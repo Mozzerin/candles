@@ -41,7 +41,13 @@ const messages: Record<Locale, Record<string, string>> = {
     'product.order.notes': 'Notes (optional)',
     'product.order.submit': 'Send Order Email',
     'product.back': 'Back to products',
-    'product.notFound': 'Product not found'
+    'product.notFound': 'Product not found',
+    'form.error.required': 'Required',
+    'form.error.quantityRange': '1-99',
+    'form.error.nameShort': 'Too short',
+    'form.error.emailInvalid': 'Invalid email',
+    'form.error.fix': 'Fix errors',
+    'contact.mailto': 'Open email client'
   },
   de: {
     'nav.products': 'Produkte',
@@ -81,7 +87,13 @@ const messages: Record<Locale, Record<string, string>> = {
     'product.order.notes': 'Notizen (optional)',
     'product.order.submit': 'Bestell-E-Mail senden',
     'product.back': 'Zurück zu den Produkten',
-    'product.notFound': 'Produkt nicht gefunden'
+    'product.notFound': 'Produkt nicht gefunden',
+    'form.error.required': 'Pflichtfeld',
+    'form.error.quantityRange': '1-99',
+    'form.error.nameShort': 'Zu kurz',
+    'form.error.emailInvalid': 'Ungültige E-Mail',
+    'form.error.fix': 'Fehler beheben',
+    'contact.mailto': 'E-Mail Programm öffnen'
   },
   fr: {
     'nav.products': 'Produits',
@@ -121,7 +133,13 @@ const messages: Record<Locale, Record<string, string>> = {
     'product.order.notes': 'Notes (optionnel)',
     'product.order.submit': 'Envoyer la commande',
     'product.back': 'Retour aux produits',
-    'product.notFound': 'Produit introuvable'
+    'product.notFound': 'Produit introuvable',
+    'form.error.required': 'Requis',
+    'form.error.quantityRange': '1-99',
+    'form.error.nameShort': 'Trop court',
+    'form.error.emailInvalid': 'Email invalide',
+    'form.error.fix': 'Corrigez les erreurs',
+    'contact.mailto': 'Ouvrir le client e-mail'
   }
 };
 

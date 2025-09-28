@@ -4,38 +4,37 @@ import './sections.css';
 
 export function LocationSection() {
   const { t, addressLines } = useI18n();
-  const { mapEmbedUrl, latitude, longitude, provider } = factoryLocation as any;
+  const { latitude, longitude, provider } = factoryLocation as any;
 
-  const googleKey = (import.meta as any).env?.VITE_GOOGLE_MAPS_KEY;
-  const useGoogle = provider?.type === 'google' && googleKey;
+  // Берём ключ если есть
+  const googleKey = (import.meta as any).env?.VITE_GOOGLE_MAPS_KEY as string | undefined;
   const zoom = provider?.zoom ?? 14;
 
-  const googleSrc = useGoogle
+  // Если есть ключ используем Maps Embed API, иначе публичный embed без ключа
+  const googleSrc = googleKey
     ? `https://www.google.com/maps/embed/v1/place?key=${googleKey}&q=${latitude},${longitude}&zoom=${zoom}`
-    : undefined;
+    : `https://www.google.com/maps?q=${latitude},${longitude}&z=${zoom}&output=embed&hl=en`;
 
   return (
     <section id="location" className="section location-section" aria-labelledby="location-heading">
       <div className="section-inner">
         <h2 id="location-heading">{t('sections.location.title')}</h2>
         <div className="location-grid">
-          <address className="address" aria-label="Factory address">
+          <address className="location-address" aria-label="Studio address">
             {addressLines.map(line => (<div key={line}>{line}</div>))}
           </address>
           <div className="map-wrapper" aria-label="Map showing the studio location">
             <iframe
               title="Studio location map"
-              src={googleSrc || mapEmbedUrl}
+              src={googleSrc}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
             />
           </div>
         </div>
-        {provider?.type === 'google' && !googleKey && (
-          <p style={{ fontSize: '.7rem', opacity: .7, marginTop: '0.75rem' }}>
-            Google Maps API key missing – falling back to OpenStreetMap. Add VITE_GOOGLE_MAPS_KEY to enable Google Maps.
-          </p>
+        {!googleKey && provider?.type === 'google' && (
+          <p className="map-hint">Google Maps API key not set – using public embed. Add VITE_GOOGLE_MAPS_KEY for enhanced map controls.</p>
         )}
       </div>
     </section>
