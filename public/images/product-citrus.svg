@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" role="img" aria-label="Citrus candle">
+  <rect x="15" y="20" width="60" height="50" rx="8" fill="#4d3a11" stroke="#ffdd91" stroke-width="3" />
+  <rect x="35" y="12" width="20" height="12" rx="3" fill="#ffdd91" />
+  <path d="M45 8c3 3 4.5 6 4.5 8.5S48 20 45 20s-4.5-2.5-4.5-3.5S42 11 45 8Z" fill="#fff2d1" stroke="#ffdd91" stroke-width="2" />
+  <circle cx="45" cy="45" r="14" fill="#ffb347" stroke="#ffdd91" stroke-width="2" />
+  <path d="M45 33v24M33 45h24" stroke="#4d3a11" stroke-width="2" />
+</svg>
+
