@@ -34,7 +34,14 @@ const messages: Record<Locale, Record<string, string>> = {
     'contact.error': 'Something went wrong. Try again.',
     'contact.privacy': 'We respond from',
     'footer.backToTop': 'Back to top',
-    'skip.toProducts': 'Skip to products'
+    'skip.toProducts': 'Skip to products',
+    'products.more': 'View details',
+    'product.order.title': 'Order this candle',
+    'product.order.quantity': 'Quantity',
+    'product.order.notes': 'Notes (optional)',
+    'product.order.submit': 'Send Order Email',
+    'product.back': 'Back to products',
+    'product.notFound': 'Product not found'
   },
   de: {
     'nav.products': 'Produkte',
@@ -67,7 +74,14 @@ const messages: Record<Locale, Record<string, string>> = {
     'contact.error': 'Fehler aufgetreten. Bitte erneut versuchen.',
     'contact.privacy': 'Wir antworten von',
     'footer.backToTop': 'Nach oben',
-    'skip.toProducts': 'Zu den Produkten springen'
+    'skip.toProducts': 'Zu den Produkten springen',
+    'products.more': 'Details ansehen',
+    'product.order.title': 'Diese Kerze bestellen',
+    'product.order.quantity': 'Menge',
+    'product.order.notes': 'Notizen (optional)',
+    'product.order.submit': 'Bestell-E-Mail senden',
+    'product.back': 'Zurück zu den Produkten',
+    'product.notFound': 'Produkt nicht gefunden'
   },
   fr: {
     'nav.products': 'Produits',
@@ -100,7 +114,14 @@ const messages: Record<Locale, Record<string, string>> = {
     'contact.error': 'Une erreur est survenue. Réessayez.',
     'contact.privacy': 'Nous répondons depuis',
     'footer.backToTop': 'Haut de page',
-    'skip.toProducts': 'Aller aux produits'
+    'skip.toProducts': 'Aller aux produits',
+    'products.more': 'Voir le détail',
+    'product.order.title': 'Commander cette bougie',
+    'product.order.quantity': 'Quantité',
+    'product.order.notes': 'Notes (optionnel)',
+    'product.order.submit': 'Envoyer la commande',
+    'product.back': 'Retour aux produits',
+    'product.notFound': 'Produit introuvable'
   }
 };
 
