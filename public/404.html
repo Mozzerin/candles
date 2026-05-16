@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    // Redirect all unknown paths to the SPA root
+    sessionStorage.setItem('redirect', location.pathname + location.search);
+    location.replace('/');
+  </script>
+</head>
+</html>
