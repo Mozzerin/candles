@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emma's Creative Learning | Plaster Painting Kits</title>
+  <meta name="description" content="Handmade plaster painting kits for kids and families. Perfect for creative play, gifts and art projects.">
+
+  <style>
+    /* ── Config & Reset ───────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-bg: #ffffff;
+      --color-text: #1a1a1a;
+      --color-muted: #555555;
+      --color-light: #f5f5f5;
+      --color-border: #e0e0e0;
+      --color-sale: #c0392b;
+      --color-badge-bg: #fdf0ef;
+      --color-btn: #1a1a1a;
+      --color-btn-text: #ffffff;
+      --color-accent: #e8602c;
+      --font-body: system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+      --max-width: 1500px;
+      --site-gutter: 4vw;
+      --header-h: 64px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button, input, select, textarea { font: inherit; }
+    button { cursor: pointer; }
+
+    .visually-hidden {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); border: 0;
+    }
+
+    /* ── Header ──────────────────────────────────────────────── */
+    #header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-border);
+      height: var(--header-h);
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--site-gutter);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .header-logo {
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .header-nav a {
+      font-size: 0.875rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+    .header-nav a:hover { opacity: 1; }
+
+    .cart-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: none;
+      border: none;
+      font-size: 0.875rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .cart-btn:hover { opacity: 0.7; }
+    .cart-count {
+      font-size: 0.8rem;
+    }
+
+    /* Language switcher */
+    .lang-switcher { display: flex; gap: 0.5rem; align-items: center; }
+    .lang-btn {
+      background: none; border: none;
+      font-size: 0.8rem; letter-spacing: 0.04em;
+      text-transform: uppercase; opacity: 0.5;
+      padding: 2px 4px; cursor: pointer;
+    }
+    .lang-btn.active { opacity: 1; font-weight: 600; }
+    .lang-sep { opacity: 0.3; font-size: 0.8rem; }
+
+    /* Mobile burger */
+    .burger { display: none; background: none; border: none; padding: 0; flex-direction: column; gap: 5px; }
+    .burger span { display: block; width: 22px; height: 1px; background: var(--color-text); }
+
+    /* ── Page ────────────────────────────────────────────────── */
+    #main { min-height: calc(100vh - var(--header-h) - 200px); }
+
+    /* ── Product list section ────────────────────────────────── */
+    .shop-section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem var(--site-gutter) 5rem;
+    }
+
+    .shop-header {
+      margin-bottom: 2rem;
+    }
+
+    .shop-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .category-nav {
+      display: flex;
+      gap: 0;
+      list-style: none;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .category-nav li a,
+    .category-nav li button {
+      background: none;
+      border: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0 1rem 0 0;
+      color: var(--color-muted);
+      cursor: pointer;
+    }
+    .category-nav li.active a,
+    .category-nav li.active button { color: var(--color-text); font-weight: 600; }
+
+    /* ── Products Grid ───────────────────────────────────────── */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    /* ── Product card ────────────────────────────────────────── */
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .card-img-wrap {
+      position: relative;
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      background: var(--color-light);
+    }
+
+    .card-img-wrap img {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: opacity 0.38s;
+    }
+
+    .card-img-main  { opacity: 1; }
+    .card-img-hover { opacity: 0; }
+    .card-img-wrap:hover .card-img-hover { opacity: 1; }
+    .card-img-wrap:hover .card-img-main  { opacity: 0; }
+
+    .card-badge {
+      position: absolute;
+      top: 0.75rem; left: 0.75rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-sale);
+      background: #fff;
+      border: 1px solid var(--color-sale);
+      padding: 0.2rem 0.55rem;
+    }
+
+    .card-body {
+      padding: 1rem 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      flex: 1;
+    }
+
+    .card-category {
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+    }
+
+    .card-name {
+      font-size: 0.95rem;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    .card-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+
+    .card-price-sale     { color: var(--color-sale); font-weight: 600; }
+    .card-price-normal   { font-weight: 500; }
+    .card-price-original { font-size: 0.82rem; text-decoration: line-through; color: var(--color-muted); }
+
+    .card-add-btn {
+      margin-top: auto;
+      padding-top: 0.85rem;
+      padding-bottom: 0.85rem;
+      background: var(--color-btn);
+      color: var(--color-btn-text);
+      border: 1px solid var(--color-btn);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      margin-top: 0.75rem;
+      width: 100%;
+    }
+    .card-add-btn:hover {
+      background: var(--color-bg);
+      color: var(--color-btn);
+    }
+
+    /* shared price helpers */
+    .price-sale     { color: var(--color-sale); font-weight: 500; }
+    .price-original { text-decoration: line-through; color: var(--color-muted); font-size: 0.8rem; }
+    .add-to-cart-btn { display: none; }
+
+    /* ── Product modal responsive ────────────────────────────── */
+    @media (max-width: 640px) {
+      #product-modal-inner {
+        grid-template-columns: 1fr !important;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+      }
+    }
+
+    #pd-add-btn:hover { background: #333 !important; }
+
+    /* ── Cart overlay ────────────────────────────────────────── */
+    #cart-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+    }
+
+    #cart-overlay.open { display: flex; }
+
+    .cart-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+    }
+
+    .cart-drawer {
+      position: absolute;
+      top: 0; right: 0; bottom: 0;
+      width: min(480px, 100vw);
+      background: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .cart-drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--color-border);
+      position: sticky;
+      top: 0;
+      background: var(--color-bg);
+      z-index: 1;
+    }
+
+    .cart-drawer-title { font-size: 1rem; font-weight: 600; letter-spacing: 0.04em; }
+
+    .cart-close-btn {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      line-height: 1;
+      padding: 0;
+      color: var(--color-text);
+      opacity: 0.6;
+    }
+    .cart-close-btn:hover { opacity: 1; }
+
+    .cart-empty {
+      padding: 3rem 1.5rem;
+      text-align: center;
+      color: var(--color-muted);
+      font-size: 0.9rem;
+    }
+
+    .cart-items { padding: 1rem 1.5rem 0; }
+
+    .cart-item {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 0.75rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .cart-item-img {
+      aspect-ratio: 2/3;
+      overflow: hidden;
+      background: var(--color-light);
+    }
+    .cart-item-img img { width: 100%; height: 100%; object-fit: cover; }
+
+    .cart-item-info { display: flex; flex-direction: column; gap: 0.35rem; }
+    .cart-item-name { font-size: 0.875rem; font-weight: 400; }
+    .cart-item-price { font-size: 0.875rem; color: var(--color-muted); }
+
+    .cart-item-qty {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+
+    .qty-btn {
+      width: 24px; height: 24px;
+      border: 1px solid var(--color-border);
+      background: none;
+      font-size: 1rem;
+      line-height: 1;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .qty-btn:hover { background: var(--color-light); }
+    .qty-val { font-size: 0.875rem; min-width: 20px; text-align: center; }
+
+    .cart-item-remove {
+      background: none; border: none;
+      font-size: 0.75rem; color: var(--color-muted);
+      cursor: pointer; margin-top: auto;
+      letter-spacing: 0.03em;
+    }
+    .cart-item-remove:hover { color: var(--color-text); }
+
+    .cart-subtotal {
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--color-border);
+      margin-top: 0.5rem;
+    }
+    .cart-subtotal-label { font-weight: 600; }
+
+    /* ── Request form ────────────────────────────────────────── */
+    .request-form-section {
+      padding: 1rem 1.5rem 2rem;
+      border-top: 2px solid var(--color-text);
+    }
+
+    .request-form-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .form-group.full { grid-column: 1 / -1; }
+
+    .form-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+    }
+
+    .form-input,
+    .form-textarea {
+      border: 1px solid var(--color-border);
+      padding: 0.55rem 0.75rem;
+      font-size: 0.875rem;
+      background: var(--color-bg);
+      color: var(--color-text);
+      width: 100%;
+      transition: border-color 0.2s;
+    }
+    .form-input:focus,
+    .form-textarea:focus { outline: none; border-color: var(--color-text); }
+
+    .form-textarea { resize: vertical; min-height: 80px; }
+
+    .submit-btn {
+      width: 100%;
+      padding: 0.9rem 1.5rem;
+      background: var(--color-btn);
+      color: var(--color-btn-text);
+      border: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      transition: background 0.2s;
+    }
+    .submit-btn:hover { background: #333; }
+    .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .form-success {
+      display: none;
+      background: #f0faf4;
+      border: 1px solid #a3d9b1;
+      color: #1d6a38;
+      padding: 1rem;
+      border-radius: 2px;
+      font-size: 0.875rem;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+
+    /* ── Footer ──────────────────────────────────────────────── */
+    footer {
+      padding: 2rem var(--site-gutter);
+      border-top: 1px solid var(--color-border);
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .footer-brand { font-size: 1rem; font-weight: 600; }
+    .footer-copy { font-size: 0.8rem; color: var(--color-muted); }
+
+    /* ── Contact cards ───────────────────────────────────────── */
+    .contact-section {
+      padding: 4rem var(--site-gutter);
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .contact-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .contact-subtitle {
+      color: var(--color-muted);
+      font-size: 0.9rem;
+      margin-bottom: 2.5rem;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 420px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    .contact-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.6rem;
+      padding: 1.25rem;
+      border: 1px solid var(--color-border);
+      text-decoration: none;
+      color: var(--color-text);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .contact-card:hover { border-color: var(--color-text); background: var(--color-light); }
+    .contact-card-icon {
+      width: 28px; height: 28px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--color-text);
+    }
+    .contact-card-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+    }
+    .contact-card-value {
+      font-size: 0.875rem;
+      font-weight: 500;
+      word-break: break-all;
+    }
+
+    /* ── Instagram header icon ───────────────────────────────── */
+    .social-header-link {
+      display: flex;
+      align-items: center;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+    .social-header-link:hover { opacity: 1; }
+
+    /* ── Mobile nav overlay ──────────────────────────────────── */
+    #mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 150;
+      background: var(--color-bg);
+      padding: 2rem var(--site-gutter);
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    #mobile-nav.open { display: flex; }
+
+    .mobile-nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mobile-nav-links { list-style: none; display: flex; flex-direction: column; gap: 1.5rem; }
+    .mobile-nav-links a { font-size: 1.2rem; font-weight: 500; }
+
+    .mobile-nav-close {
+      background: none; border: none;
+      font-size: 1.5rem; color: var(--color-text);
+      opacity: 0.6;
+    }
+
+    /* ── Responsive header ───────────────────────────────────── */
+    @media (max-width: 700px) {
+      .header-nav { display: none; }
+      .burger { display: flex; }
+      .lang-switcher { display: none; }
+    }
+
+    /* ── Notification toast ──────────────────────────────────── */
+    #toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--color-text);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.85rem;
+      border-radius: 2px;
+      z-index: 300;
+      transition: transform 0.3s ease;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+    #toast.show { transform: translateX(-50%) translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ HEADER ════════════════════════════════ -->
+<header id="header">
+  <div class="header-inner">
+
+    <a href="#" class="header-logo" id="brand-name">Emma's Creative Learning</a>
+
+    <nav>
+      <ul class="header-nav" id="main-nav-links">
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div style="display:flex;align-items:center;gap:1.25rem;">
+      <a href="https://www.instagram.com/emmas_lab_candle" target="_blank" rel="noopener noreferrer" class="social-header-link" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLang('en')">EN</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" onclick="setLang('fr')">FR</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" onclick="setLang('de')">DE</button>
+      </div>
+
+      <button class="cart-btn" onclick="openCart()" aria-label="Open cart">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span data-i18n="cart.label">Cart</span>
+        <span class="cart-count" id="cart-count-badge">(0)</span>
+      </button>
+
+      <button class="burger" id="burger-btn" aria-label="Menu" onclick="openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════ MOBILE NAV ═══════════════════════════ -->
+<div id="mobile-nav">
+  <div class="mobile-nav-header">
+    <span class="header-logo" id="mobile-brand">Emma's Creative Learning</span>
+    <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+  </div>
+  <ul class="mobile-nav-links">
+    <li><a href="#about" onclick="closeMobileNav()" data-i18n="nav.about">About</a></li>
+    <li><a href="#contact" onclick="closeMobileNav()" data-i18n="nav.contact">Contact</a></li>
+    <li><a href="#" onclick="closeMobileNav();openCart();" data-i18n="cart.label">Cart</a></li>
+    <li><a href="https://www.instagram.com/emmas_lab_candle" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+  </ul>
+  <div class="lang-switcher" style="margin-top:auto;">
+    <button class="lang-btn active" onclick="setLang('en');closeMobileNav()">EN</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" onclick="setLang('fr');closeMobileNav()">FR</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" onclick="setLang('de');closeMobileNav()">DE</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ MAIN ═════════════════════════════════ -->
+<main id="main">
+
+  <!-- SHOP SECTION -->
+  <section class="shop-section">
+    <div class="shop-header">
+      <h2 class="shop-title" data-i18n="shop.title">Shop</h2>
+      <ul class="category-nav">
+        <li class="active"><button onclick="filterProducts('all')" data-i18n="cat.all">All</button></li>
+        <li><button onclick="filterProducts('unicorn')" data-i18n="cat.unicorn">Unicorn</button></li>
+        <li><button onclick="filterProducts('dinosaur')" data-i18n="cat.dinosaur">Dinosaur</button></li>
+      </ul>
+    </div>
+
+    <div class="products-grid" id="products-grid">
+      <!-- Cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" style="padding: 4rem var(--site-gutter); max-width: var(--max-width); margin: 0 auto;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+      <div>
+        <h2 style="font-size:1.5rem;font-weight:600;margin-bottom:1rem;" data-i18n="about.title">About Emma's Creative Learning</h2>
+        <p style="color:var(--color-muted);line-height:1.8;margin-bottom:1rem;" data-i18n="about.text1">
+          We create handmade plaster painting kits designed to inspire creativity in children and adults alike.
+          Each kit comes with everything you need: a pre-cast plaster figure, paints, and a brush.
+        </p>
+        <p style="color:var(--color-muted);line-height:1.8;" data-i18n="about.text2">
+          Based in Switzerland, we handcraft every piece with love and care.
+          Perfect for birthday gifts, rainy afternoons, and creative family time.
+        </p>
+      </div>
+      <div style="aspect-ratio:1;overflow:hidden;background:var(--color-light);">
+        <img src="images/creator.jpg" alt="Emma" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <h2 class="contact-title" data-i18n="contact.title">Get in touch</h2>
+    <p class="contact-subtitle" data-i18n="contact.text">Questions, custom orders, wholesale inquiries:</p>
+
+    <div class="contact-grid">
+
+      <!-- Email -->
+      <a class="contact-card" id="contact-email-link" href="mailto:mozzerin@gmail.com">
+        <div class="contact-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="contact-card-label" data-i18n="contact.label.email">Email</div>
+        <div class="contact-card-value" id="contact-email-val">mozzerin@gmail.com</div>
+      </a>
+
+      <!-- Phone -->
+      <a class="contact-card" id="contact-phone-link" href="tel:+41000000000">
+        <div class="contact-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div class="contact-card-label" data-i18n="contact.label.phone">Phone</div>
+        <div class="contact-card-value" id="contact-phone-val">+41 00 000 00 00</div>
+      </a>
+
+      <!-- WhatsApp -->
+      <a class="contact-card" id="contact-wa-link" href="https://wa.me/41000000000" target="_blank" rel="noopener noreferrer">
+        <div class="contact-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        </div>
+        <div class="contact-card-label">WhatsApp</div>
+        <div class="contact-card-value" id="contact-wa-val">+41 00 000 00 00</div>
+      </a>
+
+      <!-- Instagram -->
+      <a class="contact-card" href="https://www.instagram.com/emmas_lab_candle" target="_blank" rel="noopener noreferrer">
+        <div class="contact-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div class="contact-card-label">Instagram</div>
+        <div class="contact-card-value">@emmas_lab_candle</div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand" data-i18n="footer.brand">Emma's Creative Learning</div>
+    <div class="footer-copy">© <span id="footer-year"></span> Emma's Creative Learning. <span data-i18n="footer.rights">All rights reserved.</span></div>
+    <div style="display:flex;gap:1rem;margin-top:0.5rem;font-size:0.8rem;align-items:center;">
+      <a href="https://www.instagram.com/emmas_lab_candle" target="_blank" rel="noopener noreferrer" style="color:var(--color-muted);display:flex;align-items:center;gap:0.3rem;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        @emmas_lab_candle
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════ PRODUCT MODAL ════════════════════════ -->
+<div id="product-modal" role="dialog" aria-modal="true" aria-label="Product detail" style="display:none;position:fixed;inset:0;z-index:250;overflow-y:auto;">
+  <div style="position:fixed;inset:0;background:rgba(0,0,0,0.4);" onclick="closeProduct()"></div>
+
+  <div id="product-modal-inner" style="
+    position:relative; z-index:1;
+    background:#fff; margin:auto;
+    max-width:900px; width:calc(100% - 2rem);
+    margin-top:3rem; margin-bottom:3rem;
+    display:grid; grid-template-columns:1fr 1fr; gap:0;
+  ">
+    <!-- image carousel -->
+    <div style="position:relative;">
+      <div style="overflow:hidden;">
+        <div id="pd-img-track" style="display:flex;transition:transform 0.38s cubic-bezier(.25,.46,.45,.94);">
+          <!-- img slides -->
+        </div>
+      </div>
+      <button onclick="pdMove(-1)" id="pd-prev" style="position:absolute;left:0.5rem;top:50%;transform:translateY(-50%);width:36px;height:36px;background:rgba(255,255,255,0.9);border:1px solid #ddd;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button onclick="pdMove(1)"  id="pd-next" style="position:absolute;right:0.5rem;top:50%;transform:translateY(-50%);width:36px;height:36px;background:rgba(255,255,255,0.9);border:1px solid #ddd;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <!-- thumbnail strip -->
+      <div id="pd-thumbs" style="display:flex;gap:6px;padding:0.75rem;overflow-x:auto;background:#f5f5f5;"></div>
+    </div>
+
+    <!-- info panel -->
+    <div style="padding:2.5rem 2rem;display:flex;flex-direction:column;gap:1.25rem;">
+      <button onclick="closeProduct()" aria-label="Close" style="align-self:flex-end;background:none;border:none;font-size:1.4rem;line-height:1;opacity:0.5;cursor:pointer;margin-bottom:-0.5rem;">✕</button>
+      <div id="pd-category" style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:#555;"></div>
+      <h2 id="pd-name" style="font-size:1.4rem;font-weight:500;line-height:1.25;"></h2>
+      <div id="pd-price" style="font-size:1.2rem;font-weight:600;"></div>
+      <div id="pd-badge" style="display:none;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:#c0392b;border:1px solid #c0392b;padding:0.2rem 0.55rem;align-self:flex-start;"></div>
+      <p id="pd-desc" style="color:#555;line-height:1.8;font-size:0.9rem;"></p>
+      <div style="display:flex;align-items:center;gap:1rem;margin-top:0.5rem;">
+        <div style="display:flex;align-items:center;border:1px solid #e0e0e0;">
+          <button onclick="pdQtyChange(-1)" style="width:36px;height:42px;background:none;border:none;font-size:1.1rem;cursor:pointer;">−</button>
+          <span id="pd-qty" style="min-width:36px;text-align:center;font-size:0.95rem;">1</span>
+          <button onclick="pdQtyChange(1)"  style="width:36px;height:42px;background:none;border:none;font-size:1.1rem;cursor:pointer;">+</button>
+        </div>
+        <button id="pd-add-btn" onclick="pdAddToCart()" style="flex:1;padding:0.85rem 1.5rem;background:#1a1a1a;color:#fff;border:none;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:background 0.2s;">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ CART OVERLAY ═════════════════════════ -->
+<div id="cart-overlay" role="dialog" aria-modal="true" aria-label="Shopping cart">
+  <div class="cart-backdrop" onclick="closeCart()"></div>
+  <div class="cart-drawer">
+    <div class="cart-drawer-header">
+      <span class="cart-drawer-title" data-i18n="cart.title">Cart</span>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Close cart">✕</button>
+    </div>
+
+    <div id="cart-body">
+      <!-- Empty state -->
+      <div class="cart-empty" id="cart-empty-msg">
+        <p data-i18n="cart.empty">Your cart is empty.</p>
+      </div>
+
+      <!-- Items -->
+      <div class="cart-items" id="cart-items-list"></div>
+
+      <!-- Subtotal -->
+      <div class="cart-subtotal" id="cart-subtotal" style="display:none;">
+        <span class="cart-subtotal-label" data-i18n="cart.subtotal">Subtotal</span>
+        <span id="cart-total-val">CHF 0.00</span>
+      </div>
+
+      <!-- Request form -->
+      <div class="request-form-section" id="request-form-section" style="display:none;">
+        <h3 class="request-form-title" data-i18n="form.title">Send a Request</h3>
+        <form id="request-form" onsubmit="submitRequest(event)" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="req-name" data-i18n="form.name">Name *</label>
+              <input class="form-input" id="req-name" type="text" required autocomplete="name" placeholder="Emma Müller">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="req-email" data-i18n="form.email">Email *</label>
+              <input class="form-input" id="req-email" type="email" required autocomplete="email" placeholder="you@example.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="req-phone" data-i18n="form.phone">Phone</label>
+              <input class="form-input" id="req-phone" type="tel" autocomplete="tel" placeholder="+41 79 000 00 00">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="req-city" data-i18n="form.city">City / Postcode</label>
+              <input class="form-input" id="req-city" type="text" autocomplete="address-level2" placeholder="Zürich 8001">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="req-address" data-i18n="form.address">Delivery Address</label>
+            <input class="form-input" id="req-address" type="text" autocomplete="street-address" placeholder="Bahnhofstrasse 1">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="req-notes" data-i18n="form.notes">Notes / Special requests</label>
+            <textarea class="form-textarea" id="req-notes" rows="3" placeholder="..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn" data-i18n="form.submit">Send Request</button>
+        </form>
+        <div class="form-success" id="form-success">
+          <p data-i18n="form.success">✓ Your request has been sent! We will contact you shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ TOAST ════════════════════════════════ -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- ═══════════════════════════════════════ SCRIPTS ══════════════════════════════ -->
+<script>
+  /* ──────────────────────────────────────────────────────────────
+     CONFIG — change these to configure the site
+  ────────────────────────────────────────────────────────────── */
+  const CONFIG = {
+    contactEmail: 'mozzerin@gmail.com',
+    phone:        '+41 00 000 00 00',     // <-- YOUR PHONE HERE
+    whatsapp:     '41000000000',          // <-- digits only, e.g. 41791234567
+    instagram:    'emmas_lab_candle',
+    currency:     'CHF',
+    siteName:     "Emma's Creative Learning"
+  };
+
+  /* ──────────────────────────────────────────────────────────────
+     TRANSLATIONS
+  ────────────────────────────────────────────────────────────── */
+  const TRANSLATIONS = {
+    en: {
+      'nav.about': 'About',
+      'nav.docs': 'Legal',
+      'nav.contact': 'Contact',
+      'cart.label': 'Cart',
+      'cart.title': 'Cart',
+      'cart.empty': 'Your cart is empty.',
+      'cart.subtotal': 'Subtotal',
+      'shop.title': 'Shop',
+      'cat.all': 'All',
+      'cat.unicorn': 'Unicorn',
+      'cat.dinosaur': 'Dinosaur',
+      'about.title': "About Emma's Creative Learning",
+      'about.text1': 'We create handmade plaster painting kits designed to inspire creativity in children and adults alike. Each kit comes with everything you need: a pre-cast plaster figure, paints, and a brush.',
+      'about.text2': 'Based in Switzerland, we handcraft every piece with love and care. Perfect for birthday gifts, rainy afternoons, and creative family time.',
+      'docs.title': 'Legal & Documents',
+      'docs.subtitle': 'Switzerland-compliant business documents',
+      'docs.group.legal': 'Legal',
+      'docs.group.commerce': 'Commerce',
+      'docs.group.registration': 'Business Registration',
+      'contact.title': 'Get in touch',
+      'contact.text': 'Questions, custom orders, wholesale inquiries:',
+      'contact.location': '🇨🇭 Switzerland',
+      'contact.label.email': 'Email',
+      'contact.label.phone': 'Phone',
+      'footer.brand': "Emma's Creative Learning",
+      'footer.rights': 'All rights reserved.',
+      'footer.privacy': 'Privacy Policy',
+      'footer.terms': 'Terms',
+      'form.title': 'Send a Request',
+      'form.name': 'Name *',
+      'form.email': 'Email *',
+      'form.phone': 'Phone',
+      'form.city': 'City / Postcode',
+      'form.address': 'Delivery Address',
+      'form.notes': 'Notes / Special requests',
+      'form.submit': 'Send Request',
+      'form.success': '✓ Your request has been sent! We will contact you shortly.',
+      'add.to.cart': 'Add to Cart',
+      'quick.view': 'Quick View',
+      'badge.sale': 'Sale',
+      'added.toast': 'Added to cart',
+    },
+    fr: {
+      'nav.about': 'À propos',
+      'nav.docs': 'Légal',
+      'nav.contact': 'Contact',
+      'cart.label': 'Panier',
+      'cart.title': 'Panier',
+      'cart.empty': 'Votre panier est vide.',
+      'cart.subtotal': 'Sous-total',
+      'shop.title': 'Boutique',
+      'cat.all': 'Tout',
+      'cat.unicorn': 'Licorne',
+      'cat.dinosaur': 'Dinosaure',
+      'about.title': "À propos d'Emma's Creative Learning",
+      'about.text1': "Nous créons des kits de peinture en plâtre faits à la main pour inspirer la créativité chez les enfants et les adultes. Chaque kit comprend tout ce dont vous avez besoin : une figurine en plâtre, des peintures et un pinceau.",
+      'about.text2': "Basés en Suisse, nous fabriquons chaque pièce avec amour et soin. Parfait pour les cadeaux d'anniversaire, les après-midi pluvieux et les moments créatifs en famille.",
+      'docs.title': 'Documents légaux',
+      'docs.subtitle': 'Documents conformes à la législation suisse',
+      'docs.group.legal': 'Légal',
+      'docs.group.commerce': 'Commerce',
+      'docs.group.registration': 'Enregistrement commercial',
+      'contact.title': 'Contactez-nous',
+      'contact.text': 'Questions, commandes personnalisées, ventes en gros :',
+      'contact.location': '🇨🇭 Suisse',
+      'contact.label.email': 'E-mail',
+      'contact.label.phone': 'Téléphone',
+      'footer.brand': "Emma's Creative Learning",
+      'footer.rights': 'Tous droits réservés.',
+      'footer.privacy': 'Politique de confidentialité',
+      'footer.terms': 'Conditions',
+      'form.title': 'Envoyer une demande',
+      'form.name': 'Nom *',
+      'form.email': 'E-mail *',
+      'form.phone': 'Téléphone',
+      'form.city': 'Ville / Code postal',
+      'form.address': 'Adresse de livraison',
+      'form.notes': 'Notes / Demandes spéciales',
+      'form.submit': 'Envoyer la demande',
+      'form.success': '✓ Votre demande a été envoyée ! Nous vous contacterons prochainement.',
+      'add.to.cart': 'Ajouter au panier',
+      'quick.view': 'Aperçu rapide',
+      'badge.sale': 'Solde',
+      'added.toast': 'Ajouté au panier',
+    },
+    de: {
+      'nav.about': 'Über uns',
+      'nav.docs': 'Rechtliches',
+      'nav.contact': 'Kontakt',
+      'cart.label': 'Warenkorb',
+      'cart.title': 'Warenkorb',
+      'cart.empty': 'Ihr Warenkorb ist leer.',
+      'cart.subtotal': 'Zwischensumme',
+      'shop.title': 'Shop',
+      'cat.all': 'Alle',
+      'cat.unicorn': 'Einhorn',
+      'cat.dinosaur': 'Dinosaurier',
+      'about.title': "Über Emma's Creative Learning",
+      'about.text1': 'Wir erstellen handgefertigte Gipsmalerei-Kits, um die Kreativität bei Kindern und Erwachsenen zu fördern. Jedes Kit enthält alles, was Sie brauchen: eine gegossene Gipsfigur, Farben und einen Pinsel.',
+      'about.text2': 'Mit Sitz in der Schweiz fertigen wir jedes Stück mit Liebe und Sorgfalt. Ideal als Geburtstagsgeschenk, für Regentage und kreative Familienzeit.',
+      'docs.title': 'Rechtliches & Dokumente',
+      'docs.subtitle': 'Dokumente konform mit Schweizer Recht',
+      'docs.group.legal': 'Rechtliches',
+      'docs.group.commerce': 'Handel',
+      'docs.group.registration': 'Gewerbeanmeldung',
+      'contact.title': 'Kontakt',
+      'contact.text': 'Fragen, individuelle Bestellungen, Großhandelsanfragen:',
+      'contact.location': '🇨🇭 Schweiz',
+      'contact.label.email': 'E-Mail',
+      'contact.label.phone': 'Telefon',
+      'footer.brand': "Emma's Creative Learning",
+      'footer.rights': 'Alle Rechte vorbehalten.',
+      'footer.privacy': 'Datenschutzrichtlinie',
+      'footer.terms': 'AGB',
+      'form.title': 'Anfrage senden',
+      'form.name': 'Name *',
+      'form.email': 'E-Mail *',
+      'form.phone': 'Telefon',
+      'form.city': 'Stadt / Postleitzahl',
+      'form.address': 'Lieferadresse',
+      'form.notes': 'Anmerkungen / Sonderwünsche',
+      'form.submit': 'Anfrage senden',
+      'form.success': '✓ Ihre Anfrage wurde gesendet! Wir werden Sie in Kürze kontaktieren.',
+      'add.to.cart': 'In den Warenkorb',
+      'quick.view': 'Schnellansicht',
+      'badge.sale': 'Angebot',
+      'added.toast': 'In den Warenkorb gelegt',
+    }
+  };
+
+  /* ──────────────────────────────────────────────────────────────
+     PRODUCTS
+  ────────────────────────────────────────────────────────────── */
+  const PRODUCTS = [
+    {
+      id: 'unicorn-kit-1',
+      category: 'unicorn',
+      image: 'images/unicorn1.png',
+      imageHover: 'images/unicorn1-hover.png',
+      price: 7.00,
+      originalPrice: 10.00,
+      onSale: true,
+      translations: {
+        en: { name: 'Handmade Unicorn Plaster Painting Kit', description: 'A magical unicorn plaster figure ready to paint. Kit includes the plaster figure, 6 acrylic paints, a brush and step-by-step instructions. Perfect creative activity for kids aged 4 and up.' },
+        fr: { name: 'Kit de Peinture Licorne en Plâtre', description: 'Une figurine licorne en plâtre prête à peindre. Le kit comprend la figurine, 6 peintures acryliques, un pinceau et des instructions. Idéal pour les enfants dès 4 ans.' },
+        de: { name: 'Handgemachtes Einhorn Gipsmalerei-Set', description: 'Eine magische Einhorn-Gipsfigur zum Bemalen. Das Set enthält die Figur, 6 Acrylfarben, einen Pinsel und Schritt-für-Schritt-Anleitungen. Perfekt für Kinder ab 4 Jahren.' }
+      }
+    },
+    {
+      id: 'unicorn-face-kit',
+      category: 'unicorn',
+      image: 'images/unicorn-face.png',
+      imageHover: 'images/unicorn-face-hover.png',
+      price: 7.00,
+      originalPrice: 10.00,
+      onSale: true,
+      translations: {
+        en: { name: 'Handmade Unicorn Face Plaster Painting Kit', description: 'A charming unicorn face plaster plaque to paint and display. Includes the plaster piece, 6 vibrant paints, a brush and easy instructions. Great gift idea for young artists.' },
+        fr: { name: 'Kit de Peinture Visage de Licorne en Plâtre', description: 'Une charmante plaque en plâtre représentant un visage de licorne à peindre. Comprend la pièce en plâtre, 6 peintures vives, un pinceau et des instructions. Beau cadeau pour les jeunes artistes.' },
+        de: { name: 'Handgemachtes Einhorn-Gesicht Gipsmalerei-Set', description: 'Eine charmante Gips-Wandplakette mit Einhorn-Gesicht zum Bemalen. Enthält das Gipsstück, 6 leuchtende Farben, einen Pinsel und einfache Anleitungen. Tolles Geschenk für junge Künstler.' }
+      }
+    },
+    {
+      id: 'unicorn-kit-2',
+      category: 'unicorn',
+      image: 'images/unicorn2.png',
+      imageHover: 'images/unicorn2-hover.png',
+      price: 7.00,
+      originalPrice: 10.00,
+      onSale: true,
+      translations: {
+        en: { name: 'Handmade Unicorn Plaster Painting Kit – Blue', description: 'A blue-themed unicorn plaster figure with a dreamy design. Kit contains the plaster figure, 6 paints, a brush and instructions. Encourages creativity and fine motor skills.' },
+        fr: { name: 'Kit de Peinture Licorne en Plâtre – Bleu', description: 'Une figurine licorne en plâtre aux tons bleus et au design rêveur. Le kit contient la figurine, 6 peintures, un pinceau et des instructions. Encourage la créativité et la motricité fine.' },
+        de: { name: 'Handgemachtes Einhorn Gipsmalerei-Set – Blau', description: 'Eine blaue Einhorn-Gipsfigur mit traumhaftem Design. Das Set enthält die Figur, 6 Farben, einen Pinsel und Anleitungen. Fördert Kreativität und Feinmotorik.' }
+      }
+    },
+    {
+      id: 'unicorn-kit-3',
+      category: 'unicorn',
+      image: 'images/unicorn3.png',
+      imageHover: 'images/unicorn3-hover.png',
+      price: 7.00,
+      originalPrice: 10.00,
+      onSale: true,
+      translations: {
+        en: { name: 'Handmade Unicorn Plaster Painting Kit – Classic', description: 'The classic unicorn plaster figure — a timeless design loved by children everywhere. Includes the figure, 6 acrylic paints, a brush and easy-to-follow instructions.' },
+        fr: { name: 'Kit de Peinture Licorne en Plâtre – Classique', description: 'La figurine licorne en plâtre classique — un design intemporel adoré des enfants. Comprend la figurine, 6 peintures acryliques, un pinceau et des instructions simples.' },
+        de: { name: 'Handgemachtes Einhorn Gipsmalerei-Set – Klassisch', description: 'Die klassische Einhorn-Gipsfigur — ein zeitloses Design, das Kinder lieben. Enthält die Figur, 6 Acrylfarben, einen Pinsel und leicht verständliche Anleitungen.' }
+      }
+    },
+    {
+      id: 'dinosaur-kit-1',
+      category: 'dinosaur',
+      image: 'images/dinosaur1.png',
+      imageHover: 'images/dinosaur1-hover.png',
+      price: 10.00,
+      originalPrice: null,
+      onSale: false,
+      translations: {
+        en: { name: 'Handmade Dinosaur Plaster Painting Kit', description: 'A roar-some dinosaur plaster figure ready to be painted. Kit includes the plaster figure, 8 acrylic paints, a brush and instructions. The perfect gift for little dino fans.' },
+        fr: { name: 'Kit de Peinture Dinosaure en Plâtre', description: 'Une figurine dinosaure en plâtre prête à peindre. Le kit comprend la figurine, 8 peintures acryliques, un pinceau et des instructions. Le cadeau parfait pour les petits fans de dinos.' },
+        de: { name: 'Handgemachtes Dinosaurier Gipsmalerei-Set', description: 'Eine beeindruckende Dinosaurier-Gipsfigur zum Bemalen. Das Set enthält die Figur, 8 Acrylfarben, einen Pinsel und Anleitungen. Das perfekte Geschenk für kleine Dino-Fans.' }
+      }
+    },
+    {
+      id: 'dinosaur-kit-2',
+      category: 'dinosaur',
+      image: 'images/dinosaur2.png',
+      imageHover: 'images/dinosaur2-hover.png',
+      price: 7.00,
+      originalPrice: 10.00,
+      onSale: true,
+      translations: {
+        en: { name: 'Handmade Dinosaur Plaster Painting Kit – Roar Edition', description: 'The Roar Edition dinosaur plaster kit features an extra-expressive pose. Includes the plaster figure, 6 paints, a brush and step-by-step instructions. Hours of creative fun guaranteed.' },
+        fr: { name: 'Kit de Peinture Dinosaure en Plâtre – Édition Roar', description: 'L\'édition Roar du kit dinosaure en plâtre avec une pose encore plus expressive. Comprend la figurine, 6 peintures, un pinceau et des instructions. Des heures de plaisir créatif garanties.' },
+        de: { name: 'Handgemachtes Dinosaurier Gipsmalerei-Set – Roar Edition', description: 'Die Roar Edition des Dinosaurier-Sets mit einer besonders ausdrucksstarken Pose. Enthält die Figur, 6 Farben, einen Pinsel und Schritt-für-Schritt-Anleitungen. Stunden kreativer Freude garantiert.' }
+      }
+    }
+  ];
+
+  /* ──────────────────────────────────────────────────────────────
+     CART STATE
+  ────────────────────────────────────────────────────────────── */
+  let cart = [];  // { productId, qty }
+  let currentLang = 'en';
+  let currentFilter = 'all';
+
+  function t(key) {
+    return (TRANSLATIONS[currentLang] && TRANSLATIONS[currentLang][key]) || TRANSLATIONS['en'][key] || key;
+  }
+
+  function formatPrice(n) {
+    return CONFIG.currency + ' ' + n.toFixed(2);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     LANGUAGE
+  ────────────────────────────────────────────────────────────── */
+  function setLang(lang) {
+    if (!TRANSLATIONS[lang]) return;
+    currentLang = lang;
+
+    // Update all lang-btn active state
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.trim().toLowerCase() === lang);
+    });
+
+    // Update all data-i18n elements
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      el.textContent = t(key);
+    });
+
+    // Update contact email link text
+    const emailLink = document.getElementById('contact-email-link');
+    if (emailLink) emailLink.textContent = CONFIG.contactEmail;
+
+    // Re-render products
+    renderProducts();
+    renderCartItems();
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     MAIN CAROUSEL STATE  (1 slide = 1 product, full-width)
+  ────────────────────────────────────────────────────────────── */
+
+
+  function filteredProducts() {
+    return currentFilter === 'all'
+      ? PRODUCTS
+      : PRODUCTS.filter(p => p.category === currentFilter);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     PRODUCTS RENDERING
+  ────────────────────────────────────────────────────────────── */
+  function filterProducts(cat) {
+    currentFilter = cat;
+    document.querySelectorAll('.category-nav li').forEach((li, i) => {
+      li.classList.toggle('active', ['all','unicorn','dinosaur'][i] === cat);
+    });
+    renderProducts();
+  }
+
+  function renderProducts() {
+    const grid  = document.getElementById('products-grid');
+    const items = filteredProducts();
+
+    grid.innerHTML = items.map(p => {
+      const tr   = p.translations[currentLang] || p.translations.en;
+      const name = tr.name;
+      const cat  = p.category.charAt(0).toUpperCase() + p.category.slice(1);
+
+      const priceHtml = p.onSale
+        ? `<span class="card-price-sale">${formatPrice(p.price)}</span>
+           <span class="card-price-original">${formatPrice(p.originalPrice)}</span>`
+        : `<span class="card-price-normal">${formatPrice(p.price)}</span>`;
+
+      const badgeHtml = p.onSale
+        ? `<div class="card-badge">${t('badge.sale')}</div>` : '';
+
+      return `
+        <div class="product-card" data-product-id="${p.id}">
+          <div class="card-img-wrap" onclick="openProduct('${p.id}')">
+            <img class="card-img-main"  src="${p.image}"      alt="${name}">
+            <img class="card-img-hover" src="${p.imageHover}" alt="${name}">
+            ${badgeHtml}
+          </div>
+          <div class="card-body">
+            <div class="card-category">${cat}</div>
+            <h3 class="card-name">${name}</h3>
+            <div class="card-price-row">${priceHtml}</div>
+            <button class="card-add-btn" onclick="event.stopPropagation();addToCart('${p.id}')">
+              ${t('add.to.cart')}
+            </button>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     PRODUCT DETAIL MODAL
+  ────────────────────────────────────────────────────────────── */
+  let pdProductId = null;
+  let pdImgIndex  = 0;
+  let pdQty       = 1;
+
+  function openProduct(id) {
+    const p  = PRODUCTS.find(x => x.id === id);
+    if (!p) return;
+    const tr = p.translations[currentLang] || p.translations.en;
+    pdProductId = id;
+    pdImgIndex  = 0;
+    pdQty       = 1;
+
+    // All images for this product
+    const imgs = [p.image, p.imageHover].filter(Boolean);
+
+    // Image track
+    const track = document.getElementById('pd-img-track');
+    track.innerHTML = imgs.map(src =>
+      `<div style="flex:0 0 100%;aspect-ratio:2/3;overflow:hidden;background:#f5f5f5;">
+         <img src="${src}" alt="${tr.name}" style="width:100%;height:100%;object-fit:cover;">
+       </div>`
+    ).join('');
+
+    // Thumbnails
+    const thumbs = document.getElementById('pd-thumbs');
+    thumbs.innerHTML = imgs.map((src, i) =>
+      `<img src="${src}" class="slide-thumb${i===0?' active':''}" style="width:52px;height:52px;object-fit:cover;border:2px solid ${i===0?'#1a1a1a':'#ddd'};cursor:pointer;flex-shrink:0;" onclick="pdGoImg(${i})">`
+    ).join('');
+
+    pdUpdateImgButtons(imgs.length);
+
+    // Info
+    document.getElementById('pd-name').textContent     = tr.name;
+    document.getElementById('pd-category').textContent = p.category.charAt(0).toUpperCase() + p.category.slice(1);
+    document.getElementById('pd-qty').textContent      = pdQty;
+
+    const priceEl = document.getElementById('pd-price');
+    if (p.onSale) {
+      priceEl.innerHTML = `<span style="color:#c0392b;margin-right:0.5rem;">${formatPrice(p.price)}</span><span style="text-decoration:line-through;color:#888;font-size:0.9rem;">${formatPrice(p.originalPrice)}</span>`;
+    } else {
+      priceEl.textContent = formatPrice(p.price);
+    }
+
+    const badgeEl = document.getElementById('pd-badge');
+    badgeEl.style.display = p.onSale ? 'inline-block' : 'none';
+    badgeEl.textContent   = t('badge.sale');
+
+    const descEl = document.getElementById('pd-desc');
+    descEl.textContent = tr.description || '';
+
+    document.getElementById('pd-add-btn').textContent = t('add.to.cart');
+
+    const modal = document.getElementById('product-modal');
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeProduct() {
+    document.getElementById('product-modal').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  function pdMove(dir) {
+    const p    = PRODUCTS.find(x => x.id === pdProductId);
+    if (!p) return;
+    const imgs = [p.image, p.imageHover].filter(Boolean);
+    pdImgIndex = Math.max(0, Math.min(pdImgIndex + dir, imgs.length - 1));
+    pdGoImg(pdImgIndex);
+  }
+
+  function pdGoImg(idx) {
+    const p    = PRODUCTS.find(x => x.id === pdProductId);
+    if (!p) return;
+    const imgs = [p.image, p.imageHover].filter(Boolean);
+    pdImgIndex = idx;
+    const track = document.getElementById('pd-img-track');
+    track.style.transform = `translateX(-${idx * 100}%)`;
+    document.querySelectorAll('#pd-thumbs img').forEach((th, i) => {
+      th.style.border = `2px solid ${i === idx ? '#1a1a1a' : '#ddd'}`;
+    });
+    pdUpdateImgButtons(imgs.length);
+  }
+
+  function pdUpdateImgButtons(total) {
+    document.getElementById('pd-prev').style.opacity = pdImgIndex === 0 ? '0.3' : '1';
+    document.getElementById('pd-next').style.opacity = pdImgIndex >= total - 1 ? '0.3' : '1';
+  }
+
+  function pdQtyChange(delta) {
+    pdQty = Math.max(1, pdQty + delta);
+    document.getElementById('pd-qty').textContent = pdQty;
+  }
+
+  function pdAddToCart() {
+    if (!pdProductId) return;
+    const existing = cart.find(i => i.productId === pdProductId);
+    if (existing) existing.qty += pdQty;
+    else cart.push({ productId: pdProductId, qty: pdQty });
+    saveCart();
+    updateCartBadge();
+    showToast(t('added.toast'));
+    closeProduct();
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     CART LOGIC
+  ────────────────────────────────────────────────────────────── */
+  function addToCart(productId) {
+    const existing = cart.find(i => i.productId === productId);
+    if (existing) {
+      existing.qty++;
+    } else {
+      cart.push({ productId, qty: 1 });
+    }
+    saveCart();
+    updateCartBadge();
+    showToast(t('added.toast'));
+  }
+
+  function removeFromCart(productId) {
+    cart = cart.filter(i => i.productId !== productId);
+    saveCart();
+    updateCartBadge();
+    renderCartItems();
+  }
+
+  function changeQty(productId, delta) {
+    const item = cart.find(i => i.productId === productId);
+    if (!item) return;
+    item.qty = Math.max(1, item.qty + delta);
+    saveCart();
+    renderCartItems();
+    updateCartBadge();
+  }
+
+  function cartTotal() {
+    return cart.reduce((sum, item) => {
+      const product = PRODUCTS.find(p => p.id === item.productId);
+      return sum + (product ? product.price * item.qty : 0);
+    }, 0);
+  }
+
+  function updateCartBadge() {
+    const total = cart.reduce((s, i) => s + i.qty, 0);
+    document.getElementById('cart-count-badge').textContent = `(${total})`;
+  }
+
+  function renderCartItems() {
+    const listEl = document.getElementById('cart-items-list');
+    const emptyEl = document.getElementById('cart-empty-msg');
+    const subtotalEl = document.getElementById('cart-subtotal');
+    const formSection = document.getElementById('request-form-section');
+    const totalVal = document.getElementById('cart-total-val');
+
+    if (cart.length === 0) {
+      emptyEl.style.display = '';
+      listEl.innerHTML = '';
+      subtotalEl.style.display = 'none';
+      formSection.style.display = 'none';
+      return;
+    }
+
+    emptyEl.style.display = 'none';
+    subtotalEl.style.display = '';
+    formSection.style.display = '';
+
+    listEl.innerHTML = cart.map(item => {
+      const product = PRODUCTS.find(p => p.id === item.productId);
+      if (!product) return '';
+      const name = (product.translations[currentLang] || product.translations.en).name;
+      return `
+        <div class="cart-item">
+          <div class="cart-item-img">
+            <img src="${product.image}" alt="${name}" loading="lazy">
+          </div>
+          <div class="cart-item-info">
+            <div class="cart-item-name">${name}</div>
+            <div class="cart-item-price">${formatPrice(product.price)} × ${item.qty} = ${formatPrice(product.price * item.qty)}</div>
+            <div class="cart-item-qty">
+              <button class="qty-btn" onclick="changeQty('${item.productId}',-1)" aria-label="Decrease">−</button>
+              <span class="qty-val">${item.qty}</span>
+              <button class="qty-btn" onclick="changeQty('${item.productId}',1)" aria-label="Increase">+</button>
+            </div>
+            <button class="cart-item-remove" onclick="removeFromCart('${item.productId}')">Remove</button>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    totalVal.textContent = formatPrice(cartTotal());
+
+    // Re-apply i18n to form section
+    document.querySelectorAll('#request-form-section [data-i18n]').forEach(el => {
+      el.textContent = t(el.getAttribute('data-i18n'));
+    });
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     CART OPEN / CLOSE
+  ────────────────────────────────────────────────────────────── */
+  function openCart() {
+    renderCartItems();
+    document.getElementById('cart-overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('form-success').style.display = 'none';
+    document.getElementById('request-form').style.display = '';
+  }
+
+  function closeCart() {
+    document.getElementById('cart-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeCart();
+  });
+
+  /* ──────────────────────────────────────────────────────────────
+     REQUEST FORM SUBMISSION
+  ────────────────────────────────────────────────────────────── */
+  function submitRequest(e) {
+    e.preventDefault();
+
+    const name    = document.getElementById('req-name').value.trim();
+    const email   = document.getElementById('req-email').value.trim();
+    const phone   = document.getElementById('req-phone').value.trim();
+    const city    = document.getElementById('req-city').value.trim();
+    const address = document.getElementById('req-address').value.trim();
+    const notes   = document.getElementById('req-notes').value.trim();
+
+    if (!name || !email) return;
+
+    // Build order summary
+    const orderLines = cart.map(item => {
+      const product = PRODUCTS.find(p => p.id === item.productId);
+      const pname = (product.translations.en).name;
+      return `  • ${pname} × ${item.qty}  =  ${formatPrice(product.price * item.qty)}`;
+    });
+
+    const subject = `[Order Request] ${CONFIG.siteName}`;
+    const body = [
+      `ORDER REQUEST — ${CONFIG.siteName}`,
+      '─'.repeat(40),
+      '',
+      `Name:    ${name}`,
+      `Email:   ${email}`,
+      phone   ? `Phone:   ${phone}`   : null,
+      address ? `Address: ${address}` : null,
+      city    ? `City:    ${city}`    : null,
+      '',
+      'ORDER:',
+      ...orderLines,
+      '',
+      `TOTAL:   ${formatPrice(cartTotal())}`,
+      '',
+      notes   ? `Notes:\n${notes}` : null,
+      '',
+      `Sent at: ${new Date().toLocaleString()}`,
+    ].filter(l => l !== null).join('\n');
+
+    const mailto = `mailto:${CONFIG.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+
+    // Show success state
+    document.getElementById('request-form').style.display = 'none';
+    const successEl = document.getElementById('form-success');
+    successEl.style.display = 'block';
+    successEl.querySelector('p').textContent = t('form.success');
+
+    // Clear cart after a delay
+    setTimeout(() => {
+      cart = [];
+      saveCart();
+      updateCartBadge();
+    }, 1500);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     MOBILE NAV
+  ────────────────────────────────────────────────────────────── */
+  function openMobileNav() {
+    document.getElementById('mobile-nav').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMobileNav() {
+    document.getElementById('mobile-nav').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     TOAST
+  ────────────────────────────────────────────────────────────── */
+  let toastTimer;
+  function showToast(msg) {
+    const el = document.getElementById('toast');
+    el.textContent = msg;
+    el.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove('show'), 2200);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     LOCAL STORAGE — cart persistence
+  ────────────────────────────────────────────────────────────── */
+  const CART_KEY = 'ecl_cart_v1';
+
+  function saveCart() {
+    try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch(e) {}
+  }
+
+  function loadCart() {
+    try {
+      const raw = localStorage.getItem(CART_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) cart = parsed;
+      }
+    } catch(e) {}
+  }
+
+
+  /* ──────────────────────────────────────────────────────────────
+     INIT
+  ────────────────────────────────────────────────────────────── */
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  // Contact cards — driven by CONFIG
+  document.getElementById('contact-email-link').href = `mailto:${CONFIG.contactEmail}`;
+  document.getElementById('contact-email-val').textContent  = CONFIG.contactEmail;
+  document.getElementById('contact-phone-link').href = `tel:${CONFIG.phone.replace(/\s/g,'')}`;
+  document.getElementById('contact-phone-val').textContent  = CONFIG.phone;
+  document.getElementById('contact-wa-link').href = `https://wa.me/${CONFIG.whatsapp}`;
+  document.getElementById('contact-wa-val').textContent     = CONFIG.phone;
+
+  loadCart();
+  updateCartBadge();
+  renderProducts();
+  setLang('en');
+</script>
+
+</body>
+</html>
