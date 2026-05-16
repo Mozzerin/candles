@@ -3,8 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emma's Creative Learning | Plaster Painting Kits</title>
-  <meta name="description" content="Handmade plaster painting kits for kids and families. Perfect for creative play, gifts and art projects.">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="CH">
+  <meta name="geo.placename" content="Switzerland">
+  <meta name="geo.position" content="46.818188;8.227512">
+  <meta name="ICBM" content="46.818188, 8.227512">
+
+  <!-- Primary SEO (content updated by JS on language switch) -->
+  <title id="page-title">Emma's Creative Learning | Handmade Plaster Painting Kits – Switzerland</title>
+  <meta id="meta-desc" name="description" content="Handmade plaster painting kits for kids and families in Switzerland. Unicorn &amp; dinosaur sets with paints and brush included. Perfect gift. Order online – CHF 7.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Emma's Creative Learning">
+  <meta id="og-title"  property="og:title"       content="Emma's Creative Learning | Handmade Plaster Painting Kits">
+  <meta id="og-desc"   property="og:description"  content="Handmade plaster painting kits for kids in Switzerland. CHF 7. Order online.">
+  <meta id="og-locale" property="og:locale"       content="en_US">
+  <meta id="og-url"    property="og:url"          content="">
+  <meta id="og-image"  property="og:image"        content="">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta id="tw-title" name="twitter:title"       content="Emma's Creative Learning | Plaster Painting Kits">
+  <meta id="tw-desc"  name="twitter:description" content="Handmade plaster painting kits for kids in Switzerland. CHF 7.">
+  <meta id="tw-image" name="twitter:image"       content="">
+
+  <!-- hreflang (URLs set by JS from CONFIG.siteUrl) -->
+  <link id="hl-en" rel="alternate" hreflang="en"        href="">
+  <link id="hl-fr" rel="alternate" hreflang="fr"        href="">
+  <link id="hl-de" rel="alternate" hreflang="de"        href="">
+  <link id="hl-xd" rel="alternate" hreflang="x-default" href="">
+  <link id="canonical" rel="canonical" href="">
+
+  <!-- Structured data (populated by JS) -->
+  <script type="application/ld+json" id="json-ld"></script>
 
   <style>
     /* ── Config & Reset ───────────────────────────────────────── */
@@ -683,10 +715,8 @@
   <section class="shop-section">
     <div class="shop-header">
       <h2 class="shop-title" data-i18n="shop.title">Shop</h2>
-      <ul class="category-nav">
-        <li class="active"><button onclick="filterProducts('all')" data-i18n="cat.all">All</button></li>
-        <li><button onclick="filterProducts('unicorn')" data-i18n="cat.unicorn">Unicorn</button></li>
-        <li><button onclick="filterProducts('dinosaur')" data-i18n="cat.dinosaur">Dinosaur</button></li>
+      <ul class="category-nav" id="category-nav">
+        <!-- filled dynamically by renderCategoryNav() -->
       </ul>
     </div>
 
@@ -897,243 +927,10 @@
 <div id="toast" role="status" aria-live="polite"></div>
 
 <!-- ═══════════════════════════════════════ SCRIPTS ══════════════════════════════ -->
+<script src="config.js"></script>
+<script src="products.js"></script>
 <script>
-  /* ──────────────────────────────────────────────────────────────
-     CONFIG — change these to configure the site
-  ────────────────────────────────────────────────────────────── */
-  const CONFIG = {
-    contactEmail: 'mozzerin@gmail.com',
-    phone:        '+41 00 000 00 00',     // <-- YOUR PHONE HERE
-    whatsapp:     '41000000000',          // <-- digits only, e.g. 41791234567
-    instagram:    'emmas_lab_candle',
-    currency:     'CHF',
-    siteName:     "Emma's Creative Learning"
-  };
-
-  /* ──────────────────────────────────────────────────────────────
-     TRANSLATIONS
-  ────────────────────────────────────────────────────────────── */
-  const TRANSLATIONS = {
-    en: {
-      'nav.about': 'About',
-      'nav.docs': 'Legal',
-      'nav.contact': 'Contact',
-      'cart.label': 'Cart',
-      'cart.title': 'Cart',
-      'cart.empty': 'Your cart is empty.',
-      'cart.subtotal': 'Subtotal',
-      'shop.title': 'Shop',
-      'cat.all': 'All',
-      'cat.unicorn': 'Unicorn',
-      'cat.dinosaur': 'Dinosaur',
-      'about.title': "About Emma's Creative Learning",
-      'about.text1': 'We create handmade plaster painting kits designed to inspire creativity in children and adults alike. Each kit comes with everything you need: a pre-cast plaster figure, paints, and a brush.',
-      'about.text2': 'Based in Switzerland, we handcraft every piece with love and care. Perfect for birthday gifts, rainy afternoons, and creative family time.',
-      'docs.title': 'Legal & Documents',
-      'docs.subtitle': 'Switzerland-compliant business documents',
-      'docs.group.legal': 'Legal',
-      'docs.group.commerce': 'Commerce',
-      'docs.group.registration': 'Business Registration',
-      'contact.title': 'Get in touch',
-      'contact.text': 'Questions, custom orders, wholesale inquiries:',
-      'contact.location': '🇨🇭 Switzerland',
-      'contact.label.email': 'Email',
-      'contact.label.phone': 'Phone',
-      'footer.brand': "Emma's Creative Learning",
-      'footer.rights': 'All rights reserved.',
-      'footer.privacy': 'Privacy Policy',
-      'footer.terms': 'Terms',
-      'form.title': 'Send a Request',
-      'form.name': 'Name *',
-      'form.email': 'Email *',
-      'form.phone': 'Phone',
-      'form.city': 'City / Postcode',
-      'form.address': 'Delivery Address',
-      'form.notes': 'Notes / Special requests',
-      'form.submit': 'Send Request',
-      'form.success': '✓ Your request has been sent! We will contact you shortly.',
-      'add.to.cart': 'Add to Cart',
-      'quick.view': 'Quick View',
-      'badge.sale': 'Sale',
-      'added.toast': 'Added to cart',
-    },
-    fr: {
-      'nav.about': 'À propos',
-      'nav.docs': 'Légal',
-      'nav.contact': 'Contact',
-      'cart.label': 'Panier',
-      'cart.title': 'Panier',
-      'cart.empty': 'Votre panier est vide.',
-      'cart.subtotal': 'Sous-total',
-      'shop.title': 'Boutique',
-      'cat.all': 'Tout',
-      'cat.unicorn': 'Licorne',
-      'cat.dinosaur': 'Dinosaure',
-      'about.title': "À propos d'Emma's Creative Learning",
-      'about.text1': "Nous créons des kits de peinture en plâtre faits à la main pour inspirer la créativité chez les enfants et les adultes. Chaque kit comprend tout ce dont vous avez besoin : une figurine en plâtre, des peintures et un pinceau.",
-      'about.text2': "Basés en Suisse, nous fabriquons chaque pièce avec amour et soin. Parfait pour les cadeaux d'anniversaire, les après-midi pluvieux et les moments créatifs en famille.",
-      'docs.title': 'Documents légaux',
-      'docs.subtitle': 'Documents conformes à la législation suisse',
-      'docs.group.legal': 'Légal',
-      'docs.group.commerce': 'Commerce',
-      'docs.group.registration': 'Enregistrement commercial',
-      'contact.title': 'Contactez-nous',
-      'contact.text': 'Questions, commandes personnalisées, ventes en gros :',
-      'contact.location': '🇨🇭 Suisse',
-      'contact.label.email': 'E-mail',
-      'contact.label.phone': 'Téléphone',
-      'footer.brand': "Emma's Creative Learning",
-      'footer.rights': 'Tous droits réservés.',
-      'footer.privacy': 'Politique de confidentialité',
-      'footer.terms': 'Conditions',
-      'form.title': 'Envoyer une demande',
-      'form.name': 'Nom *',
-      'form.email': 'E-mail *',
-      'form.phone': 'Téléphone',
-      'form.city': 'Ville / Code postal',
-      'form.address': 'Adresse de livraison',
-      'form.notes': 'Notes / Demandes spéciales',
-      'form.submit': 'Envoyer la demande',
-      'form.success': '✓ Votre demande a été envoyée ! Nous vous contacterons prochainement.',
-      'add.to.cart': 'Ajouter au panier',
-      'quick.view': 'Aperçu rapide',
-      'badge.sale': 'Solde',
-      'added.toast': 'Ajouté au panier',
-    },
-    de: {
-      'nav.about': 'Über uns',
-      'nav.docs': 'Rechtliches',
-      'nav.contact': 'Kontakt',
-      'cart.label': 'Warenkorb',
-      'cart.title': 'Warenkorb',
-      'cart.empty': 'Ihr Warenkorb ist leer.',
-      'cart.subtotal': 'Zwischensumme',
-      'shop.title': 'Shop',
-      'cat.all': 'Alle',
-      'cat.unicorn': 'Einhorn',
-      'cat.dinosaur': 'Dinosaurier',
-      'about.title': "Über Emma's Creative Learning",
-      'about.text1': 'Wir erstellen handgefertigte Gipsmalerei-Kits, um die Kreativität bei Kindern und Erwachsenen zu fördern. Jedes Kit enthält alles, was Sie brauchen: eine gegossene Gipsfigur, Farben und einen Pinsel.',
-      'about.text2': 'Mit Sitz in der Schweiz fertigen wir jedes Stück mit Liebe und Sorgfalt. Ideal als Geburtstagsgeschenk, für Regentage und kreative Familienzeit.',
-      'docs.title': 'Rechtliches & Dokumente',
-      'docs.subtitle': 'Dokumente konform mit Schweizer Recht',
-      'docs.group.legal': 'Rechtliches',
-      'docs.group.commerce': 'Handel',
-      'docs.group.registration': 'Gewerbeanmeldung',
-      'contact.title': 'Kontakt',
-      'contact.text': 'Fragen, individuelle Bestellungen, Großhandelsanfragen:',
-      'contact.location': '🇨🇭 Schweiz',
-      'contact.label.email': 'E-Mail',
-      'contact.label.phone': 'Telefon',
-      'footer.brand': "Emma's Creative Learning",
-      'footer.rights': 'Alle Rechte vorbehalten.',
-      'footer.privacy': 'Datenschutzrichtlinie',
-      'footer.terms': 'AGB',
-      'form.title': 'Anfrage senden',
-      'form.name': 'Name *',
-      'form.email': 'E-Mail *',
-      'form.phone': 'Telefon',
-      'form.city': 'Stadt / Postleitzahl',
-      'form.address': 'Lieferadresse',
-      'form.notes': 'Anmerkungen / Sonderwünsche',
-      'form.submit': 'Anfrage senden',
-      'form.success': '✓ Ihre Anfrage wurde gesendet! Wir werden Sie in Kürze kontaktieren.',
-      'add.to.cart': 'In den Warenkorb',
-      'quick.view': 'Schnellansicht',
-      'badge.sale': 'Angebot',
-      'added.toast': 'In den Warenkorb gelegt',
-    }
-  };
-
-  /* ──────────────────────────────────────────────────────────────
-     PRODUCTS
-  ────────────────────────────────────────────────────────────── */
-  const PRODUCTS = [
-    {
-      id: 'unicorn-kit-1',
-      category: 'unicorn',
-      image: 'images/unicorn1.png',
-      imageHover: 'images/unicorn1-hover.png',
-      price: 7.00,
-      originalPrice: 10.00,
-      onSale: true,
-      translations: {
-        en: { name: 'Handmade Unicorn Plaster Painting Kit', description: 'A magical unicorn plaster figure ready to paint. Kit includes the plaster figure, 6 acrylic paints, a brush and step-by-step instructions. Perfect creative activity for kids aged 4 and up.' },
-        fr: { name: 'Kit de Peinture Licorne en Plâtre', description: 'Une figurine licorne en plâtre prête à peindre. Le kit comprend la figurine, 6 peintures acryliques, un pinceau et des instructions. Idéal pour les enfants dès 4 ans.' },
-        de: { name: 'Handgemachtes Einhorn Gipsmalerei-Set', description: 'Eine magische Einhorn-Gipsfigur zum Bemalen. Das Set enthält die Figur, 6 Acrylfarben, einen Pinsel und Schritt-für-Schritt-Anleitungen. Perfekt für Kinder ab 4 Jahren.' }
-      }
-    },
-    {
-      id: 'unicorn-face-kit',
-      category: 'unicorn',
-      image: 'images/unicorn-face.png',
-      imageHover: 'images/unicorn-face-hover.png',
-      price: 7.00,
-      originalPrice: 10.00,
-      onSale: true,
-      translations: {
-        en: { name: 'Handmade Unicorn Face Plaster Painting Kit', description: 'A charming unicorn face plaster plaque to paint and display. Includes the plaster piece, 6 vibrant paints, a brush and easy instructions. Great gift idea for young artists.' },
-        fr: { name: 'Kit de Peinture Visage de Licorne en Plâtre', description: 'Une charmante plaque en plâtre représentant un visage de licorne à peindre. Comprend la pièce en plâtre, 6 peintures vives, un pinceau et des instructions. Beau cadeau pour les jeunes artistes.' },
-        de: { name: 'Handgemachtes Einhorn-Gesicht Gipsmalerei-Set', description: 'Eine charmante Gips-Wandplakette mit Einhorn-Gesicht zum Bemalen. Enthält das Gipsstück, 6 leuchtende Farben, einen Pinsel und einfache Anleitungen. Tolles Geschenk für junge Künstler.' }
-      }
-    },
-    {
-      id: 'unicorn-kit-2',
-      category: 'unicorn',
-      image: 'images/unicorn2.png',
-      imageHover: 'images/unicorn2-hover.png',
-      price: 7.00,
-      originalPrice: 10.00,
-      onSale: true,
-      translations: {
-        en: { name: 'Handmade Unicorn Plaster Painting Kit – Blue', description: 'A blue-themed unicorn plaster figure with a dreamy design. Kit contains the plaster figure, 6 paints, a brush and instructions. Encourages creativity and fine motor skills.' },
-        fr: { name: 'Kit de Peinture Licorne en Plâtre – Bleu', description: 'Une figurine licorne en plâtre aux tons bleus et au design rêveur. Le kit contient la figurine, 6 peintures, un pinceau et des instructions. Encourage la créativité et la motricité fine.' },
-        de: { name: 'Handgemachtes Einhorn Gipsmalerei-Set – Blau', description: 'Eine blaue Einhorn-Gipsfigur mit traumhaftem Design. Das Set enthält die Figur, 6 Farben, einen Pinsel und Anleitungen. Fördert Kreativität und Feinmotorik.' }
-      }
-    },
-    {
-      id: 'unicorn-kit-3',
-      category: 'unicorn',
-      image: 'images/unicorn3.png',
-      imageHover: 'images/unicorn3-hover.png',
-      price: 7.00,
-      originalPrice: 10.00,
-      onSale: true,
-      translations: {
-        en: { name: 'Handmade Unicorn Plaster Painting Kit – Classic', description: 'The classic unicorn plaster figure — a timeless design loved by children everywhere. Includes the figure, 6 acrylic paints, a brush and easy-to-follow instructions.' },
-        fr: { name: 'Kit de Peinture Licorne en Plâtre – Classique', description: 'La figurine licorne en plâtre classique — un design intemporel adoré des enfants. Comprend la figurine, 6 peintures acryliques, un pinceau et des instructions simples.' },
-        de: { name: 'Handgemachtes Einhorn Gipsmalerei-Set – Klassisch', description: 'Die klassische Einhorn-Gipsfigur — ein zeitloses Design, das Kinder lieben. Enthält die Figur, 6 Acrylfarben, einen Pinsel und leicht verständliche Anleitungen.' }
-      }
-    },
-    {
-      id: 'dinosaur-kit-1',
-      category: 'dinosaur',
-      image: 'images/dinosaur1.png',
-      imageHover: 'images/dinosaur1-hover.png',
-      price: 10.00,
-      originalPrice: null,
-      onSale: false,
-      translations: {
-        en: { name: 'Handmade Dinosaur Plaster Painting Kit', description: 'A roar-some dinosaur plaster figure ready to be painted. Kit includes the plaster figure, 8 acrylic paints, a brush and instructions. The perfect gift for little dino fans.' },
-        fr: { name: 'Kit de Peinture Dinosaure en Plâtre', description: 'Une figurine dinosaure en plâtre prête à peindre. Le kit comprend la figurine, 8 peintures acryliques, un pinceau et des instructions. Le cadeau parfait pour les petits fans de dinos.' },
-        de: { name: 'Handgemachtes Dinosaurier Gipsmalerei-Set', description: 'Eine beeindruckende Dinosaurier-Gipsfigur zum Bemalen. Das Set enthält die Figur, 8 Acrylfarben, einen Pinsel und Anleitungen. Das perfekte Geschenk für kleine Dino-Fans.' }
-      }
-    },
-    {
-      id: 'dinosaur-kit-2',
-      category: 'dinosaur',
-      image: 'images/dinosaur2.png',
-      imageHover: 'images/dinosaur2-hover.png',
-      price: 7.00,
-      originalPrice: 10.00,
-      onSale: true,
-      translations: {
-        en: { name: 'Handmade Dinosaur Plaster Painting Kit – Roar Edition', description: 'The Roar Edition dinosaur plaster kit features an extra-expressive pose. Includes the plaster figure, 6 paints, a brush and step-by-step instructions. Hours of creative fun guaranteed.' },
-        fr: { name: 'Kit de Peinture Dinosaure en Plâtre – Édition Roar', description: 'L\'édition Roar du kit dinosaure en plâtre avec une pose encore plus expressive. Comprend la figurine, 6 peintures, un pinceau et des instructions. Des heures de plaisir créatif garanties.' },
-        de: { name: 'Handgemachtes Dinosaurier Gipsmalerei-Set – Roar Edition', description: 'Die Roar Edition des Dinosaurier-Sets mit einer besonders ausdrucksstarken Pose. Enthält die Figur, 6 Farben, einen Pinsel und Schritt-für-Schritt-Anleitungen. Stunden kreativer Freude garantiert.' }
-      }
-    }
-  ];
+  // CONFIG, TRANSLATIONS and PRODUCTS are loaded from config.js and products.js
 
   /* ──────────────────────────────────────────────────────────────
      CART STATE
@@ -1157,22 +954,38 @@
     if (!TRANSLATIONS[lang]) return;
     currentLang = lang;
 
-    // Update all lang-btn active state
+    // HTML lang attribute (important for SEO & screen readers)
+    document.documentElement.lang = lang;
+
+    // Lang-btn active state
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.textContent.trim().toLowerCase() === lang);
     });
 
-    // Update all data-i18n elements
+    // data-i18n elements
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       el.textContent = t(key);
     });
 
-    // Update contact email link text
+    // Contact email link text
     const emailLink = document.getElementById('contact-email-link');
     if (emailLink) emailLink.textContent = CONFIG.contactEmail;
 
-    // Re-render products
+    // SEO meta tags
+    const title = t('meta.title');
+    const desc  = t('meta.description');
+    document.getElementById('page-title').textContent = title;
+    document.getElementById('meta-desc').setAttribute('content', desc);
+    document.getElementById('og-title').setAttribute('content', title);
+    document.getElementById('og-desc').setAttribute('content', desc);
+    document.getElementById('tw-title').setAttribute('content', title);
+    document.getElementById('tw-desc').setAttribute('content', desc);
+    const ogLocaleMap = { en: 'en_US', fr: 'fr_CH', de: 'de_CH' };
+    document.getElementById('og-locale').setAttribute('content', ogLocaleMap[lang] || 'en_US');
+
+    // Re-render
+    renderCategoryNav();
     renderProducts();
     renderCartItems();
   }
@@ -1182,10 +995,28 @@
   ────────────────────────────────────────────────────────────── */
 
 
+  function visibleProducts() {
+    return PRODUCTS.filter(p => !p.hidden);
+  }
+
   function filteredProducts() {
-    return currentFilter === 'all'
-      ? PRODUCTS
-      : PRODUCTS.filter(p => p.category === currentFilter);
+    const all = visibleProducts();
+    return currentFilter === 'all' ? all : all.filter(p => p.category === currentFilter);
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     CATEGORY NAV  (built dynamically from PRODUCTS)
+  ────────────────────────────────────────────────────────────── */
+  function renderCategoryNav() {
+    const cats = ['all', ...new Set(visibleProducts().map(p => p.category))];
+    const nav  = document.getElementById('category-nav');
+    nav.innerHTML = cats.map(cat => {
+      const label = cat === 'all'
+        ? t('cat.all')
+        : (t(`cat.${cat}`) !== `cat.${cat}` ? t(`cat.${cat}`) : cat.charAt(0).toUpperCase() + cat.slice(1));
+      const active = currentFilter === cat ? ' class="active"' : '';
+      return `<li${active}><button onclick="filterProducts('${cat}')">${label}</button></li>`;
+    }).join('');
   }
 
   /* ──────────────────────────────────────────────────────────────
@@ -1193,9 +1024,7 @@
   ────────────────────────────────────────────────────────────── */
   function filterProducts(cat) {
     currentFilter = cat;
-    document.querySelectorAll('.category-nav li').forEach((li, i) => {
-      li.classList.toggle('active', ['all','unicorn','dinosaur'][i] === cat);
-    });
+    renderCategoryNav();
     renderProducts();
   }
 
@@ -1565,16 +1394,79 @@
   document.getElementById('footer-year').textContent = new Date().getFullYear();
 
   // Contact cards — driven by CONFIG
-  document.getElementById('contact-email-link').href = `mailto:${CONFIG.contactEmail}`;
+  document.getElementById('contact-email-link').href        = `mailto:${CONFIG.contactEmail}`;
   document.getElementById('contact-email-val').textContent  = CONFIG.contactEmail;
-  document.getElementById('contact-phone-link').href = `tel:${CONFIG.phone.replace(/\s/g,'')}`;
+  document.getElementById('contact-phone-link').href        = `tel:${CONFIG.phone.replace(/\s/g,'')}`;
   document.getElementById('contact-phone-val').textContent  = CONFIG.phone;
-  document.getElementById('contact-wa-link').href = `https://wa.me/${CONFIG.whatsapp}`;
+  document.getElementById('contact-wa-link').href           = `https://wa.me/${CONFIG.whatsapp}`;
   document.getElementById('contact-wa-val').textContent     = CONFIG.phone;
+
+  // SEO — canonical, hreflang, og:url, og:image, twitter:image
+  const pageUrl = CONFIG.siteUrl + '/emma/';
+  document.getElementById('canonical').href = pageUrl;
+  document.getElementById('hl-en').href     = pageUrl + '?lang=en';
+  document.getElementById('hl-fr').href     = pageUrl + '?lang=fr';
+  document.getElementById('hl-de').href     = pageUrl + '?lang=de';
+  document.getElementById('hl-xd').href     = pageUrl;
+  document.getElementById('og-url').setAttribute('content', pageUrl);
+  document.getElementById('og-image').setAttribute('content', CONFIG.seo.ogImage);
+  document.getElementById('tw-image').setAttribute('content', CONFIG.seo.ogImage);
+
+  // JSON-LD structured data
+  (function buildJsonLd() {
+    const productList = visibleProducts().map((p, i) => {
+      const tr = p.translations.en;
+      return {
+        '@type':    'ListItem',
+        position:   i + 1,
+        item: {
+          '@type':       'Product',
+          name:          tr.name,
+          description:   tr.description || '',
+          image:         CONFIG.siteUrl + '/emma/' + p.image,
+          offers: {
+            '@type':        'Offer',
+            priceCurrency:  CONFIG.currency,
+            price:          p.price.toFixed(2),
+            availability:   'https://schema.org/InStock',
+            url:            pageUrl,
+          },
+        },
+      };
+    });
+
+    const ld = [
+      {
+        '@context': 'https://schema.org',
+        '@type':    'Organization',
+        name:       CONFIG.siteName,
+        url:        CONFIG.siteUrl,
+        contactPoint: {
+          '@type':     'ContactPoint',
+          telephone:   CONFIG.phone,
+          email:       CONFIG.contactEmail,
+          contactType: 'customer service',
+        },
+        sameAs: [
+          `https://www.instagram.com/${CONFIG.instagram}`,
+          `https://wa.me/${CONFIG.whatsapp}`,
+        ],
+      },
+      {
+        '@context':     'https://schema.org',
+        '@type':        'ItemList',
+        name:           "Emma's Creative Learning – Product Catalog",
+        url:            pageUrl,
+        numberOfItems:  productList.length,
+        itemListElement: productList,
+      },
+    ];
+
+    document.getElementById('json-ld').textContent = JSON.stringify(ld);
+  })();
 
   loadCart();
   updateCartBadge();
-  renderProducts();
   setLang('en');
 </script>
 
