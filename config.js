@@ -5,9 +5,9 @@
 const CONFIG = {
   siteName:     "Emma's Creative Learning",
   siteUrl:      'https://emmas-lab.ch', // ← YOUR DOMAIN (no trailing slash)
-  contactEmail: 'mozzerin@gmail.com',
-  phone:        '+41 00 000 00 00',   // ← YOUR PHONE (display format)
-  whatsapp:     '41000000000',        // ← digits only, e.g. 41791234567
+  contactEmail: 'emmalabcandle@gmail.com',
+  phone:        '+41 78 256 29 52',
+  whatsapp:     '41782562952',
   instagram:    'emmas_lab_candle',
   currency:     'CHF',
 
