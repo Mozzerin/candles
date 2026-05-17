@@ -702,6 +702,52 @@
       white-space: nowrap;
     }
     #toast.show { transform: translateX(-50%) translateY(0); }
+
+    /* ── Cart flyout ─────────────────────────────────────────── */
+    #cart-flyout {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 290px;
+      background: #fff;
+      border: 1px solid var(--color-border);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      z-index: 310;
+      transform: translateX(calc(100% + 2.5rem));
+      transition: transform 0.38s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    #cart-flyout.show { transform: translateX(0); }
+    .flyout-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .flyout-header span { color: #2d7a2d; font-weight: 600; }
+    .flyout-close { background: none; border: none; font-size: 1.1rem; opacity: 0.4; cursor: pointer; line-height: 1; padding: 0; }
+    .flyout-close:hover { opacity: 1; }
+    .flyout-body { display: flex; gap: 0.75rem; padding: 1rem; align-items: center; }
+    .flyout-img { width: 64px; height: 64px; object-fit: contain; background: var(--color-light); flex-shrink: 0; }
+    .flyout-info { flex: 1; min-width: 0; }
+    .flyout-name { font-size: 0.85rem; font-weight: 500; line-height: 1.3; margin-bottom: 0.25rem; }
+    .flyout-price { font-size: 0.82rem; color: var(--color-muted); }
+    .flyout-footer { padding: 0 1rem 1rem; }
+    .flyout-btn {
+      display: block; width: 100%; padding: 0.7rem;
+      background: var(--color-btn); color: var(--color-btn-text);
+      border: none; font-size: 0.75rem; letter-spacing: 0.08em;
+      text-transform: uppercase; cursor: pointer; text-align: center;
+      transition: background 0.2s;
+    }
+    .flyout-btn:hover { background: #333; }
+
+    /* Cart button bump animation */
+    @keyframes cart-bump {
+      0%   { transform: scale(1); }
+      40%  { transform: scale(1.35); }
+      100% { transform: scale(1); }
+    }
+    .cart-btn.bump { animation: cart-bump 0.3s ease; }
   </style>
 </head>
 <body>
@@ -1028,6 +1074,24 @@
   </div>
 </div>
 
+<!-- ═══════════════════════════════════════ CART FLYOUT ══════════════════════════ -->
+<div id="cart-flyout" role="status" aria-live="polite">
+  <div class="flyout-header">
+    <span>✓ Added to cart</span>
+    <button class="flyout-close" onclick="closeCartFlyout()">✕</button>
+  </div>
+  <div class="flyout-body">
+    <img id="flyout-img" class="flyout-img" src="" alt="">
+    <div class="flyout-info">
+      <div id="flyout-name" class="flyout-name"></div>
+      <div id="flyout-price" class="flyout-price"></div>
+    </div>
+  </div>
+  <div class="flyout-footer">
+    <button class="flyout-btn" onclick="closeCartFlyout();openCart()">View Cart</button>
+  </div>
+</div>
+
 <!-- ═══════════════════════════════════════ TOAST ════════════════════════════════ -->
 <div id="toast" role="status" aria-live="polite"></div>
 
@@ -1301,7 +1365,36 @@
     }
     saveCart();
     updateCartBadge();
-    showToast(t('added.toast'));
+    showCartFlyout(productId);
+    bumpCartBtn();
+  }
+
+  let flyoutTimer;
+  function showCartFlyout(productId) {
+    const p = PRODUCTS.find(x => x.id === productId);
+    if (!p) return;
+    const name = (p.translations[currentLang] || p.translations.en).name;
+    document.getElementById('flyout-img').src   = p.images ? p.images[0] : p.image;
+    document.getElementById('flyout-name').textContent  = name;
+    document.getElementById('flyout-price').textContent = formatPrice(p.price);
+    const flyout = document.getElementById('cart-flyout');
+    flyout.classList.add('show');
+    clearTimeout(flyoutTimer);
+    flyoutTimer = setTimeout(() => flyout.classList.remove('show'), 3500);
+  }
+
+  function closeCartFlyout() {
+    clearTimeout(flyoutTimer);
+    document.getElementById('cart-flyout').classList.remove('show');
+  }
+
+  function bumpCartBtn() {
+    const btn = document.querySelector('.cart-btn');
+    if (!btn) return;
+    btn.classList.remove('bump');
+    void btn.offsetWidth;
+    btn.classList.add('bump');
+    btn.addEventListener('animationend', () => btn.classList.remove('bump'), { once: true });
   }
 
   function removeFromCart(productId) {
