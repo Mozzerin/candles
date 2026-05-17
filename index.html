@@ -34,6 +34,7 @@
   <link id="hl-en" rel="alternate" hreflang="en"        href="">
   <link id="hl-fr" rel="alternate" hreflang="fr"        href="">
   <link id="hl-de" rel="alternate" hreflang="de"        href="">
+  <link id="hl-ru" rel="alternate" hreflang="ru"        href="">
   <link id="hl-xd" rel="alternate" hreflang="x-default" href="">
   <link id="canonical" rel="canonical" href="">
 
@@ -776,6 +777,8 @@
         <button class="lang-btn" onclick="setLang('fr')">FR</button>
         <span class="lang-sep">/</span>
         <button class="lang-btn" onclick="setLang('de')">DE</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" onclick="setLang('ru')">RU</button>
       </div>
 
       <button class="cart-btn" onclick="openCart()" aria-label="Open cart">
@@ -810,6 +813,8 @@
     <button class="lang-btn" onclick="setLang('fr');closeMobileNav()">FR</button>
     <span class="lang-sep">/</span>
     <button class="lang-btn" onclick="setLang('de');closeMobileNav()">DE</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" onclick="setLang('ru');closeMobileNav()">RU</button>
   </div>
 </div>
 
@@ -1166,7 +1171,7 @@
     document.getElementById('og-desc').setAttribute('content', desc);
     document.getElementById('tw-title').setAttribute('content', title);
     document.getElementById('tw-desc').setAttribute('content', desc);
-    const ogLocaleMap = { en: 'en_US', fr: 'fr_CH', de: 'de_CH' };
+    const ogLocaleMap = { en: 'en_US', fr: 'fr_CH', de: 'de_CH', ru: 'ru_RU' };
     document.getElementById('og-locale').setAttribute('content', ogLocaleMap[lang] || 'en_US');
 
     // Re-render
@@ -1731,6 +1736,7 @@
   document.getElementById('hl-en').href     = pageUrl + '?lang=en';
   document.getElementById('hl-fr').href     = pageUrl + '?lang=fr';
   document.getElementById('hl-de').href     = pageUrl + '?lang=de';
+  document.getElementById('hl-ru').href     = pageUrl + '?lang=ru';
   document.getElementById('hl-xd').href     = CONFIG.siteUrl;
   document.getElementById('og-url').setAttribute('content', CONFIG.siteUrl);
   document.getElementById('og-image').setAttribute('content', CONFIG.seo.ogImage);
