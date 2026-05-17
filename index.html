@@ -815,14 +815,14 @@
 
     <div class="contact-grid">
 
-      <!-- Email -->
-      <a class="contact-card" id="contact-email-link" href="mailto:emmalabcandle@gmail.com">
+      <!-- Email → opens contact modal -->
+      <button class="contact-card" onclick="openContactModal()" style="text-align:left;width:100%;background:none;">
         <div class="contact-card-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </div>
         <div class="contact-card-label" data-i18n="contact.label.email">Email</div>
         <div class="contact-card-value" id="contact-email-val">emmalabcandle@gmail.com</div>
-      </a>
+      </button>
 
 
       <!-- Phone -->
@@ -854,37 +854,41 @@
 
     </div>
 
-    <!-- Contact form -->
-    <div class="contact-form-wrap">
-      <h3 class="contact-form-title" data-i18n="contact.form.title">Send a Message</h3>
-      <form id="contact-form" onsubmit="submitContact(event)" novalidate>
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="ct-name" data-i18n="contact.form.name">Name *</label>
-            <input class="form-input" id="ct-name" type="text" required autocomplete="name">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="ct-email" data-i18n="contact.form.email">Email *</label>
-            <input class="form-input" id="ct-email" type="email" required autocomplete="email">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="ct-message" data-i18n="contact.form.message">Message *</label>
-          <textarea class="form-textarea" id="ct-message" rows="4" required style="min-height:120px;"></textarea>
-        </div>
-        <button type="submit" class="submit-btn" id="ct-submit-btn" data-i18n="contact.form.submit">Send Message</button>
-      </form>
-      <div class="form-success" id="contact-success" style="display:none;">
-        <p id="ct-success-text" data-i18n="contact.form.success">✓ Message sent! We'll get back to you shortly.</p>
-      </div>
-      <div id="contact-error" style="display:none;background:#fef2f2;border:1px solid #fca5a5;color:#b91c1c;padding:1rem;font-size:0.875rem;margin-top:0.75rem;text-align:center;">
-        <p id="ct-error-text" data-i18n="contact.form.error">✕ Something went wrong. Please try again or email us directly.</p>
-      </div>
-    </div>
-
   </section>
 
 </main>
+
+<!-- ═══════════════════════════════════════ CONTACT MODAL ════════════════════════ -->
+<div id="contact-modal" role="dialog" aria-modal="true" style="display:none;position:fixed;inset:0;z-index:260;display:none;align-items:center;justify-content:center;padding:1rem;">
+  <div style="position:fixed;inset:0;background:rgba(0,0,0,0.45);" onclick="closeContactModal()"></div>
+  <div style="position:relative;z-index:1;background:#fff;width:100%;max-width:480px;padding:2rem;max-height:90vh;overflow-y:auto;">
+    <button onclick="closeContactModal()" aria-label="Close" style="position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.4rem;line-height:1;opacity:0.5;cursor:pointer;">✕</button>
+    <h2 id="ct-modal-title" style="font-size:1.1rem;font-weight:600;margin-bottom:1.5rem;letter-spacing:0.02em;" data-i18n="contact.form.title">Send a Message</h2>
+    <form id="contact-form" onsubmit="submitContact(event)" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="ct-name" data-i18n="contact.form.name">Name *</label>
+          <input class="form-input" id="ct-name" type="text" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="ct-email" data-i18n="contact.form.email">Email *</label>
+          <input class="form-input" id="ct-email" type="email" required autocomplete="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="ct-message" data-i18n="contact.form.message">Message *</label>
+        <textarea class="form-textarea" id="ct-message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn" id="ct-submit-btn" data-i18n="contact.form.submit">Send Message</button>
+    </form>
+    <div id="contact-success" style="display:none;padding:1.5rem 0;text-align:center;color:#166534;">
+      <p id="ct-success-text" data-i18n="contact.form.success">✓ Message sent! We'll get back to you shortly.</p>
+    </div>
+    <div id="contact-error" style="display:none;background:#fef2f2;border:1px solid #fca5a5;color:#b91c1c;padding:1rem;font-size:0.875rem;margin-top:0.75rem;text-align:center;">
+      <p id="ct-error-text" data-i18n="contact.form.error">✕ Something went wrong. Please try again or email us directly.</p>
+    </div>
+  </div>
+</div>
 
 <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════ -->
 <footer>
@@ -1395,7 +1399,7 @@
   }
 
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') { closeCart(); closeProduct(); }
+    if (e.key === 'Escape') { closeCart(); closeProduct(); closeContactModal(); }
   });
 
   /* ──────────────────────────────────────────────────────────────
@@ -1483,6 +1487,29 @@
   }
 
   /* ──────────────────────────────────────────────────────────────
+     CONTACT MODAL
+  ────────────────────────────────────────────────────────────── */
+  function openContactModal() {
+    const modal = document.getElementById('contact-modal');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    // reset form state
+    document.getElementById('contact-form').style.display = '';
+    document.getElementById('contact-success').style.display = 'none';
+    document.getElementById('contact-error').style.display = 'none';
+    const btn = document.getElementById('ct-submit-btn');
+    btn.disabled = false;
+    btn.textContent = t('contact.form.submit');
+    setTimeout(() => document.getElementById('ct-name').focus(), 50);
+  }
+
+  function closeContactModal() {
+    const modal = document.getElementById('contact-modal');
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  /* ──────────────────────────────────────────────────────────────
      CONTACT FORM SUBMISSION (EmailJS)
   ────────────────────────────────────────────────────────────── */
   function submitContact(e) {
@@ -1522,6 +1549,7 @@
         const successEl = document.getElementById('contact-success');
         successEl.style.display = 'block';
         document.getElementById('ct-success-text').textContent = t('contact.form.success');
+        setTimeout(closeContactModal, 2500);
       })
       .catch(() => {
         btn.disabled = false;
