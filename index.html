@@ -255,6 +255,21 @@
     }
     .cdot.active { background: rgba(0,0,0,0.7); }
 
+    .card-arrow {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 28px; height: 28px;
+      background: rgba(255,255,255,0.85);
+      border: 1px solid rgba(0,0,0,0.12);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; z-index: 3;
+      opacity: 0; transition: opacity 0.2s;
+      font-size: 0.75rem; color: #1a1a1a;
+      padding: 0;
+    }
+    .card-arrow-prev { left: 0.4rem; }
+    .card-arrow-next { right: 0.4rem; }
+    .card-img-wrap:hover .card-arrow { opacity: 1; }
+
     .card-badge {
       position: absolute;
       top: 0.75rem; left: 0.75rem;
@@ -1139,7 +1154,9 @@
       const dotsHtml = imgs.length > 1
         ? `<div class="card-dots">${imgs.map((_, i) =>
             `<button class="cdot${i === 0 ? ' active' : ''}" onclick="cardSlide('${p.id}',${i},event)" aria-label="Photo ${i + 1}"></button>`
-          ).join('')}</div>`
+          ).join('')}</div>
+           <button class="card-arrow card-arrow-prev" onclick="cardSlideDir('${p.id}',-1,event)" aria-label="Previous">&#8249;</button>
+           <button class="card-arrow card-arrow-next" onclick="cardSlideDir('${p.id}',1,event)" aria-label="Next">&#8250;</button>`
         : '';
 
       return `
@@ -1378,7 +1395,7 @@
   }
 
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeCart();
+    if (e.key === 'Escape') { closeCart(); closeProduct(); }
   });
 
   /* ──────────────────────────────────────────────────────────────
@@ -1390,6 +1407,16 @@
     if (!card) return;
     card.querySelectorAll('.card-slide').forEach((img, i) => img.classList.toggle('active', i === idx));
     card.querySelectorAll('.cdot').forEach((dot, i) => dot.classList.toggle('active', i === idx));
+  }
+
+  function cardSlideDir(productId, dir, e) {
+    e.stopPropagation();
+    const card = document.querySelector(`.product-card[data-product-id="${productId}"]`);
+    if (!card) return;
+    const slides = card.querySelectorAll('.card-slide');
+    let idx = [...slides].findIndex(s => s.classList.contains('active'));
+    idx = (idx + dir + slides.length) % slides.length;
+    cardSlide(productId, idx, e);
   }
 
   function markInvalid(el) {
