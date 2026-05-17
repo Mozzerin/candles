@@ -1358,7 +1358,7 @@
       return `
         <div class="cart-item">
           <div class="cart-item-img">
-            <img src="${product.image}" alt="${name}" loading="lazy">
+            <img src="${product.images ? product.images[0] : product.image}" alt="${name}" loading="lazy">
           </div>
           <div class="cart-item-info">
             <div class="cart-item-name">${name}</div>
