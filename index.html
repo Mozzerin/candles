@@ -1036,6 +1036,12 @@
         <span id="cart-total-val">CHF 0.00</span>
       </div>
 
+      <!-- Shipping info -->
+      <div id="cart-shipping-info" style="display:none;padding:0.75rem 1.5rem;font-size:0.8rem;color:#555;border-top:1px solid var(--color-border);line-height:1.6;">
+        <div data-i18n="shipping.ch">Shipping within Switzerland: CHF 8</div>
+        <div data-i18n="shipping.intl">International shipping: rate confirmed in your reply email</div>
+      </div>
+
       <!-- Request form -->
       <div class="request-form-section" id="request-form-section" style="display:none;">
         <h3 class="request-form-title" data-i18n="form.title">Send a Request</h3>
@@ -1450,18 +1456,21 @@
     const emptyEl = document.getElementById('cart-empty-msg');
     const subtotalEl = document.getElementById('cart-subtotal');
     const formSection = document.getElementById('request-form-section');
+    const shippingInfo = document.getElementById('cart-shipping-info');
     const totalVal = document.getElementById('cart-total-val');
 
     if (cart.length === 0) {
       emptyEl.style.display = '';
       listEl.innerHTML = '';
       subtotalEl.style.display = 'none';
+      shippingInfo.style.display = 'none';
       formSection.style.display = 'none';
       return;
     }
 
     emptyEl.style.display = 'none';
     subtotalEl.style.display = '';
+    shippingInfo.style.display = '';
     formSection.style.display = '';
 
     listEl.innerHTML = cart.map(item => {
@@ -1503,7 +1512,11 @@
     document.getElementById('cart-overlay').classList.add('open');
     document.body.style.overflow = 'hidden';
     document.getElementById('form-success').style.display = 'none';
+    document.getElementById('form-error').style.display = 'none';
     document.getElementById('request-form').style.display = '';
+    const btn = document.querySelector('#request-form .submit-btn');
+    btn.disabled = false;
+    btn.textContent = t('form.submit');
   }
 
   function closeCart() {

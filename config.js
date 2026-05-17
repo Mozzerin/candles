@@ -82,6 +82,8 @@ const TRANSLATIONS = {
     'add.to.cart':  'Add to Cart',
     'badge.sale':   'Sale',
     'added.toast':  'Added to cart',
+    'shipping.ch':   'Shipping within Switzerland: CHF 8',
+    'shipping.intl': 'International shipping: rate confirmed in your reply email',
   },
 
   fr: {
@@ -133,6 +135,8 @@ const TRANSLATIONS = {
     'add.to.cart':  'Ajouter au panier',
     'badge.sale':   'Solde',
     'added.toast':  'Ajouté au panier',
+    'shipping.ch':   'Livraison en Suisse : CHF 8',
+    'shipping.intl': 'Livraison internationale : tarif confirmé dans votre e-mail de réponse',
   },
 
   de: {
@@ -184,6 +188,8 @@ const TRANSLATIONS = {
     'add.to.cart':  'In den Warenkorb',
     'badge.sale':   'Angebot',
     'added.toast':  'In den Warenkorb gelegt',
+    'shipping.ch':   'Versand innerhalb der Schweiz: CHF 8',
+    'shipping.intl': 'Internationaler Versand: Preis wird per E-Mail bestätigt',
   },
 
   ru: {
@@ -235,5 +241,7 @@ const TRANSLATIONS = {
     'add.to.cart':  'В корзину',
     'badge.sale':   'Скидка',
     'added.toast':  'Добавлено в корзину',
+    'shipping.ch':   'Доставка по Швейцарии: CHF 8',
+    'shipping.intl': 'Международная доставка: стоимость сообщим в ответном письме',
   },
 };
