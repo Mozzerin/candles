@@ -36,69 +36,69 @@ const PRODUCTS = [
       'images/Starlight_Unicorn3.png',
       'images/unicorn.png',
     ],
-    price:         49.00,
-    originalPrice: 98.00,
+    price:         45.00,
+    originalPrice: 70.00,
     onSale:        true,
     translations: {
       en: {
-        name:        'Unicorn Plaster Painting Kit – Bundle',
-        description: `Everything you need to paint and personalize your plaster unicorn figures is included in the kit: plaster figurines, paint set, and brush. Simply open the box, put on your favorite playlist, gather your friends or family, and turn painting into a cozy, creative experience.
+        name:        'Unicorn Plaster Painting Kit – Party Box',
+        description: `Everything you need for a full creative party is in one box — 10 complete unicorn painting kits, ready to go. Open the box, hit play on your favorite playlist, and let everyone choose their unicorn and paint it their own way.
 
-This bundle is perfect for relaxing at home, girls' nights, parties, family gatherings, creative workshops, or as a thoughtful and unique gift. Painting plaster figures is a great way to slow down, unwind, spark creativity, and enjoy the process of making something with your own hands.
+This Party Box is made for birthday parties, girls' nights, family gatherings, creative workshops, and group events. It's also perfect as a gift for a whole class, a school event, or any celebration where you want to give people something fun and memorable to make with their hands.
 
-Every piece becomes one of a kind — you choose the colors, the mood, and the final look. It's more than just a paint kit; it's a small creative ritual that leaves you with something truly personal.
+At CHF 4.50 per kit, the Party Box saves you 35% compared to buying individually — the best value for groups.
 
-What's included:
-• plaster unicorn figurines ready to paint
-• paint set
-• paintbrush
-• postcard
-• 2 stickers`,
+What's included (×10 complete kits):
+• 10 plaster unicorn figurines ready to paint
+• 10 paint sets
+• 10 paintbrushes
+• 10 postcards
+• 20 stickers`,
       },
       fr: {
-        name:        'Kit de Peinture Licorne en Plâtre – Offre Groupée',
-        description: `Tout ce dont vous avez besoin pour peindre et personnaliser vos figurines licorne en plâtre est inclus dans le coffret : des figurines en plâtre, un set de peinture et un pinceau. Ouvrez simplement la boîte, mettez votre playlist préférée, réunissez vos amis ou votre famille, et transformez la peinture en une expérience créative et chaleureuse.
+        name:        'Kit de Peinture Licorne en Plâtre – Party Box',
+        description: `Tout ce qu'il faut pour une fête créative complète dans une seule boîte — 10 kits de peinture licorne complets, prêts à l'emploi. Ouvrez la boîte, lancez votre playlist préférée, et laissez chacun choisir sa licorne et la peindre à sa façon.
 
-Ce coffret est parfait pour se détendre à la maison, les soirées entre amies, les fêtes, les réunions en famille, les ateliers créatifs, ou comme cadeau attentionné et original. Peindre des figurines en plâtre est une belle façon de ralentir, de se ressourcer, d'éveiller sa créativité et de profiter du plaisir de créer quelque chose de ses propres mains.
+Cette Party Box est idéale pour les anniversaires, les soirées entre amies, les réunions en famille, les ateliers créatifs et les événements en groupe. Elle convient aussi parfaitement comme cadeau pour une classe entière, une fête scolaire ou toute célébration où vous souhaitez offrir quelque chose de fun et de mémorable à créer avec les mains.
 
-Chaque pièce devient unique — vous choisissez les couleurs, l'ambiance et le résultat final. C'est bien plus qu'un simple kit de peinture ; c'est un petit rituel créatif dont vous ressortez avec quelque chose de vraiment personnel.
+À CHF 4,50 par kit, la Party Box vous fait économiser 35 % par rapport à l'achat individuel — le meilleur rapport qualité-prix pour les groupes.
 
-Ce qui est inclus :
-• des figurines licorne en plâtre prêtes à peindre
-• set de peinture
-• pinceau
-• carte postale
-• 2 autocollants`,
+Ce qui est inclus (×10 kits complets) :
+• 10 figurines licorne en plâtre prêtes à peindre
+• 10 sets de peinture
+• 10 pinceaux
+• 10 cartes postales
+• 20 autocollants`,
       },
       de: {
-        name:        'Einhorn Gipsmalerei-Set – Bundle',
-        description: `Alles, was du zum Bemalen und Personalisieren deiner Gips-Einhorn-Figuren brauchst, ist im Set enthalten: Gipsfiguren, Farb-Set und Pinsel. Öffne einfach die Box, leg deine Lieblingsplaylist auf, hol deine Freunde oder Familie dazu und mach das Malen zu einem gemütlichen, kreativen Erlebnis.
+        name:        'Einhorn Gipsmalerei-Set – Party Box',
+        description: `Alles, was du für eine vollständige Kreativ-Party brauchst, in einer Box — 10 komplette Einhorn-Mal-Sets, sofort einsatzbereit. Öffne die Box, leg deine Lieblingsplaylist auf und lass jeden sein Einhorn auswählen und nach eigener Vorstellung bemalen.
 
-Dieses Bundle ist perfekt zum Entspannen zu Hause, für Mädelsabende, Partys, Familientreffen, kreative Workshops oder als durchdachtes und einzigartiges Geschenk. Gipsfiguren bemalen ist eine wunderbare Möglichkeit, innezuhalten, sich zu erholen, Kreativität zu wecken und den Prozess des Erschaffens mit den eigenen Händen zu genießen.
+Diese Party Box ist ideal für Kindergeburtstage, Mädelsabende, Familientreffen, kreative Workshops und Gruppenevents. Sie eignet sich auch hervorragend als Geschenk für eine ganze Klasse, ein Schulevent oder jede Feier, bei der du den Menschen etwas Spaßiges und Unvergessliches zum Selbermachen schenken möchtest.
 
-Jedes Stück wird zum Unikat — du wählst die Farben, die Stimmung und das Endergebnis. Es ist mehr als nur ein Mal-Set; es ist ein kleines kreatives Ritual, das dir etwas wirklich Persönliches hinterlässt.
+Mit CHF 4,50 pro Kit sparst du mit der Party Box 35 % gegenüber dem Einzelkauf — der beste Preis für Gruppen.
 
-Was enthalten ist:
-• Gips-Einhorn-Figuren, bereit zum Bemalen
-• Farb-Set
-• Pinsel
-• Postkarte
-• 2 Sticker`,
+Was enthalten ist (×10 komplette Sets):
+• 10 Gips-Einhorn-Figuren, bereit zum Bemalen
+• 10 Farb-Sets
+• 10 Pinsel
+• 10 Postkarten
+• 20 Sticker`,
       },
       ru: {
-        name:        'Набор для росписи гипсовых единорогов – Комплект',
-        description: `Всё необходимое для росписи и украшения гипсовых фигурок единорогов уже в наборе: гипсовые фигурки, набор красок и кисть. Просто откройте коробку, включите любимый плейлист, позовите друзей или семью — и превратите рисование в уютное творческое занятие.
+        name:        'Набор для росписи гипсовых единорогов – Party Box',
+        description: `Всё необходимое для творческой вечеринки в одной коробке — 10 полных наборов для росписи единорогов, готовых к использованию. Откройте коробку, включите музыку и позвольте каждому выбрать своего единорога и раскрасить его по-своему.
 
-Этот комплект идеально подойдёт для отдыха дома, девичников, вечеринок, семейных встреч, творческих мастер-классов или в качестве продуманного и оригинального подарка. Роспись гипсовых фигурок — отличный способ замедлиться, расслабиться, пробудить творческое начало и насладиться процессом создания чего-то своими руками.
+Party Box создан для дней рождений, девичников, семейных встреч, творческих мастер-классов и групповых мероприятий. Это также идеальный подарок для целого класса, школьного праздника или любого торжества, где хочется дать людям что-то интересное и запоминающееся для творчества.
 
-Каждая фигурка становится уникальной — вы выбираете цвета, настроение и итоговый вид. Это больше, чем просто набор для рисования; это маленький творческий ритуал, который оставляет вам что-то по-настоящему личное.
+По CHF 4.50 за набор, Party Box экономит 35% по сравнению с покупкой по одному — лучшая цена для группы.
 
-Что входит в набор:
-• гипсовые фигурки единорогов, готовые к росписи
-• набор красок
-• кисть
-• открытка
-• 2 наклейки`,
+Что входит (×10 полных наборов):
+• 10 гипсовых фигурок единорогов, готовых к росписи
+• 10 наборов красок
+• 10 кистей
+• 10 открыток
+• 20 наклеек`,
       },
     },
   },
@@ -112,8 +112,8 @@ Was enthalten ist:
       'images/Moonlight_Unicorn3.png',
       'images/unicorn.png',
     ],
-    price:         7.00,
-    originalPrice: 10.00,
+    price:         5.00,
+    originalPrice: 7.00,
     onSale:        true,
     translations: {
       en: {
@@ -188,8 +188,8 @@ Was enthalten ist:
       'images/Dreamy_Unicorn3.png',
       'images/unicorn.png',
     ],
-    price:         7.00,
-    originalPrice: 10.00,
+    price:         5.00,
+    originalPrice: 7.00,
     onSale:        true,
     translations: {
       en: {
@@ -264,8 +264,8 @@ Was enthalten ist:
       'images/Starlight_Unicorn3.png',
       'images/unicorn.png',
     ],
-    price:         7.00,
-    originalPrice: 10.00,
+    price:         5.00,
+    originalPrice: 7.00,
     onSale:        true,
     translations: {
       en: {
@@ -342,9 +342,9 @@ Was enthalten ist:
       'images/Diplodocus3.png',
       'images/dinosavr.png',
     ],
-    price:         10.00,
-    originalPrice: null,
-    onSale:        false,
+    price:         5.00,
+    originalPrice: 7.00,
+    onSale:        true,
     translations: {
       en: {
         name:        'Diplodocus Plaster Painting Kit',
@@ -418,8 +418,8 @@ Was enthalten ist:
       'images/Stegosaurus3.png',
       'images/dinosavr.png',
     ],
-    price:         7.00,
-    originalPrice: 10.00,
+    price:         5.00,
+    originalPrice: 7.00,
     onSale:        true,
     translations: {
       en: {
