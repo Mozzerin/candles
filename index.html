@@ -234,10 +234,26 @@
       transition: opacity 0.38s;
     }
 
-    .card-img-main  { opacity: 1; }
-    .card-img-hover { opacity: 0; }
-    .card-img-wrap:hover .card-img-hover { opacity: 1; }
-    .card-img-wrap:hover .card-img-main  { opacity: 0; }
+    .card-slide {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: contain;
+      opacity: 0; transition: opacity 0.38s;
+    }
+    .card-slide.active { opacity: 1; }
+
+    .card-dots {
+      position: absolute; bottom: 0.5rem; left: 0; right: 0;
+      display: flex; justify-content: center; gap: 5px; z-index: 2;
+    }
+    .cdot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: rgba(255,255,255,0.6);
+      border: 1px solid rgba(0,0,0,0.2);
+      padding: 0; cursor: pointer;
+      transition: background 0.2s;
+    }
+    .cdot.active { background: rgba(0,0,0,0.7); }
 
     .card-badge {
       position: absolute;
@@ -1116,11 +1132,21 @@
       const badgeHtml = p.onSale
         ? `<div class="card-badge">${t('badge.sale')}</div>` : '';
 
+      const imgs = p.images || [p.image];
+      const slidesHtml = imgs.map((src, i) =>
+        `<img class="card-slide${i === 0 ? ' active' : ''}" src="${src}" alt="${name}" loading="lazy">`
+      ).join('');
+      const dotsHtml = imgs.length > 1
+        ? `<div class="card-dots">${imgs.map((_, i) =>
+            `<button class="cdot${i === 0 ? ' active' : ''}" onclick="cardSlide('${p.id}',${i},event)" aria-label="Photo ${i + 1}"></button>`
+          ).join('')}</div>`
+        : '';
+
       return `
         <div class="product-card" data-product-id="${p.id}">
           <div class="card-img-wrap" onclick="openProduct('${p.id}')">
-            <img class="card-img-main"  src="${p.image}"      alt="${name}">
-            <img class="card-img-hover" src="${p.imageHover}" alt="${name}">
+            ${slidesHtml}
+            ${dotsHtml}
             ${badgeHtml}
           </div>
           <div class="card-body">
@@ -1151,13 +1177,13 @@
     pdQty       = 1;
 
     // All images for this product
-    const imgs = [p.image, p.imageHover].filter(Boolean);
+    const imgs = p.images || [p.image];
 
     // Image track
     const track = document.getElementById('pd-img-track');
     track.innerHTML = imgs.map(src =>
-      `<div style="flex:0 0 100%;aspect-ratio:2/3;overflow:hidden;background:#f5f5f5;">
-         <img src="${src}" alt="${tr.name}" style="width:100%;height:100%;object-fit:cover;">
+      `<div style="flex:0 0 100%;aspect-ratio:1/1;overflow:hidden;background:#f5f5f5;">
+         <img src="${src}" alt="${tr.name}" style="width:100%;height:100%;object-fit:contain;">
        </div>`
     ).join('');
 
@@ -1203,7 +1229,7 @@
   function pdMove(dir) {
     const p    = PRODUCTS.find(x => x.id === pdProductId);
     if (!p) return;
-    const imgs = [p.image, p.imageHover].filter(Boolean);
+    const imgs = p.images || [p.image];
     pdImgIndex = Math.max(0, Math.min(pdImgIndex + dir, imgs.length - 1));
     pdGoImg(pdImgIndex);
   }
@@ -1211,7 +1237,7 @@
   function pdGoImg(idx) {
     const p    = PRODUCTS.find(x => x.id === pdProductId);
     if (!p) return;
-    const imgs = [p.image, p.imageHover].filter(Boolean);
+    const imgs = p.images || [p.image];
     pdImgIndex = idx;
     const track = document.getElementById('pd-img-track');
     track.style.transform = `translateX(-${idx * 100}%)`;
@@ -1358,6 +1384,14 @@
   /* ──────────────────────────────────────────────────────────────
      REQUEST FORM SUBMISSION
   ────────────────────────────────────────────────────────────── */
+  function cardSlide(productId, idx, e) {
+    e.stopPropagation();
+    const card = document.querySelector(`.product-card[data-product-id="${productId}"]`);
+    if (!card) return;
+    card.querySelectorAll('.card-slide').forEach((img, i) => img.classList.toggle('active', i === idx));
+    card.querySelectorAll('.cdot').forEach((dot, i) => dot.classList.toggle('active', i === idx));
+  }
+
   function markInvalid(el) {
     el.classList.add('invalid');
     el.addEventListener('input', () => el.classList.remove('invalid'), { once: true });
@@ -1551,7 +1585,7 @@
           '@type':       'Product',
           name:          tr.name,
           description:   tr.description || '',
-          image:         CONFIG.siteUrl + '/' + p.image,
+          image:         CONFIG.siteUrl + '/' + (p.images ? p.images[0] : p.image),
           offers: {
             '@type':        'Offer',
             priceCurrency:  CONFIG.currency,
