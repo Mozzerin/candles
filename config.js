@@ -5,7 +5,7 @@
 const CONFIG = {
   siteName:     "Emma's Creative Learning",
   siteUrl:      'https://emmas-lab.ch', // ← YOUR DOMAIN (no trailing slash)
-  contactEmail: 'emmalabcandle@gmail.com',
+  contactEmail: 'emmaslabcandle@gmail.com',
   phone:        '+41 78 256 29 52',
   whatsapp:     '41782562952',
   instagram:    'emmas_lab_candle',
