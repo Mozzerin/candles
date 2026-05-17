@@ -334,6 +334,82 @@ Was enthalten ist:
   // ── DINOSAUR KITS ─────────────────────────────────────────────────────
 
   {
+    id:            'dinosaur-party-box',
+    category:      'dinosaur',
+    images:        [
+      'images/dinosaur1.png',
+      'images/Diplodocus3.png',
+      'images/Stegosaurus3.png',
+      'images/dinosavr.png',
+    ],
+    price:         45.00,
+    originalPrice: 70.00,
+    onSale:        true,
+    translations: {
+      en: {
+        name:        'Dinosaur Plaster Painting Kit – Party Box',
+        description: `Everything you need for a full creative party is in one box — 10 complete dinosaur painting kits, ready to go. Open the box, hit play on your favorite playlist, and let everyone choose their dinosaur and paint it their own way.
+
+This Party Box is made for birthday parties, family gatherings, school events, creative workshops, and any group celebration where you want to give people something fun and hands-on to make together. It's also a perfect gift for an entire class or a dino-loving kid who wants to share the fun.
+
+At CHF 4.50 per kit, the Party Box saves you 35% compared to buying individually — the best value for groups.
+
+What's included (×10 complete kits):
+• 10 plaster dinosaur figurines ready to paint
+• 10 paint sets
+• 10 paintbrushes
+• 10 postcards
+• 20 stickers`,
+      },
+      fr: {
+        name:        'Kit de Peinture Dinosaure en Plâtre – Party Box',
+        description: `Tout ce qu'il faut pour une fête créative complète dans une seule boîte — 10 kits de peinture dinosaure complets, prêts à l'emploi. Ouvrez la boîte, lancez votre playlist préférée, et laissez chacun choisir son dinosaure et le peindre à sa façon.
+
+Cette Party Box est idéale pour les anniversaires, les réunions en famille, les fêtes scolaires, les ateliers créatifs et toute célébration en groupe où vous souhaitez offrir quelque chose de fun et de mémorable à créer avec les mains. C'est aussi le cadeau parfait pour toute une classe ou un enfant fan de dinosaures qui veut partager l'aventure.
+
+À CHF 4,50 par kit, la Party Box vous fait économiser 35 % par rapport à l'achat individuel — le meilleur rapport qualité-prix pour les groupes.
+
+Ce qui est inclus (×10 kits complets) :
+• 10 figurines dinosaure en plâtre prêtes à peindre
+• 10 sets de peinture
+• 10 pinceaux
+• 10 cartes postales
+• 20 autocollants`,
+      },
+      de: {
+        name:        'Dinosaurier Gipsmalerei-Set – Party Box',
+        description: `Alles, was du für eine vollständige Kreativ-Party brauchst, in einer Box — 10 komplette Dinosaurier-Mal-Sets, sofort einsatzbereit. Öffne die Box, leg deine Lieblingsplaylist auf und lass jeden seinen Dinosaurier auswählen und nach eigener Vorstellung bemalen.
+
+Diese Party Box ist ideal für Kindergeburtstage, Familientreffen, Schulevents, kreative Workshops und jede Gruppenfeier, bei der du den Menschen etwas Spaßiges und Unvergessliches zum Selbermachen schenken möchtest. Sie ist auch das perfekte Geschenk für eine ganze Klasse oder ein dino-begeistertes Kind, das den Spaß teilen möchte.
+
+Mit CHF 4,50 pro Kit sparst du mit der Party Box 35 % gegenüber dem Einzelkauf — der beste Preis für Gruppen.
+
+Was enthalten ist (×10 komplette Sets):
+• 10 Gips-Dinosaurier-Figuren, bereit zum Bemalen
+• 10 Farb-Sets
+• 10 Pinsel
+• 10 Postkarten
+• 20 Sticker`,
+      },
+      ru: {
+        name:        'Набор для росписи гипсовых динозавров – Party Box',
+        description: `Всё необходимое для творческой вечеринки в одной коробке — 10 полных наборов для росписи динозавров, готовых к использованию. Откройте коробку, включите музыку и позвольте каждому выбрать своего динозавра и раскрасить его по-своему.
+
+Party Box создан для дней рождений, семейных встреч, школьных праздников, творческих мастер-классов и любых групповых мероприятий, где хочется дать людям что-то интересное и запоминающееся для совместного творчества. Это также идеальный подарок для целого класса или ребёнка-любителя динозавров, который хочет поделиться радостью с друзьями.
+
+По CHF 4.50 за набор, Party Box экономит 35% по сравнению с покупкой по одному — лучшая цена для группы.
+
+Что входит (×10 полных наборов):
+• 10 гипсовых фигурок динозавров, готовых к росписи
+• 10 наборов красок
+• 10 кистей
+• 10 открыток
+• 20 наклеек`,
+      },
+    },
+  },
+
+  {
     id:            'dinosaur-kit-1',
     category:      'dinosaur',
     images:        [
