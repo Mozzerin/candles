@@ -38,6 +38,9 @@
   <!-- Structured data (populated by JS) -->
   <script type="application/ld+json" id="json-ld"></script>
 
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
   <style>
     /* ── Config & Reset ───────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -446,6 +449,11 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0.75rem;
+    }
+
+    @media (max-width: 480px) {
+      .form-row { grid-template-columns: 1fr; }
+      .cart-drawer { width: 100vw; }
     }
 
     .form-group {
@@ -922,6 +930,9 @@
         <div class="form-success" id="form-success">
           <p data-i18n="form.success">✓ Your request has been sent! We will contact you shortly.</p>
         </div>
+        <div class="form-error" id="form-error" style="display:none;background:#fef2f2;border:1px solid #fca5a5;color:#b91c1c;padding:1rem;font-size:0.875rem;margin-top:0.75rem;text-align:center;">
+          <p data-i18n="form.error">✕ Something went wrong. Please try again or contact us directly.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -1303,49 +1314,45 @@
 
     if (!name || !email) return;
 
-    // Build order summary
+    const btn = document.querySelector('#request-form .submit-btn');
+    btn.disabled = true;
+    btn.textContent = t('form.sending');
+    document.getElementById('form-error').style.display = 'none';
+
     const orderLines = cart.map(item => {
       const product = PRODUCTS.find(p => p.id === item.productId);
-      const pname = (product.translations.en).name;
-      return `  • ${pname} × ${item.qty}  =  ${formatPrice(product.price * item.qty)}`;
+      const pname = product.translations.en.name;
+      return `• ${pname} × ${item.qty} = ${formatPrice(product.price * item.qty)}`;
     });
 
-    const subject = `[Order Request] ${CONFIG.siteName}`;
-    const body = [
-      `ORDER REQUEST — ${CONFIG.siteName}`,
-      '─'.repeat(40),
-      '',
-      `Name:    ${name}`,
-      `Email:   ${email}`,
-      phone   ? `Phone:   ${phone}`   : null,
-      address ? `Address: ${address}` : null,
-      city    ? `City:    ${city}`    : null,
-      '',
-      'ORDER:',
-      ...orderLines,
-      '',
-      `TOTAL:   ${formatPrice(cartTotal())}`,
-      '',
-      notes   ? `Notes:\n${notes}` : null,
-      '',
-      `Sent at: ${new Date().toLocaleString()}`,
-    ].filter(l => l !== null).join('\n');
+    const params = {
+      site_name:   CONFIG.siteName,
+      from_name:   name,
+      from_email:  email,
+      phone:       phone   || '—',
+      city:        city    || '—',
+      address:     address || '—',
+      notes:       notes   || '—',
+      order_items: orderLines.join('\n'),
+      total:       formatPrice(cartTotal()),
+      sent_at:     new Date().toLocaleString(),
+    };
 
-    const mailto = `mailto:${CONFIG.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
-
-    // Show success state
-    document.getElementById('request-form').style.display = 'none';
-    const successEl = document.getElementById('form-success');
-    successEl.style.display = 'block';
-    successEl.querySelector('p').textContent = t('form.success');
-
-    // Clear cart after a delay
-    setTimeout(() => {
-      cart = [];
-      saveCart();
-      updateCartBadge();
-    }, 1500);
+    emailjs.send(CONFIG.emailjs.serviceId, CONFIG.emailjs.templateId, params, CONFIG.emailjs.publicKey)
+      .then(() => {
+        document.getElementById('request-form').style.display = 'none';
+        const successEl = document.getElementById('form-success');
+        successEl.style.display = 'block';
+        successEl.querySelector('p').textContent = t('form.success');
+        setTimeout(() => { cart = []; saveCart(); updateCartBadge(); }, 1500);
+      })
+      .catch(() => {
+        btn.disabled = false;
+        btn.textContent = t('form.submit');
+        const errEl = document.getElementById('form-error');
+        errEl.style.display = 'block';
+        errEl.querySelector('p').textContent = t('form.error');
+      });
   }
 
   /* ──────────────────────────────────────────────────────────────
@@ -1395,6 +1402,7 @@
   /* ──────────────────────────────────────────────────────────────
      INIT
   ────────────────────────────────────────────────────────────── */
+  emailjs.init({ publicKey: CONFIG.emailjs.publicKey });
   document.getElementById('footer-year').textContent = new Date().getFullYear();
 
   // Contact cards — driven by CONFIG

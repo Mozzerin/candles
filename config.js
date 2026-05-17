@@ -11,12 +11,19 @@ const CONFIG = {
   instagram:    'emmas_lab_candle',
   currency:     'CHF',
 
+  // ── EmailJS ─────────────────────────────────────────────────────────
+  // Sign up at https://www.emailjs.com, then fill in these three values.
+  // Step-by-step instructions are in the README below the CONFIG block.
+  emailjs: {
+    publicKey:  'YOUR_PUBLIC_KEY',   // Account → API Keys → Public Key
+    serviceId:  'YOUR_SERVICE_ID',   // Email Services → your service → Service ID
+    templateId: 'YOUR_TEMPLATE_ID',  // Email Templates → your template → Template ID
+  },
+
   // SEO — used in <title>, meta description, og:image etc.
   seo: {
-    // Default language shown to search engines (what's in the HTML on first load)
     defaultLang: 'en',
-    // og:image — absolute URL to a share image (1200×630 px recommended)
-    ogImage: 'https://emmas-creative-learning.ch/emma/images/og-cover.jpg',
+    ogImage: 'https://emmas-creative-learning.ch/images/og-cover.jpg',
   },
 };
 
@@ -60,7 +67,9 @@ const TRANSLATIONS = {
     'form.address': 'Delivery Address',
     'form.notes':   'Notes / Special requests',
     'form.submit':  'Send Request',
+    'form.sending': 'Sending…',
     'form.success': '✓ Your request has been sent! We will contact you shortly.',
+    'form.error':   '✕ Something went wrong. Please try again or contact us directly.',
     'add.to.cart':  'Add to Cart',
     'badge.sale':   'Sale',
     'added.toast':  'Added to cart',
@@ -100,7 +109,9 @@ const TRANSLATIONS = {
     'form.address': 'Adresse de livraison',
     'form.notes':   'Notes / Demandes spéciales',
     'form.submit':  'Envoyer la demande',
+    'form.sending': 'Envoi en cours…',
     'form.success': '✓ Votre demande a été envoyée ! Nous vous contacterons prochainement.',
+    'form.error':   '✕ Une erreur est survenue. Veuillez réessayer ou nous contacter directement.',
     'add.to.cart':  'Ajouter au panier',
     'badge.sale':   'Solde',
     'added.toast':  'Ajouté au panier',
@@ -140,7 +151,9 @@ const TRANSLATIONS = {
     'form.address': 'Lieferadresse',
     'form.notes':   'Anmerkungen / Sonderwünsche',
     'form.submit':  'Anfrage senden',
+    'form.sending': 'Wird gesendet…',
     'form.success': '✓ Ihre Anfrage wurde gesendet! Wir werden Sie in Kürze kontaktieren.',
+    'form.error':   '✕ Etwas ist schiefgelaufen. Bitte versuche es erneut oder kontaktiere uns direkt.',
     'add.to.cart':  'In den Warenkorb',
     'badge.sale':   'Angebot',
     'added.toast':  'In den Warenkorb gelegt',
