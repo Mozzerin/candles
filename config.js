@@ -34,8 +34,9 @@ const CONFIG = {
 
 const TRANSLATIONS = {
   en: {
-    'meta.title':       "Emma's Lab | Handmade Plaster Painting Kits Switzerland – emmas-lab.ch",
-    'meta.description': 'Handmade plaster painting kits for kids and families in Switzerland. Unicorn & dinosaur sets with paints, brush and instructions. Perfect gift. Order online from CHF 7.',
+    'meta.title':       "Emma's Lab | Painting Kits for Kids Switzerland – Toys, Crafts & Party Activities",
+    'meta.description': 'Handmade plaster painting kits for kids in Switzerland. Unicorn & dinosaur sets — perfect educational toy, creative gift, or party activity. Includes paints, brush & instructions. From CHF 7. Order online.',
+    'meta.keywords':    'painting kit kids Switzerland, plaster figure painting, educational toy Switzerland, creative gift children, party activity kids, craft for kids, unicorn toy, dinosaur toy, kids birthday activity, handmade toy Switzerland',
     'nav.about':    'About',
     'nav.contact':  'Contact',
     'cart.label':   'Cart',
@@ -84,8 +85,9 @@ const TRANSLATIONS = {
   },
 
   fr: {
-    'meta.title':       "Emma's Lab | Kits de Peinture en Plâtre Suisse – emmas-lab.ch",
-    'meta.description': 'Kits de peinture en plâtre faits main pour enfants et familles en Suisse. Licornes et dinosaures avec peintures, pinceau et instructions. Cadeau parfait. Dès CHF 7.',
+    'meta.title':       "Emma's Lab | Kits de Peinture pour Enfants Suisse – Jouets, Créativité & Activités Fête",
+    'meta.description': 'Kits de peinture en plâtre faits main pour enfants en Suisse. Licornes & dinosaures — jouet éducatif, cadeau créatif ou activité de fête. Avec peintures, pinceau et instructions. Dès CHF 7.',
+    'meta.keywords':    'kit peinture enfants Suisse, figurine plâtre à peindre, jouet éducatif Suisse, cadeau créatif enfant, activité anniversaire enfants, loisirs créatifs, jouet licorne, jouet dinosaure, idée cadeau enfant, artisanat enfant Suisse',
     'nav.about':    'À propos',
     'nav.contact':  'Contact',
     'cart.label':   'Panier',
@@ -134,8 +136,9 @@ const TRANSLATIONS = {
   },
 
   de: {
-    'meta.title':       "Emma's Lab | Handgemachte Gipsmalerei-Sets Schweiz – emmas-lab.ch",
-    'meta.description': 'Handgefertigte Gipsmalerei-Kits für Kinder und Familien in der Schweiz. Einhorn- und Dinosaurier-Sets mit Farben, Pinsel und Anleitung. Perfektes Geschenk. Ab CHF 7.',
+    'meta.title':       "Emma's Lab | Mal-Sets für Kinder Schweiz – Spielzeug, Kreativität & Kindergeburtstag",
+    'meta.description': 'Handgemachte Gips-Mal-Sets für Kinder in der Schweiz. Einhorn & Dinosaurier — pädagogisches Spielzeug, kreatives Geschenk oder Beschäftigung für den Kindergeburtstag. Mit Farben, Pinsel & Anleitung. Ab CHF 7.',
+    'meta.keywords':    'Malset Kinder Schweiz, Gipsfigur bemalen, pädagogisches Spielzeug Schweiz, kreatives Geschenk Kinder, Kindergeburtstag Aktivität, Bastelset Kinder, Einhorn Spielzeug, Dinosaurier Spielzeug, Beschäftigung Kinder, Handarbeit Kinder Schweiz',
     'nav.about':    'Über uns',
     'nav.contact':  'Kontakt',
     'cart.label':   'Warenkorb',

@@ -11,8 +11,9 @@
   <meta name="ICBM" content="46.818188, 8.227512">
 
   <!-- Primary SEO (content updated by JS on language switch) -->
-  <title id="page-title">Emma's Lab | Handmade Plaster Painting Kits Switzerland</title>
-  <meta id="meta-desc" name="description" content="Handmade plaster painting kits for kids and families in Switzerland. Unicorn & dinosaur sets with paints, brush and instructions. Perfect gift. Order online from CHF 7.">
+  <title id="page-title">Emma's Lab | Painting Kits for Kids Switzerland – Toys, Crafts & Party Activities</title>
+  <meta id="meta-desc" name="description" content="Handmade plaster painting kits for kids in Switzerland. Unicorn & dinosaur sets — perfect educational toy, creative gift, or party activity. Includes paints, brush & instructions. From CHF 7. Order online.">
+  <meta id="meta-keywords" name="keywords" content="painting kit kids Switzerland, plaster figure painting, educational toy Switzerland, creative gift children, party activity kids, unicorn toy, dinosaur toy, craft kit, Spielzeug Kinder Schweiz, Kindergeburtstag Aktivität, jouet enfant Suisse, activité fête enfants">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -1037,15 +1038,16 @@
       el.textContent = t(key);
     });
 
-    // Contact email link text
-    const emailLink = document.getElementById('contact-email-link');
-    if (emailLink) emailLink.textContent = CONFIG.contactEmail;
+    // Contact email value text
+    const emailVal = document.getElementById('contact-email-val');
+    if (emailVal) emailVal.textContent = CONFIG.contactEmail;
 
     // SEO meta tags
     const title = t('meta.title');
     const desc  = t('meta.description');
     document.getElementById('page-title').textContent = title;
     document.getElementById('meta-desc').setAttribute('content', desc);
+    document.getElementById('meta-keywords').setAttribute('content', t('meta.keywords'));
     document.getElementById('og-title').setAttribute('content', title);
     document.getElementById('og-desc').setAttribute('content', desc);
     document.getElementById('tw-title').setAttribute('content', title);
