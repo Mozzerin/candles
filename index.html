@@ -11,12 +11,12 @@
   <meta name="ICBM" content="46.818188, 8.227512">
 
   <!-- Primary SEO (content updated by JS on language switch) -->
-  <title id="page-title">Emma's Creative Learning | Handmade Plaster Painting Kits – Switzerland</title>
-  <meta id="meta-desc" name="description" content="Handmade plaster painting kits for kids and families in Switzerland. Unicorn &amp; dinosaur sets with paints and brush included. Perfect gift. Order online – CHF 7.">
+  <title id="page-title">Emma's Lab | Handmade Plaster Painting Kits Switzerland</title>
+  <meta id="meta-desc" name="description" content="Handmade plaster painting kits for kids and families in Switzerland. Unicorn & dinosaur sets with paints, brush and instructions. Perfect gift. Order online from CHF 7.">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Emma's Creative Learning">
+  <meta property="og:site_name" content="Emma's Lab">
   <meta id="og-title"  property="og:title"       content="Emma's Creative Learning | Handmade Plaster Painting Kits">
   <meta id="og-desc"   property="og:description"  content="Handmade plaster painting kits for kids in Switzerland. CHF 7. Order online.">
   <meta id="og-locale" property="og:locale"       content="en_US">
@@ -1415,13 +1415,13 @@
   document.getElementById('contact-wa-val').textContent     = CONFIG.phone;
 
   // SEO — canonical, hreflang, og:url, og:image, twitter:image
-  const pageUrl = CONFIG.siteUrl + '/emma/';
-  document.getElementById('canonical').href = pageUrl;
+  const pageUrl = CONFIG.siteUrl + '/';
+  document.getElementById('canonical').href = CONFIG.siteUrl;
   document.getElementById('hl-en').href     = pageUrl + '?lang=en';
   document.getElementById('hl-fr').href     = pageUrl + '?lang=fr';
   document.getElementById('hl-de').href     = pageUrl + '?lang=de';
-  document.getElementById('hl-xd').href     = pageUrl;
-  document.getElementById('og-url').setAttribute('content', pageUrl);
+  document.getElementById('hl-xd').href     = CONFIG.siteUrl;
+  document.getElementById('og-url').setAttribute('content', CONFIG.siteUrl);
   document.getElementById('og-image').setAttribute('content', CONFIG.seo.ogImage);
   document.getElementById('tw-image').setAttribute('content', CONFIG.seo.ogImage);
 
@@ -1436,7 +1436,7 @@
           '@type':       'Product',
           name:          tr.name,
           description:   tr.description || '',
-          image:         CONFIG.siteUrl + '/emma/' + p.image,
+          image:         CONFIG.siteUrl + '/' + p.image,
           offers: {
             '@type':        'Offer',
             priceCurrency:  CONFIG.currency,

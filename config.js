@@ -4,7 +4,7 @@
 
 const CONFIG = {
   siteName:     "Emma's Creative Learning",
-  siteUrl:      'https://emmas-creative-learning.ch', // ← YOUR DOMAIN (no trailing slash)
+  siteUrl:      'https://emmas-lab.ch', // ← YOUR DOMAIN (no trailing slash)
   contactEmail: 'mozzerin@gmail.com',
   phone:        '+41 00 000 00 00',   // ← YOUR PHONE (display format)
   whatsapp:     '41000000000',        // ← digits only, e.g. 41791234567
@@ -23,7 +23,7 @@ const CONFIG = {
   // SEO — used in <title>, meta description, og:image etc.
   seo: {
     defaultLang: 'en',
-    ogImage: 'https://emmas-creative-learning.ch/images/og-cover.jpg',
+    ogImage: 'https://emmas-lab.ch/images/og-cover.jpg',
   },
 };
 
@@ -34,8 +34,8 @@ const CONFIG = {
 
 const TRANSLATIONS = {
   en: {
-    'meta.title':       "Emma's Creative Learning | Handmade Plaster Painting Kits – Switzerland",
-    'meta.description': 'Handmade plaster painting kits for kids and families in Switzerland. Unicorn & dinosaur sets with paints and brush included. Perfect gift. Order online – CHF 7.',
+    'meta.title':       "Emma's Lab | Handmade Plaster Painting Kits Switzerland – emmas-lab.ch",
+    'meta.description': 'Handmade plaster painting kits for kids and families in Switzerland. Unicorn & dinosaur sets with paints, brush and instructions. Perfect gift. Order online from CHF 7.',
     'nav.about':    'About',
     'nav.contact':  'Contact',
     'cart.label':   'Cart',
@@ -76,8 +76,8 @@ const TRANSLATIONS = {
   },
 
   fr: {
-    'meta.title':       "Emma's Creative Learning | Kits de Peinture en Plâtre – Suisse",
-    'meta.description': 'Kits de peinture en plâtre faits main pour enfants et familles en Suisse. Licornes et dinosaures avec peintures et pinceau inclus. Cadeau parfait. Commandez en ligne – CHF 7.',
+    'meta.title':       "Emma's Lab | Kits de Peinture en Plâtre Suisse – emmas-lab.ch",
+    'meta.description': 'Kits de peinture en plâtre faits main pour enfants et familles en Suisse. Licornes et dinosaures avec peintures, pinceau et instructions. Cadeau parfait. Dès CHF 7.',
     'nav.about':    'À propos',
     'nav.contact':  'Contact',
     'cart.label':   'Panier',
@@ -118,8 +118,8 @@ const TRANSLATIONS = {
   },
 
   de: {
-    'meta.title':       "Emma's Creative Learning | Handgemachte Gipsmalerei-Sets – Schweiz",
-    'meta.description': 'Handgefertigte Gipsmalerei-Kits für Kinder und Familien in der Schweiz. Einhorn- und Dinosaurier-Sets mit Farben und Pinsel. Perfektes Geschenk. Online bestellen – CHF 7.',
+    'meta.title':       "Emma's Lab | Handgemachte Gipsmalerei-Sets Schweiz – emmas-lab.ch",
+    'meta.description': 'Handgefertigte Gipsmalerei-Kits für Kinder und Familien in der Schweiz. Einhorn- und Dinosaurier-Sets mit Farben, Pinsel und Anleitung. Perfektes Geschenk. Ab CHF 7.',
     'nav.about':    'Über uns',
     'nav.contact':  'Kontakt',
     'cart.label':   'Warenkorb',
