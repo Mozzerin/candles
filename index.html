@@ -485,6 +485,8 @@
     }
     .form-input:focus,
     .form-textarea:focus { outline: none; border-color: var(--color-text); }
+    .form-input.invalid,
+    .form-textarea.invalid { border-color: #dc2626; background: #fef2f2; }
 
     .form-textarea { resize: vertical; min-height: 80px; }
 
@@ -592,6 +594,19 @@
       font-size: 0.875rem;
       font-weight: 500;
       word-break: break-all;
+    }
+
+    /* ── Contact form ────────────────────────────────────────── */
+    .contact-form-wrap {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .contact-form-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.02em;
     }
 
     /* ── Instagram header icon ───────────────────────────────── */
@@ -777,6 +792,7 @@
         <div class="contact-card-value" id="contact-email-val">emmalabcandle@gmail.com</div>
       </a>
 
+
       <!-- Phone -->
       <a class="contact-card" id="contact-phone-link" href="tel:+41782562952">
         <div class="contact-card-icon">
@@ -805,6 +821,35 @@
       </a>
 
     </div>
+
+    <!-- Contact form -->
+    <div class="contact-form-wrap">
+      <h3 class="contact-form-title" data-i18n="contact.form.title">Send a Message</h3>
+      <form id="contact-form" onsubmit="submitContact(event)" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="ct-name" data-i18n="contact.form.name">Name *</label>
+            <input class="form-input" id="ct-name" type="text" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="ct-email" data-i18n="contact.form.email">Email *</label>
+            <input class="form-input" id="ct-email" type="email" required autocomplete="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="ct-message" data-i18n="contact.form.message">Message *</label>
+          <textarea class="form-textarea" id="ct-message" rows="4" required style="min-height:120px;"></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="ct-submit-btn" data-i18n="contact.form.submit">Send Message</button>
+      </form>
+      <div class="form-success" id="contact-success" style="display:none;">
+        <p id="ct-success-text" data-i18n="contact.form.success">✓ Message sent! We'll get back to you shortly.</p>
+      </div>
+      <div id="contact-error" style="display:none;background:#fef2f2;border:1px solid #fca5a5;color:#b91c1c;padding:1rem;font-size:0.875rem;margin-top:0.75rem;text-align:center;">
+        <p id="ct-error-text" data-i18n="contact.form.error">✕ Something went wrong. Please try again or email us directly.</p>
+      </div>
+    </div>
+
   </section>
 
 </main>
@@ -1311,17 +1356,27 @@
   /* ──────────────────────────────────────────────────────────────
      REQUEST FORM SUBMISSION
   ────────────────────────────────────────────────────────────── */
+  function markInvalid(el) {
+    el.classList.add('invalid');
+    el.addEventListener('input', () => el.classList.remove('invalid'), { once: true });
+  }
+
   function submitRequest(e) {
     e.preventDefault();
 
-    const name    = document.getElementById('req-name').value.trim();
-    const email   = document.getElementById('req-email').value.trim();
+    const nameEl  = document.getElementById('req-name');
+    const emailEl = document.getElementById('req-email');
+    const name    = nameEl.value.trim();
+    const email   = emailEl.value.trim();
     const phone   = document.getElementById('req-phone').value.trim();
     const city    = document.getElementById('req-city').value.trim();
     const address = document.getElementById('req-address').value.trim();
     const notes   = document.getElementById('req-notes').value.trim();
 
-    if (!name || !email) return;
+    let valid = true;
+    if (!name)  { markInvalid(nameEl);  valid = false; }
+    if (!email) { markInvalid(emailEl); valid = false; }
+    if (!valid) { if (!name) nameEl.focus(); else emailEl.focus(); return; }
 
     const btn = document.querySelector('#request-form .submit-btn');
     btn.disabled = true;
@@ -1361,6 +1416,56 @@
         const errEl = document.getElementById('form-error');
         errEl.style.display = 'block';
         errEl.querySelector('p').textContent = t('form.error');
+      });
+  }
+
+  /* ──────────────────────────────────────────────────────────────
+     CONTACT FORM SUBMISSION (EmailJS)
+  ────────────────────────────────────────────────────────────── */
+  function submitContact(e) {
+    e.preventDefault();
+
+    const nameEl    = document.getElementById('ct-name');
+    const emailEl   = document.getElementById('ct-email');
+    const messageEl = document.getElementById('ct-message');
+    const name      = nameEl.value.trim();
+    const email     = emailEl.value.trim();
+    const message   = messageEl.value.trim();
+
+    let valid = true;
+    if (!name)    { markInvalid(nameEl);    valid = false; }
+    if (!email)   { markInvalid(emailEl);   valid = false; }
+    if (!message) { markInvalid(messageEl); valid = false; }
+    if (!valid) { nameEl.focus(); return; }
+
+    const btn = document.getElementById('ct-submit-btn');
+    btn.disabled = true;
+    btn.textContent = t('contact.form.sending');
+    document.getElementById('contact-error').style.display = 'none';
+
+    const params = {
+      site_name:   CONFIG.siteName,
+      from_name:   name,
+      from_email:  email,
+      notes:       message,
+      order_items: '— contact form message —',
+      total:       '—',
+      sent_at:     new Date().toLocaleString(),
+    };
+
+    emailjs.send(CONFIG.emailjs.serviceId, CONFIG.emailjs.templateId, params, CONFIG.emailjs.publicKey)
+      .then(() => {
+        document.getElementById('contact-form').style.display = 'none';
+        const successEl = document.getElementById('contact-success');
+        successEl.style.display = 'block';
+        document.getElementById('ct-success-text').textContent = t('contact.form.success');
+      })
+      .catch(() => {
+        btn.disabled = false;
+        btn.textContent = t('contact.form.submit');
+        const errEl = document.getElementById('contact-error');
+        errEl.style.display = 'block';
+        document.getElementById('ct-error-text').textContent = t('contact.form.error');
       });
   }
 
