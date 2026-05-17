@@ -36,8 +36,8 @@ const PRODUCTS = [
       'images/Starlight_Unicorn3.png',
       'images/unicorn.png',
     ],
-    price:         7.00,
-    originalPrice: 10.00,
+    price:         49.00,
+    originalPrice: 98.00,
     onSale:        true,
     translations: {
       en: {
