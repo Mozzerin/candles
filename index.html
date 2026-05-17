@@ -990,7 +990,7 @@
       <h2 id="pd-name" style="font-size:1.4rem;font-weight:500;line-height:1.25;"></h2>
       <div id="pd-price" style="font-size:1.2rem;font-weight:600;"></div>
       <div id="pd-badge" style="display:none;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:#c0392b;border:1px solid #c0392b;padding:0.2rem 0.55rem;align-self:flex-start;"></div>
-      <p id="pd-desc" style="color:#555;line-height:1.8;font-size:0.9rem;"></p>
+      <div id="pd-desc" style="color:#555;line-height:1.7;font-size:0.875rem;"></div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:0.5rem;">
         <div style="display:flex;align-items:center;border:1px solid #e0e0e0;">
           <button onclick="pdQtyChange(-1)" style="width:36px;height:42px;background:none;border:none;font-size:1.1rem;cursor:pointer;">−</button>
@@ -1110,6 +1110,19 @@
 
   function t(key) {
     return (TRANSLATIONS[currentLang] && TRANSLATIONS[currentLang][key]) || TRANSLATIONS['en'][key] || key;
+  }
+
+  function formatDesc(text) {
+    return text.split(/\n\n+/).map(block => {
+      const lines = block.split('\n');
+      const isList = lines.every(l => l.trim() === '' || l.trim().startsWith('•'));
+      if (isList) {
+        const items = lines.filter(l => l.trim().startsWith('•'))
+          .map(l => `<li>${l.trim().slice(1).trim()}</li>`).join('');
+        return `<ul style="padding-left:1.1rem;margin:0.5rem 0 0;">${items}</ul>`;
+      }
+      return `<p style="margin:0 0 0.75rem;">${lines.join('<br>')}</p>`;
+    }).join('');
   }
 
   function formatPrice(n) {
@@ -1297,7 +1310,7 @@
     badgeEl.textContent   = t('badge.sale');
 
     const descEl = document.getElementById('pd-desc');
-    descEl.textContent = tr.description || '';
+    descEl.innerHTML = formatDesc(tr.description || '');
 
     document.getElementById('pd-add-btn').textContent = t('add.to.cart');
 
