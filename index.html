@@ -749,6 +749,177 @@
       100% { transform: scale(1); }
     }
     .cart-btn.bump { animation: cart-bump 0.3s ease; }
+
+    /* ── Hero ─────────────────────────────────────────────── */
+    .hero-section {
+      background: #fdf8f4;
+      padding: 5.5rem var(--site-gutter) 4.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .hero-headline {
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      max-width: 640px;
+      margin: 0 auto 1.25rem;
+    }
+    .hero-sub {
+      color: var(--color-muted);
+      font-size: 1rem;
+      line-height: 1.75;
+      max-width: 500px;
+      margin: 0 auto 2.25rem;
+    }
+    .hero-cta {
+      background: var(--color-btn);
+      color: var(--color-btn-text);
+      padding: 0.9rem 2.5rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .hero-cta:hover { background: #333; }
+
+    /* ── Pain points ──────────────────────────────────────── */
+    .pain-section {
+      padding: 4.5rem var(--site-gutter);
+      text-align: center;
+    }
+    .pain-intro {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 2.5rem;
+    }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .pain-card {
+      background: #f9f9f9;
+      border: 1px solid var(--color-border);
+      padding: 1.75rem 1.5rem;
+      text-align: left;
+    }
+    .pain-card-num {
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      margin-bottom: 0.65rem;
+      font-weight: 600;
+    }
+    .pain-card p {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--color-text);
+    }
+
+    /* ── Benefits ─────────────────────────────────────────── */
+    .benefit-section {
+      padding: 4.5rem var(--site-gutter);
+      background: #fdf8f4;
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .benefit-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .benefit-title {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 3rem;
+    }
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+    .benefit-item { text-align: center; }
+    .benefit-icon {
+      width: 44px; height: 44px;
+      margin: 0 auto 0.85rem;
+      color: var(--color-text);
+    }
+    .benefit-item-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .benefit-item-text {
+      font-size: 0.78rem;
+      color: var(--color-muted);
+      line-height: 1.65;
+    }
+
+    /* ── Party Box CTA ────────────────────────────────────── */
+    .partycta-section {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 4.5rem var(--site-gutter);
+      text-align: center;
+    }
+    .partycta-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: var(--color-accent);
+      color: #fff;
+      padding: 0.25rem 0.8rem;
+      margin-bottom: 1.25rem;
+    }
+    .partycta-title {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .partycta-sub {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.92rem;
+      max-width: 460px;
+      margin: 0 auto 2rem;
+      line-height: 1.75;
+    }
+    .partycta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .partycta-btn {
+      background: #fff;
+      color: #1a1a1a;
+      padding: 0.9rem 2rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .partycta-btn:hover { opacity: 0.85; }
+    .partycta-btn.outline {
+      background: transparent;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+    .partycta-btn.outline:hover { border-color: #fff; opacity: 1; }
+
+    /* Responsive landing sections */
+    @media (max-width: 760px) {
+      .pain-grid { grid-template-columns: 1fr; }
+      .benefit-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 440px) {
+      .benefit-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -821,8 +992,73 @@
 <!-- ═══════════════════════════════════════ MAIN ═════════════════════════════════ -->
 <main id="main">
 
+  <!-- HERO -->
+  <section class="hero-section">
+    <h1 class="hero-headline" data-i18n="hero.headline">Paint Your Own Unicorn or Dinosaur</h1>
+    <p class="hero-sub" data-i18n="hero.sub">Handmade plaster kits with everything included — just open, paint, and enjoy. Perfect for birthdays, family nights, and creative gifts.</p>
+    <button class="hero-cta" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">
+      <span data-i18n="hero.cta">See All Kits</span>
+    </button>
+  </section>
+
+  <!-- PAIN POINTS -->
+  <section class="pain-section">
+    <p class="pain-intro" data-i18n="pain.intro">Sound familiar?</p>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-card-num">01</div>
+        <p data-i18n="pain.1">Looking for a birthday activity the whole group will actually enjoy — not just watch?</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-card-num">02</div>
+        <p data-i18n="pain.2">Need a creative gift that stands out from the usual toys and actually gets used?</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-card-num">03</div>
+        <p data-i18n="pain.3">Want to spend quality time together and make something with your own hands — without screens?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefit-section">
+    <div class="benefit-inner">
+      <h2 class="benefit-title" data-i18n="benefit.title">Everything You Need, Right in the Box</h2>
+      <div class="benefit-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <div class="benefit-item-title" data-i18n="benefit.1.title">All Included</div>
+          <div class="benefit-item-text" data-i18n="benefit.1.text">Figurine, paints, brush, postcard & stickers — nothing to buy separately</div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="benefit-item-title" data-i18n="benefit.2.title">Open & Paint</div>
+          <div class="benefit-item-text" data-i18n="benefit.2.text">Ready in seconds. No prep, no mess setup, no experience needed</div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <div class="benefit-item-title" data-i18n="benefit.3.title">Handmade in Switzerland</div>
+          <div class="benefit-item-text" data-i18n="benefit.3.text">Each plaster figure is cast by hand with care and attention to detail</div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div class="benefit-item-title" data-i18n="benefit.4.title">For Groups Too</div>
+          <div class="benefit-item-text" data-i18n="benefit.4.text">Party Box with 10 complete kits — perfect for birthdays and events</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- SHOP SECTION -->
-  <section class="shop-section">
+  <section class="shop-section" id="shop">
     <div class="shop-header">
       <h2 class="shop-title" data-i18n="shop.title">Shop</h2>
       <ul class="category-nav" id="category-nav">
@@ -832,6 +1068,17 @@
 
     <div class="products-grid" id="products-grid">
       <!-- Cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- PARTY BOX CTA -->
+  <section class="partycta-section">
+    <div class="partycta-tag" data-i18n="partycta.tag">Best Value</div>
+    <h2 class="partycta-title" data-i18n="partycta.title">Planning a Party?</h2>
+    <p class="partycta-sub" data-i18n="partycta.sub">Get 10 complete kits in one box for CHF 4.50 each — 35% cheaper than buying separately.</p>
+    <div class="partycta-btns">
+      <button class="partycta-btn" onclick="openProduct('unicorn-kit-1')" data-i18n="partycta.btn.unicorn">🦄 Unicorn Party Box</button>
+      <button class="partycta-btn outline" onclick="openProduct('dinosaur-party-box')" data-i18n="partycta.btn.dino">🦕 Dinosaur Party Box</button>
     </div>
   </section>
 
