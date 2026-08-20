@@ -98,32 +98,6 @@
     }
     .article-meta-sep { opacity: 0.4; }
 
-    /* Language tabs */
-    .lang-tabs {
-      display: flex;
-      gap: 0;
-      margin-bottom: 3rem;
-      border-bottom: 1px solid var(--color-border);
-    }
-    .lang-tab {
-      background: none;
-      border: none;
-      border-bottom: 2px solid transparent;
-      padding: 0.65rem 1.25rem;
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--color-muted);
-      cursor: pointer;
-      margin-bottom: -1px;
-      transition: color 0.15s, border-color 0.15s;
-    }
-    .lang-tab:hover { color: var(--color-text); }
-    .lang-tab.active {
-      color: var(--color-text);
-      border-bottom-color: var(--color-text);
-    }
-
     /* Article content */
     .article-content { display: none; }
     .article-content.visible { display: block; }
@@ -160,6 +134,19 @@
       font-style: italic;
     }
 
+    /* Lang switcher in header */
+    .header-right { display: flex; align-items: center; gap: 1.5rem; }
+    .lang-switcher { display: flex; align-items: center; gap: 0.35rem; }
+    .lang-btn {
+      background: none; border: none; cursor: pointer;
+      font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--color-muted); padding: 0; opacity: 0.55;
+      transition: opacity 0.15s;
+    }
+    .lang-btn:hover { opacity: 0.85; }
+    .lang-btn.active { opacity: 1; font-weight: 600; color: var(--color-text); }
+    .lang-sep { font-size: 0.75rem; color: var(--color-border); }
+
     /* Footer */
     footer {
       border-top: 1px solid var(--color-border);
@@ -183,7 +170,18 @@
 
 <header>
   <a href="/" class="header-logo">Emma's Lab</a>
-  <a href="/" class="header-back">← Back to shop</a>
+  <div class="header-right">
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="showLang('de', this)">DE</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" onclick="showLang('en', this)">EN</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" onclick="showLang('fr', this)">FR</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" onclick="showLang('ru', this)">RU</button>
+    </div>
+    <a href="/" class="header-back">← Back</a>
+  </div>
 </header>
 
 <div class="blog-hero">
@@ -202,13 +200,6 @@
       <span>Ekaterina</span>
       <span class="article-meta-sep">·</span>
       <span>Emma's Lab Candle</span>
-    </div>
-
-    <div class="lang-tabs">
-      <button class="lang-tab active" onclick="showLang('de', this)">Deutsch</button>
-      <button class="lang-tab" onclick="showLang('en', this)">English</button>
-      <button class="lang-tab" onclick="showLang('fr', this)">Français</button>
-      <button class="lang-tab" onclick="showLang('ru', this)">Русский</button>
     </div>
 
     <!-- ═══ DEUTSCH ═══ -->
@@ -380,16 +371,16 @@
   function showLang(lang, btn) {
     document.querySelectorAll('.article-content').forEach(el => el.classList.remove('visible'));
     document.getElementById('article-' + lang).classList.add('visible');
-    document.querySelectorAll('.lang-tab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     document.documentElement.lang = lang;
   }
 
-  // Auto-detect lang from URL param (e.g. ?lang=fr from main site)
+  // Auto-detect lang from URL param (e.g. ?lang=ru from main site)
   const urlLang = new URLSearchParams(window.location.search).get('lang');
-  const btnMap = { de: 1, en: 2, fr: 3, ru: 4 };
-  if (urlLang && btnMap[urlLang]) {
-    const btn = document.querySelector(`.lang-tab:nth-child(${btnMap[urlLang]})`);
+  const btnMap = { de: 0, en: 1, fr: 2, ru: 3 };
+  if (urlLang && btnMap[urlLang] !== undefined) {
+    const btn = document.querySelectorAll('.lang-btn')[btnMap[urlLang]];
     showLang(urlLang, btn);
   }
 </script>
