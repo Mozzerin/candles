@@ -3,7 +3,7 @@
 // ═══════════════════════════════════════════════════════════════════════
 
 const CONFIG = {
-  siteName:     "Emma's Creative Learning",
+  siteName:     "Emma's Lab",
   siteUrl:      'https://emmas-lab.ch', // ← YOUR DOMAIN (no trailing slash)
   contactEmail: 'emmaslabcandle@gmail.com',
   phone:        '+41 78 256 29 52',
@@ -67,7 +67,7 @@ const TRANSLATIONS = {
     'contact.form.sending': 'Sending…',
     'contact.form.success': '✓ Message sent! We\'ll get back to you shortly.',
     'contact.form.error':   '✕ Something went wrong. Please try again or email us directly.',
-    'footer.brand': "Emma's Creative Learning",
+    'footer.brand': "Emma's Lab",
     'footer.rights':'All rights reserved.',
     'form.title':   'Send a Request',
     'form.name':    'Name *',
@@ -143,7 +143,7 @@ const TRANSLATIONS = {
     'contact.form.sending': 'Envoi…',
     'contact.form.success': '✓ Message envoyé ! Nous vous répondrons sous peu.',
     'contact.form.error':   '✕ Une erreur est survenue. Réessayez ou écrivez-nous directement.',
-    'footer.brand': "Emma's Creative Learning",
+    'footer.brand': "Emma's Lab",
     'footer.rights':'Tous droits réservés.',
     'form.title':   'Envoyer une demande',
     'form.name':    'Nom *',
@@ -219,7 +219,7 @@ const TRANSLATIONS = {
     'contact.form.sending': 'Wird gesendet…',
     'contact.form.success': '✓ Nachricht gesendet! Wir melden uns in Kürze.',
     'contact.form.error':   '✕ Etwas ist schiefgelaufen. Bitte erneut versuchen oder direkt schreiben.',
-    'footer.brand': "Emma's Creative Learning",
+    'footer.brand': "Emma's Lab",
     'footer.rights':'Alle Rechte vorbehalten.',
     'form.title':   'Anfrage senden',
     'form.name':    'Name *',
@@ -295,7 +295,7 @@ const TRANSLATIONS = {
     'contact.form.sending': 'Отправка…',
     'contact.form.success': '✓ Сообщение отправлено! Мы свяжемся с вами в ближайшее время.',
     'contact.form.error':   '✕ Что-то пошло не так. Попробуйте ещё раз или напишите нам напрямую.',
-    'footer.brand': "Emma's Creative Learning",
+    'footer.brand': "Emma's Lab",
     'footer.rights':'Все права защищены.',
     'form.title':   'Отправить заявку',
     'form.name':    'Имя *',
