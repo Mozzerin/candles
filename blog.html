@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Blog – Emma's Lab | Handmade Plaster Painting Kits Switzerland</title>
+  <meta name="description" content="Stories, inspiration and behind-the-scenes from Emma's Lab — handmade plaster painting kits for kids in Switzerland.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-bg: #ffffff;
+      --color-text: #1a1a1a;
+      --color-muted: #555555;
+      --color-border: #e0e0e0;
+      --color-accent: #e8602c;
+      --font-body: system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+      --max-width: 720px;
+      --site-gutter: 4vw;
+      --header-h: 64px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* Header */
+    header {
+      height: var(--header-h);
+      border-bottom: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 var(--site-gutter);
+      position: sticky;
+      top: 0;
+      background: var(--color-bg);
+      z-index: 10;
+    }
+    .header-logo {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .header-back {
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+    }
+    .header-back:hover { color: var(--color-text); }
+
+    /* Blog header */
+    .blog-hero {
+      padding: 4rem var(--site-gutter) 3rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .blog-hero-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .blog-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.75rem;
+    }
+    .blog-hero h1 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    /* Article */
+    .article-wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3.5rem var(--site-gutter) 6rem;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: var(--color-muted);
+      letter-spacing: 0.04em;
+      margin-bottom: 2rem;
+    }
+    .article-meta-sep { opacity: 0.4; }
+
+    /* Language tabs */
+    .lang-tabs {
+      display: flex;
+      gap: 0;
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .lang-tab {
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      padding: 0.65rem 1.25rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      cursor: pointer;
+      margin-bottom: -1px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .lang-tab:hover { color: var(--color-text); }
+    .lang-tab.active {
+      color: var(--color-text);
+      border-bottom-color: var(--color-text);
+    }
+
+    /* Article content */
+    .article-content { display: none; }
+    .article-content.visible { display: block; }
+
+    .article-content h2 {
+      font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 2rem;
+    }
+    .article-content h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 2.5rem 0 0.85rem;
+      letter-spacing: 0.01em;
+    }
+    .article-content p {
+      color: var(--color-muted);
+      margin-bottom: 1.25rem;
+      line-height: 1.85;
+    }
+    .article-content p:last-child { margin-bottom: 0; }
+    .article-content strong {
+      color: var(--color-text);
+      font-weight: 600;
+    }
+    .article-sign {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      font-style: italic;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--color-border);
+      padding: 2rem var(--site-gutter);
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--color-muted);
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a { color: var(--color-muted); font-size: 0.75rem; }
+    .footer-links a:hover { color: var(--color-text); }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="header-logo">Emma's Lab</a>
+  <a href="/" class="header-back">← Back to shop</a>
+</header>
+
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <p class="blog-eyebrow">Emma's Lab · Stories</p>
+    <h1>Behind the Scenes</h1>
+  </div>
+</div>
+
+<main>
+  <div class="article-wrap">
+
+    <div class="article-meta">
+      <span>May 2026</span>
+      <span class="article-meta-sep">·</span>
+      <span>Ekaterina</span>
+      <span class="article-meta-sep">·</span>
+      <span>Emma's Lab Candle</span>
+    </div>
+
+    <div class="lang-tabs">
+      <button class="lang-tab active" onclick="showLang('de', this)">Deutsch</button>
+      <button class="lang-tab" onclick="showLang('en', this)">English</button>
+    </div>
+
+    <!-- ═══ DEUTSCH ═══ -->
+    <div id="article-de" class="article-content visible">
+      <h2>Die Geschichte von Emma's Lab Candle – mit Liebe zum Detail geschaffen</h2>
+
+      <p>Für mich sind schöne Dinge mehr als nur Dekoration für das Zuhause. Es sind die kleinen Details, die eine besondere Atmosphäre schaffen: warmes Licht, ein vertrauter Duft, ein gemütlicher Abend und das Gefühl, dass alles gut ist. Genau deshalb stelle ich jedes Produkt von Emma's Lab Candle selbst her – von der ersten Idee bis zum letzten Pinselstrich.</p>
+
+      <h3>Von der Idee bis zur Form</h3>
+
+      <p>Ich suche lange nach Formen, die ich selbst gerne in meinem Zuhause sehen würde. Sie sollen nicht nur schön sein, sondern auch eine besondere Stimmung schaffen – Wärme, Zartheit und ein kleines bisschen Magie in den Raum bringen.</p>
+
+      <p>Auch den Gips für meine Produkte habe ich mit viel Sorgfalt ausgewählt. Ich habe verschiedene Mischungen verglichen, ausprobiert und getestet, bis ich das passende Material gefunden habe. Jede Figur wird von mir von Hand gegossen, sodass in jedem Stück ein Teil echter Handarbeit steckt.</p>
+
+      <h3>Farben, die zum Leben erwecken</h3>
+
+      <p>Nachdem die Form fertig ist, beginnt mein Lieblingsteil – das Bemalen.</p>
+
+      <p>Ich wähle die Farbtöne sorgfältig aus, mische die Farben selbst und arbeite auch die kleinsten Details von Hand aus. Genau diese kleinen Unterschiede machen jedes Stück einzigartig und besonders.</p>
+
+      <h3>Der Duft – ein weiterer Teil der Geschichte</h3>
+
+      <p>Ebenso viel Zeit habe ich in die Auswahl des Wachses und meiner Duftlieferanten investiert. Mir war wichtig, hochwertige Materialien und besondere Duftkompositionen zu finden, die nicht nur angenehm riechen, sondern eine Stimmung schaffen und das Zuhause mit einer ganz besonderen Atmosphäre erfüllen.</p>
+
+      <p>Ich liebe es, wenn das Aussehen eines Produkts und sein Duft zu einer Einheit werden – zu einem kleinen, gemütlichen Moment, den man einfach genießen möchte.</p>
+
+      <h3>Kreativität für kleine Künstler</h3>
+
+      <p>Neben meinen dekorativen Produkten stelle ich auch Kreativsets für Kinder her.</p>
+
+      <p>Damit können Kinder ihre eigene Figur bemalen, ihre ganz persönlichen Farben wählen und daraus ein kleines Kunstwerk machen.</p>
+
+      <p>Es ist nicht einfach nur eine Beschäftigung für einen Nachmittag – es ist eine Möglichkeit, die Fantasie zu entfalten, gemeinsam Zeit zu verbringen und etwas zu erschaffen, das es so kein zweites Mal gibt.</p>
+
+      <p class="article-sign"><strong>Von Hand gemacht. Mit Liebe geschaffen.</strong><br>
+      Emma's Lab Candle entstand aus meiner Liebe zu schönen Details, gemütlichen Zuhause und kleinen Freuden im Alltag. Jedes Produkt geht durch meine Hände und entsteht ohne Eile – mit viel Aufmerksamkeit für Materialien, Farben, Formen und jedes noch so kleine Detail.<br><br>
+      Ich wünsche mir, dass Sie mit einem Produkt aus meiner Kollektion nicht einfach nur etwas Schönes nach Hause bringen, sondern ein kleines Stück Wärme, das Sie gerne bei sich haben möchten.<br><br>
+      <em>Emma's Lab Candle – handmade, created with love.</em></p>
+    </div>
+
+    <!-- ═══ ENGLISH ═══ -->
+    <div id="article-en" class="article-content">
+      <h2>The Story of Emma's Lab Candle – Made with Love for Every Detail</h2>
+
+      <p>For me, beautiful things are more than just home decorations. They are the little details that create an atmosphere: warm light, a familiar scent, a cosy evening and that feeling that everything is just right. That is why I create every Emma's Lab Candle product myself – from the very first idea to the final brushstroke.</p>
+
+      <h3>From the Idea to the Form</h3>
+
+      <p>I spend a long time looking for shapes that I would genuinely love to have in my own home. They should not only be beautiful, but also create a special feeling – bringing warmth, softness and a little touch of magic into the space.</p>
+
+      <p>I was just as careful when choosing the plaster I use for my products. I compared different mixtures, experimented and tested them until I found the one that worked just right. Every figure is hand-cast by me, so each piece carries a little part of true craftsmanship.</p>
+
+      <h3>Colours That Bring Them to Life</h3>
+
+      <p>Once the shape is ready, my favourite part begins – painting.</p>
+
+      <p>I carefully choose the shades, mix the colours myself and hand-paint even the smallest details. These little differences are what make every piece unique and one of a kind.</p>
+
+      <h3>The Scent – Another Part of the Story</h3>
+
+      <p>I spent just as much time searching for the right wax and reliable fragrance suppliers. It was important to me to find high-quality materials and special fragrance compositions that not only smell beautiful, but also create a mood and fill your home with a warm, inviting atmosphere.</p>
+
+      <p>I love when the appearance of a piece and its fragrance come together as one – creating a small, cosy moment that you simply want to enjoy.</p>
+
+      <h3>Creativity for Little Artists</h3>
+
+      <p>Alongside my decorative products, I also create creative sets for children.</p>
+
+      <p>They give children the opportunity to paint their own figure, choose their favourite colours and turn it into a little work of art.</p>
+
+      <p>It is more than just an activity for an afternoon – it is a chance to let their imagination run free, spend meaningful time together and create something that will be truly one of a kind.</p>
+
+      <p class="article-sign"><strong>Handmade. Made with Heart.</strong><br>
+      Emma's Lab Candle was born from my love of beautiful details, cosy homes and the little joys in everyday life. Every product passes through my hands and is made without rushing – with care and attention to the materials, colours, shapes and every little detail.<br><br>
+      I want you to bring home more than just something beautiful when you choose a piece from my collection. I want you to bring home a little piece of warmth that you will love having in your space.<br><br>
+      <em>Emma's Lab Candle – handmade, created with love.</em></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div>© <script>document.write(new Date().getFullYear())</script> Emma's Lab. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="/">Shop</a>
+    <a href="/privacy-policy.html">Privacy Policy</a>
+    <a href="/cookie-policy.html">Cookie Policy</a>
+    <a href="/terms.html">Terms & Conditions</a>
+  </div>
+</footer>
+
+<script>
+  function showLang(lang, btn) {
+    document.querySelectorAll('.article-content').forEach(el => el.classList.remove('visible'));
+    document.getElementById('article-' + lang).classList.add('visible');
+    document.querySelectorAll('.lang-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.documentElement.lang = lang;
+  }
+
+  // Auto-detect lang from URL param (e.g. ?lang=en from main site)
+  const urlLang = new URLSearchParams(window.location.search).get('lang');
+  if (urlLang === 'en') {
+    const enBtn = document.querySelector('.lang-tab:nth-child(2)');
+    showLang('en', enBtn);
+  }
+</script>
+</body>
+</html>
