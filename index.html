@@ -11,23 +11,23 @@
   <meta name="ICBM" content="46.818188, 8.227512">
 
   <!-- Primary SEO (content updated by JS on language switch) -->
-  <title id="page-title">Emma's Lab | Painting Kits for Kids Switzerland – Toys, Crafts & Party Activities</title>
-  <meta id="meta-desc" name="description" content="Handmade plaster painting kits for kids in Switzerland. Unicorn & dinosaur sets — perfect educational toy, creative gift, or party activity. Includes paints, brush & instructions. From CHF 7. Order online.">
-  <meta id="meta-keywords" name="keywords" content="painting kit kids Switzerland, plaster figure painting, educational toy Switzerland, creative gift children, party activity kids, unicorn toy, dinosaur toy, craft kit, Spielzeug Kinder Schweiz, Kindergeburtstag Aktivität, jouet enfant Suisse, activité fête enfants">
+  <title id="page-title">Emma's Lab | Handmade Candles & Craft Kits – Switzerland</title>
+  <meta id="meta-desc" name="description" content="Handmade sculptural candles and plaster painting kits from Switzerland. Unique gifts for birthdays, home decor, and creative evenings. Order online — shipped across Switzerland.">
+  <meta id="meta-keywords" name="keywords" content="handmade candles Switzerland, sculptural candles, artisan candles gift, plaster painting kit kids, creative gift Switzerland, party activity kids, Kerzen Schweiz handgemacht, Gips Malset Kinder, bougie artisanale Suisse, kit créatif enfant, свечи ручная работа Швейцария">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Emma's Lab">
-  <meta id="og-title"  property="og:title"       content="Emma's Lab | Handmade Plaster Painting Kits">
-  <meta id="og-desc"   property="og:description"  content="Handmade plaster painting kits for kids in Switzerland. CHF 7. Order online.">
+  <meta id="og-title"  property="og:title"       content="Emma's Lab | Handmade Candles & Craft Kits from Switzerland">
+  <meta id="og-desc"   property="og:description"  content="Sculptural handmade candles and plaster painting kits — unique Swiss gifts for any occasion.">
   <meta id="og-locale" property="og:locale"       content="en_US">
   <meta id="og-url"    property="og:url"          content="">
   <meta id="og-image"  property="og:image"        content="">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta id="tw-title" name="twitter:title"       content="Emma's Lab | Plaster Painting Kits">
-  <meta id="tw-desc"  name="twitter:description" content="Handmade plaster painting kits for kids in Switzerland. CHF 7.">
+  <meta id="tw-title" name="twitter:title"       content="Emma's Lab | Handmade Candles & Craft Kits from Switzerland">
+  <meta id="tw-desc"  name="twitter:description" content="Sculptural handmade candles and plaster painting kits — unique Swiss gifts.">
   <meta id="tw-image" name="twitter:image"       content="">
 
   <!-- hreflang (URLs set by JS from CONFIG.siteUrl) -->
@@ -185,26 +185,34 @@
 
     .category-nav {
       display: flex;
-      gap: 0;
+      flex-wrap: wrap;
+      gap: 0.5rem;
       list-style: none;
-      border-bottom: 1px solid var(--color-border);
-      padding-bottom: 0.5rem;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     .category-nav li a,
     .category-nav li button {
       background: none;
-      border: none;
-      font-size: 0.8rem;
-      letter-spacing: 0.06em;
+      border: 1px solid var(--color-border);
+      border-radius: 2rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.07em;
       text-transform: uppercase;
-      padding: 0 1rem 0 0;
+      padding: 0.4rem 1rem;
       color: var(--color-muted);
       cursor: pointer;
+      transition: background 0.18s, color 0.18s, border-color 0.18s;
     }
+    .category-nav li a:hover,
+    .category-nav li button:hover { border-color: #aaa; color: var(--color-text); }
     .category-nav li.active a,
-    .category-nav li.active button { color: var(--color-text); font-weight: 600; }
+    .category-nav li.active button {
+      background: var(--color-text);
+      border-color: var(--color-text);
+      color: #fff;
+      font-weight: 500;
+    }
 
     /* ── Products Grid ───────────────────────────────────────── */
     .products-grid {
@@ -1078,7 +1086,7 @@
         </button>
       </div>
       <div class="hero-visual">
-        <img src="images/unicorn1.png" alt="Unicorn Plaster Painting Kit Party Box">
+        <img src="images/hero_2.png" alt="Emma's Lab handmade candles and plaster painting kits from Switzerland">
       </div>
     </div>
   </section>
@@ -2120,8 +2128,9 @@
 
   // JSON-LD structured data
   (function buildJsonLd() {
-    const productList = visibleProducts().map((p, i) => {
+    const productList = visibleProducts().filter(p => p.price !== null).map((p, i) => {
       const tr = p.translations.en;
+      const imgSrc = p.images ? p.images.find(s => !/\.mp4$/i.test(s)) : p.image;
       return {
         '@type':    'ListItem',
         position:   i + 1,
@@ -2129,13 +2138,14 @@
           '@type':       'Product',
           name:          tr.name,
           description:   tr.description || '',
-          image:         CONFIG.siteUrl + '/' + (p.images ? p.images[0] : p.image),
+          image:         CONFIG.siteUrl + '/' + imgSrc,
+          brand:         { '@type': 'Brand', name: "Emma's Lab" },
           offers: {
             '@type':        'Offer',
             priceCurrency:  CONFIG.currency,
             price:          p.price.toFixed(2),
             availability:   'https://schema.org/InStock',
-            url:            pageUrl,
+            url:            CONFIG.siteUrl,
           },
         },
       };
