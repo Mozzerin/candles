@@ -1594,7 +1594,7 @@
       const allImgs = p.images || [p.image];
       const imgs = allImgs.filter(s => !/\.mp4$/i.test(s));
       const slidesHtml = imgs.map((src, i) =>
-        `<img class="card-slide${i === 0 ? ' active' : ''}" src="${src}" alt="${name}" loading="lazy">`
+        `<img class="card-slide${i === 0 ? ' active' : ''}" src="${encodeURI(src)}" alt="${name}" loading="lazy">`
       ).join('');
       const dotsHtml = imgs.length > 1
         ? `<div class="card-dots">${imgs.map((_, i) =>
