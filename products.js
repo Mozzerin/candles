@@ -561,6 +561,399 @@ Was enthalten ist:
     },
   },
 
+  // ── CANDLE COLLECTION ─────────────────────────────────────────────────
+
+  {
+    id:            'candle-frog',
+    category:      'candle',
+    images:        [
+      'images/candles/frog1.png',
+      'images/candles/frog2.png',
+      'images/candles/frog3.mp4',
+    ],
+    price:         100.00,
+    originalPrice: null,
+    onSale:        false,
+    translations: {
+      en: {
+        name: 'Frog Candle',
+        description: `A handcrafted frog-shaped candle, full of character and charm. Made with care in Switzerland, this whimsical figure works equally well as a decorative piece or a functional candle. Its smooth, detailed silhouette makes it a perfect conversation starter on any shelf, desk, or windowsill.
+
+A delightful gift for anyone who loves animals, nature, or just something unexpected and fun.
+
+What's included:
+• 1 handcrafted frog-shaped candle
+• Made in Switzerland`,
+      },
+      fr: {
+        name: 'Bougie Grenouille',
+        description: `Une bougie artisanale en forme de grenouille, pleine de caractère et de charme. Fabriquée avec soin en Suisse, cette figurine espiègle fonctionne aussi bien comme pièce décorative que comme bougie fonctionnelle. Sa silhouette lisse et détaillée en fait un accessoire parfait sur toute étagère, bureau ou rebord de fenêtre.
+
+Un cadeau délicieux pour tous ceux qui aiment les animaux, la nature ou simplement quelque chose d'inattendu et d'amusant.
+
+Ce qui est inclus :
+• 1 bougie grenouille artisanale
+• Fabriquée en Suisse`,
+      },
+      de: {
+        name: 'Frosch-Kerze',
+        description: `Eine handgefertigte Kerze in Froschform — voll Charakter und Charme. In der Schweiz mit Sorgfalt hergestellt, eignet sich diese verspielte Figur gleichermaßen als Dekorationsstück oder als funktionale Kerze. Ihre glatte, detaillierte Silhouette macht sie zum perfekten Blickfang auf jedem Regal, Schreibtisch oder Fensterbrett.
+
+Ein wunderbares Geschenk für alle, die Tiere, Natur oder einfach etwas Unerwartetes und Fröhliches lieben.
+
+Was enthalten ist:
+• 1 handgefertigte Frosch-Kerze
+• Hergestellt in der Schweiz`,
+      },
+      ru: {
+        name: 'Свеча «Лягушка»',
+        description: `Свеча ручной работы в форме лягушки — с характером и шармом. Изготовлена с заботой в Швейцарии, эта игривая фигурка одинаково хороша и как декоративный предмет, и как функциональная свеча. Плавный, детально проработанный силуэт станет идеальным украшением любой полки, стола или подоконника.
+
+Прекрасный подарок для тех, кто любит животных, природу или просто что-то неожиданное и весёлое.
+
+Что входит:
+• 1 свеча-лягушка ручной работы
+• Сделано в Швейцарии`,
+      },
+    },
+  },
+
+  {
+    id:            'candle-frog-hat',
+    category:      'candle',
+    images:        [
+      'images/candles/froghat1.png',
+      'images/candles/froghat2.png',
+      'images/candles/froghat3.mp4',
+    ],
+    price:         100.00,
+    originalPrice: null,
+    onSale:        false,
+    translations: {
+      en: {
+        name: 'Frog in a Hat Candle',
+        description: `Meet the most dapper frog you'll ever own. This handcrafted candle features a frog in a top hat — a little touch of absurdist elegance that brightens up any space. Made by hand in Switzerland, it's the kind of gift that makes someone smile the moment they unwrap it.
+
+Place it on your desk, shelf, or bathroom counter and let it start conversations. A perfect gift for someone with a sense of humour and an eye for the charming and unexpected.
+
+What's included:
+• 1 handcrafted frog-in-a-hat candle
+• Made in Switzerland`,
+      },
+      fr: {
+        name: 'Bougie Grenouille au Chapeau',
+        description: `Voici la grenouille la plus élégante que vous posséderez jamais. Cette bougie artisanale représente une grenouille portant un chapeau haut-de-forme — une touche d'élégance absurde qui égaie n'importe quel espace. Fabriquée à la main en Suisse, c'est le genre de cadeau qui fait sourire dès le déballage.
+
+Le cadeau parfait pour quelqu'un qui a le sens de l'humour et un œil pour le charmant et l'inattendu.
+
+Ce qui est inclus :
+• 1 bougie grenouille au chapeau artisanale
+• Fabriquée en Suisse`,
+      },
+      de: {
+        name: 'Frosch-mit-Hut-Kerze',
+        description: `Begegnen Sie dem stilbewusstesten Frosch, den Sie je besessen haben. Diese handgefertigte Kerze zeigt einen Frosch mit Zylinder — ein kleines Detail absurder Eleganz, das jeden Raum aufheitert. In der Schweiz handgefertigt, ist es die Art von Geschenk, bei der man vom ersten Moment des Auspackens an lächelt.
+
+Das perfekte Geschenk für jemanden mit Sinn für Humor und einem Blick für das Charmante und Unerwartete.
+
+Was enthalten ist:
+• 1 handgefertigte Frosch-mit-Hut-Kerze
+• Hergestellt in der Schweiz`,
+      },
+      ru: {
+        name: 'Свеча «Лягушка в шляпе»',
+        description: `Самая элегантная лягушка из всех, что у вас когда-либо были. Свеча ручной работы изображает лягушку в цилиндре — маленькая деталь абсурдной элегантности, которая украсит любое пространство. Изготовлена вручную в Швейцарии — это именно тот подарок, от которого улыбаются сразу при распаковке.
+
+Идеальный подарок для того, у кого есть чувство юмора и вкус к очаровательному и неожиданному.
+
+Что входит:
+• 1 свеча «Лягушка в шляпе» ручной работы
+• Сделано в Швейцарии`,
+      },
+    },
+  },
+
+  {
+    id:            'candle-hyacinth',
+    category:      'candle',
+    images:        [
+      'images/candles/hyacinth1.png',
+      'images/candles/hyacinth2.png',
+      'images/candles/hyacinth3.png',
+      'images/candles/hyacinth4.mp4',
+    ],
+    price:         100.00,
+    originalPrice: null,
+    onSale:        false,
+    translations: {
+      en: {
+        name: 'Hyacinth Candle',
+        description: `A beautifully detailed hyacinth candle, handcrafted in Switzerland. The layered clusters of petals capture the natural elegance of one of spring's most beloved flowers. Whether displayed solo or as part of a floral arrangement, this candle brings a touch of botanical beauty to any interior.
+
+The hyacinth is a symbol of rebirth and new beginnings — making this a thoughtful gift for housewarmings, birthdays, or simply to bring a little nature indoors.
+
+What's included:
+• 1 handcrafted hyacinth candle
+• Made in Switzerland`,
+      },
+      fr: {
+        name: 'Bougie Jacinthe',
+        description: `Une bougie jacinthe magnifiquement détaillée, fabriquée à la main en Suisse. Les grappes de pétales superposées capturent l'élégance naturelle de l'une des fleurs les plus appréciées du printemps. Exposée seule ou intégrée dans une composition florale, cette bougie apporte une touche de beauté botanique à tout intérieur.
+
+La jacinthe est un symbole de renaissance — ce qui en fait un cadeau attentionné pour une pendaison de crémaillère, un anniversaire ou simplement pour apporter un peu de nature à l'intérieur.
+
+Ce qui est inclus :
+• 1 bougie jacinthe artisanale
+• Fabriquée en Suisse`,
+      },
+      de: {
+        name: 'Hyazinthen-Kerze',
+        description: `Eine wunderschön detaillierte Hyazinthen-Kerze, handgefertigt in der Schweiz. Die geschichteten Blütentrauben fangen die natürliche Eleganz einer der beliebtesten Frühlingsblumen ein. Ob allein ausgestellt oder als Teil eines floralen Arrangements — diese Kerze bringt einen Hauch botanischer Schönheit in jeden Raum.
+
+Die Hyazinthe ist ein Symbol der Erneuerung — ein nachdenkliches Geschenk zur Einweihungsfeier, zum Geburtstag oder einfach um etwas Natur nach drinnen zu bringen.
+
+Was enthalten ist:
+• 1 handgefertigte Hyazinthen-Kerze
+• Hergestellt in der Schweiz`,
+      },
+      ru: {
+        name: 'Свеча «Гиацинт»',
+        description: `Красиво детализированная свеча в форме гиацинта, изготовленная вручную в Швейцарии. Многослойные грозди лепестков передают природную элегантность одного из самых любимых весенних цветков. Эта свеча принесёт нотку ботанической красоты в любой интерьер — отдельно или в составе цветочной композиции.
+
+Гиацинт — символ возрождения и новых начал. Это продуманный подарок на новоселье, день рождения или просто чтобы привнести немного природы в дом.
+
+Что входит:
+• 1 свеча «Гиацинт» ручной работы
+• Сделано в Швейцарии`,
+      },
+    },
+  },
+
+  {
+    id:            'candle-pumpkin',
+    category:      'candle',
+    images:        [
+      'images/candles/pumpkin1.png',
+      'images/candles/pumpkin2.png',
+      'images/candles/pumpkin3.png',
+      'images/candles/pumpkin4.mp4',
+    ],
+    price:         100.00,
+    originalPrice: null,
+    onSale:        false,
+    translations: {
+      en: {
+        name: 'Pumpkin Candle',
+        description: `A handcrafted pumpkin candle — perfect for autumn decorating, Halloween, or as a cosy accent piece year-round. Made in Switzerland with careful attention to the natural form of a pumpkin: the ribbed silhouette, the rounded body, the little stem on top.
+
+Works beautifully on its own or grouped together in a seasonal display. A warm, inviting piece that brings the feeling of autumn indoors.
+
+What's included:
+• 1 handcrafted pumpkin candle
+• Made in Switzerland`,
+      },
+      fr: {
+        name: 'Bougie Citrouille',
+        description: `Une bougie citrouille artisanale — parfaite pour la décoration d'automne, Halloween ou comme pièce décorative chaleureuse toute l'année. Fabriquée en Suisse avec une attention particulière à la forme naturelle de la citrouille : la silhouette côtelée, le corps arrondi, la petite tige sur le dessus.
+
+S'expose magnifiquement seule ou groupée dans une composition saisonnière.
+
+Ce qui est inclus :
+• 1 bougie citrouille artisanale
+• Fabriquée en Suisse`,
+      },
+      de: {
+        name: 'Kürbis-Kerze',
+        description: `Eine handgefertigte Kürbis-Kerze — perfekt für die Herbstdekoration, Halloween oder als gemütliches Akzentstück das ganze Jahr über. In der Schweiz mit besonderer Aufmerksamkeit für die natürliche Form eines Kürbisses hergestellt: die gerippte Silhouette, der runde Körper, der kleine Stiel oben.
+
+Wunderschön allein oder in Gruppen als saisonale Dekoration.
+
+Was enthalten ist:
+• 1 handgefertigte Kürbis-Kerze
+• Hergestellt in der Schweiz`,
+      },
+      ru: {
+        name: 'Свеча «Тыква»',
+        description: `Свеча ручной работы в форме тыквы — идеальна для осеннего декора, Хэллоуина или как уютный акцентный предмет круглый год. Изготовлена в Швейцарии с вниманием к естественной форме тыквы: рёбра, округлое тело, небольшой черешок сверху.
+
+Выглядит прекрасно отдельно или в группе как сезонная декорация.
+
+Что входит:
+• 1 свеча «Тыква» ручной работы
+• Сделано в Швейцарии`,
+      },
+    },
+  },
+
+  {
+    id:            'candle-carousel',
+    category:      'candle',
+    images:        [
+      'images/candles/carousel1.png',
+      'images/candles/carousel2.png',
+      'images/candles/carousel3.png',
+      'images/candles/carousel4.png',
+      'images/candles/carousel5.mp4',
+    ],
+    price:         100.00,
+    originalPrice: null,
+    onSale:        false,
+    translations: {
+      en: {
+        name: 'Carousel Candle',
+        description: `A stunning decorative carousel candle, handcrafted in Switzerland. One of the most intricate pieces in the Emma's Lab collection — delicate horses, an ornate canopy, and a detailed base come together to create something that feels truly magical.
+
+This candle is as much an art object as it is a candle. Display it on a mantelpiece, shelf, or sideboard, and gift it to someone who appreciates beautiful handmade things. It brings the warmth and wonder of a fairground carousel into any home.
+
+What's included:
+• 1 handcrafted carousel candle
+• Made in Switzerland`,
+      },
+      fr: {
+        name: 'Bougie Carrousel',
+        description: `Une magnifique bougie carrousel décorative, fabriquée à la main en Suisse. L'une des pièces les plus complexes de la collection Emma's Lab — de délicats chevaux, un auvent ornemental et une base détaillée s'assemblent pour créer quelque chose de véritablement magique.
+
+Cette bougie est autant un objet d'art qu'une bougie. Exposez-la sur une cheminée, une étagère ou un buffet. Un cadeau pour ceux qui apprécient les belles choses faites à la main.
+
+Ce qui est inclus :
+• 1 bougie carrousel artisanale
+• Fabriquée en Suisse`,
+      },
+      de: {
+        name: 'Karussell-Kerze',
+        description: `Eine atemberaubende dekorative Karussell-Kerze, handgefertigt in der Schweiz. Eines der aufwendigsten Stücke der Emma's Lab Kollektion — zarte Pferde, ein verziertes Dach und eine detaillierte Basis ergeben zusammen etwas, das sich wirklich magisch anfühlt.
+
+Diese Kerze ist ebenso sehr ein Kunstobjekt wie eine Kerze. Stellen Sie sie auf einen Kaminsims, ein Regal oder ein Sideboard. Ein Geschenk für alle, die schöne handgemachte Dinge schätzen.
+
+Was enthalten ist:
+• 1 handgefertigte Karussell-Kerze
+• Hergestellt in der Schweiz`,
+      },
+      ru: {
+        name: 'Свеча «Карусель»',
+        description: `Потрясающая декоративная свеча-карусель, изготовленная вручную в Швейцарии. Одна из самых сложных работ в коллекции Emma's Lab — изящные лошади, украшенный навес и детализированное основание создают нечто поистине волшебное.
+
+Эта свеча — столь же предмет искусства, сколь и источник света. Поставьте её на каминную полку, полку или комод. Подарок для тех, кто ценит красивые вещи ручной работы.
+
+Что входит:
+• 1 свеча «Карусель» ручной работы
+• Сделано в Швейцарии`,
+      },
+    },
+  },
+
+  {
+    id:            'candle-xmas-bauble',
+    category:      'candle',
+    images:        [
+      'images/candles/Christmas%20tree%20bauble1.png',
+      'images/candles/Christmas%20tree%20bauble2.png',
+      'images/candles/Christmas%20tree%20bauble3.png',
+      'images/candles/Christmas%20tree%20bauble4.mp4',
+    ],
+    price:         100.00,
+    originalPrice: null,
+    onSale:        false,
+    translations: {
+      en: {
+        name: 'Christmas Bauble Candle',
+        description: `A handcrafted candle in the shape of a classic Christmas tree ornament — smooth, round, and beautifully made. This bauble candle captures the warm nostalgia of holiday decorating in a form you can display year after year.
+
+Perfect as a Christmas gift, a stocking filler, or a festive addition to your seasonal décor. Give it on its own or pair it with other pieces from the Emma's Lab candle collection.
+
+What's included:
+• 1 handcrafted Christmas bauble candle
+• Made in Switzerland`,
+      },
+      fr: {
+        name: 'Bougie Boule de Noël',
+        description: `Une bougie artisanale en forme de boule de Noël classique — lisse, ronde et magnifiquement réalisée. Cette bougie-boule capture la douce nostalgie des décorations de fête dans une forme que vous pouvez exposer année après année.
+
+Parfaite comme cadeau de Noël, cadeau de Noël de bas de laine ou ajout festif à votre décoration saisonnière.
+
+Ce qui est inclus :
+• 1 bougie boule de Noël artisanale
+• Fabriquée en Suisse`,
+      },
+      de: {
+        name: 'Weihnachtskugel-Kerze',
+        description: `Eine handgefertigte Kerze in Form eines klassischen Weihnachtsbaumschmucks — glatt, rund und wunderschön gearbeitet. Diese Kugelkerze fängt die warme Nostalgie der festlichen Dekoration in einer Form ein, die Sie Jahr für Jahr aufstellen können.
+
+Perfekt als Weihnachtsgeschenk, Strumpffüller oder festliche Ergänzung Ihrer saisonalen Dekoration.
+
+Was enthalten ist:
+• 1 handgefertigte Weihnachtskugel-Kerze
+• Hergestellt in der Schweiz`,
+      },
+      ru: {
+        name: 'Свеча «Новогодний шар»',
+        description: `Свеча ручной работы в форме классического рождественского шара — гладкая, круглая и красиво исполненная. Эта свеча передаёт тёплую ностальгию праздничного декора в форме, которую можно выставлять каждый год.
+
+Идеальный рождественский подарок, дополнение к праздничному декору или часть коллекции свечей Emma's Lab.
+
+Что входит:
+• 1 свеча «Новогодний шар» ручной работы
+• Сделано в Швейцарии`,
+      },
+    },
+  },
+
+  {
+    id:            'candle-mouse-king',
+    category:      'candle',
+    images:        [
+      'images/candles/Mouse%20King1.png',
+      'images/candles/Mouse%20King2.PNG',
+      'images/candles/Mouse%20King3.png',
+      'images/candles/Mouse%20King4.mp4',
+    ],
+    price:         100.00,
+    originalPrice: null,
+    onSale:        false,
+    translations: {
+      en: {
+        name: 'Mouse King Candle',
+        description: `The Mouse King — handcrafted in Switzerland. This candle is inspired by the legendary villain of The Nutcracker, complete with his crown, fierce expression, and regal posture. A collectible piece that bridges the world of handmade craft and Christmas storytelling.
+
+A memorable gift for anyone who loves The Nutcracker, ballet, or extraordinary seasonal decorations. Display it proudly during the festive season — or all year round.
+
+What's included:
+• 1 handcrafted Mouse King candle
+• Made in Switzerland`,
+      },
+      fr: {
+        name: 'Bougie Roi des Souris',
+        description: `Le Roi des souris — fabriqué à la main en Suisse. Cette bougie s'inspire du légendaire méchant de Casse-Noisette, avec sa couronne, son expression féroce et sa posture royale. Une pièce de collection qui unit l'artisanat fait main et la magie de Noël.
+
+Un cadeau mémorable pour tous ceux qui aiment Casse-Noisette, le ballet ou des décorations saisonnières extraordinaires.
+
+Ce qui est inclus :
+• 1 bougie Roi des souris artisanale
+• Fabriquée en Suisse`,
+      },
+      de: {
+        name: 'Mäusekönig-Kerze',
+        description: `Der Mäusekönig — handgefertigt in der Schweiz. Diese Kerze ist vom legendären Bösewicht aus dem Nussknacker inspiriert — mit seiner Krone, seinem finsteren Ausdruck und seiner königlichen Haltung. Ein Sammlerstück, das Handwerkskunst und Weihnachtsgeschichten verbindet.
+
+Ein unvergessliches Geschenk für alle, die den Nussknacker, Ballett oder außergewöhnliche saisonale Dekorationen lieben.
+
+Was enthalten ist:
+• 1 handgefertigte Mäusekönig-Kerze
+• Hergestellt in der Schweiz`,
+      },
+      ru: {
+        name: 'Свеча «Мышиный Король»',
+        description: `Мышиный Король — изготовлен вручную в Швейцарии. Эта свеча создана по мотивам легендарного злодея из «Щелкунчика» — с короной, грозным взглядом и царственной осанкой. Коллекционный предмет на стыке handmade-мастерства и рождественской сказки.
+
+Незабываемый подарок для тех, кто любит «Щелкунчика», балет или необычные праздничные украшения.
+
+Что входит:
+• 1 свеча «Мышиный Король» ручной работы
+• Сделано в Швейцарии`,
+      },
+    },
+  },
+
   // ── ADD NEW PRODUCTS BELOW ────────────────────────────────────────────
   //
   // {

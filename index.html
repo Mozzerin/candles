@@ -1571,7 +1571,9 @@
       const name = tr.name;
       const cat  = p.category.charAt(0).toUpperCase() + p.category.slice(1);
 
-      const priceHtml = p.onSale
+      const priceHtml = p.price === null
+        ? `<span class="card-price-normal">—</span>`
+        : p.onSale
         ? `<span class="card-price-sale">${formatPrice(p.price)}</span>
            <span class="card-price-original">${formatPrice(p.originalPrice)}</span>`
         : `<span class="card-price-normal">${formatPrice(p.price)}</span>`;
@@ -1579,7 +1581,8 @@
       const badgeHtml = p.onSale
         ? `<div class="card-badge">${t('badge.sale')}</div>` : '';
 
-      const imgs = p.images || [p.image];
+      const allImgs = p.images || [p.image];
+      const imgs = allImgs.filter(s => !/\.mp4$/i.test(s));
       const slidesHtml = imgs.map((src, i) =>
         `<img class="card-slide${i === 0 ? ' active' : ''}" src="${src}" alt="${name}" loading="lazy">`
       ).join('');
@@ -1617,6 +1620,8 @@
   let pdImgIndex  = 0;
   let pdQty       = 1;
 
+  function isVideo(src) { return /\.mp4$/i.test(src); }
+
   function openProduct(id) {
     const p  = PRODUCTS.find(x => x.id === id);
     if (!p) return;
@@ -1628,18 +1633,26 @@
     // All images for this product
     const imgs = p.images || [p.image];
 
-    // Image track
+    // Image track (supports video)
     const track = document.getElementById('pd-img-track');
     track.innerHTML = imgs.map(src =>
-      `<div style="flex:0 0 100%;aspect-ratio:1/1;overflow:hidden;background:#f5f5f5;">
-         <img src="${src}" alt="${tr.name}" style="width:100%;height:100%;object-fit:contain;">
-       </div>`
+      isVideo(src)
+        ? `<div style="flex:0 0 100%;aspect-ratio:1/1;overflow:hidden;background:#111;display:flex;align-items:center;justify-content:center;">
+             <video src="${encodeURI(src)}" style="width:100%;height:100%;object-fit:contain;" controls muted playsinline loop></video>
+           </div>`
+        : `<div style="flex:0 0 100%;aspect-ratio:1/1;overflow:hidden;background:#f5f5f5;">
+             <img src="${encodeURI(src)}" alt="${tr.name}" style="width:100%;height:100%;object-fit:contain;">
+           </div>`
     ).join('');
 
-    // Thumbnails
+    // Thumbnails (video gets play-icon thumb)
     const thumbs = document.getElementById('pd-thumbs');
     thumbs.innerHTML = imgs.map((src, i) =>
-      `<img src="${src}" class="slide-thumb${i===0?' active':''}" style="width:52px;height:52px;object-fit:cover;border:2px solid ${i===0?'#1a1a1a':'#ddd'};cursor:pointer;flex-shrink:0;" onclick="pdGoImg(${i})">`
+      isVideo(src)
+        ? `<div class="slide-thumb" onclick="pdGoImg(${i})" style="width:52px;height:52px;background:#111;border:2px solid ${i===0?'#1a1a1a':'#ddd'};cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;">
+             <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+           </div>`
+        : `<img src="${encodeURI(src)}" class="slide-thumb" style="width:52px;height:52px;object-fit:cover;border:2px solid ${i===0?'#1a1a1a':'#ddd'};cursor:pointer;flex-shrink:0;" onclick="pdGoImg(${i})">`
     ).join('');
 
     pdUpdateImgButtons(imgs.length);
@@ -1650,7 +1663,9 @@
     document.getElementById('pd-qty').textContent      = pdQty;
 
     const priceEl = document.getElementById('pd-price');
-    if (p.onSale) {
+    if (p.price === null) {
+      priceEl.textContent = '—';
+    } else if (p.onSale) {
       priceEl.innerHTML = `<span style="color:#c0392b;margin-right:0.5rem;">${formatPrice(p.price)}</span><span style="text-decoration:line-through;color:#888;font-size:0.9rem;">${formatPrice(p.originalPrice)}</span>`;
     } else {
       priceEl.textContent = formatPrice(p.price);
@@ -1673,6 +1688,7 @@
   function closeProduct() {
     document.getElementById('product-modal').style.display = 'none';
     document.body.style.overflow = '';
+    document.getElementById('pd-img-track').querySelectorAll('video').forEach(v => v.pause());
   }
 
   function pdMove(dir) {
@@ -1690,7 +1706,10 @@
     pdImgIndex = idx;
     const track = document.getElementById('pd-img-track');
     track.style.transform = `translateX(-${idx * 100}%)`;
-    document.querySelectorAll('#pd-thumbs img').forEach((th, i) => {
+    track.querySelectorAll('video').forEach(v => v.pause());
+    const cur = track.children[idx];
+    if (cur) { const v = cur.querySelector('video'); if (v) v.play(); }
+    document.querySelectorAll('#pd-thumbs .slide-thumb').forEach((th, i) => {
       th.style.border = `2px solid ${i === idx ? '#1a1a1a' : '#ddd'}`;
     });
     pdUpdateImgButtons(imgs.length);
