@@ -28,7 +28,7 @@ const PRODUCTS = [
 
   {
     id:            'unicorn-kit-1',
-    category:      'unicorn',
+    category:      'kids',
     images:        [
       'images/unicorn1.png',
       'images/Dreamy_Unicorn3.png',
@@ -105,7 +105,7 @@ Party Box создан для дней рождений, девичников, �
 
   {
     id:            'unicorn-face-kit',
-    category:      'unicorn',
+    category:      'kids',
     images:        [
       'images/Moonlight_Unicorn1.jpg',
       'images/Moonlight_Unicorn2.png',
@@ -181,7 +181,7 @@ Was enthalten ist:
 
   {
     id:            'unicorn-kit-2',
-    category:      'unicorn',
+    category:      'kids',
     images:        [
       'images/Dreamy_Unicorn1.png',
       'images/Dreamy_Unicorn2.png',
@@ -257,7 +257,7 @@ Was enthalten ist:
 
   {
     id:            'unicorn-kit-3',
-    category:      'unicorn',
+    category:      'kids',
     images:        [
       'images/Starlight_Unicorn1.png',
       'images/Starlight_Unicorn2.png',
@@ -335,7 +335,7 @@ Was enthalten ist:
 
   {
     id:            'dinosaur-party-box',
-    category:      'dinosaur',
+    category:      'kids',
     images:        [
       'images/dinosaur1.png',
       'images/Diplodocus3.png',
@@ -411,7 +411,7 @@ Party Box создан для дней рождений, семейных вст
 
   {
     id:            'dinosaur-kit-1',
-    category:      'dinosaur',
+    category:      'kids',
     images:        [
       'images/Diplodocus1.png',
       'images/Diplodocus2.png',
@@ -487,7 +487,7 @@ Was enthalten ist:
 
   {
     id:            'dinosaur-kit-2',
-    category:      'dinosaur',
+    category:      'kids',
     images:        [
       'images/Stegosaurus1.png',
       'images/Stegosaurus2.jpg',
@@ -574,6 +574,7 @@ Was enthalten ist:
     price:         100.00,
     originalPrice: null,
     onSale:        false,
+    size: '≈ 13 × 8 cm',
     translations: {
       en: {
         name: 'Frog Candle',
@@ -629,6 +630,7 @@ Was enthalten ist:
     price:         100.00,
     originalPrice: null,
     onSale:        false,
+    size: '≈ 13 × 11 cm',
     translations: {
       en: {
         name: 'Frog in a Hat Candle',
@@ -685,6 +687,7 @@ Was enthalten ist:
     price:         100.00,
     originalPrice: null,
     onSale:        false,
+    size: '≈ 10 × 14 cm',
     translations: {
       en: {
         name: 'Hyacinth Candle',
@@ -741,6 +744,7 @@ Was enthalten ist:
     price:         100.00,
     originalPrice: null,
     onSale:        false,
+    size: '≈ 12 × 14 cm',
     translations: {
       en: {
         name: 'Pumpkin Candle',
@@ -798,6 +802,7 @@ Was enthalten ist:
     price:         100.00,
     originalPrice: null,
     onSale:        false,
+    size: '≈ 13 × 12 cm',
     translations: {
       en: {
         name: 'Carousel Candle',
@@ -854,6 +859,7 @@ Was enthalten ist:
     price:         100.00,
     originalPrice: null,
     onSale:        false,
+    size: '≈ 10 × 10 cm',
     translations: {
       en: {
         name: 'Christmas Bauble Candle',
@@ -910,6 +916,7 @@ Was enthalten ist:
     price:         100.00,
     originalPrice: null,
     onSale:        false,
+    size: '≈ 8 × 13 cm',
     translations: {
       en: {
         name: 'Mouse King Candle',
