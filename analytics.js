@@ -56,7 +56,12 @@ function checkConsent() {
   if (consent === 'accepted') {
     initAnalytics();
   } else if (consent !== 'declined') {
-    document.getElementById('cookie-banner').style.display = 'flex';
+    const banner = document.getElementById('cookie-banner');
+    if (banner) banner.style.display = 'flex';
+    else document.addEventListener('DOMContentLoaded', () => {
+      const b = document.getElementById('cookie-banner');
+      if (b) b.style.display = 'flex';
+    });
   }
 }
 
