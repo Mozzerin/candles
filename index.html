@@ -911,6 +911,55 @@
       display: block;
     }
 
+    /* ── B2B section ─────────────────────────────────────────── */
+    .b2b-section {
+      padding: 5rem var(--site-gutter);
+      border-top: 1px solid var(--color-border);
+    }
+    .b2b-inner { max-width: var(--max-width); margin: 0 auto; }
+    .b2b-header { text-align: center; margin-bottom: 3rem; }
+    .b2b-eyebrow {
+      font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--color-muted); margin-bottom: 0.75rem;
+    }
+    .b2b-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 500;
+    }
+    .b2b-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .b2b-card {
+      padding: 2rem 1.75rem 2.25rem;
+      border: 1px solid var(--color-border);
+      display: flex; flex-direction: column; gap: 0.75rem;
+    }
+    .b2b-card-icon {
+      width: 36px; height: 36px;
+      color: var(--color-accent);
+      margin-bottom: 0.5rem;
+      flex-shrink: 0;
+    }
+    .b2b-card-title {
+      font-family: var(--font-heading);
+      font-size: 1.1rem; font-weight: 500;
+    }
+    .b2b-card-text {
+      font-size: 0.875rem; line-height: 1.75; color: var(--color-muted);
+    }
+    .b2b-cta { text-align: center; }
+    .b2b-cta-btn {
+      background: var(--color-btn); color: var(--color-btn-text);
+      border: none; padding: 1rem 2.5rem;
+      font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+      cursor: pointer; transition: background 0.2s;
+    }
+    .b2b-cta-btn:hover { background: #333; }
+
     /* Responsive landing sections */
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; min-height: auto; }
@@ -920,6 +969,7 @@
       .partycta-inner { grid-template-columns: 1fr; }
       .partycta-text { padding: 3.5rem var(--site-gutter); }
       .partycta-images { aspect-ratio: 2/1; }
+      .b2b-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 700px) {
       .benefit-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1090,6 +1140,42 @@
       <div class="partycta-images">
         <div class="partycta-img"><img src="images/products/candles/pumpkin_hero1.png" alt="Pumpkin candle"></div>
         <div class="partycta-img"><img src="images/products/candles/carousel_hero1.png" alt="Carousel candle"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- B2B SECTION -->
+  <section class="b2b-section">
+    <div class="b2b-inner">
+      <div class="b2b-header">
+        <p class="b2b-eyebrow" data-i18n="b2b.eyebrow">For Business</p>
+        <h2 class="b2b-title" data-i18n="b2b.title">Orders for Companies &amp; Events</h2>
+      </div>
+      <div class="b2b-grid">
+        <div class="b2b-card">
+          <svg class="b2b-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="7" width="20" height="15" rx="1"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/>
+          </svg>
+          <h3 class="b2b-card-title" data-i18n="b2b.card1.title">Corporate Gifts</h3>
+          <p class="b2b-card-text" data-i18n="b2b.card1.text">Custom sculptural candles with your branding. Unique year-end gifts, client appreciation, or event souvenirs — each handpoured in Switzerland.</p>
+        </div>
+        <div class="b2b-card">
+          <svg class="b2b-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2c0 0-4 4-4 8a4 4 0 0 0 8 0c0-4-4-8-4-8z"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/>
+          </svg>
+          <h3 class="b2b-card-title" data-i18n="b2b.card2.title">Workshop Kits</h3>
+          <p class="b2b-card-text" data-i18n="b2b.card2.text">Creative team-building evenings: we supply complete candle-making kits for groups. Hands-on, memorable, no experience needed.</p>
+        </div>
+        <div class="b2b-card">
+          <svg class="b2b-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="3" width="9" height="9" rx="1"/><rect x="13" y="3" width="9" height="9" rx="1"/><rect x="2" y="13" width="9" height="9" rx="1"/><rect x="13" y="13" width="9" height="9" rx="1"/>
+          </svg>
+          <h3 class="b2b-card-title" data-i18n="b2b.card3.title">Wholesale &amp; Bulk</h3>
+          <p class="b2b-card-text" data-i18n="b2b.card3.text">Special pricing from 10 pieces. Perfect for boutiques, concept stores, and event planners. Let's talk quantities.</p>
+        </div>
+      </div>
+      <div class="b2b-cta">
+        <button class="b2b-cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-i18n="b2b.cta">Get in Touch</button>
       </div>
     </div>
   </section>
