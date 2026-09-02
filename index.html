@@ -834,27 +834,26 @@
     /* ── Party Box CTA ────────────────────────────────────── */
     .partycta-section {
       padding: 4rem var(--site-gutter) 5rem;
-      background: var(--color-light);
+      background: #100c08;
       position: relative;
       overflow: visible;
     }
-    .partycta-web {
+    .partycta-spider {
       position: absolute;
-      top: 0.5rem;
+      top: 0;
       right: var(--site-gutter);
-      width: 110px;
-      opacity: 0.22;
-      color: var(--color-text);
+      width: 160px;
       pointer-events: none;
       z-index: 2;
+      mix-blend-mode: multiply;
     }
     .partycta-bat {
       position: absolute;
-      top: 2rem;
-      right: calc(var(--site-gutter) + 80px);
+      top: 2.5rem;
+      right: calc(var(--site-gutter) + 140px);
       width: 48px;
-      opacity: 0.35;
-      color: var(--color-text);
+      opacity: 0.6;
+      color: #c8a55a;
       pointer-events: none;
       z-index: 2;
     }
@@ -863,8 +862,8 @@
       bottom: -20px;
       left: calc(var(--site-gutter) - 20px);
       width: 150px;
-      opacity: 0.75;
-      mix-blend-mode: multiply;
+      opacity: 0.55;
+      mix-blend-mode: screen;
       pointer-events: none;
       z-index: 2;
     }
@@ -874,13 +873,13 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       height: 480px;
-      border: 1px solid #c4a882;
+      border: 1px solid #3a2510;
       overflow: hidden;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
     }
     .partycta-images {
       overflow: hidden;
-      background: #1a0e08;
+      background: #0d0804;
     }
     .partycta-images img {
       width: 100%;
@@ -890,19 +889,19 @@
       display: block;
     }
     .partycta-text {
-      background: var(--color-bg);
-      color: var(--color-text);
+      background: #1c1108;
+      color: #F5EDD8;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 3rem 3rem;
-      border-left: 1px solid #c4a882;
+      border-left: 1px solid #3a2510;
     }
     .partycta-tag {
       font-size: 0.65rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--color-accent);
+      color: #C4622D;
       margin-bottom: 1rem;
     }
     .partycta-title {
@@ -911,17 +910,18 @@
       font-weight: 500;
       line-height: 1.15;
       margin-bottom: 1rem;
+      color: #F5EDD8;
     }
     .partycta-sub {
-      color: var(--color-muted);
+      color: rgba(245,237,216,0.6);
       font-size: 0.875rem;
       line-height: 1.8;
       margin-bottom: 2rem;
     }
     .partycta-btns { display: flex; flex-direction: column; gap: 0.6rem; align-items: flex-start; }
     .partycta-btn {
-      background: var(--color-btn);
-      color: var(--color-btn-text);
+      background: #C4622D;
+      color: #F5EDD8;
       padding: 0.85rem 1.75rem;
       font-size: 0.72rem;
       letter-spacing: 0.1em;
@@ -931,10 +931,10 @@
       transition: background 0.2s;
       align-self: flex-start;
     }
-    .partycta-btn:hover { background: #333; }
+    .partycta-btn:hover { background: #a84e22; }
     .partycta-btn.outline {
       background: none;
-      color: var(--color-muted);
+      color: rgba(245,237,216,0.45);
       border: none;
       padding: 0.3rem 0;
       font-size: 0.72rem;
@@ -942,7 +942,7 @@
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-    .partycta-btn.outline:hover { color: var(--color-text); }
+    .partycta-btn.outline:hover { color: #F5EDD8; }
 
     /* ── B2B section ─────────────────────────────────────────── */
     .b2b-section {
@@ -1161,21 +1161,10 @@
   <!-- PARTY BOX CTA -->
   <section class="partycta-section">
 
-    <!-- Spider web — top right -->
-    <svg class="partycta-web" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.8" aria-hidden="true">
-      <line x1="100" y1="0" x2="0"   y2="0"/>
-      <line x1="100" y1="0" x2="0"   y2="40"/>
-      <line x1="100" y1="0" x2="0"   y2="80"/>
-      <line x1="100" y1="0" x2="20"  y2="100"/>
-      <line x1="100" y1="0" x2="60"  y2="100"/>
-      <line x1="100" y1="0" x2="100" y2="100"/>
-      <path d="M 75 0 A 25 25 0 0 1 100 25"/>
-      <path d="M 50 0 A 50 50 0 0 1 100 50"/>
-      <path d="M 25 0 A 75 75 0 0 1 100 75"/>
-      <path d="M 0  0 A 100 100 0 0 1 100 100"/>
-    </svg>
+    <!-- Spider + web image (Higgsfield) — top right, placeholder until generated -->
+    <img src="" alt="" class="partycta-spider" aria-hidden="true" id="partycta-spider-img" style="display:none">
 
-    <!-- Bat — top right, near web -->
+    <!-- Bat — top right -->
     <svg class="partycta-bat" viewBox="0 0 80 40" fill="currentColor" aria-hidden="true">
       <ellipse cx="40" cy="22" rx="6" ry="8"/>
       <path d="M34 20 Q24 8 8 14 Q20 20 34 24Z"/>
