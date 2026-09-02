@@ -60,64 +60,6 @@
       clip: rect(0,0,0,0); border: 0;
     }
 
-    /* ── Header ──────────────────────────────────────────────── */
-    #header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--color-bg);
-      border-bottom: 1px solid var(--color-border);
-      height: var(--header-h);
-    }
-
-    .header-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 var(--site-gutter);
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
-    }
-
-    .header-nav {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    .header-nav a {
-      font-size: 0.875rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      opacity: 0.8;
-      transition: opacity 0.2s;
-    }
-    .header-nav a:hover { opacity: 1; }
-
-    .cart-btn {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: none;
-      border: none;
-      font-size: 0.875rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: opacity 0.2s;
-    }
-    .cart-btn:hover { opacity: 0.7; }
-    .cart-count {
-      font-size: 0.8rem;
-    }
-
-    /* Mobile burger */
-    .burger { display: none; background: none; border: none; padding: 0; flex-direction: column; gap: 5px; }
-    .burger span { display: block; width: 22px; height: 1px; background: var(--color-text); }
-
     /* ── Page ────────────────────────────────────────────────── */
     #main { min-height: calc(100vh - var(--header-h) - 200px); }
 
@@ -618,50 +560,6 @@
       letter-spacing: 0.02em;
     }
 
-    /* ── Instagram header icon ───────────────────────────────── */
-    .social-header-link {
-      display: flex;
-      align-items: center;
-      opacity: 0.7;
-      transition: opacity 0.2s;
-    }
-    .social-header-link:hover { opacity: 1; }
-
-    /* ── Mobile nav overlay ──────────────────────────────────── */
-    #mobile-nav {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 150;
-      background: var(--color-bg);
-      padding: 2rem var(--site-gutter);
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    #mobile-nav.open { display: flex; }
-
-    .mobile-nav-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .mobile-nav-links { list-style: none; display: flex; flex-direction: column; gap: 1.5rem; }
-    .mobile-nav-links a { font-size: 1.2rem; font-weight: 500; }
-
-    .mobile-nav-close {
-      background: none; border: none;
-      font-size: 1.5rem; color: var(--color-text);
-      opacity: 0.6;
-    }
-
-    /* ── Responsive header ───────────────────────────────────── */
-    @media (max-width: 700px) {
-      .header-nav { display: none; }
-      .burger { display: flex; }
-      .lang-switcher { display: none; }
-    }
-
     /* ── Notification toast ──────────────────────────────────── */
     #toast {
       position: fixed;
@@ -1117,6 +1015,7 @@
 
     <nav>
       <ul class="header-nav" id="main-nav-links">
+        <li><a href="#shop" data-i18n="nav.shop">Shop</a></li>
         <li><a href="#about" data-i18n="nav.about">About</a></li>
         <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         <li><a href="/blog.html" data-i18n="nav.blog">Blog</a></li>
@@ -1159,6 +1058,7 @@
     <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
   </div>
   <ul class="mobile-nav-links">
+    <li><a href="#shop" onclick="closeMobileNav()" data-i18n="nav.shop">Shop</a></li>
     <li><a href="#about" onclick="closeMobileNav()" data-i18n="nav.about">About</a></li>
     <li><a href="#contact" onclick="closeMobileNav()" data-i18n="nav.contact">Contact</a></li>
     <li><a href="/blog.html" data-i18n="nav.blog">Blog</a></li>
