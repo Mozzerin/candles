@@ -860,10 +860,11 @@
       margin-bottom: 1rem;
     }
     .partycta-title {
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
       font-weight: 600;
       line-height: 1.15;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.01em;
       margin-bottom: 1rem;
     }
     .partycta-sub {
@@ -1078,17 +1079,17 @@
   <section class="partycta-section">
     <div class="partycta-inner">
       <div class="partycta-text">
-        <span class="partycta-tag" data-i18n="partycta.tag">Best Value</span>
-        <h2 class="partycta-title" data-i18n="partycta.title">Planning a Party?</h2>
-        <p class="partycta-sub" data-i18n="partycta.sub">Get 10 complete kits in one box for CHF 4.50 each — 35% cheaper than buying separately.</p>
+        <span class="partycta-tag" data-i18n="partycta.tag">Handmade in Switzerland</span>
+        <h2 class="partycta-title" data-i18n="partycta.title">A Gift Worth Lighting</h2>
+        <p class="partycta-sub" data-i18n="partycta.sub">Sculptural candles handpoured in Mettmenstetten. Each piece is unique — warm, personal, and made to be cherished.</p>
         <div class="partycta-btns">
-          <button class="partycta-btn" onclick="openProduct('unicorn-kit-1')" data-i18n="partycta.btn.unicorn">🦄 Unicorn Party Box</button>
-          <button class="partycta-btn outline" onclick="openProduct('dinosaur-party-box')" data-i18n="partycta.btn.dino">🦕 Dinosaur Party Box</button>
+          <button class="partycta-btn" onclick="filterCategory('candle')" data-i18n="partycta.btn.primary">Shop Candles</button>
+          <button class="partycta-btn outline" onclick="filterCategory('kit')" data-i18n="partycta.btn.secondary">Craft Kits</button>
         </div>
       </div>
       <div class="partycta-images">
-        <div class="partycta-img"><img src="images/products/kits/unicorn1.png" alt="Unicorn Party Box"></div>
-        <div class="partycta-img"><img src="images/products/kits/dinosaur1.png" alt="Dinosaur Party Box"></div>
+        <div class="partycta-img"><img src="images/products/candles/pumpkin_hero1.png" alt="Pumpkin candle"></div>
+        <div class="partycta-img"><img src="images/products/candles/carousel_hero1.png" alt="Carousel candle"></div>
       </div>
     </div>
   </section>
@@ -1489,6 +1490,11 @@
     currentFilter = cat;
     renderCategoryNav();
     renderProducts();
+  }
+
+  function filterCategory(cat) {
+    filterProducts(cat);
+    document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
   }
 
   function renderProducts() {
