@@ -1354,7 +1354,7 @@
   ────────────────────────────────────────────────────────────── */
   let cart = [];  // { productId, qty }
   let currentLang = 'en';
-  let currentFilter = 'all';
+  let currentFilter = 'candle';
 
   function t(key) {
     return (TRANSLATIONS[currentLang] && TRANSLATIONS[currentLang][key]) || TRANSLATIONS['en'][key] || key;
@@ -1439,7 +1439,9 @@
      CATEGORY NAV  (built dynamically from PRODUCTS)
   ────────────────────────────────────────────────────────────── */
   function renderCategoryNav() {
-    const cats = ['all', ...new Set(visibleProducts().map(p => p.category))];
+    const rawCats = [...new Set(visibleProducts().map(p => p.category))]
+      .sort((a, b) => a === 'candle' ? -1 : b === 'candle' ? 1 : a.localeCompare(b));
+    const cats = ['all', ...rawCats];
     const nav  = document.getElementById('category-nav');
     nav.innerHTML = cats.map(cat => {
       const label = cat === 'all'
