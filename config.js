@@ -23,7 +23,7 @@ const CONFIG = {
   // SEO — used in <title>, meta description, og:image etc.
   seo: {
     defaultLang: 'en',
-    ogImage: 'https://emmas-lab.ch/images/og-cover.jpg',
+    ogImage: 'https://emmas-lab.ch/images/site/og-cover.jpg',
   },
 };
 
