@@ -131,12 +131,45 @@
     .shop-header {
       margin-bottom: 2rem;
     }
-
+    .shop-header-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      gap: 1rem;
+    }
     .shop-title {
       font-size: 1.5rem;
       font-weight: 600;
-      margin-bottom: 1rem;
     }
+    .sort-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+    .sort-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+    }
+    .sort-select {
+      appearance: none;
+      background: none;
+      border: 1px solid var(--color-border);
+      border-radius: 2rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      color: var(--color-text);
+      padding: 0.4rem 2rem 0.4rem 0.9rem;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237A5C42'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.7rem center;
+      font-family: inherit;
+    }
+    .sort-select:focus { outline: 1px solid var(--color-border); }
 
     .category-nav {
       display: flex;
@@ -1143,7 +1176,19 @@
   <!-- SHOP SECTION -->
   <section class="shop-section" id="shop">
     <div class="shop-header">
-      <h2 class="shop-title" data-i18n="shop.title">Shop</h2>
+      <div class="shop-header-top">
+        <h2 class="shop-title" data-i18n="shop.title">Shop</h2>
+        <div class="sort-wrap">
+          <span class="sort-label" data-i18n="sort.label">Sort</span>
+          <select class="sort-select" id="sort-select" onchange="setSort(this.value)">
+            <option value="default" data-i18n="sort.default">Featured</option>
+            <option value="price-asc" data-i18n="sort.price-asc">Price: Low to High</option>
+            <option value="price-desc" data-i18n="sort.price-desc">Price: High to Low</option>
+            <option value="name-asc" data-i18n="sort.name-asc">Name: A–Z</option>
+            <option value="name-desc" data-i18n="sort.name-desc">Name: Z–A</option>
+          </select>
+        </div>
+      </div>
       <ul class="category-nav" id="category-nav">
         <!-- filled dynamically by renderCategoryNav() -->
       </ul>
@@ -1508,6 +1553,7 @@
   let cart = [];  // { productId, qty }
   let currentLang = 'en';
   let currentFilter = 'candle';
+  let currentSort    = 'default';
 
   function t(key) {
     return (TRANSLATIONS[currentLang] && TRANSLATIONS[currentLang][key]) || TRANSLATIONS['en'][key] || key;
@@ -1585,7 +1631,25 @@
 
   function filteredProducts() {
     const all = visibleProducts();
-    return currentFilter === 'all' ? all : all.filter(p => p.category === currentFilter);
+    const filtered = currentFilter === 'all' ? all : all.filter(p => p.category === currentFilter);
+    if (currentSort === 'price-asc')  return [...filtered].sort((a, b) => a.price - b.price);
+    if (currentSort === 'price-desc') return [...filtered].sort((a, b) => b.price - a.price);
+    if (currentSort === 'name-asc')   return [...filtered].sort((a, b) => {
+      const na = (a.translations[currentLang] || a.translations.en).name;
+      const nb = (b.translations[currentLang] || b.translations.en).name;
+      return na.localeCompare(nb);
+    });
+    if (currentSort === 'name-desc')  return [...filtered].sort((a, b) => {
+      const na = (a.translations[currentLang] || a.translations.en).name;
+      const nb = (b.translations[currentLang] || b.translations.en).name;
+      return nb.localeCompare(na);
+    });
+    return filtered;
+  }
+
+  function setSort(value) {
+    currentSort = value;
+    renderProducts();
   }
 
   /* ──────────────────────────────────────────────────────────────
