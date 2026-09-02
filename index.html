@@ -842,10 +842,13 @@
     .partycta-spider {
       position: absolute;
       top: 0;
-      left: 0;
-      width: 240px;
+      right: 0;
+      width: 260px;
       pointer-events: none;
       z-index: 2;
+      filter: invert(1) brightness(0.75);
+      opacity: 0.55;
+      transform: scaleX(-1);
     }
     .partycta-inner {
       max-width: 1100px;
@@ -896,7 +899,32 @@
       color: rgba(245,237,216,0.6);
       font-size: 0.875rem;
       line-height: 1.8;
-      margin-bottom: 2rem;
+      margin-bottom: 1.25rem;
+    }
+    .partycta-price {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+    .partycta-sale-price {
+      font-family: var(--font-heading);
+      font-size: 1.9rem;
+      font-weight: 500;
+      color: #F5EDD8;
+    }
+    .partycta-original-price {
+      font-size: 1rem;
+      color: rgba(245,237,216,0.35);
+      text-decoration: line-through;
+    }
+    .partycta-discount-badge {
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #C4622D;
+      border: 1px solid rgba(196,98,45,0.5);
+      padding: 0.2rem 0.55rem;
     }
     .partycta-btns { display: flex; flex-direction: column; gap: 0.6rem; align-items: flex-start; }
     .partycta-btn {
@@ -1152,6 +1180,11 @@
         <span class="partycta-tag" data-i18n="partycta.tag">31 October is Coming</span>
         <h2 class="partycta-title" data-i18n="partycta.title">The Pumpkin Candle</h2>
         <p class="partycta-sub" data-i18n="partycta.sub">Halloween is almost here. Our enchanted pumpkin cottage glows from within — hand-sculpted in Switzerland, limited seasonal piece. Order yours before it's gone.</p>
+        <div class="partycta-price">
+          <span class="partycta-sale-price">CHF 29</span>
+          <span class="partycta-original-price">CHF 39</span>
+          <span class="partycta-discount-badge">−26%</span>
+        </div>
         <div class="partycta-btns">
           <button class="partycta-btn" onclick="openProduct('candle-pumpkin')" data-i18n="partycta.btn.primary">Shop Pumpkin Candle</button>
           <button class="partycta-btn outline" onclick="filterCategory('candle')" data-i18n="partycta.btn.secondary">All Candles</button>
