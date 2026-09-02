@@ -834,68 +834,17 @@
     /* ── Party Box CTA ────────────────────────────────────── */
     .partycta-section {
       padding: 4rem var(--site-gutter) 5rem;
-      overflow: hidden;
     }
     .partycta-inner {
-      max-width: 760px;
+      max-width: 840px;
       margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 460px;
+      border: 1px solid var(--color-border);
       overflow: hidden;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.13);
     }
-    .partycta-text {
-      background: #3D2817;
-      color: #FAF6EE;
-      display: flex;
-      flex-direction: column;
-      padding: 2.5rem 3rem 3rem;
-    }
-    .partycta-tag {
-      display: inline-block;
-      font-size: 0.65rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--color-border);
-      margin-bottom: 0.75rem;
-    }
-    .partycta-title {
-      font-family: var(--font-heading);
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      font-weight: 600;
-      line-height: 1.15;
-      letter-spacing: -0.01em;
-      margin-bottom: 1rem;
-    }
-    .partycta-sub {
-      color: rgba(255,255,255,0.6);
-      font-size: 0.9rem;
-      line-height: 1.8;
-      margin-bottom: 2.5rem;
-      max-width: 360px;
-    }
-    .partycta-btns { display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-start; }
-    .partycta-btn {
-      background: #fff;
-      color: #1a1a1a;
-      padding: 0.85rem 1.75rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      border: none;
-      cursor: pointer;
-      transition: opacity 0.2s;
-      width: 100%;
-      max-width: 280px;
-      text-align: center;
-    }
-    .partycta-btn:hover { opacity: 0.85; }
-    .partycta-btn.outline {
-      background: transparent;
-      color: rgba(255,255,255,0.75);
-      border: 1px solid rgba(255,255,255,0.25);
-    }
-    .partycta-btn.outline:hover { border-color: rgba(255,255,255,0.7); color: #fff; opacity: 1; }
     .partycta-images {
-      height: 300px;
       overflow: hidden;
       background: #1a0e08;
     }
@@ -903,9 +852,62 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 20%;
+      object-position: center center;
       display: block;
     }
+    .partycta-text {
+      background: var(--color-bg);
+      color: var(--color-text);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 2.5rem;
+      border-left: 1px solid var(--color-border);
+    }
+    .partycta-tag {
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 1rem;
+    }
+    .partycta-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      font-weight: 500;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .partycta-sub {
+      color: var(--color-muted);
+      font-size: 0.875rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .partycta-btns { display: flex; flex-direction: column; gap: 0.6rem; align-items: flex-start; }
+    .partycta-btn {
+      background: var(--color-btn);
+      color: var(--color-btn-text);
+      padding: 0.85rem 1.75rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .partycta-btn:hover { background: #333; }
+    .partycta-btn.outline {
+      background: none;
+      color: var(--color-muted);
+      border: none;
+      padding: 0.3rem 0;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .partycta-btn.outline:hover { color: var(--color-text); }
 
     /* ── B2B section ─────────────────────────────────────────── */
     .b2b-section {
@@ -963,8 +965,8 @@
       .hero-visual { aspect-ratio: 4/3; }
       .hero-branch { width: 140px; top: -10px; left: -15px; }
       .partycta-inner { grid-template-columns: 1fr; }
-      .partycta-text { padding: 3.5rem var(--site-gutter); }
-      .partycta-images { aspect-ratio: 2/1; }
+      .partycta-images { aspect-ratio: 4/3; }
+      .partycta-text { border-left: none; border-top: 1px solid var(--color-border); }
       .b2b-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 700px) {
@@ -1125,7 +1127,7 @@
   <section class="partycta-section">
     <div class="partycta-inner">
       <div class="partycta-images">
-        <img src="images/products/candles/pumpkin1.png" alt="Pumpkin witch hat candle by Emma's Lab">
+        <img src="images/products/candles/pumpkin.png" alt="Pumpkin witch hat candle by Emma's Lab">
       </div>
       <div class="partycta-text">
         <span class="partycta-tag" data-i18n="partycta.tag">31 October is Coming</span>
