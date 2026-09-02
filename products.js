@@ -567,6 +567,7 @@ Was enthalten ist:
     id:            'candle-frog',
     category:      'candle',
     images:        [
+      'images/candles/frog_crone.png',
       'images/candles/frog1.png',
       'images/candles/frog2.png',
       'images/candles/frog3.mp4',
@@ -623,6 +624,7 @@ Was enthalten ist:
     id:            'candle-frog-hat',
     category:      'candle',
     images:        [
+      'images/candles/frog_hat.png',
       'images/candles/froghat1.png',
       'images/candles/froghat2.png',
       'images/candles/froghat3.mp4',
@@ -736,6 +738,7 @@ Was enthalten ist:
     id:            'candle-pumpkin',
     category:      'candle',
     images:        [
+      'images/candles/pumpkin.png',
       'images/candles/pumpkin1.png',
       'images/candles/pumpkin2.png',
       'images/candles/pumpkin3.png',
@@ -793,6 +796,7 @@ Was enthalten ist:
     id:            'candle-carousel',
     category:      'candle',
     images:        [
+      'images/candles/carousel_m.png',
       'images/candles/carousel1.png',
       'images/candles/carousel2.png',
       'images/candles/carousel3.png',
@@ -851,6 +855,7 @@ Was enthalten ist:
     id:            'candle-xmas-bauble',
     category:      'candle',
     images:        [
+      'images/candles/christmass_tree_bowl.png',
       'images/candles/Christmas tree bauble1.png',
       'images/candles/Christmas tree bauble2.png',
       'images/candles/Christmas tree bauble3.png',
@@ -908,6 +913,8 @@ Was enthalten ist:
     id:            'candle-mouse-king',
     category:      'candle',
     images:        [
+      'images/candles/king_red.png',
+      'images/candles/kingmouse-blue.png',
       'images/candles/Mouse King1.png',
       'images/candles/Mouse King2.PNG',
       'images/candles/Mouse King3.png',
