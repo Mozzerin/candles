@@ -834,6 +834,7 @@
     /* ── Party Box CTA ────────────────────────────────────── */
     .partycta-section {
       padding: 4rem var(--site-gutter) 5rem;
+      background: var(--color-light);
     }
     .partycta-inner {
       max-width: 1100px;
@@ -841,8 +842,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       height: 480px;
-      border: 1px solid var(--color-border);
+      border: 1px solid #c4a882;
       overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
     }
     .partycta-images {
       overflow: hidden;
@@ -852,7 +854,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center center;
+      object-position: center 60%;
       display: block;
     }
     .partycta-text {
@@ -861,8 +863,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 3rem 2.5rem;
-      border-left: 1px solid var(--color-border);
+      padding: 3rem 3rem;
+      border-left: 1px solid #c4a882;
     }
     .partycta-tag {
       font-size: 0.65rem;
@@ -895,6 +897,7 @@
       border: none;
       cursor: pointer;
       transition: background 0.2s;
+      align-self: flex-start;
     }
     .partycta-btn:hover { background: #333; }
     .partycta-btn.outline {
