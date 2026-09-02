@@ -842,10 +842,11 @@
       position: absolute;
       top: 0;
       right: var(--site-gutter);
-      width: 160px;
+      width: 200px;
       pointer-events: none;
       z-index: 2;
-      mix-blend-mode: multiply;
+      transform: scaleX(-1);
+      opacity: 0.85;
     }
     .partycta-bat {
       position: absolute;
@@ -1161,8 +1162,8 @@
   <!-- PARTY BOX CTA -->
   <section class="partycta-section">
 
-    <!-- Spider + web image (Higgsfield) — top right, placeholder until generated -->
-    <img src="" alt="" class="partycta-spider" aria-hidden="true" id="partycta-spider-img" style="display:none">
+    <!-- Spider + web — top right -->
+    <img src="images/site/spider_web.png" alt="" class="partycta-spider" aria-hidden="true">
 
     <!-- Bat — top right -->
     <svg class="partycta-bat" viewBox="0 0 80 40" fill="currentColor" aria-hidden="true">
