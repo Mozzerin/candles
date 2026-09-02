@@ -744,8 +744,8 @@ Was enthalten ist:
       'images/products/candles/pumpkin3.png',
       'images/products/candles/pumpkin4.mp4',
     ],
-    price:         29.00,
-    originalPrice: 39.00,
+    price:         34.00,
+    originalPrice: 44.00,
     onSale:        true,
     size: '≈ 12 × 14 cm',
     translations: {
