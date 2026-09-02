@@ -25,6 +25,18 @@ const CONFIG = {
     defaultLang: 'en',
     ogImage: 'https://emmas-lab.ch/images/site/og-cover.jpg',
   },
+
+  // ── Candle scents ────────────────────────────────────────────────────
+  // Displayed as selectable chips in the product modal for candle items.
+  // Add or remove scents here — they appear automatically.
+  candleScents: [
+    { id: 'vanilla-amber',    en: 'Vanilla & Amber',    fr: 'Vanille & Ambre',     de: 'Vanille & Amber',    ru: 'Ваниль и амбра'    },
+    { id: 'lavender-cedar',   en: 'Lavender & Cedar',   fr: 'Lavande & Cèdre',     de: 'Lavendel & Zeder',   ru: 'Лаванда и кедр'    },
+    { id: 'cinnamon-orange',  en: 'Cinnamon & Orange',  fr: 'Cannelle & Orange',   de: 'Zimt & Orange',      ru: 'Корица и апельсин' },
+    { id: 'rose-sandalwood',  en: 'Rose & Sandalwood',  fr: 'Rose & Santal',       de: 'Rose & Sandelholz',  ru: 'Роза и сандал'     },
+    { id: 'eucalyptus-mint',  en: 'Eucalyptus & Mint',  fr: 'Eucalyptus & Menthe', de: 'Eukalyptus & Minze', ru: 'Эвкалипт и мята'   },
+    { id: 'unscented',        en: 'Unscented',           fr: 'Sans parfum',         de: 'Ohne Duft',          ru: 'Без аромата'       },
+  ],
 };
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -45,6 +57,9 @@ const TRANSLATIONS = {
     'cart.empty':   'Your cart is empty.',
     'cart.subtotal':'Subtotal',
     'shop.title':   'Shop',
+    'scent.label':    'Choose Your Scent',
+    'scent.note':     'Each candle is handcrafted with a unique signature scent.',
+    'scent.required': 'Please select a scent to continue.',
     'sort.label':      'Sort',
     'sort.default':    'Featured',
     'sort.price-asc':  'Price: Low to High',
@@ -137,6 +152,9 @@ const TRANSLATIONS = {
     'cart.empty':   'Votre panier est vide.',
     'cart.subtotal':'Sous-total',
     'shop.title':   'Boutique',
+    'scent.label':    'Choisissez votre parfum',
+    'scent.note':     'Chaque bougie est fabriquée à la main avec un parfum signature unique.',
+    'scent.required': 'Veuillez sélectionner un parfum pour continuer.',
     'sort.label':      'Trier',
     'sort.default':    'Par défaut',
     'sort.price-asc':  'Prix: croissant',
@@ -229,6 +247,9 @@ const TRANSLATIONS = {
     'cart.empty':   'Ihr Warenkorb ist leer.',
     'cart.subtotal':'Zwischensumme',
     'shop.title':   'Shop',
+    'scent.label':    'Wähle deinen Duft',
+    'scent.note':     'Jede Kerze wird mit einem einzigartigen Signaturduft handgefertigt.',
+    'scent.required': 'Bitte wähle einen Duft aus, um fortzufahren.',
     'sort.label':      'Sortieren',
     'sort.default':    'Standard',
     'sort.price-asc':  'Preis: aufsteigend',
@@ -321,6 +342,9 @@ const TRANSLATIONS = {
     'cart.empty':   'Ваша корзина пуста.',
     'cart.subtotal':'Итого',
     'shop.title':   'Магазин',
+    'scent.label':    'Выберите аромат',
+    'scent.note':     'Каждая свеча создаётся вручную с уникальным авторским ароматом.',
+    'scent.required': 'Пожалуйста, выберите аромат чтобы продолжить.',
     'sort.label':      'Сортировка',
     'sort.default':    'По умолчанию',
     'sort.price-asc':  'Цена: по возрастанию',

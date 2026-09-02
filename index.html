@@ -1042,6 +1042,21 @@
       .benefit-grid { grid-template-columns: 1fr; }
     }
 
+    /* ── Scent selector (product modal) ─────────────────────────── */
+    .pd-scent-section { border-top: 1px solid #eee; padding-top: 1.25rem; }
+    .pd-scent-note { font-size: 0.8rem; color: var(--color-muted); font-style: italic; margin-bottom: 0.75rem; line-height: 1.5; }
+    .pd-scent-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: #555; margin-bottom: 0.6rem; }
+    .pd-scent-options { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .pd-scent-chip {
+      background: none; border: 1px solid var(--color-border); border-radius: 2rem;
+      font-size: 0.73rem; letter-spacing: 0.03em; padding: 0.35rem 0.9rem;
+      cursor: pointer; color: var(--color-muted); transition: all 0.15s; font-family: inherit;
+    }
+    .pd-scent-chip:hover { border-color: #aaa; color: var(--color-text); }
+    .pd-scent-chip.selected { background: var(--color-text); border-color: var(--color-text); color: #fff; }
+    .pd-scent-error { font-size: 0.78rem; color: #c0392b; margin-top: 0.5rem; display: none; }
+    .cart-item-scent { font-size: 0.75rem; color: var(--color-muted); font-style: italic; }
+
     /* ── Cookie consent banner ───────────────────────────────────── */
     #cookie-banner {
       display: none;
@@ -1475,6 +1490,12 @@
       <div id="pd-badge" style="display:none;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:#c0392b;border:1px solid #c0392b;padding:0.2rem 0.55rem;align-self:flex-start;"></div>
       <div id="pd-desc" style="color:#555;line-height:1.7;font-size:0.875rem;"></div>
       <div id="pd-size" style="font-size:0.8rem;color:#888;"></div>
+      <div id="pd-scent-section" class="pd-scent-section" style="display:none;">
+        <p class="pd-scent-note" id="pd-scent-note"></p>
+        <div class="pd-scent-label" id="pd-scent-label"></div>
+        <div class="pd-scent-options" id="pd-scent-options"></div>
+        <div class="pd-scent-error" id="pd-scent-error"></div>
+      </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:0.5rem;">
         <div style="display:flex;align-items:center;border:1px solid #e0e0e0;">
           <button onclick="pdQtyChange(-1)" style="width:36px;height:42px;background:none;border:none;font-size:1.1rem;cursor:pointer;">−</button>
@@ -1785,6 +1806,7 @@
   let pdProductId = null;
   let pdImgIndex  = 0;
   let pdQty       = 1;
+  let pdScent     = null;
 
   function isVideo(src) { return /\.mp4$/i.test(src); }
 
@@ -1851,9 +1873,31 @@
 
     document.getElementById('pd-add-btn').textContent = t('add.to.cart');
 
+    // Scent selector — only for candles
+    pdScent = null;
+    const scentSection = document.getElementById('pd-scent-section');
+    if (p.category === 'candle') {
+      document.getElementById('pd-scent-note').textContent  = t('scent.note');
+      document.getElementById('pd-scent-label').textContent = t('scent.label');
+      document.getElementById('pd-scent-error').style.display = 'none';
+      document.getElementById('pd-scent-options').innerHTML = CONFIG.candleScents.map(s =>
+        `<button class="pd-scent-chip" onclick="selectScent('${s.id}', this)">${s[currentLang] || s.en}</button>`
+      ).join('');
+      scentSection.style.display = '';
+    } else {
+      scentSection.style.display = 'none';
+    }
+
     const modal = document.getElementById('product-modal');
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
+  }
+
+  function selectScent(id, btn) {
+    pdScent = id;
+    document.querySelectorAll('.pd-scent-chip').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    document.getElementById('pd-scent-error').style.display = 'none';
   }
 
   function closeProduct() {
@@ -1909,12 +1953,24 @@
 
   function pdAddToCart() {
     if (!pdProductId) return;
-    const existing = cart.find(i => i.productId === pdProductId);
+    const p = PRODUCTS.find(x => x.id === pdProductId);
+    if (p && p.category === 'candle' && !pdScent) {
+      const errEl = document.getElementById('pd-scent-error');
+      errEl.textContent = t('scent.required');
+      errEl.style.display = 'block';
+      return;
+    }
+    const scentLabel = pdScent
+      ? (CONFIG.candleScents.find(s => s.id === pdScent) || {})[currentLang] || pdScent
+      : null;
+    const existing = cart.find(i => i.productId === pdProductId && i.scent === scentLabel);
     if (existing) existing.qty += pdQty;
-    else cart.push({ productId: pdProductId, qty: pdQty });
+    else cart.push({ productId: pdProductId, qty: pdQty, scent: scentLabel || null });
     saveCart();
     updateCartBadge();
     showToast(t('added.toast'));
+    const product = PRODUCTS.find(x => x.id === pdProductId);
+    if (product) trackAddToCart(product);
     closeProduct();
   }
 
@@ -1922,16 +1978,17 @@
      CART LOGIC
   ────────────────────────────────────────────────────────────── */
   function addToCart(productId) {
+    const p = PRODUCTS.find(x => x.id === productId);
+    if (p && p.category === 'candle') { openProduct(productId); return; }
     const existing = cart.find(i => i.productId === productId);
     if (existing) {
       existing.qty++;
     } else {
-      cart.push({ productId, qty: 1 });
+      cart.push({ productId, qty: 1, scent: null });
     }
     saveCart();
     updateCartBadge();
     showCartFlyout(productId);
-    const p = PRODUCTS.find(x => x.id === productId);
     if (p) trackAddToCart(p);
     bumpCartBtn();
   }
@@ -2025,6 +2082,7 @@
           </div>
           <div class="cart-item-info">
             <div class="cart-item-name">${name}</div>
+            ${item.scent ? `<div class="cart-item-scent">${item.scent}</div>` : ''}
             <div class="cart-item-price">${formatPrice(product.price)} × ${item.qty} = ${formatPrice(product.price * item.qty)}</div>
             <div class="cart-item-qty">
               <button class="qty-btn" onclick="changeQty('${item.productId}',-1)" aria-label="Decrease">−</button>
@@ -2120,7 +2178,8 @@
     const orderLines = cart.map(item => {
       const product = PRODUCTS.find(p => p.id === item.productId);
       const pname = product.translations.en.name;
-      return `• ${pname} × ${item.qty} = ${formatPrice(product.price * item.qty)}`;
+      const scentStr = item.scent ? ` [Scent: ${item.scent}]` : '';
+      return `• ${pname}${scentStr} × ${item.qty} = ${formatPrice(product.price * item.qty)}`;
     });
 
     const params = {
