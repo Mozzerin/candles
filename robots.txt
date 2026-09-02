@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /404.html
+Disallow: /privacy-policy.html
+Disallow: /cookie-policy.html
+Disallow: /terms.html
+
+Sitemap: https://emmas-lab.ch/sitemap.xml

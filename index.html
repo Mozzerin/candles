@@ -2316,6 +2316,65 @@
   ────────────────────────────────────────────────────────────── */
   const CART_KEY = 'ecl_cart_v1';
 
+  /* ── SEO: hreflang + canonical + Schema.org ────────────────────────────── */
+  function injectSEO() {
+    const base = CONFIG.siteUrl;
+    ['en','fr','de','ru'].forEach(lang => {
+      const el = document.getElementById('hl-' + lang);
+      if (el) el.href = base + '/';
+    });
+    const xd = document.getElementById('hl-xd');
+    if (xd) xd.href = base + '/';
+    const can = document.getElementById('canonical');
+    if (can) can.href = base + '/';
+
+    const candles = PRODUCTS.filter(p => p.category === 'candle' && !p.hidden);
+    const schema = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'LocalBusiness',
+          '@id': base + '/#business',
+          name: CONFIG.siteName,
+          description: 'Handmade sculptural candles and plaster painting kits, crafted in Wettmenstetten, Switzerland.',
+          url: base,
+          email: CONFIG.contactEmail,
+          telephone: CONFIG.phone,
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Wettmenstetten',
+            addressRegion: 'AG',
+            addressCountry: 'CH',
+          },
+          image: CONFIG.seo.ogImage,
+          priceRange: 'CHF 15–79',
+          sameAs: ['https://www.instagram.com/' + CONFIG.instagram],
+        },
+        ...candles.map(p => {
+          const tr   = p.translations.en;
+          const imgs = p.images.filter(i => !i.endsWith('.mp4')).map(i => base + '/' + i);
+          return {
+            '@type': 'Product',
+            name: tr.name,
+            description: (tr.description || '').split('\n')[0].slice(0, 300),
+            image: imgs,
+            brand: { '@type': 'Brand', name: CONFIG.siteName },
+            offers: {
+              '@type': 'Offer',
+              price: p.price,
+              priceCurrency: 'CHF',
+              availability: 'https://schema.org/InStock',
+              url: base + '/#shop',
+              seller: { '@type': 'Organization', name: CONFIG.siteName },
+            },
+          };
+        }),
+      ],
+    };
+    const el = document.getElementById('json-ld');
+    if (el) el.textContent = JSON.stringify(schema);
+  }
+
   function saveCart() {
     try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch(e) {}
   }
@@ -2415,6 +2474,7 @@
   updateCartBadge();
   setLang('en');
   checkConsent();
+  injectSEO();
 </script>
 
 <div id="cookie-banner" role="dialog" aria-label="Cookie consent">

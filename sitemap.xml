@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://emmas-lab.ch/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emmas-lab.ch/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://emmas-lab.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://emmas-lab.ch/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://emmas-lab.ch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emmas-lab.ch/"/>
+  </url>
+
+  <url>
+    <loc>https://emmas-lab.ch/blog.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://emmas-lab.ch/privacy.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>
