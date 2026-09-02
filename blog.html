@@ -40,6 +40,17 @@
     .blog-hero {
       padding: 4rem var(--site-gutter) 3rem;
       border-bottom: 1px solid var(--color-border);
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-branch {
+      position: absolute;
+      top: -20px;
+      left: -30px;
+      width: 200px;
+      opacity: 0.82;
+      pointer-events: none;
+      mix-blend-mode: multiply;
     }
     .blog-hero-inner {
       max-width: var(--max-width);
@@ -158,6 +169,7 @@
 </header>
 
 <div class="blog-hero">
+  <img src="images/site/autumn_branch.png" alt="" class="blog-branch" aria-hidden="true">
   <div class="blog-hero-inner">
     <p class="blog-eyebrow">Emma's Lab · Stories</p>
     <h1>Behind the Scenes</h1>
