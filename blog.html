@@ -4,18 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <title>Blog – Emma's Lab | Handmade Plaster Painting Kits Switzerland</title>
-  <meta name="description" content="Stories, inspiration and behind-the-scenes from Emma's Lab — handmade plaster painting kits for kids in Switzerland.">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Blog – Emma's Lab | Handmade Candles Switzerland</title>
+  <meta name="description" content="Stories, inspiration and behind-the-scenes from Emma's Lab — handmade sculptural candles and craft kits from Mettmenstetten, Switzerland.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/site/favicon-64.png">
+  <link rel="apple-touch-icon" href="images/site/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --color-bg: #ffffff;
-      --color-text: #1a1a1a;
-      --color-muted: #555555;
-      --color-border: #e0e0e0;
-      --color-accent: #e8602c;
+      --color-bg: #FAF6EE;
+      --color-text: #2C1810;
+      --color-muted: #7A5C42;
+      --color-border: #D4AA70;
+      --color-light: #EEE6D8;
+      --color-btn: #5A2530;
+      --color-accent: #C4622D;
       --font-body: system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+      --font-heading: 'Playfair Display', Georgia, serif;
       --max-width: 720px;
       --site-gutter: 4vw;
       --header-h: 64px;
@@ -46,9 +54,19 @@
       z-index: 10;
     }
     .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
       font-size: 1rem;
       font-weight: 600;
       letter-spacing: 0.02em;
+    }
+    .header-logo img {
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
     }
     .header-back {
       font-size: 0.78rem;
@@ -75,9 +93,10 @@
       margin-bottom: 0.75rem;
     }
     .blog-hero h1 {
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      font-weight: 600;
-      letter-spacing: -0.02em;
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 500;
+      letter-spacing: 0;
       line-height: 1.2;
     }
 
@@ -103,9 +122,10 @@
     .article-content.visible { display: block; }
 
     .article-content h2 {
+      font-family: var(--font-heading);
       font-size: clamp(1.3rem, 2.5vw, 1.75rem);
-      font-weight: 600;
-      letter-spacing: -0.02em;
+      font-weight: 500;
+      letter-spacing: 0;
       line-height: 1.25;
       margin-bottom: 2rem;
     }
@@ -169,7 +189,10 @@
 <body>
 
 <header>
-  <a href="/" class="header-logo">Emma's Lab</a>
+  <a href="/" class="header-logo">
+    <img src="images/site/logo.png" alt="Emma's Lab logo">
+    Emma's Lab
+  </a>
   <div class="header-right">
     <div class="lang-switcher">
       <button class="lang-btn active" onclick="showLang('de', this)">DE</button>
