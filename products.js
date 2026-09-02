@@ -910,11 +910,10 @@ Was enthalten ist:
   },
 
   {
-    id:            'candle-mouse-king',
+    id:            'candle-mouse-king-red',
     category:      'candle',
     images:        [
       'images/candles/king_red.png',
-      'images/candles/kingmouse-blue.png',
       'images/candles/Mouse King1.png',
       'images/candles/Mouse King2.PNG',
       'images/candles/Mouse King3.png',
@@ -926,43 +925,83 @@ Was enthalten ist:
     size: '≈ 8 × 13 cm',
     translations: {
       en: {
-        name: 'Mouse King Candle',
-        description: `The Mouse King — handcrafted in Switzerland. This candle is inspired by the legendary villain of The Nutcracker, complete with his crown, fierce expression, and regal posture. A collectible piece that bridges the world of handmade craft and Christmas storytelling.
+        name: 'Mouse King Candle — Red',
+        description: `The Mouse King in his royal red uniform — handcrafted in Switzerland. Inspired by the legendary villain of The Nutcracker, complete with his crown, fierce expression, and regal posture. A collectible piece that bridges handmade craft and Christmas storytelling.
 
-A memorable gift for anyone who loves The Nutcracker, ballet, or extraordinary seasonal decorations. Display it proudly during the festive season — or all year round.
+A memorable gift for anyone who loves The Nutcracker, ballet, or extraordinary seasonal decorations.
 
 What's included:
-• 1 handcrafted Mouse King candle
+• 1 handcrafted Mouse King candle (red)
 • Made in Switzerland`,
       },
       fr: {
-        name: 'Bougie Roi des Souris',
-        description: `Le Roi des souris — fabriqué à la main en Suisse. Cette bougie s'inspire du légendaire méchant de Casse-Noisette, avec sa couronne, son expression féroce et sa posture royale. Une pièce de collection qui unit l'artisanat fait main et la magie de Noël.
-
-Un cadeau mémorable pour tous ceux qui aiment Casse-Noisette, le ballet ou des décorations saisonnières extraordinaires.
+        name: 'Bougie Roi des Souris — Rouge',
+        description: `Le Roi des souris en uniforme rouge royal — fabriqué à la main en Suisse. Inspiré du légendaire méchant de Casse-Noisette, avec sa couronne, son expression féroce et sa posture royale.
 
 Ce qui est inclus :
-• 1 bougie Roi des souris artisanale
+• 1 bougie Roi des souris artisanale (rouge)
 • Fabriquée en Suisse`,
       },
       de: {
-        name: 'Mäusekönig-Kerze',
-        description: `Der Mäusekönig — handgefertigt in der Schweiz. Diese Kerze ist vom legendären Bösewicht aus dem Nussknacker inspiriert — mit seiner Krone, seinem finsteren Ausdruck und seiner königlichen Haltung. Ein Sammlerstück, das Handwerkskunst und Weihnachtsgeschichten verbindet.
-
-Ein unvergessliches Geschenk für alle, die den Nussknacker, Ballett oder außergewöhnliche saisonale Dekorationen lieben.
+        name: 'Mäusekönig-Kerze — Rot',
+        description: `Der Mäusekönig in seiner königlichen roten Uniform — handgefertigt in der Schweiz. Inspiriert vom legendären Bösewicht aus dem Nussknacker.
 
 Was enthalten ist:
-• 1 handgefertigte Mäusekönig-Kerze
+• 1 handgefertigte Mäusekönig-Kerze (rot)
 • Hergestellt in der Schweiz`,
       },
       ru: {
-        name: 'Свеча «Мышиный Король»',
-        description: `Мышиный Король — изготовлен вручную в Швейцарии. Эта свеча создана по мотивам легендарного злодея из «Щелкунчика» — с короной, грозным взглядом и царственной осанкой. Коллекционный предмет на стыке handmade-мастерства и рождественской сказки.
-
-Незабываемый подарок для тех, кто любит «Щелкунчика», балет или необычные праздничные украшения.
+        name: 'Свеча «Мышиный Король» — Красный',
+        description: `Мышиный Король в красном королевском мундире — изготовлен вручную в Швейцарии. По мотивам «Щелкунчика» — с короной, грозным взглядом и царственной осанкой.
 
 Что входит:
-• 1 свеча «Мышиный Король» ручной работы
+• 1 свеча «Мышиный Король» (красный) ручной работы
+• Сделано в Швейцарии`,
+      },
+    },
+  },
+
+  {
+    id:            'candle-mouse-king-blue',
+    category:      'candle',
+    images:        [
+      'images/candles/kingmouse-blue.png',
+    ],
+    price:         100.00,
+    originalPrice: null,
+    onSale:        false,
+    size: '≈ 8 × 13 cm',
+    translations: {
+      en: {
+        name: 'Mouse King Candle — Blue',
+        description: `The Mouse King in his striking blue uniform — handcrafted in Switzerland. A bold alternative to the classic red, with the same regal crown and fierce Nutcracker character. A unique collectible for the festive season.
+
+What's included:
+• 1 handcrafted Mouse King candle (blue)
+• Made in Switzerland`,
+      },
+      fr: {
+        name: 'Bougie Roi des Souris — Bleu',
+        description: `Le Roi des souris en uniforme bleu saisissant — fabriqué à la main en Suisse. Une alternative audacieuse au rouge classique, avec la même couronne royale et le même caractère de Casse-Noisette.
+
+Ce qui est inclus :
+• 1 bougie Roi des souris artisanale (bleu)
+• Fabriquée en Suisse`,
+      },
+      de: {
+        name: 'Mäusekönig-Kerze — Blau',
+        description: `Der Mäusekönig in seiner auffälligen blauen Uniform — handgefertigt in der Schweiz. Eine kühne Alternative zum klassischen Rot, mit derselben königlichen Krone.
+
+Was enthalten ist:
+• 1 handgefertigte Mäusekönig-Kerze (blau)
+• Hergestellt in der Schweiz`,
+      },
+      ru: {
+        name: 'Свеча «Мышиный Король» — Синий',
+        description: `Мышиный Король в синем мундире — изготовлен вручную в Швейцарии. Смелая альтернатива классическому красному — та же корона, тот же характер из «Щелкунчика».
+
+Что входит:
+• 1 свеча «Мышиный Король» (синий) ручной работы
 • Сделано в Швейцарии`,
       },
     },
