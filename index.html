@@ -697,6 +697,17 @@
     .hero-section {
       padding: 0 var(--site-gutter);
       overflow: hidden;
+      position: relative;
+    }
+    .hero-branch {
+      position: absolute;
+      bottom: -40px;
+      left: -30px;
+      width: 220px;
+      opacity: 0.82;
+      pointer-events: none;
+      z-index: 1;
+      mix-blend-mode: multiply;
     }
     .hero-inner {
       max-width: var(--max-width);
@@ -763,9 +774,10 @@
     /* ── Benefits ─────────────────────────────────────────── */
     .benefit-section {
       padding: 6rem var(--site-gutter);
+      background: var(--color-light);
     }
     .benefit-inner {
-      max-width: 1060px;
+      max-width: 1100px;
       margin: 0 auto;
     }
     .benefit-title {
@@ -773,34 +785,50 @@
       text-align: center;
       font-size: clamp(1.4rem, 2.5vw, 2rem);
       font-weight: 500;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
       letter-spacing: 0;
     }
     .benefit-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 0;
+      gap: 1.25rem;
     }
     .benefit-item {
       text-align: center;
-      padding: 2.5rem 2rem;
-      border-left: 1px solid var(--color-border);
+      padding: 2.25rem 1.5rem 2.5rem;
+      background: var(--color-bg);
+      border-top: 3px solid var(--color-border);
+      transition: border-color 0.2s;
     }
-    .benefit-item:first-child { border-left: none; }
+    .benefit-item:hover { border-color: var(--color-accent); }
+    .benefit-item:nth-child(1) { border-top-color: #C4622D; }
+    .benefit-item:nth-child(2) { border-top-color: #D4AA70; }
+    .benefit-item:nth-child(3) { border-top-color: #5A2530; }
+    .benefit-item:nth-child(4) { border-top-color: #8B3A2A; }
     .benefit-icon {
-      width: 40px; height: 40px;
-      margin: 0 auto 1.1rem;
-      color: var(--color-text);
+      width: 48px; height: 48px;
+      margin: 0 auto 1.25rem;
+      color: var(--color-accent);
+      background: var(--color-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px;
     }
+    .benefit-item:nth-child(1) .benefit-icon { color: #C4622D; }
+    .benefit-item:nth-child(2) .benefit-icon { color: #9A7820; }
+    .benefit-item:nth-child(3) .benefit-icon { color: #5A2530; }
+    .benefit-item:nth-child(4) .benefit-icon { color: #8B3A2A; }
     .benefit-item-title {
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
     .benefit-item-text {
       font-size: 0.78rem;
       color: var(--color-muted);
-      line-height: 1.7;
+      line-height: 1.75;
     }
 
     /* ── Party Box CTA ────────────────────────────────────── */
@@ -887,6 +915,7 @@
       .hero-inner { grid-template-columns: 1fr; min-height: auto; }
       .hero-text { padding: 4rem 0 3rem; }
       .hero-visual { aspect-ratio: 4/3; }
+      .hero-branch { width: 140px; bottom: -20px; left: -15px; }
       .partycta-inner { grid-template-columns: 1fr; }
       .partycta-text { padding: 3.5rem var(--site-gutter); }
       .partycta-images { aspect-ratio: 2/1; }
@@ -978,6 +1007,7 @@
 
   <!-- HERO -->
   <section class="hero-section">
+    <img src="images/site/autumn_branch.png" alt="" class="hero-branch" aria-hidden="true">
     <div class="hero-inner">
       <div class="hero-text">
         <p class="hero-eyebrow" data-i18n="hero.eyebrow">Handmade in Switzerland</p>
