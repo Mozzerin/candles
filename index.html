@@ -1041,6 +1041,52 @@
     @media (max-width: 440px) {
       .benefit-grid { grid-template-columns: 1fr; }
     }
+
+    /* ── Cookie consent banner ───────────────────────────────────── */
+    #cookie-banner {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 9999;
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+      padding: 1rem var(--site-gutter);
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.07);
+    }
+    .cookie-text {
+      font-size: 0.82rem;
+      color: var(--color-muted);
+      line-height: 1.6;
+      flex: 1;
+      min-width: 220px;
+    }
+    .cookie-text a { color: var(--color-accent); text-decoration: underline; }
+    .cookie-btns { display: flex; gap: 0.6rem; flex-shrink: 0; }
+    .cookie-accept {
+      background: var(--color-btn);
+      color: var(--color-btn-text);
+      border: none;
+      padding: 0.55rem 1.25rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .cookie-decline {
+      background: none;
+      border: 1px solid var(--color-border);
+      color: var(--color-muted);
+      padding: 0.55rem 1.25rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .cookie-decline:hover { color: var(--color-text); border-color: #aaa; }
   </style>
 </head>
 <body>
@@ -1379,9 +1425,7 @@
       </a>
     </div>
     <div class="footer-legal">
-      <a href="/privacy-policy.html">Privacy Policy</a>
-      <a href="/cookie-policy.html">Cookie Policy</a>
-      <a href="/terms.html">Terms &amp; Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
     </div>
   </div>
 </footer>
@@ -1544,6 +1588,7 @@
 <!-- ═══════════════════════════════════════ SCRIPTS ══════════════════════════════ -->
 <script src="config.js"></script>
 <script src="products.js"></script>
+<script src="analytics.js"></script>
 <script>
   // CONFIG, TRANSLATIONS and PRODUCTS are loaded from config.js and products.js
 
@@ -1746,6 +1791,7 @@
   function openProduct(id) {
     const p  = PRODUCTS.find(x => x.id === id);
     if (!p) return;
+    trackViewContent(p);
     const tr = p.translations[currentLang] || p.translations.en;
     pdProductId = id;
     pdImgIndex  = 0;
@@ -1885,6 +1931,8 @@
     saveCart();
     updateCartBadge();
     showCartFlyout(productId);
+    const p = PRODUCTS.find(x => x.id === productId);
+    if (p) trackAddToCart(p);
     bumpCartBtn();
   }
 
@@ -2164,6 +2212,7 @@
 
     emailjs.send(CONFIG.emailjs.serviceId, CONFIG.emailjs.templateId, params, CONFIG.emailjs.publicKey)
       .then(() => {
+        trackContact();
         document.getElementById('contact-form').style.display = 'none';
         const successEl = document.getElementById('contact-success');
         successEl.style.display = 'block';
@@ -2306,7 +2355,19 @@
   loadCart();
   updateCartBadge();
   setLang('en');
+  checkConsent();
 </script>
+
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p class="cookie-text">
+    We use cookies for analytics and advertising to improve your experience.
+    See our <a href="privacy.html">Privacy Policy</a>.
+  </p>
+  <div class="cookie-btns">
+    <button class="cookie-decline" onclick="declineCookies()">Decline</button>
+    <button class="cookie-accept" onclick="acceptCookies()">Accept</button>
+  </div>
+</div>
 
 </body>
 </html>
