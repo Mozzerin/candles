@@ -3,7 +3,7 @@
    GA4:  Google Analytics 4 → Admin → Data Streams → Measurement ID (G-…)
    Meta: Meta Business → Events Manager → Pixel → Pixel ID
 ──────────────────────────────────────────────────────────────────────────── */
-const GA4_ID        = 'G-XXXXXXXXXX';      // ← replace
+const GA4_ID        = 'G-FS5JXS3RQ8';
 const META_PIXEL_ID = 'XXXXXXXXXXXXXXXX';  // ← replace
 
 let analyticsLoaded = false;
