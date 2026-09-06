@@ -46,9 +46,9 @@ const CONFIG = {
 
 const TRANSLATIONS = {
   en: {
-    'meta.title':       "Emma's Lab | Painting Kits for Kids Switzerland – Toys, Crafts & Party Activities",
-    'meta.description': 'Handmade plaster painting kits for kids in Switzerland. Unicorn & dinosaur sets — perfect educational toy, creative gift, or party activity. Includes paints, brush & instructions. From CHF 7. Order online.',
-    'meta.keywords':    'painting kit kids Switzerland, plaster figure painting, educational toy Switzerland, creative gift children, party activity kids, craft for kids, unicorn toy, dinosaur toy, kids birthday activity, handmade toy Switzerland',
+    'meta.title':       "Emma's Lab | Sculptural Plaster Candles & Craft Kits — Switzerland",
+    'meta.description': 'Handmade sculptural plaster candle figurines from Switzerland — unique shaped candles of frogs, pumpkins, carousels & more. Plus creative plaster painting kits for kids. Artisan fragrances, hand-painted. Order online — shipped across Switzerland.',
+    'meta.keywords':    'sculptural plaster candle Switzerland, plaster candle figurine, gypsum candle sculpture, handmade shaped candle, unique candle gift Switzerland, candle figurine Switzerland, painting kit kids Switzerland, plaster figure painting, creative gift Switzerland, handmade craft Switzerland, candle shop Switzerland',
     'nav.shop':     'Shop',
     'nav.about':    'About',
     'nav.contact':  'Contact',
@@ -142,9 +142,9 @@ const TRANSLATIONS = {
   },
 
   fr: {
-    'meta.title':       "Emma's Lab | Kits de Peinture pour Enfants Suisse – Jouets, Créativité & Activités Fête",
-    'meta.description': 'Kits de peinture en plâtre faits main pour enfants en Suisse. Licornes & dinosaures — jouet éducatif, cadeau créatif ou activité de fête. Avec peintures, pinceau et instructions. Dès CHF 7.',
-    'meta.keywords':    'kit peinture enfants Suisse, figurine plâtre à peindre, jouet éducatif Suisse, cadeau créatif enfant, activité anniversaire enfants, loisirs créatifs, jouet licorne, jouet dinosaure, idée cadeau enfant, artisanat enfant Suisse',
+    'meta.title':       "Emma's Lab | Bougies Figurines en Plâtre & Kits Créatifs — Suisse",
+    'meta.description': 'Figurines-bougies sculptées en plâtre faites main depuis la Suisse — grenouilles, citrouilles, carrousels et plus. Kits de peinture en plâtre pour enfants. Parfums artisanaux, peintes à la main. Commandez en ligne — livraison en Suisse.',
+    'meta.keywords':    'bougie figurine plâtre Suisse, bougie sculptée plâtre, figurine bougie artisanale, bougie en plâtre unique, cadeau bougie Suisse, bougie fait main Suisse, kit peinture plâtre enfants, figurine plâtre peindre, cadeau créatif Suisse, artisanat Suisse',
     'nav.shop':     'Boutique',
     'nav.about':    'À propos',
     'nav.contact':  'Contact',
@@ -238,9 +238,9 @@ const TRANSLATIONS = {
   },
 
   de: {
-    'meta.title':       "Emma's Lab | Mal-Sets für Kinder Schweiz – Spielzeug, Kreativität & Kindergeburtstag",
-    'meta.description': 'Handgemachte Gips-Mal-Sets für Kinder in der Schweiz. Einhorn & Dinosaurier — pädagogisches Spielzeug, kreatives Geschenk oder Beschäftigung für den Kindergeburtstag. Mit Farben, Pinsel & Anleitung. Ab CHF 7.',
-    'meta.keywords':    'Malset Kinder Schweiz, Gipsfigur bemalen, pädagogisches Spielzeug Schweiz, kreatives Geschenk Kinder, Kindergeburtstag Aktivität, Bastelset Kinder, Einhorn Spielzeug, Dinosaurier Spielzeug, Beschäftigung Kinder, Handarbeit Kinder Schweiz',
+    'meta.title':       "Emma's Lab | Gips-Kerzen Figuren & Kreativ-Sets — Schweiz",
+    'meta.description': 'Handgemachte Gips-Kerzen-Figuren aus der Schweiz — einzigartige Kerzen in Form von Fröschen, Kürbissen, Karussells & mehr. Gips-Mal-Sets für Kinder. Kunsthandwerk, handgemalt, einzigartige Duftkompositionen. Jetzt bestellen — Lieferung in der Schweiz.',
+    'meta.keywords':    'Gipskerze Figur Schweiz, Kerzen Figur handgemacht, Gips Kerze Skulptur, Kerze Geschenk Schweiz, handgemachte Kerze Schweiz, Gipskerze kaufen, Gips Mal-Set Kinder Schweiz, Gipsfigur bemalen, kreatives Geschenk Schweiz, Kunsthandwerk Schweiz, Kerzen Schweiz',
     'nav.shop':     'Shop',
     'nav.about':    'Über uns',
     'nav.contact':  'Kontakt',
@@ -334,9 +334,9 @@ const TRANSLATIONS = {
   },
 
   ru: {
-    'meta.title':       "Emma's Lab | Наборы для рисования для детей в Швейцарии – Игрушки, творчество и праздники",
-    'meta.description': 'Наборы для раскрашивания гипсовых фигурок ручной работы для детей в Швейцарии. Единороги и динозавры — развивающая игрушка, творческий подарок или активность на день рождения. Краски, кисть и инструкция в комплекте. От CHF 7. Заказ онлайн.',
-    'meta.keywords':    'набор для рисования дети Швейцария, гипсовая фигурка раскрасить, развивающая игрушка Швейцария, творческий подарок ребёнку, активность на день рождения дети, поделки для детей, игрушка единорог, игрушка динозавр, детский праздник активность, хэндмейд Швейцария',
+    'meta.title':       "Emma's Lab | Гипсовые свечи-фигурки & Творческие наборы — Швейцария",
+    'meta.description': 'Авторские гипсовые свечи-фигурки ручной работы из Швейцарии — лягушки, тыквы, карусели и другие. Уникальные ароматы, ручная роспись. Наборы для раскрашивания гипсовых фигурок для детей. Заказ онлайн — доставка по Швейцарии.',
+    'meta.keywords':    'гипсовые свечи фигурки Швейцария, свечи из гипса ручной работы, авторские свечи Швейцария, свечи фигурки купить, подарок свеча Швейцария, гипсовая свеча скульптура, набор для рисования гипс дети, гипсовая фигурка раскрасить, творческий подарок Швейцария, хэндмейд Швейцария',
     'nav.shop':     'Магазин',
     'nav.about':    'О нас',
     'nav.contact':  'Контакт',
