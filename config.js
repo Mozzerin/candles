@@ -46,9 +46,9 @@ const CONFIG = {
 
 const TRANSLATIONS = {
   en: {
-    'meta.title':       "Emma's Lab | Sculptural Plaster Candles & Craft Kits — Switzerland",
-    'meta.description': 'Handmade sculptural plaster candle figurines from Switzerland — unique shaped candles of frogs, pumpkins, carousels & more. Plus creative plaster painting kits for kids. Artisan fragrances, hand-painted. Order online — shipped across Switzerland.',
-    'meta.keywords':    'sculptural plaster candle Switzerland, plaster candle figurine, gypsum candle sculpture, handmade shaped candle, unique candle gift Switzerland, candle figurine Switzerland, painting kit kids Switzerland, plaster figure painting, creative gift Switzerland, handmade craft Switzerland, candle shop Switzerland',
+    'meta.title':       "Emma's Lab | Halloween Pumpkin Candle & Sculptural Plaster Candles — Switzerland",
+    'meta.description': 'Handmade sculptural plaster candle figurines from Switzerland. Halloween pumpkin witch candle on sale — CHF 34. Unique shaped candles of frogs, carousels & more. Creative plaster painting kits for kids. Artisan fragrances, hand-painted. Order online — shipped across Switzerland.',
+    'meta.keywords':    'Halloween candle Switzerland, pumpkin candle Halloween, Halloween gift Switzerland, Halloween decoration candle, witch hat pumpkin candle, sculptural plaster candle Switzerland, plaster candle figurine, handmade candle gift Switzerland, unique candle Switzerland, Halloween candle handmade, painting kit kids Switzerland, creative gift Switzerland',
     'nav.shop':     'Shop',
     'nav.about':    'About',
     'nav.contact':  'Contact',
@@ -142,9 +142,9 @@ const TRANSLATIONS = {
   },
 
   fr: {
-    'meta.title':       "Emma's Lab | Bougies Figurines en Plâtre & Kits Créatifs — Suisse",
-    'meta.description': 'Figurines-bougies sculptées en plâtre faites main depuis la Suisse — grenouilles, citrouilles, carrousels et plus. Kits de peinture en plâtre pour enfants. Parfums artisanaux, peintes à la main. Commandez en ligne — livraison en Suisse.',
-    'meta.keywords':    'bougie figurine plâtre Suisse, bougie sculptée plâtre, figurine bougie artisanale, bougie en plâtre unique, cadeau bougie Suisse, bougie fait main Suisse, kit peinture plâtre enfants, figurine plâtre peindre, cadeau créatif Suisse, artisanat Suisse',
+    'meta.title':       "Emma's Lab | Bougie Citrouille Halloween & Bougies Figurines en Plâtre — Suisse",
+    'meta.description': 'Figurines-bougies sculptées en plâtre faites main depuis la Suisse. Bougie citrouille sorcière Halloween en promotion — CHF 34. Grenouilles, carrousels & plus. Kits de peinture pour enfants. Parfums artisanaux, peintes à la main. Livraison en Suisse.',
+    'meta.keywords':    'bougie Halloween Suisse, bougie citrouille Halloween, cadeau Halloween Suisse, décoration Halloween bougie, bougie citrouille sorcière, bougie figurine plâtre Suisse, bougie sculptée plâtre, bougie fait main Suisse, cadeau bougie Suisse, kit peinture plâtre enfants, cadeau créatif Suisse',
     'nav.shop':     'Boutique',
     'nav.about':    'À propos',
     'nav.contact':  'Contact',
@@ -238,9 +238,9 @@ const TRANSLATIONS = {
   },
 
   de: {
-    'meta.title':       "Emma's Lab | Gips-Kerzen Figuren & Kreativ-Sets — Schweiz",
-    'meta.description': 'Handgemachte Gips-Kerzen-Figuren aus der Schweiz — einzigartige Kerzen in Form von Fröschen, Kürbissen, Karussells & mehr. Gips-Mal-Sets für Kinder. Kunsthandwerk, handgemalt, einzigartige Duftkompositionen. Jetzt bestellen — Lieferung in der Schweiz.',
-    'meta.keywords':    'Gipskerze Figur Schweiz, Kerzen Figur handgemacht, Gips Kerze Skulptur, Kerze Geschenk Schweiz, handgemachte Kerze Schweiz, Gipskerze kaufen, Gips Mal-Set Kinder Schweiz, Gipsfigur bemalen, kreatives Geschenk Schweiz, Kunsthandwerk Schweiz, Kerzen Schweiz',
+    'meta.title':       "Emma's Lab | Halloween Kürbis Kerze & Gips-Kerzen Figuren — Schweiz",
+    'meta.description': 'Handgemachte Gips-Kerzen-Figuren aus der Schweiz. Halloween Kürbis-Hexen-Kerze im Angebot — CHF 34. Einzigartige Kerzen als Frösche, Karussells & mehr. Gips-Mal-Sets für Kinder. Handgemalt, einzigartige Düfte. Jetzt bestellen — Lieferung in der Schweiz.',
+    'meta.keywords':    'Halloween Kerze Schweiz, Kürbis Kerze Halloween, Halloween Geschenk Schweiz, Halloween Dekoration Kerze, Kürbis Hexe Kerze, Gipskerze Figur Schweiz, Halloween Kerze kaufen, handgemachte Kerze Schweiz, Kerze Geschenk Schweiz, Gips Mal-Set Kinder, kreatives Geschenk Schweiz',
     'nav.shop':     'Shop',
     'nav.about':    'Über uns',
     'nav.contact':  'Kontakt',
@@ -334,9 +334,9 @@ const TRANSLATIONS = {
   },
 
   ru: {
-    'meta.title':       "Emma's Lab | Гипсовые свечи-фигурки & Творческие наборы — Швейцария",
-    'meta.description': 'Авторские гипсовые свечи-фигурки ручной работы из Швейцарии — лягушки, тыквы, карусели и другие. Уникальные ароматы, ручная роспись. Наборы для раскрашивания гипсовых фигурок для детей. Заказ онлайн — доставка по Швейцарии.',
-    'meta.keywords':    'гипсовые свечи фигурки Швейцария, свечи из гипса ручной работы, авторские свечи Швейцария, свечи фигурки купить, подарок свеча Швейцария, гипсовая свеча скульптура, набор для рисования гипс дети, гипсовая фигурка раскрасить, творческий подарок Швейцария, хэндмейд Швейцария',
+    'meta.title':       "Emma's Lab | Свеча Хэллоуин Тыква & Гипсовые свечи-фигурки — Швейцария",
+    'meta.description': 'Авторские гипсовые свечи-фигурки ручной работы из Швейцарии. Свеча-тыква на Хэллоуин со скидкой — CHF 34. Лягушки, карусели и другие. Наборы для раскрашивания гипсовых фигурок для детей. Уникальные ароматы, ручная роспись. Заказ онлайн — доставка по Швейцарии.',
+    'meta.keywords':    'свеча хэллоуин Швейцария, свеча тыква хэллоуин, хэллоуин подарок Швейцария, декор хэллоуин свеча, свеча тыква ведьма, гипсовые свечи фигурки Швейцария, свечи из гипса ручной работы, авторские свечи Швейцария, подарок свеча Швейцария, набор для рисования гипс дети, творческий подарок Швейцария',
     'nav.shop':     'Магазин',
     'nav.about':    'О нас',
     'nav.contact':  'Контакт',
