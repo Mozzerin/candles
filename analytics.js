@@ -4,7 +4,7 @@
    Meta: Meta Business → Events Manager → Pixel → Pixel ID
 ──────────────────────────────────────────────────────────────────────────── */
 const GA4_ID        = 'G-FS5JXS3RQ8';
-const META_PIXEL_ID = 'XXXXXXXXXXXXXXXX';  // ← replace
+const META_PIXEL_ID = '1389010873396233';
 
 let analyticsLoaded = false;
 
