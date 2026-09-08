@@ -2414,7 +2414,13 @@
 
   loadCart();
   updateCartBadge();
-  setLang('en');
+  const savedLang    = localStorage.getItem('lang');
+  const browserLang  = (navigator.language || navigator.userLanguage || 'en').slice(0, 2).toLowerCase();
+  const supported    = ['en', 'fr', 'de', 'ru'];
+  const initLang     = supported.includes(savedLang) ? savedLang
+                     : supported.includes(browserLang) ? browserLang
+                     : 'en';
+  setLang(initLang);
   checkConsent();
   injectSEO();
 
