@@ -954,6 +954,23 @@
     .pd-scent-chip:hover { border-color: #aaa; color: var(--color-text); }
     .pd-scent-chip.selected { background: var(--color-text); border-color: var(--color-text); color: #fff; }
     .pd-scent-error { font-size: 0.78rem; color: #c0392b; margin-top: 0.5rem; display: none; }
+    .pd-scent-detail {
+      display: none;
+      margin-top: 0.9rem;
+      padding: 0.85rem 1rem;
+      background: var(--color-light);
+      border-left: 2px solid var(--color-border);
+    }
+    .pd-scent-detail.visible { display: block; }
+    .pd-scent-detail-desc {
+      font-size: 0.82rem;
+      color: var(--color-muted);
+      line-height: 1.65;
+      margin-bottom: 0.65rem;
+    }
+    .pd-scent-notes { display: flex; flex-direction: column; gap: 0.25rem; }
+    .pd-note-row { font-size: 0.78rem; color: var(--color-muted); }
+    .pd-note-label { font-weight: 600; color: var(--color-text); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; margin-right: 0.3rem; }
     .cart-item-scent { font-size: 0.75rem; color: var(--color-muted); font-style: italic; }
 
     /* ── Cookie consent banner ───────────────────────────────────── */
@@ -1395,6 +1412,14 @@
         <p class="pd-scent-note" id="pd-scent-note"></p>
         <div class="pd-scent-label" id="pd-scent-label"></div>
         <div class="pd-scent-options" id="pd-scent-options"></div>
+        <div class="pd-scent-detail" id="pd-scent-detail">
+          <p class="pd-scent-detail-desc" id="pd-scent-detail-desc"></p>
+          <div class="pd-scent-notes">
+            <div class="pd-note-row"><span class="pd-note-label" id="pd-note-top-lbl"></span><span id="pd-note-top"></span></div>
+            <div class="pd-note-row"><span class="pd-note-label" id="pd-note-heart-lbl"></span><span id="pd-note-heart"></span></div>
+            <div class="pd-note-row"><span class="pd-note-label" id="pd-note-base-lbl"></span><span id="pd-note-base"></span></div>
+          </div>
+        </div>
         <div class="pd-scent-error" id="pd-scent-error"></div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-top:0.5rem;">
@@ -1776,6 +1801,8 @@
 
     // Scent selector — only for candles
     pdScent = null;
+    const detail = document.getElementById('pd-scent-detail');
+    if (detail) detail.classList.remove('visible');
     const scentSection = document.getElementById('pd-scent-section');
     if (p.category === 'candle') {
       document.getElementById('pd-scent-note').textContent  = t('scent.note');
@@ -1799,6 +1826,20 @@
     document.querySelectorAll('.pd-scent-chip').forEach(b => b.classList.remove('selected'));
     btn.classList.add('selected');
     document.getElementById('pd-scent-error').style.display = 'none';
+
+    const scent  = CONFIG.candleScents.find(s => s.id === id);
+    const detail = document.getElementById('pd-scent-detail');
+    if (scent && detail) {
+      const l = currentLang;
+      document.getElementById('pd-scent-detail-desc').textContent = scent.desc?.[l] || scent.desc?.en || '';
+      document.getElementById('pd-note-top-lbl').textContent      = t('scent.top') + ': ';
+      document.getElementById('pd-note-top').textContent          = scent.top?.[l]   || scent.top?.en   || '';
+      document.getElementById('pd-note-heart-lbl').textContent    = t('scent.heart') + ': ';
+      document.getElementById('pd-note-heart').textContent        = scent.heart?.[l] || scent.heart?.en || '';
+      document.getElementById('pd-note-base-lbl').textContent     = t('scent.base') + ': ';
+      document.getElementById('pd-note-base').textContent         = scent.base?.[l]  || scent.base?.en  || '';
+      detail.classList.add('visible');
+    }
   }
 
   function closeProduct() {
