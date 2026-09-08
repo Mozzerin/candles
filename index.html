@@ -2417,6 +2417,10 @@
   setLang('en');
   checkConsent();
   injectSEO();
+
+  // Open product from URL param: ?product=candle-pumpkin
+  const urlProduct = new URLSearchParams(window.location.search).get('product');
+  if (urlProduct) setTimeout(() => openProduct(urlProduct), 300);
 </script>
 
 <div id="cookie-banner" role="dialog" aria-label="Cookie consent">
