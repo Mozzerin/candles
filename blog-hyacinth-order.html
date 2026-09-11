@@ -319,12 +319,6 @@
 
       <p>Denn genau das liebe ich an handgemachten Geschenken: Sie entstehen für einen besonderen Anlass und bleiben als kleine Erinnerung noch lange darüber hinaus.</p>
 
-      <div class="article-video">
-        <p class="article-video-title">Hinter den Kulissen – der gesamte Prozess im Video</p>
-        <!-- VIDEO EINFÜGEN: <iframe>-Tag hier ersetzen, z.B. von Instagram oder YouTube -->
-        <div class="video-placeholder">Video folgt in Kürze</div>
-      </div>
-
       <p class="article-sign"><em>Und jetzt nehme ich euch mit hinter die Kulissen und zeige euch Schritt für Schritt, wie aus einem Stück Gips eine handgemachte Duftkerze und schließlich 35 ganz besondere Gastgeschenke wurden.</em></p>
     </div>
 
@@ -360,18 +354,46 @@
 
       <p>That is what I love most about handmade gifts: they are created for a special occasion, but the memories they carry can last much longer.</p>
 
-      <div class="article-video">
-        <p class="article-video-title">Behind the Scenes – The Full Process on Video</p>
-        <!-- VIDEO: replace this placeholder with your <iframe> embed (Instagram or YouTube) -->
-        <div class="video-placeholder">Video coming soon</div>
-      </div>
-
       <p class="article-sign"><em>And now I'd love to take you behind the scenes and show you, step by step, how these 35 little hyacinth candles were made.</em></p>
     </div>
 
-    <!-- FR/RU fall back to EN via JS -->
+    <!-- ═══ FRANÇAIS (= EN) ═══ -->
     <div id="article-fr" class="article-content"></div>
-    <div id="article-ru" class="article-content"></div>
+
+    <!-- ═══ РУССКИЙ ═══ -->
+    <div id="article-ru" class="article-content">
+      <h2>Особый заказ: 35 свечей-гиацинтов на день рождения</h2>
+
+      <p>Сегодня я хочу рассказать вам об одном из самых красивых и особенных заказов, которые мне довелось выполнить.</p>
+
+      <p>Для дня рождения я изготовила 35 свечей ручной работы в качестве подарков гостям — маленькие гиацинты, которые не только красиво выглядят, но и оставят приятное воспоминание о празднике ещё долго после его окончания.</p>
+
+      <img src="images/site/blog_hyacinth_order.webp"
+           alt="35 свечей-гиацинтов ручной работы как подарки гостям — Emma's Lab Швейцария"
+           class="article-image"
+           loading="lazy"
+           width="1050" height="1400">
+
+      <h3>Отлиты, отшлифованы и расписаны вручную</h3>
+
+      <p>Каждую свечу я отлила вручную из гипса, тщательно отшлифовала и расписала каждую деталь от руки. После этого каждая фигурка была покрыта защитным лаком.</p>
+
+      <p>Изготовить 35 свечей — это прежде всего огромный ручной труд, терпение и внимание к каждой мелочи. От первой отливки из гипса до шлифовки, росписи и финального покрытия — каждая свеча создаётся в моей мастерской шаг за шагом, своими руками.</p>
+
+      <h3>Воск, аромат и финальный штрих</h3>
+
+      <p>Только после росписи и лакировки я заливала воск и добавляла тщательно подобранный аромат. Именно такой порядок важен — он позволяет сохранить роспись в идеальном состоянии, а аромат полностью раскрывается, когда свеча горит.</p>
+
+      <h3>Свечи ручной работы как подарки гостям — идея с душой</h3>
+
+      <p>Мне особенно нравится идея дарить свечи ручной работы гостям на день рождения. Это не просто маленький знак внимания — такой подарок может стать частью дома ещё долго после праздника.</p>
+
+      <p>Я надеюсь, что эти маленькие гиацинты наполнят дома своих новых хозяев теплом и уютом, а их чудесный аромат ещё долго будет напоминать об особенном дне рождения, близких людях и счастливых моментах, проведённых вместе.</p>
+
+      <p>Именно это я больше всего люблю в подарках ручной работы: они создаются для особого случая, но воспоминания, которые они несут, живут гораздо дольше.</p>
+
+      <p class="article-sign"><em>А теперь я приглашаю вас за кулисы и покажу шаг за шагом, как из кусочка гипса рождаётся ароматная свеча — и в итоге 35 особенных подарков для гостей.</em></p>
+    </div>
 
     <a href="/blog.html" class="back-link">← <span data-i18n="nav.blog">Blog</span></a>
 
@@ -404,6 +426,12 @@
       h1:    '35 Handmade Candles as Birthday Guest Gifts',
       eyebrow: 'Emma\'s Lab · Behind the Scenes',
     },
+    ru: {
+      title: '35 свечей ручной работы как подарки гостям | Emma\'s Lab',
+      desc:  'Как я создала 35 гипсовых свечей-гиацинтов в качестве подарков гостям на день рождения — отлиты, расписаны и заполнены ароматным воском вручную.',
+      h1:    '35 свечей ручной работы как подарки гостям',
+      eyebrow: 'Emma\'s Lab · За кулисами',
+    },
   };
 
   function setPageLang(lang) {
@@ -412,7 +440,7 @@
       b.classList.toggle('active', BLOG_LANGS[i % BLOG_LANGS.length] === lang);
     });
 
-    const articleLang = (lang === 'de') ? 'de' : 'en';
+    const articleLang = ['de', 'ru'].includes(lang) ? lang : 'en';
     document.querySelectorAll('.article-content').forEach(el => el.classList.remove('visible'));
     const el = document.getElementById('article-' + articleLang);
     if (el) el.classList.add('visible');
