@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Die Geschichte von Emma's Lab Candle – handgemacht in der Schweiz</title>
+  <meta name="description" content="Wie Emma's Lab entstand: Gipsformen, Farben, Düfte und die Liebe zum Detail. Die Geschichte hinter handgemachten Kerzen und Kreativsets aus Wettmenstetten.">
+  <link rel="canonical" href="https://emmas-lab.ch/blog-emmas-lab-story.html">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/site/favicon-64.webp">
+  <link rel="apple-touch-icon" href="images/site/logo.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="analytics.js"></script>
+  <style>
+    /* Blog-specific overrides */
+    body { font-size: 16px; line-height: 1.7; }
+
+    /* Blog header */
+    .blog-hero {
+      padding: 4rem var(--site-gutter) 3rem;
+      border-bottom: 1px solid var(--color-border);
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-branch {
+      position: absolute;
+      top: -20px;
+      left: -30px;
+      width: 200px;
+      opacity: 0.82;
+      pointer-events: none;
+    }
+    .blog-hero-inner {
+      max-width: clamp(720px, 60vw, 960px);
+      margin: 0 auto;
+    }
+    .blog-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 0.75rem;
+    }
+    .blog-hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 1.2;
+    }
+
+    /* Article */
+    .article-wrap {
+      max-width: clamp(720px, 60vw, 960px);
+      margin: 0 auto;
+      padding: 3.5rem var(--site-gutter) 6rem;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: var(--color-muted);
+      letter-spacing: 0.04em;
+      margin-bottom: 2rem;
+    }
+    .article-meta-sep { opacity: 0.4; }
+
+    /* Article content */
+    .article-content { display: none; }
+    .article-content.visible { display: block; }
+
+    .article-content h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 1.25;
+      margin-bottom: 2rem;
+    }
+    .article-content h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 2.5rem 0 0.85rem;
+      letter-spacing: 0.01em;
+    }
+    .article-content p {
+      color: var(--color-muted);
+      margin-bottom: 1.25rem;
+      line-height: 1.85;
+    }
+    .article-content p:last-child { margin-bottom: 0; }
+    .article-content strong {
+      color: var(--color-text);
+      font-weight: 600;
+    }
+    .article-sign {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      font-style: italic;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--color-border);
+      padding: 2rem var(--site-gutter);
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--color-muted);
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a { color: var(--color-muted); font-size: 0.75rem; }
+    .footer-links a:hover { color: var(--color-text); }
+  </style>
+</head>
+<body>
+
+<header id="header">
+  <div class="header-inner">
+    <a href="/" class="header-logo">
+      <img src="images/site/logo.webp" alt="Emma's Lab logo">
+      Emma's Lab
+    </a>
+    <nav>
+      <ul class="header-nav">
+        <li><a href="/#shop" data-i18n="nav.shop">Shop</a></li>
+        <li><a href="/#about" data-i18n="nav.about">About</a></li>
+        <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="/blog.html" data-i18n="nav.blog">Blog</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;align-items:center;gap:1.25rem;">
+      <a href="https://www.instagram.com/emmas_lab_candle" target="_blank" rel="noopener noreferrer" class="social-header-link" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <div class="lang-switcher" id="lang-sw">
+        <button class="lang-btn" onclick="setPageLang('en')">EN</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" onclick="setPageLang('fr')">FR</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" onclick="setPageLang('de')">DE</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" onclick="setPageLang('ru')">RU</button>
+      </div>
+      <a href="/" class="cart-btn" aria-label="Go to shop">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span data-i18n="cart.label">Cart</span>
+      </a>
+      <button class="burger" id="burger-btn" aria-label="Menu" onclick="openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-nav">
+  <div class="mobile-nav-header">
+    <span class="header-logo">Emma's Lab</span>
+    <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+  </div>
+  <ul class="mobile-nav-links">
+    <li><a href="/#shop" onclick="closeMobileNav()" data-i18n="nav.shop">Shop</a></li>
+    <li><a href="/#about" onclick="closeMobileNav()" data-i18n="nav.about">About</a></li>
+    <li><a href="/#contact" onclick="closeMobileNav()" data-i18n="nav.contact">Contact</a></li>
+    <li><a href="/blog.html" data-i18n="nav.blog">Blog</a></li>
+    <li><a href="https://www.instagram.com/emmas_lab_candle" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+  </ul>
+  <div class="lang-switcher" style="margin-top:auto;">
+    <button class="lang-btn" onclick="setPageLang('en');closeMobileNav()">EN</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" onclick="setPageLang('fr');closeMobileNav()">FR</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" onclick="setPageLang('de');closeMobileNav()">DE</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" onclick="setPageLang('ru');closeMobileNav()">RU</button>
+  </div>
+</div>
+
+<div class="blog-hero">
+  <img src="images/site/autumn_branch.webp" alt="" class="blog-branch" aria-hidden="true">
+  <div class="blog-hero-inner">
+    <p class="blog-eyebrow">Emma's Lab · Stories</p>
+    <h1>Behind the Scenes</h1>
+  </div>
+</div>
+
+<main>
+  <div class="article-wrap">
+
+    <div class="article-meta">
+      <span>May 2026</span>
+      <span class="article-meta-sep">·</span>
+      <span>Ekaterina</span>
+      <span class="article-meta-sep">·</span>
+      <span>Emma's Lab Candle</span>
+    </div>
+
+    <!-- ═══ DEUTSCH ═══ -->
+    <div id="article-de" class="article-content visible">
+      <h2>Die Geschichte von Emma's Lab Candle – mit Liebe zum Detail geschaffen</h2>
+
+      <p>Für mich sind schöne Dinge mehr als nur Dekoration für das Zuhause. Es sind die kleinen Details, die eine besondere Atmosphäre schaffen: warmes Licht, ein vertrauter Duft, ein gemütlicher Abend und das Gefühl, dass alles gut ist. Genau deshalb stelle ich jedes Produkt von Emma's Lab Candle selbst her – von der ersten Idee bis zum letzten Pinselstrich.</p>
+
+      <h3>Von der Idee bis zur Form</h3>
+
+      <p>Ich suche lange nach Formen, die ich selbst gerne in meinem Zuhause sehen würde. Sie sollen nicht nur schön sein, sondern auch eine besondere Stimmung schaffen – Wärme, Zartheit und ein kleines bisschen Magie in den Raum bringen.</p>
+
+      <p>Auch den Gips für meine Produkte habe ich mit viel Sorgfalt ausgewählt. Ich habe verschiedene Mischungen verglichen, ausprobiert und getestet, bis ich das passende Material gefunden habe. Jede Figur wird von mir von Hand gegossen, sodass in jedem Stück ein Teil echter Handarbeit steckt.</p>
+
+      <h3>Farben, die zum Leben erwecken</h3>
+
+      <p>Nachdem die Form fertig ist, beginnt mein Lieblingsteil – das Bemalen.</p>
+
+      <p>Ich wähle die Farbtöne sorgfältig aus, mische die Farben selbst und arbeite auch die kleinsten Details von Hand aus. Genau diese kleinen Unterschiede machen jedes Stück einzigartig und besonders.</p>
+
+      <h3>Der Duft – ein weiterer Teil der Geschichte</h3>
+
+      <p>Ebenso viel Zeit habe ich in die Auswahl des Wachses und meiner Duftlieferanten investiert. Mir war wichtig, hochwertige Materialien und besondere Duftkompositionen zu finden, die nicht nur angenehm riechen, sondern eine Stimmung schaffen und das Zuhause mit einer ganz besonderen Atmosphäre erfüllen.</p>
+
+      <p>Ich liebe es, wenn das Aussehen eines Produkts und sein Duft zu einer Einheit werden – zu einem kleinen, gemütlichen Moment, den man einfach genießen möchte.</p>
+
+      <h3>Kreativität für kleine Künstler</h3>
+
+      <p>Neben meinen dekorativen Produkten stelle ich auch Kreativsets für Kinder her.</p>
+
+      <p>Damit können Kinder ihre eigene Figur bemalen, ihre ganz persönlichen Farben wählen und daraus ein kleines Kunstwerk machen.</p>
+
+      <p>Es ist nicht einfach nur eine Beschäftigung für einen Nachmittag – es ist eine Möglichkeit, die Fantasie zu entfalten, gemeinsam Zeit zu verbringen und etwas zu erschaffen, das es so kein zweites Mal gibt.</p>
+
+      <p class="article-sign"><strong>Von Hand gemacht. Mit Liebe geschaffen.</strong><br>
+      Emma's Lab Candle entstand aus meiner Liebe zu schönen Details, gemütlichen Zuhause und kleinen Freuden im Alltag. Jedes Produkt geht durch meine Hände und entsteht ohne Eile – mit viel Aufmerksamkeit für Materialien, Farben, Formen und jedes noch so kleine Detail.<br><br>
+      Ich wünsche mir, dass Sie mit einem Produkt aus meiner Kollektion nicht einfach nur etwas Schönes nach Hause bringen, sondern ein kleines Stück Wärme, das Sie gerne bei sich haben möchten.<br><br>
+      <em>Emma's Lab Candle – handmade, created with love.</em></p>
+    </div>
+
+    <!-- ═══ FRANÇAIS ═══ -->
+    <div id="article-fr" class="article-content">
+      <h2>L'histoire d'Emma's Lab Candle – créée avec amour pour chaque détail</h2>
+
+      <p>Pour moi, les belles choses sont bien plus que de simples décorations. Ce sont les petits détails qui créent une atmosphère particulière : une lumière chaleureuse, un parfum familier, une soirée douillette et ce sentiment que tout va bien. C'est pourquoi je crée chaque produit Emma's Lab Candle moi-même – de la première idée au dernier coup de pinceau.</p>
+
+      <h3>De l'idée à la forme</h3>
+
+      <p>Je passe beaucoup de temps à chercher des formes que j'aimerais vraiment avoir chez moi. Elles ne doivent pas seulement être belles, mais aussi créer une ambiance particulière – apporter de la chaleur, de la douceur et une petite touche de magie dans l'espace.</p>
+
+      <p>J'ai également choisi le plâtre utilisé pour mes produits avec beaucoup de soin. J'ai comparé différents mélanges, expérimenté et testé jusqu'à trouver le matériau qui convenait parfaitement. Chaque figurine est coulée à la main par moi, de sorte que chaque pièce porte en elle une part de véritable artisanat.</p>
+
+      <h3>Des couleurs qui donnent vie</h3>
+
+      <p>Une fois la forme prête, commence ma partie préférée – la peinture.</p>
+
+      <p>Je choisis les teintes avec soin, je mélange les couleurs moi-même et je travaille à la main les moindres détails. Ce sont précisément ces petites différences qui rendent chaque pièce unique et particulière.</p>
+
+      <h3>Le parfum – une autre partie de l'histoire</h3>
+
+      <p>J'ai consacré tout autant de temps à la recherche de la cire et de mes fournisseurs de parfums. Il m'importait de trouver des matériaux de qualité et des compositions olfactives uniques qui non seulement sentent bon, mais créent une ambiance et remplissent la maison d'une atmosphère vraiment spéciale.</p>
+
+      <p>J'adore quand l'apparence d'un produit et son parfum ne font qu'un – pour créer un petit moment cosy que l'on a simplement envie de savourer.</p>
+
+      <h3>La créativité pour les petits artistes</h3>
+
+      <p>En plus de mes produits décoratifs, je crée également des kits créatifs pour enfants.</p>
+
+      <p>Ils permettent aux enfants de peindre leur propre figurine, de choisir leurs couleurs préférées et d'en faire une petite œuvre d'art.</p>
+
+      <p>Ce n'est pas seulement une activité pour un après-midi – c'est une occasion de laisser libre cours à l'imagination, de passer du temps ensemble et de créer quelque chose qui sera vraiment unique.</p>
+
+      <p class="article-sign"><strong>Fait main. Créé avec amour.</strong><br>
+      Emma's Lab Candle est né de mon amour pour les beaux détails, les intérieurs chaleureux et les petites joies du quotidien. Chaque produit passe entre mes mains et est fabriqué sans précipitation – avec beaucoup d'attention aux matériaux, aux couleurs, aux formes et à chaque petit détail.<br><br>
+      Je souhaite que lorsque vous choisissez un produit de ma collection, vous ne rameniez pas seulement quelque chose de beau chez vous, mais aussi un petit bout de chaleur que vous serez heureux d'avoir dans votre espace.<br><br>
+      <em>Emma's Lab Candle – handmade, created with love.</em></p>
+    </div>
+
+    <!-- ═══ РУССКИЙ ═══ -->
+    <div id="article-ru" class="article-content">
+      <h2>История Emma's Lab Candle – создано с любовью к каждой детали</h2>
+
+      <p>Для меня красивые вещи — это нечто большее, чем просто украшение дома. Это маленькие детали, которые создают особую атмосферу: тёплый свет, знакомый аромат, уютный вечер и ощущение, что всё хорошо. Именно поэтому я создаю каждый продукт Emma's Lab Candle сама — от первой идеи до последнего мазка кисти.</p>
+
+      <h3>От идеи к форме</h3>
+
+      <p>Я долго ищу формы, которые сама с удовольствием поставила бы у себя дома. Они должны быть не просто красивыми, но и создавать особое настроение — привносить в пространство тепло, нежность и капельку волшебства.</p>
+
+      <p>Гипс для своих изделий я тоже выбирала очень тщательно. Я сравнивала разные составы, экспериментировала и тестировала до тех пор, пока не нашла подходящий материал. Каждая фигурка отливается мной вручную, поэтому в каждом изделии есть частичка настоящего ручного труда.</p>
+
+      <h3>Цвета, которые оживляют</h3>
+
+      <p>Когда форма готова, начинается моя любимая часть — роспись.</p>
+
+      <p>Я тщательно подбираю оттенки, сама смешиваю краски и вручную прорабатываю даже самые мелкие детали. Именно эти маленькие различия делают каждое изделие уникальным и особенным.</p>
+
+      <h3>Аромат — ещё одна часть истории</h3>
+
+      <p>Не меньше времени я уделила поиску воска и поставщиков ароматов. Мне было важно найти качественные материалы и особые ароматические композиции, которые не просто приятно пахнут, но и создают настроение, наполняя дом по-настоящему особой атмосферой.</p>
+
+      <p>Я люблю, когда внешний вид изделия и его аромат становятся единым целым — маленьким уютным моментом, который просто хочется наслаждаться.</p>
+
+      <h3>Творчество для маленьких художников</h3>
+
+      <p>Помимо декоративных изделий, я также создаю творческие наборы для детей.</p>
+
+      <p>С их помощью дети могут раскрасить собственную фигурку, выбрать любимые цвета и превратить её в маленький шедевр.</p>
+
+      <p>Это не просто занятие на послеполудень — это возможность развить фантазию, провести время вместе и создать нечто, чего больше нет ни у кого.</p>
+
+      <p class="article-sign"><strong>Сделано руками. Создано с любовью.</strong><br>
+      Emma's Lab Candle родился из моей любви к красивым деталям, уютным домам и маленьким радостям повседневной жизни. Каждое изделие проходит через мои руки и создаётся без спешки — с большим вниманием к материалам, цветам, формам и каждой мелочи.<br><br>
+      Я хочу, чтобы, выбирая изделие из моей коллекции, вы приносили домой не просто что-то красивое, а маленький кусочек тепла, который вам захочется иметь рядом с собой.<br><br>
+      <em>Emma's Lab Candle – handmade, created with love.</em></p>
+    </div>
+
+    <!-- ═══ ENGLISH ═══ -->
+    <div id="article-en" class="article-content">
+      <h2>The Story of Emma's Lab Candle – Made with Love for Every Detail</h2>
+
+      <p>For me, beautiful things are more than just home decorations. They are the little details that create an atmosphere: warm light, a familiar scent, a cosy evening and that feeling that everything is just right. That is why I create every Emma's Lab Candle product myself – from the very first idea to the final brushstroke.</p>
+
+      <h3>From the Idea to the Form</h3>
+
+      <p>I spend a long time looking for shapes that I would genuinely love to have in my own home. They should not only be beautiful, but also create a special feeling – bringing warmth, softness and a little touch of magic into the space.</p>
+
+      <p>I was just as careful when choosing the plaster I use for my products. I compared different mixtures, experimented and tested them until I found the one that worked just right. Every figure is hand-cast by me, so each piece carries a little part of true craftsmanship.</p>
+
+      <h3>Colours That Bring Them to Life</h3>
+
+      <p>Once the shape is ready, my favourite part begins – painting.</p>
+
+      <p>I carefully choose the shades, mix the colours myself and hand-paint even the smallest details. These little differences are what make every piece unique and one of a kind.</p>
+
+      <h3>The Scent – Another Part of the Story</h3>
+
+      <p>I spent just as much time searching for the right wax and reliable fragrance suppliers. It was important to me to find high-quality materials and special fragrance compositions that not only smell beautiful, but also create a mood and fill your home with a warm, inviting atmosphere.</p>
+
+      <p>I love when the appearance of a piece and its fragrance come together as one – creating a small, cosy moment that you simply want to enjoy.</p>
+
+      <h3>Creativity for Little Artists</h3>
+
+      <p>Alongside my decorative products, I also create creative sets for children.</p>
+
+      <p>They give children the opportunity to paint their own figure, choose their favourite colours and turn it into a little work of art.</p>
+
+      <p>It is more than just an activity for an afternoon – it is a chance to let their imagination run free, spend meaningful time together and create something that will be truly one of a kind.</p>
+
+      <p class="article-sign"><strong>Handmade. Made with Heart.</strong><br>
+      Emma's Lab Candle was born from my love of beautiful details, cosy homes and the little joys in everyday life. Every product passes through my hands and is made without rushing – with care and attention to the materials, colours, shapes and every little detail.<br><br>
+      I want you to bring home more than just something beautiful when you choose a piece from my collection. I want you to bring home a little piece of warmth that you will love having in your space.<br><br>
+      <em>Emma's Lab Candle – handmade, created with love.</em></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div>© <script>document.write(new Date().getFullYear())</script> Emma's Lab. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="/">Shop</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="/cookie-policy.html">Cookie Policy</a>
+    <a href="/terms.html">Terms & Conditions</a>
+  </div>
+</footer>
+
+<script>
+  const BLOG_LANGS = ['en', 'fr', 'de', 'ru'];
+
+  function setPageLang(lang) {
+    localStorage.setItem('lang', lang);
+    document.querySelectorAll('.lang-btn').forEach((b, i) => {
+      b.classList.toggle('active', BLOG_LANGS[i % BLOG_LANGS.length] === lang);
+    });
+    document.querySelectorAll('.article-content').forEach(el => el.classList.remove('visible'));
+    const el = document.getElementById('article-' + lang);
+    if (el) el.classList.add('visible');
+    document.documentElement.lang = lang;
+    // apply i18n translations from config.js
+    if (typeof TRANSLATIONS !== 'undefined') {
+      const tr = TRANSLATIONS[lang] || TRANSLATIONS.en;
+      document.querySelectorAll('[data-i18n]').forEach(node => {
+        const key = node.dataset.i18n;
+        if (tr[key]) node.textContent = tr[key];
+      });
+    }
+  }
+
+  function openMobileNav()  { document.getElementById('mobile-nav').classList.add('open'); }
+  function closeMobileNav() { document.getElementById('mobile-nav').classList.remove('open'); }
+
+  const initLang = new URLSearchParams(window.location.search).get('lang')
+    || localStorage.getItem('lang')
+    || (navigator.language || '').slice(0, 2).toLowerCase();
+  setPageLang(BLOG_LANGS.includes(initLang) ? initLang : 'de');
+  checkConsent();
+</script>
+</body>
+</html>

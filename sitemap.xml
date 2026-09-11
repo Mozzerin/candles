@@ -16,9 +16,25 @@
 
   <url>
     <loc>https://emmas-lab.ch/blog.html</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://emmas-lab.ch/blog-hyacinth-order.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://emmas-lab.ch/blog-hyacinth-order.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emmas-lab.ch/blog-hyacinth-order.html"/>
+  </url>
+
+  <url>
+    <loc>https://emmas-lab.ch/blog-emmas-lab-story.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 
   <url>
