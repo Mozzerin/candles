@@ -1324,6 +1324,11 @@
   <div style="position:relative;z-index:1;background:#fff;width:100%;max-width:480px;padding:2rem;max-height:90vh;overflow-y:auto;">
     <button onclick="closeContactModal()" aria-label="Close" style="position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.4rem;line-height:1;opacity:0.5;cursor:pointer;">✕</button>
     <h2 id="ct-modal-title" style="font-size:1.1rem;font-weight:600;margin-bottom:1.5rem;letter-spacing:0.02em;" data-i18n="contact.form.title">Send a Message</h2>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem 0.75rem;margin:-0.75rem 0 1.5rem;font-size:0.85rem;color:var(--color-muted);">
+      <span data-i18n="contact.form.direct">Or email us directly:</span>
+      <span id="ct-direct-email" style="color:var(--color-text, #2C1810);font-weight:500;user-select:all;-webkit-user-select:all;">emmaslabcandle@gmail.com</span>
+      <button type="button" id="ct-copy-btn" onclick="copyContactEmail()" style="background:none;border:1px solid var(--color-border);padding:0.2rem 0.7rem;font-size:0.75rem;cursor:pointer;color:inherit;" data-i18n="contact.form.copy">Copy</button>
+    </div>
     <form id="contact-form" onsubmit="submitContact(event)" novalidate>
       <div class="form-row">
         <div class="form-group">
@@ -1596,6 +1601,8 @@
     // Contact email value text
     const emailVal = document.getElementById('contact-email-val');
     if (emailVal) emailVal.textContent = CONFIG.contactEmail;
+    const directEmail = document.getElementById('ct-direct-email');
+    if (directEmail) directEmail.textContent = CONFIG.contactEmail;
 
     // SEO meta tags
     const title = t('meta.title');
@@ -2163,6 +2170,27 @@
   /* ──────────────────────────────────────────────────────────────
      CONTACT MODAL
   ────────────────────────────────────────────────────────────── */
+  function copyContactEmail() {
+    const btn = document.getElementById('ct-copy-btn');
+    const done = () => {
+      btn.textContent = t('contact.form.copied');
+      setTimeout(() => { btn.textContent = t('contact.form.copy'); }, 1500);
+    };
+    const fallback = () => {
+      const range = document.createRange();
+      range.selectNodeContents(document.getElementById('ct-direct-email'));
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      try { if (document.execCommand('copy')) done(); } catch (e) {}
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(CONFIG.contactEmail).then(done, fallback);
+    } else {
+      fallback();
+    }
+  }
+
   function openContactModal() {
     const modal = document.getElementById('contact-modal');
     modal.style.display = 'flex';
