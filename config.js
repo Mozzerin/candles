@@ -15,9 +15,9 @@ const CONFIG = {
   // Sign up at https://www.emailjs.com, then fill in these three values.
   // Step-by-step instructions are in the README below the CONFIG block.
   emailjs: {
-    publicKey:  'fA4Qdc27FVtcfBfhL',
-    serviceId:  'service_dfx69bu',
-    templateId: 'template_7z11sev',
+    publicKey:  '0pKmMcMTtl03C24h7',
+    serviceId:  'service_9t5cdzj',
+    templateId: 'template_32nxytd',
   },
 
   // SEO — used in <title>, meta description, og:image etc.
