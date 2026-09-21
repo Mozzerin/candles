@@ -640,9 +640,11 @@
       width: 150px;
       opacity: 0.85;
       pointer-events: none;
-      z-index: 3;
+      z-index: 0;
     }
     .hero-inner {
+      position: relative;
+      z-index: 1;
       max-width: var(--max-width);
       margin: 0 auto;
       display: grid;
