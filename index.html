@@ -2118,6 +2118,22 @@
     el.addEventListener('input', () => el.classList.remove('invalid'), { once: true });
   }
 
+  // Email subject helpers (subject text is passed to EmailJS as {{subject}})
+  function emailDate() {
+    const d = new Date();
+    const p = n => String(n).padStart(2, '0');
+    return `${p(d.getDate())}.${p(d.getMonth() + 1)}.${d.getFullYear()} ${p(d.getHours())}:${p(d.getMinutes())}`;
+  }
+
+  function orderItemsSummary() {
+    const names = cart.map(item => {
+      const product = PRODUCTS.find(p => p.id === item.productId);
+      return product ? `${product.translations.en.name} ×${item.qty}` : null;
+    }).filter(Boolean);
+    if (names.length <= 1) return names[0] || 'Order';
+    return `${names[0]} +${names.length - 1} more`;
+  }
+
   function submitRequest(e) {
     e.preventDefault();
 
@@ -2163,6 +2179,7 @@
     params.name    = name;
     params.email   = email;
     params.time    = params.sent_at;
+    params.subject = `[${CONFIG.siteName}] ${orderItemsSummary()} – ${params.total} – ${emailDate()}`;
     params.message = [
       'ORDER REQUEST',
       '',
@@ -2277,6 +2294,7 @@
     params.name    = name;
     params.email   = email;
     params.time    = params.sent_at;
+    params.subject = `[${CONFIG.siteName}] Contact form – ${name} – ${emailDate()}`;
     params.message = `CONTACT FORM\n\nName: ${name}\nEmail: ${email}\n\n${message}`;
 
     emailjs.send(CONFIG.emailjs.serviceId, CONFIG.emailjs.templateId, params, CONFIG.emailjs.publicKey)
