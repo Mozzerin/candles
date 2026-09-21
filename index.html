@@ -2159,6 +2159,25 @@
       total:       formatPrice(cartTotal()),
       sent_at:     new Date().toLocaleString(),
     };
+    // Generic fields so the message also fits a plain {{name}} / {{email}} / {{time}} / {{message}} EmailJS template
+    params.name    = name;
+    params.email   = email;
+    params.time    = params.sent_at;
+    params.message = [
+      'ORDER REQUEST',
+      '',
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Phone: ${params.phone}`,
+      `City: ${params.city}`,
+      `Address: ${params.address}`,
+      '',
+      params.order_items,
+      '',
+      `Total: ${params.total}`,
+      '',
+      `Notes: ${params.notes}`,
+    ].join('\n');
 
     emailjs.send(CONFIG.emailjs.serviceId, CONFIG.emailjs.templateId, params, CONFIG.emailjs.publicKey)
       .then(() => {
@@ -2255,6 +2274,10 @@
       total:       '—',
       sent_at:     new Date().toLocaleString(),
     };
+    params.name    = name;
+    params.email   = email;
+    params.time    = params.sent_at;
+    params.message = `CONTACT FORM\n\nName: ${name}\nEmail: ${email}\n\n${message}`;
 
     emailjs.send(CONFIG.emailjs.serviceId, CONFIG.emailjs.templateId, params, CONFIG.emailjs.publicKey)
       .then(() => {
