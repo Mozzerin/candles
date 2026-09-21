@@ -1366,8 +1366,15 @@
         @emmas_lab_candle
       </a>
     </div>
+    <address class="footer-contact">
+      Emma's Lab · Bahnhofstrasse 4 · 8932 Mettmenstetten · Switzerland<br>
+      <a id="footer-email" href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a> ·
+      <a id="footer-phone" href="tel:+41782562952">+41 78 256 29 52</a>
+    </address>
     <div class="footer-legal">
       <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="cookie-policy.html">Cookie Policy</a>
     </div>
   </div>
 </footer>
@@ -1601,6 +1608,10 @@
     // Contact email value text
     const emailVal = document.getElementById('contact-email-val');
     if (emailVal) emailVal.textContent = CONFIG.contactEmail;
+    const footerEmail = document.getElementById('footer-email');
+    if (footerEmail) { footerEmail.textContent = CONFIG.contactEmail; footerEmail.href = 'mailto:' + CONFIG.contactEmail; }
+    const footerPhone = document.getElementById('footer-phone');
+    if (footerPhone) { footerPhone.textContent = CONFIG.phone; footerPhone.href = 'tel:' + CONFIG.phone.replace(/\s+/g, ''); }
     const directEmail = document.getElementById('ct-direct-email');
     if (directEmail) directEmail.textContent = CONFIG.contactEmail;
 

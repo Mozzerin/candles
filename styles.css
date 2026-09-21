@@ -187,6 +187,9 @@ footer {
 }
 .footer-brand { font-size: 1rem; font-weight: 600; }
 .footer-copy { font-size: 0.8rem; color: var(--color-muted); }
+.footer-contact { font-style: normal; font-size: 0.75rem; line-height: 1.7; color: var(--color-muted); margin-top: 0.75rem; text-align: center; }
+.footer-contact a { color: var(--color-muted); }
+.footer-contact a:hover { color: var(--color-text); }
 .footer-legal { display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; margin-top: 0.5rem; }
 .footer-legal a { font-size: 0.75rem; color: var(--color-muted); }
 .footer-legal a:hover { color: var(--color-text); }
