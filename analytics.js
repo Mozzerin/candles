@@ -107,3 +107,50 @@ function trackContact() {
   if (window.fbq) fbq('track', 'Contact');
   if (window.gtag) gtag('event', 'generate_lead');
 }
+
+/* Order request = cart submitted via the EmailJS form (no online payment). */
+function _cartItems(cart) {
+  return cart.map(item => {
+    const product = PRODUCTS.find(p => p.id === item.productId);
+    if (!product) return null;
+    const tr = product.translations.en || product.translations[Object.keys(product.translations)[0]];
+    return { item_id: product.id, item_name: tr.name, price: product.price, quantity: item.qty };
+  }).filter(Boolean);
+}
+
+let _checkoutTracked = false;
+
+function trackInitiateCheckout(cart, value) {
+  if (!analyticsLoaded || _checkoutTracked || !cart.length) return;
+  _checkoutTracked = true;
+  const items = _cartItems(cart);
+  if (window.fbq) fbq('track', 'InitiateCheckout', {
+    content_ids: items.map(i => i.item_id),
+    contents:    items.map(i => ({ id: i.item_id, quantity: i.quantity })),
+    content_type: 'product',
+    num_items:   items.reduce((s, i) => s + i.quantity, 0),
+    value,
+    currency:    'CHF',
+  });
+  if (window.gtag) gtag('event', 'begin_checkout', { currency: 'CHF', value, items });
+}
+
+function trackPurchase(cart, value) {
+  if (!analyticsLoaded) return;
+  _checkoutTracked = false;
+  const items = _cartItems(cart);
+  if (window.fbq) fbq('track', 'Purchase', {
+    content_ids: items.map(i => i.item_id),
+    contents:    items.map(i => ({ id: i.item_id, quantity: i.quantity })),
+    content_type: 'product',
+    num_items:   items.reduce((s, i) => s + i.quantity, 0),
+    value,
+    currency:    'CHF',
+  });
+  if (window.gtag) gtag('event', 'purchase', {
+    transaction_id: 'ord-' + Date.now(),
+    currency: 'CHF',
+    value,
+    items,
+  });
+}
