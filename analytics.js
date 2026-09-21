@@ -5,6 +5,7 @@
 ──────────────────────────────────────────────────────────────────────────── */
 const GA4_ID        = 'G-FS5JXS3RQ8';
 const META_PIXEL_ID = '1389010873396233';
+const GOOGLE_ADS_ID = 'AW-18465817528';
 
 let analyticsLoaded = false;
 
@@ -18,6 +19,7 @@ function _loadGA4() {
   window.gtag = function () { dataLayer.push(arguments); };
   gtag('js', new Date());
   gtag('config', GA4_ID, { anonymize_ip: true });
+  gtag('config', GOOGLE_ADS_ID);
 }
 
 function _loadMetaPixel() {
