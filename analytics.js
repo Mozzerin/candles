@@ -46,6 +46,12 @@ function acceptCookies() {
   localStorage.setItem('cookie_consent', 'accepted');
   document.getElementById('cookie-banner').style.display = 'none';
   initAnalytics();
+  // If a product card was auto-opened (e.g. ?product=... ad link) before consent
+  // was given, view_item never fired for it — catch up now that tracking is live.
+  if (typeof pdProductId !== 'undefined' && pdProductId) {
+    const product = PRODUCTS.find(p => p.id === pdProductId);
+    if (product) trackViewContent(product);
+  }
 }
 
 function declineCookies() {
