@@ -112,7 +112,7 @@ Party Box создан для дней рождений, девичников, �
       'images/products/kits/Moonlight_Unicorn3.webp',
       'images/products/kits/unicorn.webp',
     ],
-    price:         15.00,
+    price:         8.00,
     originalPrice: null,
     onSale:        false,
     translations: {
@@ -188,7 +188,7 @@ Was enthalten ist:
       'images/products/kits/Dreamy_Unicorn3.webp',
       'images/products/kits/unicorn.webp',
     ],
-    price:         15.00,
+    price:         8.00,
     originalPrice: null,
     onSale:        false,
     translations: {
@@ -264,7 +264,7 @@ Was enthalten ist:
       'images/products/kits/Starlight_Unicorn3.webp',
       'images/products/kits/unicorn.webp',
     ],
-    price:         15.00,
+    price:         8.00,
     originalPrice: null,
     onSale:        false,
     translations: {
@@ -418,7 +418,7 @@ Party Box создан для дней рождений, семейных вст
       'images/products/kits/Diplodocus3.webp',
       'images/products/kits/dinosavr.webp',
     ],
-    price:         15.00,
+    price:         8.00,
     originalPrice: null,
     onSale:        false,
     translations: {
@@ -494,7 +494,7 @@ Was enthalten ist:
       'images/products/kits/Stegosaurus3.webp',
       'images/products/kits/dinosavr.webp',
     ],
-    price:         15.00,
+    price:         8.00,
     originalPrice: null,
     onSale:        false,
     translations: {
