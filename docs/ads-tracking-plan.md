@@ -1,7 +1,10 @@
 # Ads & Tracking Plan — Emma's Lab
 
-## Status: Pending implementation
-Needs: GA4 Measurement ID (`G-XXXXXXXXXX`) + Meta Pixel ID before code changes.
+## Status: Tracking implemented (as of 2026-10-03)
+- Done: GA4, Meta Pixel and Google Ads tag behind cookie consent (`analytics.js`); funnel events from `view_item` to purchase; `?product=` and `?lang=` ad landing links; OG image; WhatsApp link in the contact section.
+- Open: customer testimonials on the landing page (Step 4.1).
+
+Steps 1–2 below are kept as a record of the original plan; `analytics.js` is the source of truth for IDs and events.
 
 ---
 
@@ -49,9 +52,9 @@ Without UTMs, GA4 shows ad traffic as "direct".
 
 ## Step 4 — Fix before spending on ads
 
-1. **Testimonials** — add 2-3 customer quotes to the landing page (cold traffic converts poorly without social proof)
-2. **OG image bug** — `og-image` meta tag is currently empty; fix so Meta ad previews show the product photo
-3. **WhatsApp button** — add to contact section (`https://wa.me/41782562952`); Swiss mobile users convert better via WhatsApp than forms
+1. **Testimonials** (open) — add 2-3 customer quotes to the landing page (cold traffic converts poorly without social proof)
+2. **OG image bug** (done) — `og-image` meta tag is currently empty; fix so Meta ad previews show the product photo
+3. **WhatsApp button** (done) — add to contact section (`https://wa.me/41782562952`); Swiss mobile users convert better via WhatsApp than forms
 
 ---
 
@@ -65,7 +68,7 @@ Target high-intent keywords by language:
 
 ### Meta (Facebook/Instagram)
 - Audience: parents of kids 3-10, Switzerland, broad interests
-- Creative: Party Box flat-lay photo, price callout (CHF 4.50/kit)
+- Creative: Party Box flat-lay photo, price callout (CHF 4.90/kit)
 - Retarget site visitors with individual kit products
 
 ### Budget

@@ -46,7 +46,7 @@ const PRODUCTS = [
 
 This Party Box is made for birthday parties, girls' nights, family gatherings, creative workshops, and group events. It's also perfect as a gift for a whole class, a school event, or any celebration where you want to give people something fun and memorable to make with their hands.
 
-At CHF 4.50 per kit, the Party Box saves you 35% compared to buying individually — the best value for groups.
+At CHF 4.90 per kit, the Party Box saves you 38% compared to buying individually — the best value for groups.
 
 What's included (×10 complete kits):
 • 10 plaster unicorn figurines ready to paint
@@ -61,7 +61,7 @@ What's included (×10 complete kits):
 
 Cette Party Box est idéale pour les anniversaires, les soirées entre amies, les réunions en famille, les ateliers créatifs et les événements en groupe. Elle convient aussi parfaitement comme cadeau pour une classe entière, une fête scolaire ou toute célébration où vous souhaitez offrir quelque chose de fun et de mémorable à créer avec les mains.
 
-À CHF 4,50 par kit, la Party Box vous fait économiser 35 % par rapport à l'achat individuel — le meilleur rapport qualité-prix pour les groupes.
+À CHF 4,90 par kit, la Party Box vous fait économiser 38 % par rapport à l'achat individuel — le meilleur rapport qualité-prix pour les groupes.
 
 Ce qui est inclus (×10 kits complets) :
 • 10 figurines licorne en plâtre prêtes à peindre
@@ -76,7 +76,7 @@ Ce qui est inclus (×10 kits complets) :
 
 Diese Party Box ist ideal für Kindergeburtstage, Mädelsabende, Familientreffen, kreative Workshops und Gruppenevents. Sie eignet sich auch hervorragend als Geschenk für eine ganze Klasse, ein Schulevent oder jede Feier, bei der du den Menschen etwas Spaßiges und Unvergessliches zum Selbermachen schenken möchtest.
 
-Mit CHF 4,50 pro Kit sparst du mit der Party Box 35 % gegenüber dem Einzelkauf — der beste Preis für Gruppen.
+Mit CHF 4,90 pro Kit sparst du mit der Party Box 38 % gegenüber dem Einzelkauf — der beste Preis für Gruppen.
 
 Was enthalten ist (×10 komplette Sets):
 • 10 Gips-Einhorn-Figuren, bereit zum Bemalen
@@ -91,7 +91,7 @@ Was enthalten ist (×10 komplette Sets):
 
 Party Box создан для дней рождений, девичников, семейных встреч, творческих мастер-классов и групповых мероприятий. Это также идеальный подарок для целого класса, школьного праздника или любого торжества, где хочется дать людям что-то интересное и запоминающееся для творчества.
 
-По CHF 4.50 за набор, Party Box экономит 35% по сравнению с покупкой по одному — лучшая цена для группы.
+По CHF 4.90 за набор, Party Box экономит 38% по сравнению с покупкой по одному — лучшая цена для группы.
 
 Что входит (×10 полных наборов):
 • 10 гипсовых фигурок единорогов, готовых к росписи
@@ -352,7 +352,7 @@ Was enthalten ist:
 
 This Party Box is made for birthday parties, family gatherings, school events, creative workshops, and any group celebration where you want to give people something fun and hands-on to make together. It's also a perfect gift for an entire class or a dino-loving kid who wants to share the fun.
 
-At CHF 4.50 per kit, the Party Box saves you 35% compared to buying individually — the best value for groups.
+At CHF 4.90 per kit, the Party Box saves you 38% compared to buying individually — the best value for groups.
 
 What's included (×10 complete kits):
 • 10 plaster dinosaur figurines ready to paint
@@ -367,7 +367,7 @@ What's included (×10 complete kits):
 
 Cette Party Box est idéale pour les anniversaires, les réunions en famille, les fêtes scolaires, les ateliers créatifs et toute célébration en groupe où vous souhaitez offrir quelque chose de fun et de mémorable à créer avec les mains. C'est aussi le cadeau parfait pour toute une classe ou un enfant fan de dinosaures qui veut partager l'aventure.
 
-À CHF 4,50 par kit, la Party Box vous fait économiser 35 % par rapport à l'achat individuel — le meilleur rapport qualité-prix pour les groupes.
+À CHF 4,90 par kit, la Party Box vous fait économiser 38 % par rapport à l'achat individuel — le meilleur rapport qualité-prix pour les groupes.
 
 Ce qui est inclus (×10 kits complets) :
 • 10 figurines dinosaure en plâtre prêtes à peindre
@@ -382,7 +382,7 @@ Ce qui est inclus (×10 kits complets) :
 
 Diese Party Box ist ideal für Kindergeburtstage, Familientreffen, Schulevents, kreative Workshops und jede Gruppenfeier, bei der du den Menschen etwas Spaßiges und Unvergessliches zum Selbermachen schenken möchtest. Sie ist auch das perfekte Geschenk für eine ganze Klasse oder ein dino-begeistertes Kind, das den Spaß teilen möchte.
 
-Mit CHF 4,50 pro Kit sparst du mit der Party Box 35 % gegenüber dem Einzelkauf — der beste Preis für Gruppen.
+Mit CHF 4,90 pro Kit sparst du mit der Party Box 38 % gegenüber dem Einzelkauf — der beste Preis für Gruppen.
 
 Was enthalten ist (×10 komplette Sets):
 • 10 Gips-Dinosaurier-Figuren, bereit zum Bemalen
@@ -397,7 +397,7 @@ Was enthalten ist (×10 komplette Sets):
 
 Party Box создан для дней рождений, семейных встреч, школьных праздников, творческих мастер-классов и любых групповых мероприятий, где хочется дать людям что-то интересное и запоминающееся для совместного творчества. Это также идеальный подарок для целого класса или ребёнка-любителя динозавров, который хочет поделиться радостью с друзьями.
 
-По CHF 4.50 за набор, Party Box экономит 35% по сравнению с покупкой по одному — лучшая цена для группы.
+По CHF 4.90 за набор, Party Box экономит 38% по сравнению с покупкой по одному — лучшая цена для группы.
 
 Что входит (×10 полных наборов):
 • 10 гипсовых фигурок динозавров, готовых к росписи
