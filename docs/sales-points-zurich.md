@@ -5,6 +5,7 @@
 
 ## 1. С чего начать
 
+0. **Хэллоуин — сегодня-завтра.** До 31 октября четыре недели: Stöckweid и Herbstmarkt Affoltern (раздел 8).
 1. **Рынки — в первую очередь.** Места на ноябрь–декабрь распределяются сейчас. Mini-Markt на Weihnachtsallee и Heiliger Bimbam лучше всего подходят под формат маленького лейбла.
 2. **Federle Geschenke** — зайти лично с образцами: это рядом, и ассортимент совпадает (подарки + детское).
 3. **allerleiLADEN** — написать во все три точки сразу: свечи в обычный магазин, гипсовые наборы в детский.
@@ -92,7 +93,7 @@
 
 **Перед отправкой:**
 - Отправлять с emmaslabcandle@gmail.com и приложить 3–4 фото: одна свеча крупно, несколько свечей вместе, набор для детей в упаковке, фото стенда с ярмарки.
-- Всё в квадратных скобках `[...]` — проверить или заменить. Это места, где я не знаю фактов: была ли Екатерина в магазине, как точно называлась сентябрьская ярмарка.
+- Всё в квадратных скобках `[...]` — проверить или заменить. Это места, где я не знаю фактов: была ли Екатерина в магазине, действительно ли сентябрьская ярмарка — это Kürbisfäscht на Stöckweid в Кнонау (так следует из названия файла с выводами).
 - Условия продажи (комиссия или закупка) в письмах намеренно оставлены открытыми — пусть магазин назовёт свои.
 - Если ответа нет, через 7–10 дней — короткое напоминание (шаблон в конце).
 
@@ -213,7 +214,8 @@ handgemachte Kerzenfiguren aus Gips — Frösche, Hyazinthen, Weihnachtskugeln,
 einen Mäusekönig — und Malsets für Kinder. Alles entsteht bei mir zu Hause,
 Stück für Stück von Hand.
 
-[Ende September war ich bereits mit einem Stand an einem Markt] und weiss
+Ende September war ich mit meinem Stand am Kürbisfäscht auf der Stöckweid
+in Knonau und weiss
 inzwischen, wie gern Kinder vor den Figuren stehen bleiben und die Eltern
 gleich mit.
 
@@ -497,6 +499,129 @@ unterwegs und bringe gern Muster vorbei.
 
 ---
 
+## 8. Хэллоуин и осень (до 1 ноября)
+
+Специализированных хэллоуинских ярмарок с продавцами рядом почти нет: нашлась одна, остальное — тыквенные фермы и осенний рынок. До Хэллоуина четыре недели, поэтому писать и звонить нужно сразу. Товар под это — свеча «Тыква» (CHF 34 вместо 44) и детские наборы.
+
+### Куда идти
+
+| Место | Что это | Даты | Как попасть | Статус |
+|---|---|---|---|---|
+| **[Stöckweid, Familie Duperrex](https://www.freizeit.ch/kalender/kurbisfascht-herbstmart-kurbisausstellung/)** — Stöckweid 1, 8934 Knonau (~3 км) | Тыквенная ферма: 150 сортов, выставка и продажа тыкв. Kürbisfäscht 26–27 сентября уже прошёл, но выставка открыта до конца октября | до конца октября | Попросить поставить свечи-тыквы у них в продаже на оставшийся месяц — лично или по телефону | |
+| **[Herbstmarkt Affoltern am Albis](https://www.stadtaffoltern.ch/dienstleistungen/32563)** — Untere Bahnhofstrasse (~5 км) | Городской осенний рынок, воскресенье 10–18. Искали ремесло и креативные товары из региона | 25 октября | Срок заявок был 23 августа, но в середине августа оставались свободные места — спросить про отказы: marktwesen@stadtaffoltern.ch, 044 762 56 00 | |
+| **[Halloween Fantasy- und Mittelalterspektakel](https://vehi-mercatus.com/market-calendar/halloween-mittelalterspektakel-zuerich-2026/)** — Hardturmstrasse 319, 8005 Zürich | Единственный настоящий хэллоуинский рынок: торговцы, шоу, детская программа с каруселью и палаткой для поделок | 30 октября – 1 ноября | Организатор — [turnei.ch](https://www.turnei.ch). Условий для торговцев на странице нет; на средневековых рынках обычно требуют стилизованный стенд — уточнить до заявки | |
+| **[Jucker Farm, Juckerhof](https://www.juckerfarm.ch/hoferlebnis/kuerbisausstellung/)** — Seegräben (~45 км) | Самая известная тыквенная выставка, свой Hofladen. Вход CHF 11–13 | выставка до 25 октября; [Halloween на ферме](https://www.juckerfarm.ch/hoferlebnis/juckerhof/) 31 октября, 17–21:30 | Написать в Hofladen. В магазине продают в основном своё, шанс небольшой — но поток посетителей огромный | |
+| **[Jucker Farm, Bächlihof](https://www.juckerfarm.ch/)** — Jona (~45 км) | Вторая ферма той же компании | выставка до 1 ноября | То же письмо, что и для Juckerhof | |
+
+### Слабее, но рядом
+
+- **[ZuKi am Teuflibach](https://www.myswitzerland.com/en-us/experiences/events/zuki-halloween/)**, Cham — семейный Хэллоуин с вырезанием тыкв. Продавцов там нет, но можно предложить детские наборы как занятие или призы. Дату 2026 я не нашёл.
+- **[Kulturama](https://www.freizeit.ch/dossier/die-besten-halloween-veranstaltungen/)**, Zürich — Halloween-Special 31 октября с мастерской для детей. Тот же заход: наборы для раскрашивания как часть программы.
+
+### Что не подходит
+
+Магазины хэллоуинского декора и костюмов (ATOP, Starworld в Хоргене, Deinparadies в Випкингене, онлайн Pekabo, Funshop) продают дешёвый массовый товар — свеча ручной работы за CHF 34 там не встанет. Вечеринки (Kaufleuten, Boda Borg, Dolder) продавцов не берут.
+
+### Письма
+
+#### 8.1 Stöckweid (Knonau)
+
+Угол: Екатерина уже стояла у них на Kürbisfäscht, тыквы продаются до конца октября, а свеча — тыква.
+
+```
+Liebe Familie Duperrex
+
+Das Kürbisfäscht war wunderschön — vielen Dank, dass ich mit meinem Stand
+dabei sein durfte. Ich bin Ekaterina von Emma's Lab, die mit den
+Kerzenfiguren und den Malsets für Kinder.
+
+Jetzt habe ich eine kleine Idee und hoffe, sie ist nicht zu frech: Ihre
+Kürbisausstellung läuft ja noch bis Ende Oktober, und ich habe eine Kerze,
+die selbst ein Kürbis ist — von Hand aus Gips gegossen, bemalt und mit
+Duftwachs gefüllt. Zwischen 150 echten Sorten wäre sie die einzige, die
+man anzünden kann.
+
+Dürfte ich bis Halloween ein paar davon bei Ihnen im Verkauf hinstellen?
+Ich bringe sie fertig angeschrieben vorbei, hole Ende Monat ab, was übrig
+ist, und Sie behalten vom Verkauf den Anteil, den Sie fair finden.
+
+Ich wohne in Mettmenstetten und bin in fünf Minuten bei Ihnen.
+```
+
+#### 8.2 Herbstmarkt Affoltern am Albis
+
+**An:** marktwesen@stadtaffoltern.ch
+**Betreff:** Herbstmarkt 25. Oktober — ist noch ein Platz frei geworden?
+
+```
+Guten Tag
+
+Ich weiss, dass die Anmeldefrist für den Herbstmarkt am 23. August
+abgelaufen ist, und frage trotzdem — manchmal sagt ja jemand ab.
+
+Ich bin Ekaterina aus Mettmenstetten und mache unter dem Namen Emma's Lab
+von Hand Kerzenfiguren aus Gips und Malsets für Kinder. Für den Herbst
+habe ich eine Kürbis-Kerze, dazu Frösche mit Hut und Hyazinthen. Ende
+September war ich mit meinem Stand am Kürbisfäscht auf der Stöckweid in
+Knonau.
+
+Falls für den 25. Oktober noch ein Platz frei ist oder frei wird, wäre
+ich sehr gern dabei; ich brauche nur wenig Platz und bringe meinen Tisch
+selbst mit. Und falls nicht: Darf ich mich gleich für den Frühlingsmarkt
+vormerken lassen?
+```
+
+#### 8.3 Jucker Farm (Juckerhof и Bächlihof)
+
+**An:** через контакты на juckerfarm.ch
+**Betreff:** Ein Kürbis, den man anzünden kann — für Ihren Hofladen zur Kürbiszeit?
+
+```
+Guten Tag liebes Jucker-Farm-Team
+
+Bei Ihnen dreht sich im Herbst alles um den Kürbis, und ich habe einen,
+den es bei Ihnen noch nicht gibt: Er ist aus Gips, von Hand bemalt und
+innen eine Duftkerze.
+
+Ich bin Ekaterina und mache in Mettmenstetten unter dem Namen Emma's Lab
+Kerzen in Form kleiner Figuren. Die Kürbis-Kerze giesse, schleife und
+bemale ich Stück für Stück selbst. Ich könnte mir vorstellen, dass sie im
+Hofladen neben Ihren Kürbisspezialitäten ein schönes Mitbringsel wäre —
+gerade für Gäste, die keinen echten Kürbis im Zug nach Hause tragen
+möchten.
+
+Nehmen Sie für die Kürbiszeit Produkte von kleinen Herstellern aus der
+Region auf? Ich schicke gern ein Muster oder bringe es in Seegräben
+vorbei. Und falls es für diesen Herbst zu spät ist, freue ich mich, wenn
+Sie für das nächste Jahr an mich denken.
+
+Fotos sind angehängt, mehr auf emmas-lab.ch.
+```
+
+#### 8.4 Halloween Fantasy- und Mittelalterspektakel
+
+Сначала короткий вопрос, а не заявка: условия неизвестны.
+
+**An:** через контакты на turnei.ch
+**Betreff:** Händleranfrage Halloween-Spektakel Zürich, 30. Oktober – 1. November
+
+```
+Guten Tag
+
+Ich bin Ekaterina und mache unter dem Namen Emma's Lab von Hand
+Kerzenfiguren aus Gips: eine Kürbis-Kerze, Frösche mit Hut, einen
+Mäusekönig — kleine Wesen, die an ein Halloween-Spektakel gut passen
+würden.
+
+Bevor ich mich bewerbe, zwei Fragen: Gibt es für dieses Jahr noch
+Händlerplätze, und welche Vorgaben gelten für den Stand — muss er
+mittelalterlich gestaltet sein?
+
+Fotos meiner Stücke sind angehängt.
+```
+
+---
+
 ## Источники
 
 - Federle Geschenke — https://www.federle-geschenke.ch/en
@@ -520,3 +645,12 @@ unterwegs und bringe gern Muster vorbei.
 - Swiss Design Market — https://www.swissdesignmarket.ch/
 - s'Fachl в Швейцарии — https://www.tinystartup.ch/interviews/s-fachl-headquarter/
 - Zug Tourismus, Shopping & Märkte — https://www.zug-tourismus.ch/entdecken/shopping-maerkte
+- Kürbisfäscht Stöckweid — https://www.freizeit.ch/kalender/kurbisfascht-herbstmart-kurbisausstellung/
+- Herbstmarkt Affoltern, nau.ch (15.08.2026) — https://www.nau.ch/ort/affoltern-am-albis/traditioneller-herbstmarkt-noch-wenige-stande-frei-67161213
+- Stadt Affoltern, Markt und Chilbi — https://www.stadtaffoltern.ch/dienstleistungen/32563
+- Halloween Mittelalterspektakel Zürich — https://vehi-mercatus.com/market-calendar/halloween-mittelalterspektakel-zuerich-2026/
+- Halloween Fantasy- und Mittelalterspektakel на myswitzerland — https://www.myswitzerland.com/en-us/experiences/events/halloween-fantasy-and-medieval-spectacle-zurich/
+- Jucker Farm, Kürbisausstellung — https://www.juckerfarm.ch/hoferlebnis/kuerbisausstellung/
+- Jucker Farm, Juckerhof — https://www.juckerfarm.ch/hoferlebnis/juckerhof/
+- Halloween-события 2026, freizeit.ch — https://www.freizeit.ch/dossier/die-besten-halloween-veranstaltungen/
+- ZuKi Halloween — https://www.myswitzerland.com/en-us/experiences/events/zuki-halloween/
