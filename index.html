@@ -1376,6 +1376,7 @@
     <div class="footer-legal">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms</a>
+      <a href="returns.html">Returns</a>
       <a href="cookie-policy.html">Cookie Policy</a>
     </div>
   </div>
@@ -2357,6 +2358,29 @@
     if (can) can.href = base + '/';
 
     const candles = PRODUCTS.filter(p => p.category === 'candle' && !p.hidden);
+    // Keep in sync with 'shipping.ch' in config.js and terms.html §6
+    const shippingDetails = {
+      '@type': 'OfferShippingDetails',
+      shippingRate: { '@type': 'MonetaryAmount', value: 8, currency: 'CHF' },
+      shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'CH' },
+      // Dispatched within 5 business days; postal transit time is not stated
+      deliveryTime: {
+        '@type': 'ShippingDeliveryTime',
+        handlingTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 5, unitCode: 'DAY' },
+      },
+    };
+    // Keep in sync with returns.html and terms.html §6–7
+    const returnPolicy = {
+      '@type': 'MerchantReturnPolicy',
+      applicableCountry: 'CH',
+      returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+      merchantReturnDays: 14,
+      returnMethod: 'https://schema.org/ReturnByMail',
+      returnFees: 'https://schema.org/ReturnFeesCustomerResponsibility',
+      refundType: 'https://schema.org/FullRefund',
+      itemCondition: 'https://schema.org/NewCondition',
+      merchantReturnLink: base + '/returns.html',
+    };
     const schema = {
       '@context': 'https://schema.org',
       '@graph': [
@@ -2394,6 +2418,8 @@
               availability: 'https://schema.org/InStock',
               url: base + '/#shop',
               seller: { '@type': 'Organization', name: CONFIG.siteName },
+              shippingDetails,
+              hasMerchantReturnPolicy: returnPolicy,
             },
           };
         }),

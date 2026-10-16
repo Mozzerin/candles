@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>Return Policy – Emma's Lab</title>
+  <meta name="description" content="Return policy for orders placed on emmas-lab.ch: 14-day voluntary return of unused products, procedure, refunds and handling of defective items.">
+  <link rel="canonical" href="https://emmas-lab.ch/returns.html">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem var(--site-gutter) 5rem;
+    }
+    h1 { font-size: 1.75rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .doc-meta { font-size: 0.8rem; color: var(--color-muted); margin-bottom: 3rem; }
+    h2 { font-size: 1rem; font-weight: 600; margin: 2rem 0 0.75rem; letter-spacing: 0.02em; }
+    p { color: var(--color-muted); margin-bottom: 0.75rem; }
+    ul, ol { color: var(--color-muted); padding-left: 1.5rem; margin-bottom: 0.75rem; }
+    li { margin-bottom: 0.35rem; }
+    .policy-content { display: none; }
+    .policy-content.visible { display: block; }
+  </style>
+</head>
+<body>
+
+<header id="header">
+  <div class="header-inner">
+    <a href="/" class="header-logo">
+      <img src="images/site/logo.webp" alt="Emma's Lab logo">
+      Emma's Lab
+    </a>
+    <nav>
+      <ul class="header-nav">
+        <li><a href="/#shop">Shop</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;align-items:center;gap:1.25rem;">
+      <a href="https://www.instagram.com/emmas_lab_candle" target="_blank" rel="noopener noreferrer" class="social-header-link" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <div class="lang-switcher" id="lang-sw">
+        <button class="lang-btn" data-lang="en" onclick="setPageLang('en')">EN</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" data-lang="fr" onclick="setPageLang('fr')">FR</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" data-lang="de" onclick="setPageLang('de')">DE</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" data-lang="ru" onclick="setPageLang('ru')">RU</button>
+      </div>
+      <a href="/" class="cart-btn" aria-label="Go to shop">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span>Cart</span>
+      </a>
+      <button class="burger" id="burger-btn" aria-label="Menu" onclick="openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-nav">
+  <div class="mobile-nav-header">
+    <span class="header-logo">Emma's Lab</span>
+    <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+  </div>
+  <ul class="mobile-nav-links">
+    <li><a href="/#shop" onclick="closeMobileNav()">Shop</a></li>
+    <li><a href="/#about" onclick="closeMobileNav()">About</a></li>
+    <li><a href="/#contact" onclick="closeMobileNav()">Contact</a></li>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="https://www.instagram.com/emmas_lab_candle" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+  </ul>
+  <div class="lang-switcher" style="margin-top:auto;">
+    <button class="lang-btn" data-lang="en" onclick="setPageLang('en');closeMobileNav()">EN</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" data-lang="fr" onclick="setPageLang('fr');closeMobileNav()">FR</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" data-lang="de" onclick="setPageLang('de');closeMobileNav()">DE</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" data-lang="ru" onclick="setPageLang('ru');closeMobileNav()">RU</button>
+  </div>
+</div>
+
+<!--
+  KEEP IN SYNC: the return rules below (14-day return, 7-day defect notice, buyer pays return
+  shipping, product price refunded, bank transfer within 14 days) are duplicated in:
+    - terms.html §6 "Returns" and §7 "Defective Goods"
+    - index.html JSON-LD `returnPolicy` (MerchantReturnPolicy)
+  All four language blocks have the same 9 sections in the same order:
+    1 Scope · 2 14-day return · 3 Conditions · 4 Excluded products · 5 How to return
+    6 Refund · 7 Returns not meeting the conditions · 8 Defective or incorrect items · 9 Contact
+-->
+<main>
+
+  <!-- ═══ EN ═══ -->
+  <section id="policy-en" class="policy-content visible" lang="en">
+    <h1>Return Policy</h1>
+    <p class="doc-meta">Last updated: October 2026 &nbsp;·&nbsp; Applies to orders placed on emmas-lab.ch</p>
+
+    <h2>1. Scope</h2>
+    <p>This Return Policy applies to orders placed through our website emmas-lab.ch and delivered within Switzerland. It supplements our <a href="/terms.html">Terms &amp; Conditions</a>. Your statutory warranty rights for defective goods under Swiss law remain unaffected.</p>
+
+    <h2>2. 14-day return</h2>
+    <p>Swiss law does not provide a statutory right of withdrawal for online purchases. As a voluntary service, we accept returns of non-defective products within <strong>14 days of receipt</strong>, under the conditions set out below.</p>
+
+    <h2>3. Conditions</h2>
+    <p>A product can be returned only if it is:</p>
+    <ul>
+      <li>unused and unopened;</li>
+      <li>in its original, undamaged packaging, with all contents complete (figure, paints, brush, instructions);</li>
+      <li>free of any signs of use.</li>
+    </ul>
+
+    <h2>4. Products excluded from return</h2>
+    <ul>
+      <li>personalised or made-to-order items;</li>
+      <li>kits whose packaging or paints have been opened;</li>
+      <li>candles that have been lit;</li>
+      <li>any product showing signs of use.</li>
+    </ul>
+
+    <h2>5. How to return</h2>
+    <ol>
+      <li>Email us at <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a> within 14 days of receiving your order. Include your order number and the product(s) you wish to return.</li>
+      <li>We confirm the return by email and send you the return address. Returns sent without prior confirmation cannot be accepted.</li>
+      <li>Ship the product within 7 days of our confirmation, well packed. Return shipping costs are borne by you. The risk of loss or damage in transit lies with you; we recommend a tracked shipment.</li>
+    </ol>
+
+    <h2>6. Refund</h2>
+    <p>Once we have received and inspected the returned product, we refund the product price by bank transfer within 14 days, to the account from which the payment was made. The original shipping costs are not refunded.</p>
+
+    <h2>7. Returns not meeting the conditions</h2>
+    <p>If a returned product does not meet the conditions above (for example it is opened, used, incomplete, or was sent after the deadline), we refuse the refund and notify you by email. The product can be sent back to you at your cost. We store such items for 30 days after our notification; after that we reserve the right to dispose of them.</p>
+
+    <h2>8. Defective or incorrect items</h2>
+    <p>If you receive a defective or wrong item, or your parcel arrives damaged, please notify us within <strong>7 days of receipt</strong> at <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a> with a description and photos (for transit damage, also photos of the packaging). Later claims may be refused.</p>
+    <p>We then decide, at our discretion, whether to offer a replacement, a partial refund or a full refund. Please do not send the item back unless we ask you to; if we do, we cover the return shipping.</p>
+    <p>Our products are handmade. Small variations in shape, colour or surface, as well as tiny air bubbles in the plaster, are natural characteristics of the craft and do not constitute defects.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions about returns: <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a></p>
+  </section>
+
+  <!-- ═══ DE ═══ -->
+  <section id="policy-de" class="policy-content" lang="de">
+    <h1>Rückgabebedingungen</h1>
+    <p class="doc-meta">Stand: Oktober 2026 &nbsp;·&nbsp; Gilt für Bestellungen über emmas-lab.ch</p>
+
+    <h2>1. Geltungsbereich</h2>
+    <p>Diese Rückgabebedingungen gelten für Bestellungen, die über unsere Website emmas-lab.ch aufgegeben und innerhalb der Schweiz geliefert werden. Sie ergänzen unsere <a href="/terms.html">Allgemeinen Geschäftsbedingungen</a>. Ihre gesetzlichen Gewährleistungsrechte bei mangelhafter Ware nach Schweizer Recht bleiben unberührt.</p>
+
+    <h2>2. 14-tägige Rückgabe</h2>
+    <p>Das Schweizer Recht sieht für Online-Käufe kein gesetzliches Widerrufsrecht vor. Als freiwillige Leistung nehmen wir mängelfreie Produkte innerhalb von <strong>14 Tagen nach Erhalt</strong> zu den nachfolgenden Bedingungen zurück.</p>
+
+    <h2>3. Voraussetzungen</h2>
+    <p>Ein Produkt kann nur zurückgegeben werden, wenn es:</p>
+    <ul>
+      <li>unbenutzt und ungeöffnet ist;</li>
+      <li>sich in der unbeschädigten Originalverpackung befindet und vollständig ist (Figur, Farben, Pinsel, Anleitung);</li>
+      <li>keinerlei Gebrauchsspuren aufweist.</li>
+    </ul>
+
+    <h2>4. Von der Rückgabe ausgeschlossen</h2>
+    <ul>
+      <li>personalisierte oder auf Bestellung gefertigte Artikel;</li>
+      <li>Sets, deren Verpackung oder Farben geöffnet wurden;</li>
+      <li>Kerzen, die angezündet wurden;</li>
+      <li>alle Produkte mit Gebrauchsspuren.</li>
+    </ul>
+
+    <h2>5. Ablauf der Rückgabe</h2>
+    <ol>
+      <li>Schreiben Sie uns innerhalb von 14 Tagen nach Erhalt Ihrer Bestellung an <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a>. Geben Sie Ihre Bestellnummer und die Produkte an, die Sie zurückgeben möchten.</li>
+      <li>Wir bestätigen die Rückgabe per E-Mail und teilen Ihnen die Rücksendeadresse mit. Rücksendungen ohne vorherige Bestätigung können nicht angenommen werden.</li>
+      <li>Senden Sie das Produkt innerhalb von 7 Tagen nach unserer Bestätigung gut verpackt zurück. Die Kosten der Rücksendung tragen Sie. Das Risiko von Verlust oder Beschädigung auf dem Transportweg liegt bei Ihnen; wir empfehlen einen Versand mit Sendungsverfolgung.</li>
+    </ol>
+
+    <h2>6. Rückerstattung</h2>
+    <p>Nach Erhalt und Prüfung des zurückgesandten Produkts erstatten wir den Produktpreis innerhalb von 14 Tagen per Banküberweisung auf das Konto, von dem die Zahlung erfolgt ist. Die ursprünglichen Versandkosten werden nicht erstattet.</p>
+
+    <h2>7. Rücksendungen, die die Voraussetzungen nicht erfüllen</h2>
+    <p>Erfüllt ein zurückgesandtes Produkt die oben genannten Voraussetzungen nicht (z.&nbsp;B. geöffnet, benutzt, unvollständig oder nach Fristablauf versandt), lehnen wir die Rückerstattung ab und informieren Sie per E-Mail. Das Produkt kann Ihnen auf Ihre Kosten zurückgesandt werden. Wir bewahren solche Artikel 30 Tage ab unserer Mitteilung auf; danach behalten wir uns vor, sie zu entsorgen.</p>
+
+    <h2>8. Mangelhafte oder falsche Artikel</h2>
+    <p>Wenn Sie einen mangelhaften oder falschen Artikel erhalten oder Ihr Paket beschädigt ankommt, melden Sie sich bitte innerhalb von <strong>7 Tagen nach Erhalt</strong> unter <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a> mit einer Beschreibung und Fotos (bei Transportschäden auch Fotos der Verpackung). Spätere Reklamationen können abgelehnt werden.</p>
+    <p>Wir entscheiden anschliessend nach unserem Ermessen, ob wir einen Ersatz, eine teilweise oder eine vollständige Rückerstattung anbieten. Bitte senden Sie den Artikel nur zurück, wenn wir Sie darum bitten; in diesem Fall übernehmen wir die Rücksendekosten.</p>
+    <p>Unsere Produkte sind handgefertigt. Kleine Abweichungen in Form, Farbe oder Oberfläche sowie winzige Luftbläschen im Gips sind natürliche Merkmale der Handarbeit und stellen keinen Mangel dar.</p>
+
+    <h2>9. Kontakt</h2>
+    <p>Fragen zu Rückgaben: <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a></p>
+  </section>
+
+  <!-- ═══ FR ═══ -->
+  <section id="policy-fr" class="policy-content" lang="fr">
+    <h1>Politique de retour</h1>
+    <p class="doc-meta">Dernière mise à jour : octobre 2026 &nbsp;·&nbsp; S'applique aux commandes passées sur emmas-lab.ch</p>
+
+    <h2>1. Champ d'application</h2>
+    <p>La présente politique de retour s'applique aux commandes passées sur notre site emmas-lab.ch et livrées en Suisse. Elle complète nos <a href="/terms.html">Conditions générales</a>. Vos droits légaux de garantie en cas de défaut selon le droit suisse ne sont pas affectés.</p>
+
+    <h2>2. Retour sous 14 jours</h2>
+    <p>Le droit suisse ne prévoit pas de droit de rétractation légal pour les achats en ligne. À titre de service volontaire, nous acceptons le retour de produits sans défaut dans les <strong>14 jours suivant la réception</strong>, aux conditions ci-dessous.</p>
+
+    <h2>3. Conditions</h2>
+    <p>Un produit ne peut être retourné que s'il est :</p>
+    <ul>
+      <li>non utilisé et non ouvert ;</li>
+      <li>dans son emballage d'origine intact, avec tout son contenu (figurine, peintures, pinceau, mode d'emploi) ;</li>
+      <li>sans aucune trace d'utilisation.</li>
+    </ul>
+
+    <h2>4. Produits exclus du retour</h2>
+    <ul>
+      <li>articles personnalisés ou fabriqués sur commande ;</li>
+      <li>kits dont l'emballage ou les peintures ont été ouverts ;</li>
+      <li>bougies qui ont été allumées ;</li>
+      <li>tout produit présentant des traces d'utilisation.</li>
+    </ul>
+
+    <h2>5. Procédure de retour</h2>
+    <ol>
+      <li>Écrivez-nous à <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a> dans les 14 jours suivant la réception de votre commande, en indiquant votre numéro de commande et les produits que vous souhaitez retourner.</li>
+      <li>Nous confirmons le retour par e-mail et vous communiquons l'adresse de retour. Les retours envoyés sans confirmation préalable ne peuvent pas être acceptés.</li>
+      <li>Expédiez le produit dans les 7 jours suivant notre confirmation, soigneusement emballé. Les frais de retour sont à votre charge. Le risque de perte ou de dommage pendant le transport vous incombe ; nous recommandons un envoi avec suivi.</li>
+    </ol>
+
+    <h2>6. Remboursement</h2>
+    <p>Après réception et contrôle du produit retourné, nous remboursons le prix du produit par virement bancaire dans un délai de 14 jours, sur le compte ayant servi au paiement. Les frais de livraison initiaux ne sont pas remboursés.</p>
+
+    <h2>7. Retours ne remplissant pas les conditions</h2>
+    <p>Si un produit retourné ne remplit pas les conditions ci-dessus (par exemple ouvert, utilisé, incomplet ou envoyé après le délai), nous refusons le remboursement et vous en informons par e-mail. Le produit peut vous être renvoyé à vos frais. Nous conservons ces articles pendant 30 jours à compter de notre notification ; passé ce délai, nous nous réservons le droit de les éliminer.</p>
+
+    <h2>8. Articles défectueux ou erronés</h2>
+    <p>Si vous recevez un article défectueux ou erroné, ou si votre colis arrive endommagé, veuillez nous le signaler dans les <strong>7 jours suivant la réception</strong> à <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a>, avec une description et des photos (en cas de dommage de transport, également des photos de l'emballage). Les réclamations tardives peuvent être refusées.</p>
+    <p>Nous décidons ensuite, à notre discrétion, de proposer un remplacement, un remboursement partiel ou un remboursement intégral. Merci de ne pas renvoyer l'article sans notre demande ; si nous vous le demandons, nous prenons en charge les frais de retour.</p>
+    <p>Nos produits sont faits main. De légères variations de forme, de couleur ou de surface, ainsi que de minuscules bulles d'air dans le plâtre, sont des caractéristiques naturelles de l'artisanat et ne constituent pas des défauts.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions sur les retours : <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a></p>
+  </section>
+
+  <!-- ═══ RU ═══ -->
+  <section id="policy-ru" class="policy-content" lang="ru">
+    <h1>Условия возврата</h1>
+    <p class="doc-meta">Обновлено: октябрь 2026 &nbsp;·&nbsp; Действует для заказов, оформленных на emmas-lab.ch</p>
+
+    <h2>1. Область действия</h2>
+    <p>Настоящие условия возврата распространяются на заказы, оформленные через наш сайт emmas-lab.ch и доставленные в пределах Швейцарии. Они дополняют наши <a href="/terms.html">Общие условия</a>. Ваши законные гарантийные права в случае дефекта товара по швейцарскому праву сохраняются.</p>
+
+    <h2>2. Возврат в течение 14 дней</h2>
+    <p>Швейцарское законодательство не предусматривает обязательного права на отказ от онлайн-покупки. В качестве добровольной услуги мы принимаем возврат товаров без дефектов в течение <strong>14 дней с момента получения</strong> на условиях, изложенных ниже.</p>
+
+    <h2>3. Условия</h2>
+    <p>Товар может быть возвращён только если он:</p>
+    <ul>
+      <li>не использовался и не вскрывался;</li>
+      <li>находится в неповреждённой оригинальной упаковке и укомплектован полностью (фигурка, краски, кисть, инструкция);</li>
+      <li>не имеет никаких следов использования.</li>
+    </ul>
+
+    <h2>4. Товары, не подлежащие возврату</h2>
+    <ul>
+      <li>персонализированные изделия и изделия, сделанные на заказ;</li>
+      <li>наборы, упаковка или краски которых были вскрыты;</li>
+      <li>свечи, которые зажигались;</li>
+      <li>любые товары со следами использования.</li>
+    </ul>
+
+    <h2>5. Порядок возврата</h2>
+    <ol>
+      <li>Напишите нам на <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a> в течение 14 дней с момента получения заказа. Укажите номер заказа и товары, которые хотите вернуть.</li>
+      <li>Мы подтверждаем возврат по электронной почте и сообщаем адрес для отправки. Возвраты, отправленные без предварительного подтверждения, не принимаются.</li>
+      <li>Отправьте товар в течение 7 дней после нашего подтверждения, надёжно упаковав его. Расходы на обратную пересылку несёте вы. Риск утери или повреждения при пересылке лежит на вас; рекомендуем отправление с отслеживанием.</li>
+    </ol>
+
+    <h2>6. Возврат денег</h2>
+    <p>После получения и проверки возвращённого товара мы возвращаем стоимость товара банковским переводом в течение 14 дней на счёт, с которого была произведена оплата. Стоимость первоначальной доставки не возвращается.</p>
+
+    <h2>7. Возвраты, не соответствующие условиям</h2>
+    <p>Если возвращённый товар не соответствует указанным выше условиям (например, вскрыт, использован, не укомплектован или отправлен после истечения срока), мы отказываем в возврате денег и уведомляем вас по электронной почте. Товар может быть отправлен вам обратно за ваш счёт. Такие товары мы храним 30 дней с момента уведомления; после этого оставляем за собой право их утилизировать.</p>
+
+    <h2>8. Дефектные или неверные товары</h2>
+    <p>Если вы получили товар с дефектом или не тот товар, либо посылка пришла повреждённой, сообщите нам об этом в течение <strong>7 дней с момента получения</strong> на <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a>, приложив описание и фотографии (при повреждении при доставке также фотографии упаковки). В более поздних претензиях может быть отказано.</p>
+    <p>Далее мы по своему усмотрению решаем, предложить замену, частичный или полный возврат денег. Пожалуйста, не отправляйте товар обратно без нашей просьбы; если мы попросим об этом, обратную пересылку оплачиваем мы.</p>
+    <p>Наши изделия сделаны вручную. Небольшие различия в форме, цвете или поверхности, а также мелкие пузырьки воздуха в гипсе являются естественными особенностями ручной работы и не считаются дефектом.</p>
+
+    <h2>9. Контакты</h2>
+    <p>Вопросы по возвратам: <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">Emma's Lab</span>
+    <span class="footer-copy">© <span id="footer-year"></span> Emma's Lab. All rights reserved.</span>
+    <nav class="footer-legal">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/cookie-policy.html">Cookie Policy</a>
+      <a href="/terms.html">Terms &amp; Conditions</a>
+      <a href="/returns.html">Returns</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  const LANGS = ['en', 'fr', 'de', 'ru'];
+  function setPageLang(lang) {
+    if (!LANGS.includes(lang)) lang = 'en';
+    localStorage.setItem('lang', lang);
+    document.querySelectorAll('.lang-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.lang === lang);
+    });
+    document.querySelectorAll('.policy-content').forEach(el => {
+      el.classList.toggle('visible', el.id === 'policy-' + lang);
+    });
+    document.documentElement.lang = lang;
+  }
+  function openMobileNav()  { document.getElementById('mobile-nav').classList.add('open'); }
+  function closeMobileNav() { document.getElementById('mobile-nav').classList.remove('open'); }
+
+  const initLang = new URLSearchParams(window.location.search).get('lang')
+    || localStorage.getItem('lang')
+    || (navigator.language || '').slice(0, 2).toLowerCase();
+  setPageLang(initLang);
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
