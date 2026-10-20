@@ -9,6 +9,7 @@ const CONFIG = {
   phone:        '+41 78 256 29 52',
   whatsapp:     '41782562952',
   instagram:    'emmas_lab_candle',
+  etsy:         'https://www.etsy.com/shop/EmmasLabCandle',
   currency:     'CHF',
 
   // ── EmailJS ─────────────────────────────────────────────────────────

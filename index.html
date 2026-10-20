@@ -1314,6 +1314,15 @@
         <div class="contact-card-value">@emmas_lab_candle</div>
       </a>
 
+      <!-- Etsy -->
+      <a class="contact-card" href="https://www.etsy.com/shop/EmmasLabCandle" target="_blank" rel="noopener noreferrer">
+        <div class="contact-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </div>
+        <div class="contact-card-label">Etsy</div>
+        <div class="contact-card-value">EmmasLabCandle</div>
+      </a>
+
     </div>
 
   </section>
@@ -1366,6 +1375,10 @@
       <a href="https://www.instagram.com/emmas_lab_candle" target="_blank" rel="noopener noreferrer" style="color:var(--color-muted);display:flex;align-items:center;gap:0.3rem;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         @emmas_lab_candle
+      </a>
+      <a href="https://www.etsy.com/shop/EmmasLabCandle" target="_blank" rel="noopener noreferrer" style="color:var(--color-muted);display:flex;align-items:center;gap:0.3rem;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Etsy
       </a>
     </div>
     <address class="footer-contact">
@@ -2400,7 +2413,7 @@
           },
           image: CONFIG.seo.ogImage,
           priceRange: 'CHF 8–79',
-          sameAs: ['https://www.instagram.com/' + CONFIG.instagram],
+          sameAs: ['https://www.instagram.com/' + CONFIG.instagram, CONFIG.etsy],
         },
         ...candles.map(p => {
           const tr   = p.translations.en;
@@ -2508,6 +2521,7 @@
         },
         sameAs: [
           `https://www.instagram.com/${CONFIG.instagram}`,
+          CONFIG.etsy,
           `https://wa.me/${CONFIG.whatsapp}`,
         ],
       },
