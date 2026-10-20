@@ -567,9 +567,8 @@ Was enthalten ist:
     id:            'candle-frog',
     category:      'candle',
     images:        [
-      'images/products/candles/frog_crone.webp',
-      'images/products/candles/frog1.webp',
-      'images/products/candles/frog2.webp',
+      'images/products/candles/photos/frog-1.webp',
+      'images/products/candles/photos/frog-2.webp',
       'images/products/candles/frog3.mp4',
     ],
     price:         39.00,
@@ -624,9 +623,10 @@ Was enthalten ist:
     id:            'candle-frog-hat',
     category:      'candle',
     images:        [
-      'images/products/candles/frog_hat.webp',
-      'images/products/candles/froghat1.webp',
-      'images/products/candles/froghat2.webp',
+      'images/products/candles/photos/frog-hat-1.webp',
+      'images/products/candles/photos/frog-hat-2.webp',
+      'images/products/candles/photos/frog-hat-3.webp',
+      'images/products/candles/photos/frog-hat-4.webp',
       'images/products/candles/froghat3.mp4',
     ],
     price:         39.00,
@@ -681,9 +681,7 @@ Was enthalten ist:
     id:            'candle-hyacinth',
     category:      'candle',
     images:        [
-      'images/products/candles/hyacinth1.webp',
-      'images/products/candles/hyacinth2.webp',
-      'images/products/candles/hyacinth3.webp',
+      'images/products/candles/photos/hyacinth-1.webp',
       'images/products/candles/hyacinth4.mp4',
     ],
     price:         29.00,
@@ -738,10 +736,11 @@ Was enthalten ist:
     id:            'candle-pumpkin',
     category:      'candle',
     images:        [
-      'images/products/candles/pumpkin.webp',
-      'images/products/candles/pumpkin1.webp',
-      'images/products/candles/pumpkin2.webp',
-      'images/products/candles/pumpkin3.webp',
+      'images/products/candles/photos/pumpkin-1.webp',
+      'images/products/candles/photos/pumpkin-2.webp',
+      'images/products/candles/photos/pumpkin-3.webp',
+      'images/products/candles/photos/pumpkin-4.webp',
+      'images/products/candles/photos/pumpkin-5.webp',
       'images/products/candles/pumpkin4.mp4',
     ],
     price:         34.00,
@@ -796,11 +795,12 @@ Was enthalten ist:
     id:            'candle-carousel',
     category:      'candle',
     images:        [
-      'images/products/candles/carousel_m.webp',
-      'images/products/candles/carousel1.webp',
-      'images/products/candles/carousel2.webp',
-      'images/products/candles/carousel3.webp',
-      'images/products/candles/carousel4.webp',
+      'images/products/candles/photos/carousel-silver-1.webp',
+      'images/products/candles/photos/carousel-silver-2.webp',
+      'images/products/candles/photos/carousel-gold-1.webp',
+      'images/products/candles/photos/carousel-gold-2.webp',
+      'images/products/candles/photos/carousel-red-1.webp',
+      'images/products/candles/photos/carousel-red-2.webp',
       'images/products/candles/carousel5.mp4',
     ],
     price:         49.00,
@@ -855,10 +855,10 @@ Was enthalten ist:
     id:            'candle-xmas-bauble',
     category:      'candle',
     images:        [
-      'images/products/candles/christmass_tree_bowl.webp',
-      'images/products/candles/christmas_bauble1.webp',
-      'images/products/candles/christmas_bauble2.webp',
-      'images/products/candles/christmas_bauble3.webp',
+      'images/products/candles/photos/bauble-gold-1.webp',
+      'images/products/candles/photos/bauble-blue-1.webp',
+      'images/products/candles/photos/bauble-gold-2.webp',
+      'images/products/candles/photos/bauble-blue-2.webp',
       'images/products/candles/christmas_bauble4.mp4',
     ],
     price:         29.00,
@@ -913,10 +913,10 @@ Was enthalten ist:
     id:            'candle-mouse-king-red',
     category:      'candle',
     images:        [
-      'images/products/candles/king_red.webp',
-      'images/products/candles/mouse_king1.webp',
-      'images/products/candles/mouse_king2.webp',
-      'images/products/candles/mouse_king3.webp',
+      'images/products/candles/photos/mouse-king-red-1.webp',
+      'images/products/candles/photos/mouse-king-red-2.webp',
+      'images/products/candles/photos/mouse-king-red-3.webp',
+      'images/products/candles/photos/mouse-king-red-4.webp',
       'images/products/candles/mouse_king4.mp4',
     ],
     price:         79.00,
@@ -956,52 +956,6 @@ Was enthalten ist:
 
 Что входит:
 • 1 свеча «Мышиный Король» (красный) ручной работы
-• Сделано в Швейцарии`,
-      },
-    },
-  },
-
-  {
-    id:            'candle-mouse-king-blue',
-    category:      'candle',
-    images:        [
-      'images/products/candles/kingmouse-blue.webp',
-    ],
-    price:         69.00,
-    originalPrice: null,
-    onSale:        false,
-    size: '≈ 8 × 13 cm',
-    translations: {
-      en: {
-        name: 'Mouse King Candle — Blue',
-        description: `The Mouse King in his striking blue uniform — handcrafted in Switzerland. A bold alternative to the classic red, with the same regal crown and fierce Nutcracker character. A unique collectible for the festive season.
-
-What's included:
-• 1 handcrafted Mouse King candle (blue)
-• Made in Switzerland`,
-      },
-      fr: {
-        name: 'Bougie Roi des Souris — Bleu',
-        description: `Le Roi des souris en uniforme bleu saisissant — fabriqué à la main en Suisse. Une alternative audacieuse au rouge classique, avec la même couronne royale et le même caractère de Casse-Noisette.
-
-Ce qui est inclus :
-• 1 bougie Roi des souris artisanale (bleu)
-• Fabriquée en Suisse`,
-      },
-      de: {
-        name: 'Mäusekönig-Kerze — Blau',
-        description: `Der Mäusekönig in seiner auffälligen blauen Uniform — handgefertigt in der Schweiz. Eine kühne Alternative zum klassischen Rot, mit derselben königlichen Krone.
-
-Was enthalten ist:
-• 1 handgefertigte Mäusekönig-Kerze (blau)
-• Hergestellt in der Schweiz`,
-      },
-      ru: {
-        name: 'Свеча «Мышиный Король» — Синий',
-        description: `Мышиный Король в синем мундире — изготовлен вручную в Швейцарии. Смелая альтернатива классическому красному — та же корона, тот же характер из «Щелкунчика».
-
-Что входит:
-• 1 свеча «Мышиный Король» (синий) ручной работы
 • Сделано в Швейцарии`,
       },
     },
