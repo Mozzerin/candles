@@ -2376,10 +2376,11 @@
       '@type': 'OfferShippingDetails',
       shippingRate: { '@type': 'MonetaryAmount', value: 8, currency: 'CHF' },
       shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'CH' },
-      // Dispatched within 5 business days; postal transit time is not stated
+      // Dispatched within 5 business days, Swiss Post transit 1–3 business days (same as the Etsy shipping profile)
       deliveryTime: {
         '@type': 'ShippingDeliveryTime',
         handlingTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 5, unitCode: 'DAY' },
+        transitTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 3, unitCode: 'DAY' },
       },
     };
     // Keep in sync with returns.html and terms.html §6–7
