@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, follow">
-  <title>Return Policy – Emma's Lab</title>
-  <meta name="description" content="Return policy for orders placed on emmas-lab.ch: 14-day voluntary return of unused products, procedure, refunds and handling of defective items.">
+  <title>Shipping &amp; Returns – Emma's Lab</title>
+  <meta name="description" content="Shipping and return rules for orders placed on emmas-lab.ch: CHF 8 shipping within Switzerland, dispatch within 5 business days, free pickup in Mettmenstetten, 14-day voluntary return of unused products and handling of defective items.">
   <link rel="canonical" href="https://emmas-lab.ch/returns.html">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
@@ -21,6 +21,8 @@
     p { color: var(--color-muted); margin-bottom: 0.75rem; }
     ul, ol { color: var(--color-muted); padding-left: 1.5rem; margin-bottom: 0.75rem; }
     li { margin-bottom: 0.35rem; }
+    h2.part { font-size: 1.25rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border); }
+    .doc-meta + h2.part { margin-top: 0; padding-top: 0; border-top: none; }
     .policy-content { display: none; }
     .policy-content.visible { display: block; }
   </style>
@@ -89,11 +91,19 @@
 </div>
 
 <!--
+  KEEP IN SYNC: the shipping facts (CHF 8 within Switzerland, dispatch within 5 business days,
+  transit 1–3 business days, pickup in 8932 Mettmenstetten, abroad on request) are duplicated in:
+    - config.js 'shipping.ch' / 'shipping.intl' (cart text)
+    - terms.html §5 "Delivery"
+    - index.html JSON-LD `shippingDetails` (shippingRate, handlingTime, transitTime)
+    - llms.txt
+  Each language block has a "Shipping & Delivery" part (sections 1–4) followed by the Return Policy part.
+
   KEEP IN SYNC: the return rules below (14-day return, 7-day defect notice, buyer pays return
   shipping, product price refunded, bank transfer within 14 days) are duplicated in:
     - terms.html §6 "Returns" and §7 "Defective Goods"
     - index.html JSON-LD `returnPolicy` (MerchantReturnPolicy)
-  All four language blocks have the same 9 sections in the same order:
+  The Return Policy part has the same 9 sections in the same order in all four languages:
     1 Scope · 2 14-day return · 3 Conditions · 4 Excluded products · 5 How to return
     6 Refund · 7 Returns not meeting the conditions · 8 Defective or incorrect items · 9 Contact
 -->
@@ -101,8 +111,26 @@
 
   <!-- ═══ EN ═══ -->
   <section id="policy-en" class="policy-content visible" lang="en">
-    <h1>Return Policy</h1>
+    <h1>Shipping &amp; Returns</h1>
     <p class="doc-meta">Last updated: October 2026 &nbsp;·&nbsp; Applies to orders placed on emmas-lab.ch</p>
+
+    <h2 class="part" id="shipping-en">Shipping &amp; Delivery</h2>
+
+    <h2>1. Delivery area and costs</h2>
+    <p>We ship within Switzerland for a flat rate of <strong>CHF 8 per order</strong>, regardless of the number of items.</p>
+    <p>Shipping abroad is possible on request. Please mention your country in your order; we confirm the shipping cost and delivery time by email before you pay.</p>
+
+    <h2>2. Pickup</h2>
+    <p>You can also collect your order free of charge in <strong>8932 Mettmenstetten</strong>. Choose pickup in your order message; we agree a time and share the exact address by email.</p>
+
+    <h2>3. Order and dispatch</h2>
+    <p>After you place an order, we send a confirmation email with the total amount and our bank details. Payment is due before dispatch. We hand your parcel to the carrier within <strong>5 business days</strong> of receiving your payment and notify you by email once it has been dispatched.</p>
+
+    <h2>4. Delivery time and transit</h2>
+    <p>Within Switzerland, parcels usually arrive <strong>1–3 business days</strong> after dispatch. Delivery times are estimates and are not guaranteed. The risk of loss or damage passes to you when the parcel is handed over to the carrier.</p>
+    <p>Our candles and plaster figures are fragile and are packed accordingly. If your parcel arrives damaged, please see section 8 of the Return Policy below (notice within 7 days, with photos).</p>
+
+    <h2 class="part" id="returns-en">Return Policy</h2>
 
     <h2>1. Scope</h2>
     <p>This Return Policy applies to orders placed through our website emmas-lab.ch and delivered within Switzerland. It supplements our <a href="/terms.html">Terms &amp; Conditions</a>. Your statutory warranty rights for defective goods under Swiss law remain unaffected.</p>
@@ -150,8 +178,26 @@
 
   <!-- ═══ DE ═══ -->
   <section id="policy-de" class="policy-content" lang="de">
-    <h1>Rückgabebedingungen</h1>
+    <h1>Versand &amp; Rückgabe</h1>
     <p class="doc-meta">Stand: Oktober 2026 &nbsp;·&nbsp; Gilt für Bestellungen über emmas-lab.ch</p>
+
+    <h2 class="part" id="shipping-de">Versand &amp; Lieferung</h2>
+
+    <h2>1. Liefergebiet und Kosten</h2>
+    <p>Wir versenden innerhalb der Schweiz zu einem Pauschalpreis von <strong>CHF 8 pro Bestellung</strong>, unabhängig von der Anzahl der Artikel.</p>
+    <p>Ein Versand ins Ausland ist auf Anfrage möglich. Bitte geben Sie Ihr Land in der Bestellung an; wir bestätigen Versandkosten und Lieferzeit per E-Mail, bevor Sie bezahlen.</p>
+
+    <h2>2. Abholung</h2>
+    <p>Sie können Ihre Bestellung auch kostenlos in <strong>8932 Mettmenstetten</strong> abholen. Wählen Sie die Abholung in Ihrer Bestellnachricht; wir vereinbaren einen Termin und teilen Ihnen die genaue Adresse per E-Mail mit.</p>
+
+    <h2>3. Bestellung und Versand</h2>
+    <p>Nach Ihrer Bestellung senden wir Ihnen eine Bestätigung per E-Mail mit dem Gesamtbetrag und unseren Bankdaten. Die Zahlung ist vor dem Versand fällig. Wir übergeben Ihr Paket innerhalb von <strong>5 Werktagen</strong> nach Zahlungseingang dem Transportunternehmen und informieren Sie per E-Mail über den Versand.</p>
+
+    <h2>4. Lieferzeit und Transport</h2>
+    <p>Innerhalb der Schweiz treffen Pakete in der Regel <strong>1–3 Werktage</strong> nach dem Versand ein. Lieferzeiten sind Richtwerte und nicht garantiert. Die Gefahr des Verlusts oder der Beschädigung geht mit der Übergabe des Pakets an das Transportunternehmen auf Sie über.</p>
+    <p>Unsere Kerzen und Gipsfiguren sind zerbrechlich und werden entsprechend verpackt. Sollte Ihr Paket beschädigt ankommen, beachten Sie bitte Abschnitt 8 der Rückgabebedingungen unten (Meldung innerhalb von 7 Tagen, mit Fotos).</p>
+
+    <h2 class="part" id="returns-de">Rückgabebedingungen</h2>
 
     <h2>1. Geltungsbereich</h2>
     <p>Diese Rückgabebedingungen gelten für Bestellungen, die über unsere Website emmas-lab.ch aufgegeben und innerhalb der Schweiz geliefert werden. Sie ergänzen unsere <a href="/terms.html">Allgemeinen Geschäftsbedingungen</a>. Ihre gesetzlichen Gewährleistungsrechte bei mangelhafter Ware nach Schweizer Recht bleiben unberührt.</p>
@@ -199,8 +245,26 @@
 
   <!-- ═══ FR ═══ -->
   <section id="policy-fr" class="policy-content" lang="fr">
-    <h1>Politique de retour</h1>
+    <h1>Livraison &amp; Retours</h1>
     <p class="doc-meta">Dernière mise à jour : octobre 2026 &nbsp;·&nbsp; S'applique aux commandes passées sur emmas-lab.ch</p>
+
+    <h2 class="part" id="shipping-fr">Expédition &amp; Livraison</h2>
+
+    <h2>1. Zone de livraison et frais</h2>
+    <p>Nous livrons en Suisse au tarif forfaitaire de <strong>CHF 8 par commande</strong>, quel que soit le nombre d'articles.</p>
+    <p>Une expédition à l'étranger est possible sur demande. Indiquez votre pays dans votre commande ; nous confirmons les frais et le délai de livraison par e-mail avant le paiement.</p>
+
+    <h2>2. Retrait sur place</h2>
+    <p>Vous pouvez aussi retirer votre commande gratuitement à <strong>8932 Mettmenstetten</strong>. Choisissez le retrait dans votre message de commande ; nous convenons d'un horaire et vous communiquons l'adresse exacte par e-mail.</p>
+
+    <h2>3. Commande et expédition</h2>
+    <p>Après votre commande, nous vous envoyons un e-mail de confirmation avec le montant total et nos coordonnées bancaires. Le paiement est dû avant l'expédition. Nous remettons votre colis au transporteur dans un délai de <strong>5 jours ouvrables</strong> après réception du paiement et vous informons de l'expédition par e-mail.</p>
+
+    <h2>4. Délai de livraison et transport</h2>
+    <p>En Suisse, les colis arrivent généralement <strong>1 à 3 jours ouvrables</strong> après l'expédition. Les délais sont indicatifs et non garantis. Le risque de perte ou de dommage vous est transféré dès la remise du colis au transporteur.</p>
+    <p>Nos bougies et figurines en plâtre sont fragiles et emballées en conséquence. Si votre colis arrive endommagé, veuillez consulter la section 8 de la politique de retour ci-dessous (signalement sous 7 jours, avec photos).</p>
+
+    <h2 class="part" id="returns-fr">Politique de retour</h2>
 
     <h2>1. Champ d'application</h2>
     <p>La présente politique de retour s'applique aux commandes passées sur notre site emmas-lab.ch et livrées en Suisse. Elle complète nos <a href="/terms.html">Conditions générales</a>. Vos droits légaux de garantie en cas de défaut selon le droit suisse ne sont pas affectés.</p>
@@ -248,8 +312,26 @@
 
   <!-- ═══ RU ═══ -->
   <section id="policy-ru" class="policy-content" lang="ru">
-    <h1>Условия возврата</h1>
+    <h1>Доставка и возврат</h1>
     <p class="doc-meta">Обновлено: октябрь 2026 &nbsp;·&nbsp; Действует для заказов, оформленных на emmas-lab.ch</p>
+
+    <h2 class="part" id="shipping-ru">Отправка и доставка</h2>
+
+    <h2>1. Регион доставки и стоимость</h2>
+    <p>Мы отправляем заказы по Швейцарии по фиксированной цене <strong>CHF 8 за заказ</strong>, независимо от количества товаров.</p>
+    <p>Отправка за границу возможна по запросу. Укажите страну в заказе; стоимость и срок доставки мы подтвердим по электронной почте до оплаты.</p>
+
+    <h2>2. Самовывоз</h2>
+    <p>Вы также можете бесплатно забрать заказ в <strong>8932 Mettmenstetten</strong>. Укажите самовывоз в сообщении к заказу; мы согласуем время и сообщим точный адрес по электронной почте.</p>
+
+    <h2>3. Заказ и отправка</h2>
+    <p>После оформления заказа мы отправляем письмо с подтверждением, итоговой суммой и банковскими реквизитами. Оплата производится до отправки. Мы передаём посылку перевозчику в течение <strong>5 рабочих дней</strong> после получения оплаты и сообщаем об отправке по электронной почте.</p>
+
+    <h2>4. Срок доставки и риски</h2>
+    <p>По Швейцарии посылки обычно приходят через <strong>1–3 рабочих дня</strong> после отправки. Сроки доставки ориентировочные и не гарантируются. Риск утраты или повреждения переходит к вам с момента передачи посылки перевозчику.</p>
+    <p>Наши свечи и гипсовые фигуры хрупкие и упаковываются соответствующим образом. Если посылка пришла повреждённой, см. раздел 8 условий возврата ниже (сообщить в течение 7 дней, с фотографиями).</p>
+
+    <h2 class="part" id="returns-ru">Условия возврата</h2>
 
     <h2>1. Область действия</h2>
     <p>Настоящие условия возврата распространяются на заказы, оформленные через наш сайт emmas-lab.ch и доставленные в пределах Швейцарии. Они дополняют наши <a href="/terms.html">Общие условия</a>. Ваши законные гарантийные права в случае дефекта товара по швейцарскому праву сохраняются.</p>
@@ -305,7 +387,7 @@
       <a href="/privacy.html">Privacy Policy</a>
       <a href="/cookie-policy.html">Cookie Policy</a>
       <a href="/terms.html">Terms &amp; Conditions</a>
-      <a href="/returns.html">Returns</a>
+      <a href="/returns.html">Shipping &amp; Returns</a>
     </nav>
   </div>
 </footer>
