@@ -569,15 +569,13 @@ Was enthalten ist:
     images:        [
       'images/products/candles/photos/frog-scene-1.webp',
       'images/products/candles/photos/frog-scene-2.webp',
-      'images/products/candles/frog_crone.webp',
-      'images/products/candles/frog1.webp',
-      'images/products/candles/frog2.webp',
+      'images/products/candles/photos/frog-scene-size.webp',
       'images/products/candles/frog3.mp4',
     ],
     price:         39.00,
     originalPrice: null,
     onSale:        false,
-    size: '≈ 13 × 8 cm',
+    size: '≈ 12 × 8 cm',
     translations: {
       en: {
         name: 'Frog Candle',
@@ -629,15 +627,13 @@ Was enthalten ist:
       'images/products/candles/photos/frog-hat-scene-1.webp',
       'images/products/candles/photos/frog-hat-scene-2.webp',
       'images/products/candles/photos/frog-hat-scene-3.webp',
-      'images/products/candles/frog_hat.webp',
-      'images/products/candles/froghat1.webp',
-      'images/products/candles/froghat2.webp',
+      'images/products/candles/photos/frog-hat-scene-size.webp',
       'images/products/candles/froghat3.mp4',
     ],
     price:         39.00,
     originalPrice: null,
     onSale:        false,
-    size: '≈ 13 × 11 cm',
+    size: '≈ 12 × 10 cm',
     translations: {
       en: {
         name: 'Frog in a Hat Candle',
