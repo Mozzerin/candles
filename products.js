@@ -567,8 +567,8 @@ Was enthalten ist:
     id:            'candle-frog',
     category:      'candle',
     images:        [
-      'images/products/candles/photos/frog-1.webp',
       'images/products/candles/photos/frog-2.webp',
+      'images/products/candles/photos/frog-1.webp',
       'images/products/candles/frog_crone.webp',
       'images/products/candles/frog1.webp',
       'images/products/candles/frog2.webp',
@@ -626,9 +626,9 @@ Was enthalten ist:
     id:            'candle-frog-hat',
     category:      'candle',
     images:        [
+      'images/products/candles/photos/frog-hat-3.webp',
       'images/products/candles/photos/frog-hat-1.webp',
       'images/products/candles/photos/frog-hat-2.webp',
-      'images/products/candles/photos/frog-hat-3.webp',
       'images/products/candles/photos/frog-hat-4.webp',
       'images/products/candles/frog_hat.webp',
       'images/products/candles/froghat1.webp',
