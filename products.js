@@ -683,16 +683,14 @@ Was enthalten ist:
     category:      'candle',
     images:        [
       'images/products/candles/photos/hyacinth-scene-1.webp',
-      'images/products/candles/photos/hyacinth-1.webp',
-      'images/products/candles/hyacinth1.webp',
-      'images/products/candles/hyacinth2.webp',
-      'images/products/candles/hyacinth3.webp',
+      'images/products/candles/photos/hyacinth-scene-2.webp',
+      'images/products/candles/photos/hyacinth-scene-size.webp',
       'images/products/candles/hyacinth4.mp4',
     ],
     price:         29.00,
     originalPrice: null,
     onSale:        false,
-    size: '≈ 10 × 14 cm',
+    size: '≈ 6 × 9 cm',
     translations: {
       en: {
         name: 'Hyacinth Candle',
