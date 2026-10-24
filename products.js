@@ -964,6 +964,62 @@ Was enthalten ist:
       },
     },
   },
+  {
+    id:            'candle-matryoshka',
+    category:      'candle',
+    images:        [
+      'images/products/candles/scenes/matryoshka-1.webp',
+      'images/products/candles/scenes/matryoshka-2.webp',
+      'images/products/candles/scenes/matryoshka-3.webp',
+      'images/products/candles/scenes/matryoshka-size.webp',
+    ],
+    price:         49.00,
+    originalPrice: null,
+    onSale:        false,
+    size: '≈ 10 × 15 cm',
+    translations: {
+      en: {
+        name: 'Matryoshka Candle',
+        description: `A handcrafted matryoshka candle — a little girl in a glossy red hood with rosy cheeks and a painted smile. Made in Switzerland, the hood lifts off as a lid to reveal the candle inside, so she works as a cosy winter decoration and a working candle at the same time.
+
+A warm, nostalgic piece for the winter season: on a windowsill, a festive table or as a gift that brings a smile.
+
+What's included:
+• 1 handcrafted matryoshka candle
+• Made in Switzerland`,
+      },
+      fr: {
+        name: 'Bougie Matriochka',
+        description: `Une bougie matriochka artisanale — une petite fille au capuchon rouge brillant, aux joues roses et au sourire peint. Fabriquée en Suisse, le capuchon se soulève comme un couvercle et révèle la bougie à l'intérieur : à la fois décoration d'hiver chaleureuse et vraie bougie.
+
+Une pièce douce et nostalgique pour la saison d'hiver : sur un rebord de fenêtre, une table de fête ou en cadeau qui fait sourire.
+
+Ce qui est inclus :
+• 1 bougie matriochka artisanale
+• Fabriquée en Suisse`,
+      },
+      de: {
+        name: 'Matrjoschka-Kerze',
+        description: `Eine handgefertigte Matrjoschka-Kerze — ein kleines Mädchen mit glänzender roter Kapuze, rosigen Wangen und gemaltem Lächeln. In der Schweiz hergestellt; die Kapuze lässt sich als Deckel abnehmen und gibt die Kerze darin frei — gemütliche Winterdekoration und echte Kerze in einem.
+
+Ein warmes, nostalgisches Stück für die Wintersaison: auf der Fensterbank, dem festlichen Tisch oder als Geschenk, das ein Lächeln schenkt.
+
+Was enthalten ist:
+• 1 handgefertigte Matrjoschka-Kerze
+• Hergestellt in der Schweiz`,
+      },
+      ru: {
+        name: 'Свеча «Матрёшка»',
+        description: `Свеча ручной работы в виде матрёшки — девочка в глянцевом красном капюшоне, с румяными щеками и нарисованной улыбкой. Сделана в Швейцарии; капюшон снимается как крышка, под ним — сама свеча. Уютное зимнее украшение и настоящая свеча в одном.
+
+Тёплая, ностальгическая вещь для зимнего сезона: на подоконник, на праздничный стол или в подарок, который вызывает улыбку.
+
+Что входит:
+• 1 свеча «Матрёшка» ручной работы
+• Сделано в Швейцарии`,
+      },
+    },
+  },
 
   // ── ADD NEW PRODUCTS BELOW ────────────────────────────────────────────
   //

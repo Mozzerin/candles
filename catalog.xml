@@ -242,5 +242,22 @@
       <g:price>8.00 CHF</g:price>
     </g:shipping>
   </item>
+  <item>
+    <g:id>candle-matryoshka</g:id>
+    <g:title>Matryoshka Candle</g:title>
+    <g:description>A handcrafted matryoshka candle — a little girl in a glossy red hood with rosy cheeks and a painted smile, made in Switzerland. The hood lifts off as a lid to reveal the candle inside: a cosy winter decoration and a working candle in one.</g:description>
+    <g:link>https://emmas-lab.ch/?product=candle-matryoshka</g:link>
+    <g:image_link>https://emmas-lab.ch/images/products/candles/scenes/matryoshka-1.webp</g:image_link>
+    <g:condition>new</g:condition>
+    <g:availability>in stock</g:availability>
+    <g:price>49.00 CHF</g:price>
+    
+    <g:brand>Emma's Lab</g:brand>
+    <g:google_product_category>Home &amp; Garden > Decor > Candles</g:google_product_category>
+    <g:shipping>
+      <g:country>CH</g:country>
+      <g:price>8.00 CHF</g:price>
+    </g:shipping>
+  </item>
   </channel>
 </rss>
