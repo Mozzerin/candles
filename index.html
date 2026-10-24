@@ -979,6 +979,48 @@
     .pd-note-label { font-weight: 600; color: var(--color-text); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; margin-right: 0.3rem; }
     .cart-item-scent { font-size: 0.75rem; color: var(--color-muted); font-style: italic; }
 
+    /* ── Announcement popup (CONFIG.promo) ───────────────────────── */
+    #promo-popup {
+      display: none;
+      position: fixed; inset: 0;
+      z-index: 9998; /* below the cookie banner */
+      background: rgba(44, 24, 16, 0.45);
+      align-items: center; justify-content: center;
+      padding: var(--site-gutter);
+    }
+    #promo-popup.open { display: flex; }
+    .promo-card {
+      position: relative;
+      display: grid; grid-template-columns: 180px 1fr;
+      width: 100%; max-width: 460px;
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+      overflow: hidden;
+    }
+    .promo-img { width: 100%; height: 100%; object-fit: cover; display: block; aspect-ratio: 3/4; }
+    .promo-body { padding: 1.5rem 1.4rem 1.4rem; display: flex; flex-direction: column; gap: 0.55rem; }
+    .promo-eyebrow { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent); font-weight: 600; }
+    .promo-name { font-size: 1.15rem; font-weight: 600; line-height: 1.3; }
+    .promo-price { font-size: 0.95rem; color: var(--color-text); }
+    .promo-text { font-size: 0.82rem; color: var(--color-muted); line-height: 1.6; }
+    .promo-cta {
+      margin-top: 0.4rem; align-self: flex-start;
+      background: var(--color-btn); color: var(--color-btn-text);
+      border: none; padding: 0.65rem 1.3rem;
+      font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer;
+    }
+    .promo-close {
+      position: absolute; top: 0.4rem; right: 0.4rem;
+      width: 2rem; height: 2rem; line-height: 2rem; text-align: center;
+      background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 50%;
+      color: var(--color-text); font-size: 1rem; cursor: pointer;
+    }
+    @media (max-width: 520px) {
+      .promo-card { grid-template-columns: 1fr; max-width: 340px; }
+      .promo-img { aspect-ratio: 4/3; max-height: 220px; }
+    }
+
     /* ── Cookie consent banner ───────────────────────────────────── */
     #cookie-banner {
       display: none;
@@ -1567,8 +1609,8 @@
 
 <!-- ═══════════════════════════════════════ SCRIPTS ══════════════════════════════ -->
 <!-- ?v= bumps the CDN cache key: change the value whenever config.js or products.js change -->
-<script src="config.js?v=20261025a"></script>
-<script src="products.js?v=20261025a"></script>
+<script src="config.js?v=20261025b"></script>
+<script src="products.js?v=20261025b"></script>
 <script src="analytics.js"></script>
 <script>
   // CONFIG, TRANSLATIONS and PRODUCTS are loaded from config.js and products.js
@@ -1622,6 +1664,7 @@
       const key = el.getAttribute('data-i18n');
       el.textContent = t(key);
     });
+    refreshPromoName();
 
     // Contact email value text
     const emailVal = document.getElementById('contact-email-val');
@@ -2554,10 +2597,71 @@
   checkConsent();
   injectSEO();
 
+  // ── Announcement popup (CONFIG.promo) ──────────────────────────────
+  var promoProduct = null; // var: refreshPromoName() is reached from setLang() before this block runs
+  function promoStorage(op) {
+    try { return op(); } catch (e) { return null; }
+  }
+  function refreshPromoName() {
+    if (!promoProduct || !document.getElementById('promo-name')) return;
+    const tr = promoProduct.translations[currentLang] || promoProduct.translations.en;
+    document.getElementById('promo-name').textContent  = tr.name;
+    document.getElementById('promo-img').alt           = tr.name;
+    document.getElementById('promo-price').textContent = formatPrice(promoProduct.price);
+    document.getElementById('promo-close').setAttribute('aria-label', t('promo.close'));
+    // the popup markup is added after the initial setLang() ran, so translate its labels here too
+    document.querySelectorAll('#promo-popup [data-i18n]').forEach(el => { el.textContent = t(el.getAttribute('data-i18n')); });
+  }
+  function initPromo() {
+    const cfg = CONFIG.promo;
+    if (!cfg || !cfg.productId || !cfg.until || !cfg.key) return;
+    if (new Date() > new Date(cfg.until + 'T23:59:59')) return;
+    if (new URLSearchParams(window.location.search).get('product')) return;
+    if (promoStorage(() => localStorage.getItem(cfg.key))) return;
+    const p = PRODUCTS.find(x => x.id === cfg.productId);
+    if (!p) return;
+    promoProduct = p;
+    const img = (p.images || []).find(s => !isVideo(s)) || p.image;
+    document.getElementById('promo-img').src = img ? encodeURI(img) : '';
+    refreshPromoName();
+    setTimeout(() => {
+      if (document.getElementById('product-modal').style.display !== 'none') return; // product page opened meanwhile
+      document.getElementById('promo-popup').classList.add('open');
+      document.getElementById('promo-close').focus();
+    }, 2000);
+  }
+  function dismissPromo() {
+    promoStorage(() => localStorage.setItem(CONFIG.promo.key, '1'));
+    document.getElementById('promo-popup').classList.remove('open');
+  }
+  function closePromo() { dismissPromo(); }
+  function goPromo() {
+    dismissPromo();
+    if (promoProduct) openProduct(promoProduct.id);
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && document.getElementById('promo-popup').classList.contains('open')) closePromo();
+  });
+  document.addEventListener('DOMContentLoaded', initPromo); // popup markup sits after this script
+
   // Open product from URL param: ?product=candle-pumpkin
   const urlProduct = new URLSearchParams(window.location.search).get('product');
   if (urlProduct) setTimeout(() => openProduct(urlProduct), 300);
 </script>
+
+<div id="promo-popup" role="dialog" aria-modal="true" aria-labelledby="promo-name" onclick="if (event.target === this) closePromo()">
+  <div class="promo-card">
+    <img id="promo-img" class="promo-img" src="" alt="">
+    <div class="promo-body">
+      <span class="promo-eyebrow" data-i18n="promo.eyebrow">New in the shop</span>
+      <span id="promo-name" class="promo-name"></span>
+      <span id="promo-price" class="promo-price"></span>
+      <p class="promo-text" data-i18n="promo.text"></p>
+      <button class="promo-cta" onclick="goPromo()" data-i18n="promo.cta">View the candle</button>
+    </div>
+    <button id="promo-close" class="promo-close" onclick="closePromo()" aria-label="Close">✕</button>
+  </div>
+</div>
 
 <div id="cookie-banner" role="dialog" aria-label="Cookie consent">
   <p class="cookie-text">

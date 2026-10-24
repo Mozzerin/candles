@@ -10,6 +10,17 @@ const CONFIG = {
   whatsapp:     '41782562952',
   instagram:    'emmas_lab_candle',
   etsy:         'https://www.etsy.com/shop/EmmasLabCandle',
+
+  // ── Announcement popup on the home page ──────────────────────────
+  // Shown once per visitor (localStorage key), 2 s after load, until the
+  // date below (inclusive, local time). Set `promo: null` to switch it off.
+  // Texts live in TRANSLATIONS under 'promo.*'; photo + name + price come
+  // from the product in products.js.
+  promo: {
+    productId: 'candle-matryoshka',
+    until:     '2026-12-31',
+    key:       'promo_matryoshka_2026',
+  },
   currency:     'CHF',
 
   // ── EmailJS ─────────────────────────────────────────────────────────
@@ -153,6 +164,10 @@ const TRANSLATIONS = {
     'nav.contact':  'Contact',
     'nav.blog':     'Blog',
     'cart.label':   'Cart',
+    'promo.eyebrow': 'New in the shop',
+    'promo.text':    'A little girl in a red hood — the hood lifts off as a lid to reveal the candle inside. Handmade in Switzerland.',
+    'promo.cta':     'View the candle',
+    'promo.close':   'Close',
     'cart.title':   'Cart',
     'cart.empty':   'Your cart is empty.',
     'cart.subtotal':'Subtotal',
@@ -258,6 +273,10 @@ const TRANSLATIONS = {
     'nav.contact':  'Contact',
     'nav.blog':     'Blog',
     'cart.label':   'Panier',
+    'promo.eyebrow': 'Nouveauté',
+    'promo.text':    'Une petite fille au capuchon rouge — le capuchon se soulève comme un couvercle et révèle la bougie. Fabriquée à la main en Suisse.',
+    'promo.cta':     'Voir la bougie',
+    'promo.close':   'Fermer',
     'cart.title':   'Panier',
     'cart.empty':   'Votre panier est vide.',
     'cart.subtotal':'Sous-total',
@@ -363,6 +382,10 @@ const TRANSLATIONS = {
     'nav.contact':  'Kontakt',
     'nav.blog':     'Blog',
     'cart.label':   'Warenkorb',
+    'promo.eyebrow': 'Neu im Shop',
+    'promo.text':    'Ein kleines Mädchen mit roter Kapuze — die Kapuze lässt sich als Deckel abnehmen und gibt die Kerze frei. Handgefertigt in der Schweiz.',
+    'promo.cta':     'Kerze ansehen',
+    'promo.close':   'Schliessen',
     'cart.title':   'Warenkorb',
     'cart.empty':   'Ihr Warenkorb ist leer.',
     'cart.subtotal':'Zwischensumme',
@@ -468,6 +491,10 @@ const TRANSLATIONS = {
     'nav.contact':  'Контакт',
     'nav.blog':     'Блог',
     'cart.label':   'Корзина',
+    'promo.eyebrow': 'Новинка',
+    'promo.text':    'Девочка в красном капюшоне — капюшон снимается как крышка, под ним сама свеча. Ручная работа, Швейцария.',
+    'promo.cta':     'Смотреть свечу',
+    'promo.close':   'Закрыть',
     'cart.title':   'Корзина',
     'cart.empty':   'Ваша корзина пуста.',
     'cart.subtotal':'Итого',
