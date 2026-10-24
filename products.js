@@ -682,6 +682,7 @@ Was enthalten ist:
     id:            'candle-hyacinth',
     category:      'candle',
     images:        [
+      'images/products/candles/photos/hyacinth-scene-1.webp',
       'images/products/candles/photos/hyacinth-1.webp',
       'images/products/candles/hyacinth1.webp',
       'images/products/candles/hyacinth2.webp',
