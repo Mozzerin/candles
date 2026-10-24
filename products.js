@@ -678,62 +678,6 @@ Was enthalten ist:
     },
   },
 
-  {
-    id:            'candle-hyacinth',
-    category:      'candle',
-    images:        [
-      'images/products/candles/photos/hyacinth-scene-1.webp',
-      'images/products/candles/photos/hyacinth-scene-2.webp',
-      'images/products/candles/photos/hyacinth-scene-size.webp',
-      'images/products/candles/hyacinth4.mp4',
-    ],
-    price:         29.00,
-    originalPrice: null,
-    onSale:        false,
-    size: '≈ 6 × 9 cm',
-    translations: {
-      en: {
-        name: 'Hyacinth Candle',
-        description: `A beautifully detailed hyacinth candle, handcrafted in Switzerland. The layered clusters of petals capture the natural elegance of one of spring's most beloved flowers. Whether displayed solo or as part of a floral arrangement, this candle brings a touch of botanical beauty to any interior.
-
-The hyacinth is a symbol of rebirth and new beginnings — making this a thoughtful gift for housewarmings, birthdays, or simply to bring a little nature indoors.
-
-What's included:
-• 1 handcrafted hyacinth candle
-• Made in Switzerland`,
-      },
-      fr: {
-        name: 'Bougie Jacinthe',
-        description: `Une bougie jacinthe magnifiquement détaillée, fabriquée à la main en Suisse. Les grappes de pétales superposées capturent l'élégance naturelle de l'une des fleurs les plus appréciées du printemps. Exposée seule ou intégrée dans une composition florale, cette bougie apporte une touche de beauté botanique à tout intérieur.
-
-La jacinthe est un symbole de renaissance — ce qui en fait un cadeau attentionné pour une pendaison de crémaillère, un anniversaire ou simplement pour apporter un peu de nature à l'intérieur.
-
-Ce qui est inclus :
-• 1 bougie jacinthe artisanale
-• Fabriquée en Suisse`,
-      },
-      de: {
-        name: 'Hyazinthen-Kerze',
-        description: `Eine wunderschön detaillierte Hyazinthen-Kerze, handgefertigt in der Schweiz. Die geschichteten Blütentrauben fangen die natürliche Eleganz einer der beliebtesten Frühlingsblumen ein. Ob allein ausgestellt oder als Teil eines floralen Arrangements — diese Kerze bringt einen Hauch botanischer Schönheit in jeden Raum.
-
-Die Hyazinthe ist ein Symbol der Erneuerung — ein nachdenkliches Geschenk zur Einweihungsfeier, zum Geburtstag oder einfach um etwas Natur nach drinnen zu bringen.
-
-Was enthalten ist:
-• 1 handgefertigte Hyazinthen-Kerze
-• Hergestellt in der Schweiz`,
-      },
-      ru: {
-        name: 'Свеча «Гиацинт»',
-        description: `Красиво детализированная свеча в форме гиацинта, изготовленная вручную в Швейцарии. Многослойные грозди лепестков передают природную элегантность одного из самых любимых весенних цветков. Эта свеча принесёт нотку ботанической красоты в любой интерьер — отдельно или в составе цветочной композиции.
-
-Гиацинт — символ возрождения и новых начал. Это продуманный подарок на новоселье, день рождения или просто чтобы привнести немного природы в дом.
-
-Что входит:
-• 1 свеча «Гиацинт» ручной работы
-• Сделано в Швейцарии`,
-      },
-    },
-  },
 
   {
     id:            'candle-pumpkin',
@@ -1016,6 +960,62 @@ Was enthalten ist:
 
 Что входит:
 • 1 свеча «Матрёшка» ручной работы
+• Сделано в Швейцарии`,
+      },
+    },
+  },
+  {
+    id:            'candle-hyacinth',
+    category:      'candle',
+    images:        [
+      'images/products/candles/photos/hyacinth-scene-1.webp',
+      'images/products/candles/photos/hyacinth-scene-2.webp',
+      'images/products/candles/photos/hyacinth-scene-size.webp',
+      'images/products/candles/hyacinth4.mp4',
+    ],
+    price:         29.00,
+    originalPrice: null,
+    onSale:        false,
+    size: '≈ 6 × 9 cm',
+    translations: {
+      en: {
+        name: 'Hyacinth Candle',
+        description: `A beautifully detailed hyacinth candle, handcrafted in Switzerland. The layered clusters of petals capture the natural elegance of one of spring's most beloved flowers. Whether displayed solo or as part of a floral arrangement, this candle brings a touch of botanical beauty to any interior.
+
+The hyacinth is a symbol of rebirth and new beginnings — making this a thoughtful gift for housewarmings, birthdays, or simply to bring a little nature indoors.
+
+What's included:
+• 1 handcrafted hyacinth candle
+• Made in Switzerland`,
+      },
+      fr: {
+        name: 'Bougie Jacinthe',
+        description: `Une bougie jacinthe magnifiquement détaillée, fabriquée à la main en Suisse. Les grappes de pétales superposées capturent l'élégance naturelle de l'une des fleurs les plus appréciées du printemps. Exposée seule ou intégrée dans une composition florale, cette bougie apporte une touche de beauté botanique à tout intérieur.
+
+La jacinthe est un symbole de renaissance — ce qui en fait un cadeau attentionné pour une pendaison de crémaillère, un anniversaire ou simplement pour apporter un peu de nature à l'intérieur.
+
+Ce qui est inclus :
+• 1 bougie jacinthe artisanale
+• Fabriquée en Suisse`,
+      },
+      de: {
+        name: 'Hyazinthen-Kerze',
+        description: `Eine wunderschön detaillierte Hyazinthen-Kerze, handgefertigt in der Schweiz. Die geschichteten Blütentrauben fangen die natürliche Eleganz einer der beliebtesten Frühlingsblumen ein. Ob allein ausgestellt oder als Teil eines floralen Arrangements — diese Kerze bringt einen Hauch botanischer Schönheit in jeden Raum.
+
+Die Hyazinthe ist ein Symbol der Erneuerung — ein nachdenkliches Geschenk zur Einweihungsfeier, zum Geburtstag oder einfach um etwas Natur nach drinnen zu bringen.
+
+Was enthalten ist:
+• 1 handgefertigte Hyazinthen-Kerze
+• Hergestellt in der Schweiz`,
+      },
+      ru: {
+        name: 'Свеча «Гиацинт»',
+        description: `Красиво детализированная свеча в форме гиацинта, изготовленная вручную в Швейцарии. Многослойные грозди лепестков передают природную элегантность одного из самых любимых весенних цветков. Эта свеча принесёт нотку ботанической красоты в любой интерьер — отдельно или в составе цветочной композиции.
+
+Гиацинт — символ возрождения и новых начал. Это продуманный подарок на новоселье, день рождения или просто чтобы привнести немного природы в дом.
+
+Что входит:
+• 1 свеча «Гиацинт» ручной работы
 • Сделано в Швейцарии`,
       },
     },
