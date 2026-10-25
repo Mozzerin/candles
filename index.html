@@ -958,6 +958,9 @@
     }
     .pd-scent-chip:hover { border-color: #aaa; color: var(--color-text); }
     .pd-scent-chip.selected { background: var(--color-text); border-color: var(--color-text); color: #fff; }
+    .pd-scent-badge { display: inline-block; margin-left: 0.4rem; padding: 0.05rem 0.4rem; border-radius: 1rem; font-size: 0.56rem; letter-spacing: 0.06em; text-transform: uppercase; background: #b23a3a; color: #fff; vertical-align: 1px; }
+    .pd-scent-chip.selected .pd-scent-badge { background: #fff; color: #b23a3a; }
+    .pd-scent-img { display: block; width: 100%; max-width: 440px; height: auto; margin: 0 auto 0.8rem; border-radius: 4px; cursor: zoom-in; }
     .pd-scent-error { font-size: 0.78rem; color: #c0392b; margin-top: 0.5rem; display: none; }
     .pd-scent-detail {
       display: none;
@@ -1513,6 +1516,7 @@
         <div class="pd-scent-label" id="pd-scent-label"></div>
         <div class="pd-scent-options" id="pd-scent-options"></div>
         <div class="pd-scent-detail" id="pd-scent-detail">
+          <img id="pd-scent-img" class="pd-scent-img" alt="" width="1200" height="1200" style="display:none" onclick="openLightbox(this.src)">
           <p class="pd-scent-detail-desc" id="pd-scent-detail-desc"></p>
           <div class="pd-scent-notes">
             <div class="pd-note-row"><span class="pd-note-label" id="pd-note-top-lbl"></span><span id="pd-note-top"></span></div>
@@ -1635,8 +1639,8 @@
 
 <!-- ═══════════════════════════════════════ SCRIPTS ══════════════════════════════ -->
 <!-- ?v= bumps the CDN cache key: change the value whenever config.js or products.js change -->
-<script src="config.js?v=20261025g"></script>
-<script src="products.js?v=20261025g"></script>
+<script src="config.js?v=20261025h"></script>
+<script src="products.js?v=20261025h"></script>
 <script src="analytics.js"></script>
 <script>
   // CONFIG, TRANSLATIONS and PRODUCTS are loaded from config.js and products.js
@@ -1918,7 +1922,7 @@
       document.getElementById('pd-scent-label').textContent = t('scent.label');
       document.getElementById('pd-scent-error').style.display = 'none';
       document.getElementById('pd-scent-options').innerHTML = CONFIG.candleScents.map(s =>
-        `<button class="pd-scent-chip" onclick="selectScent('${s.id}', this)">${s[currentLang] || s.en}</button>`
+        `<button class="pd-scent-chip" onclick="selectScent('${s.id}', this)">${s[currentLang] || s.en}${s.christmas ? `<span class="pd-scent-badge">${t('scent.badge.christmas')}</span>` : ''}</button>`
       ).join('');
       scentSection.style.display = '';
     } else {
@@ -1947,8 +1951,22 @@
       document.getElementById('pd-note-heart').textContent        = scent.heart?.[l] || scent.heart?.en || '';
       document.getElementById('pd-note-base-lbl').textContent     = t('scent.base') + ': ';
       document.getElementById('pd-note-base').textContent         = scent.base?.[l]  || scent.base?.en  || '';
+      showScentImage(scent.id, l);
       detail.classList.add('visible');
     }
+  }
+
+  // Scent note card: images/scents/<id>-<lang>.webp, falls back to -en once, then hides (no onerror loop)
+  function showScentImage(id, lang) {
+    const img = document.getElementById('pd-scent-img');
+    if (!img) return;
+    img.onerror = () => {
+      if (lang !== 'en' && !img.dataset.fallback) { img.dataset.fallback = '1'; img.src = `images/scents/${id}-en.webp`; }
+      else { img.onerror = null; img.removeAttribute('src'); img.style.display = 'none'; }
+    };
+    delete img.dataset.fallback;
+    img.style.display = '';
+    img.src = `images/scents/${id}-${lang}.webp`;
   }
 
   function closeProduct() {
