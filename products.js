@@ -72,11 +72,11 @@ Ce qui est inclus (×10 kits complets) :
       },
       de: {
         name:        'Einhorn Gipsmalerei-Set – Party Box',
-        description: `Alles, was du für eine vollständige Kreativ-Party brauchst, in einer Box — 10 komplette Einhorn-Mal-Sets, sofort einsatzbereit. Öffne die Box, leg deine Lieblingsplaylist auf und lass jeden sein Einhorn auswählen und nach eigener Vorstellung bemalen.
+        description: `Alles, was Sie für eine vollständige Kreativ-Party brauchen, in einer Box — 10 komplette Einhorn-Mal-Sets, sofort einsatzbereit. Öffnen Sie die Box, legen Sie Ihre Lieblingsplaylist auf und lassen Sie jeden sein Einhorn auswählen und nach eigener Vorstellung bemalen.
 
-Diese Party Box ist ideal für Kindergeburtstage, Mädelsabende, Familientreffen, kreative Workshops und Gruppenevents. Sie eignet sich auch hervorragend als Geschenk für eine ganze Klasse, ein Schulevent oder jede Feier, bei der du den Menschen etwas Spaßiges und Unvergessliches zum Selbermachen schenken möchtest.
+Diese Party Box ist ideal für Kindergeburtstage, Mädelsabende, Familientreffen, kreative Workshops und Gruppenevents. Sie eignet sich auch hervorragend als Geschenk für eine ganze Klasse, ein Schulevent oder jede Feier, bei der Sie den Gästen etwas Spassiges und Unvergessliches zum Selbermachen schenken möchten.
 
-Mit CHF 4,90 pro Kit sparst du mit der Party Box 38 % gegenüber dem Einzelkauf — der beste Preis für Gruppen.
+Mit CHF 4,90 pro Kit sparen Sie mit der Party Box 38 % gegenüber dem Einzelkauf — der beste Preis für Gruppen.
 
 Was enthalten ist (×10 komplette Sets):
 • 10 Gips-Einhorn-Figuren, bereit zum Bemalen
@@ -135,7 +135,7 @@ What's included:
         name:        'Kit de Peinture Licorne Moonlight en Plâtre',
         description: `Tout ce dont vous avez besoin pour peindre et personnaliser votre figurine Licorne Moonlight en plâtre est inclus dans le kit : une figurine en plâtre, un set de peinture et un pinceau. Ouvrez simplement la boîte, mettez votre playlist préférée, réunissez vos amis ou votre famille, et transformez la peinture en une expérience créative et chaleureuse.
 
-Ce kit est parfait pour se détendre à la maison, les soirées entre amies, les fêtes, les réunions en famille, les ateliers créatifs, ou comme cadeau attentionné et original.
+Ce kit est parfait pour se détendre à la maison, les soirées entre amies, les fêtes, les réunions en famille, les ateliers créatifs, ou comme cadeau attentionné et original. Peindre des figurines en plâtre est une merveilleuse façon de ralentir, de se détendre, de stimuler sa créativité et de savourer le plaisir de créer quelque chose de ses propres mains.
 
 La Licorne Moonlight possède un regard doux et serein — des lignes apaisantes et une expression calme qui vous invitent à imaginer votre propre palette de couleurs. Chaque pièce devient unique — vous choisissez les couleurs, l'ambiance et le résultat final.
 
@@ -148,11 +148,11 @@ Ce qui est inclus :
       },
       de: {
         name:        'Moonlight Einhorn Gipsmalerei-Set',
-        description: `Alles, was du zum Bemalen und Personalisieren deiner Moonlight-Einhorn-Gipsfigur brauchst, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffne einfach die Box, leg deine Lieblingsplaylist auf, hol deine Freunde oder Familie dazu und mach das Malen zu einem gemütlichen, kreativen Erlebnis.
+        description: `Alles, was Sie zum Bemalen und Personalisieren Ihrer Moonlight-Einhorn-Gipsfigur brauchen, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffnen Sie einfach die Box, legen Sie Ihre Lieblingsplaylist auf, holen Sie Freunde oder Familie dazu und machen Sie das Malen zu einem gemütlichen, kreativen Erlebnis.
 
-Dieses Kit ist perfekt zum Entspannen zu Hause, für Mädelsabende, Partys, Familientreffen, kreative Workshops oder als durchdachtes und einzigartiges Geschenk.
+Dieses Kit ist perfekt zum Entspannen zu Hause, für Mädelsabende, Partys, Familientreffen, kreative Workshops oder als durchdachtes und einzigartiges Geschenk. Gipsfiguren zu bemalen ist eine wunderbare Art, zur Ruhe zu kommen, abzuschalten, die Kreativität zu wecken und die Freude am Selbermachen zu geniessen.
 
-Das Moonlight-Einhorn hat einen sanften, ruhigen Ausdruck — weiche Linien und eine friedvolle Ausstrahlung, die dich einladen, deine eigene Farbgeschichte zu erzählen. Jedes Stück wird zum Unikat — du wählst die Farben, die Stimmung und das Endergebnis.
+Das Moonlight-Einhorn hat einen sanften, ruhigen Ausdruck — weiche Linien und eine friedvolle Ausstrahlung, die Sie einladen, Ihre eigene Farbgeschichte zu erzählen. Jedes Stück wird zum Unikat — Sie wählen die Farben, die Stimmung und das Endergebnis.
 
 Was enthalten ist:
 • 1 Moonlight-Einhorn-Gipsfigur, bereit zum Bemalen
@@ -165,7 +165,7 @@ Was enthalten ist:
         name:        'Набор для росписи гипсового единорога Moonlight',
         description: `Всё необходимое для росписи и украшения гипсовой фигурки единорога Moonlight уже в наборе: гипсовая фигурка, набор красок и кисть. Просто откройте коробку, включите любимый плейлист, позовите друзей или семью — и превратите рисование в уютное творческое занятие.
 
-Набор идеально подойдёт для отдыха дома, девичников, вечеринок, семейных встреч, творческих мастер-классов или в качестве продуманного и оригинального подарка.
+Набор идеально подойдёт для отдыха дома, девичников, вечеринок, семейных встреч, творческих мастер-классов или в качестве продуманного и оригинального подарка. Роспись гипсовых фигурок — отличный способ замедлиться, отдохнуть, пробудить творчество и получить удовольствие от того, что сделано своими руками.
 
 Единорог Moonlight обладает мягким, спокойным обликом — плавные линии и безмятежное выражение, которое приглашает вас придумать собственную цветовую историю. Каждая фигурка становится уникальной — вы выбираете цвета, настроение и итоговый вид.
 
@@ -211,7 +211,7 @@ What's included:
         name:        'Kit de Peinture Licorne Dreamy en Plâtre',
         description: `Tout ce dont vous avez besoin pour peindre et personnaliser votre figurine Licorne Dreamy en plâtre est inclus dans le kit : une figurine en plâtre, un set de peinture et un pinceau. Ouvrez simplement la boîte, mettez votre playlist préférée, réunissez vos amis ou votre famille, et transformez la peinture en une expérience créative et chaleureuse.
 
-Ce kit est parfait pour se détendre à la maison, les soirées entre amies, les fêtes, les réunions en famille, les ateliers créatifs, ou comme cadeau attentionné et original.
+Ce kit est parfait pour se détendre à la maison, les soirées entre amies, les fêtes, les réunions en famille, les ateliers créatifs, ou comme cadeau attentionné et original. Peindre des figurines en plâtre est une merveilleuse façon de ralentir, de se détendre, de stimuler sa créativité et de savourer le plaisir de créer quelque chose de ses propres mains.
 
 La Licorne Dreamy est pleine de fantaisie et de personnalité — une pose espiègle et des détails expressifs qui font de chaque coup de pinceau un véritable acte de création. Chaque pièce devient unique — vous choisissez les couleurs, l'ambiance et le résultat final.
 
@@ -224,11 +224,11 @@ Ce qui est inclus :
       },
       de: {
         name:        'Dreamy Einhorn Gipsmalerei-Set',
-        description: `Alles, was du zum Bemalen und Personalisieren deiner Dreamy-Einhorn-Gipsfigur brauchst, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffne einfach die Box, leg deine Lieblingsplaylist auf, hol deine Freunde oder Familie dazu und mach das Malen zu einem gemütlichen, kreativen Erlebnis.
+        description: `Alles, was Sie zum Bemalen und Personalisieren Ihrer Dreamy-Einhorn-Gipsfigur brauchen, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffnen Sie einfach die Box, legen Sie Ihre Lieblingsplaylist auf, holen Sie Freunde oder Familie dazu und machen Sie das Malen zu einem gemütlichen, kreativen Erlebnis.
 
-Dieses Kit ist perfekt zum Entspannen zu Hause, für Mädelsabende, Partys, Familientreffen, kreative Workshops oder als durchdachtes und einzigartiges Geschenk.
+Dieses Kit ist perfekt zum Entspannen zu Hause, für Mädelsabende, Partys, Familientreffen, kreative Workshops oder als durchdachtes und einzigartiges Geschenk. Gipsfiguren zu bemalen ist eine wunderbare Art, zur Ruhe zu kommen, abzuschalten, die Kreativität zu wecken und die Freude am Selbermachen zu geniessen.
 
-Das Dreamy-Einhorn steckt voller Verspieltheit und Persönlichkeit — eine lebhafte Pose und ausdrucksstarke Details, die jeden Pinselstrich zum Erlebnis machen. Jedes Stück wird zum Unikat — du wählst die Farben, die Stimmung und das Endergebnis.
+Das Dreamy-Einhorn steckt voller Verspieltheit und Persönlichkeit — eine lebhafte Pose und ausdrucksstarke Details, die jeden Pinselstrich zum Erlebnis machen. Jedes Stück wird zum Unikat — Sie wählen die Farben, die Stimmung und das Endergebnis.
 
 Was enthalten ist:
 • 1 Dreamy-Einhorn-Gipsfigur, bereit zum Bemalen
@@ -241,7 +241,7 @@ Was enthalten ist:
         name:        'Набор для росписи гипсового единорога Dreamy',
         description: `Всё необходимое для росписи и украшения гипсовой фигурки единорога Dreamy уже в наборе: гипсовая фигурка, набор красок и кисть. Просто откройте коробку, включите любимый плейлист, позовите друзей или семью — и превратите рисование в уютное творческое занятие.
 
-Набор идеально подойдёт для отдыха дома, девичников, вечеринок, семейных встреч, творческих мастер-классов или в качестве продуманного и оригинального подарка.
+Набор идеально подойдёт для отдыха дома, девичников, вечеринок, семейных встреч, творческих мастер-классов или в качестве продуманного и оригинального подарка. Роспись гипсовых фигурок — отличный способ замедлиться, отдохнуть, пробудить творчество и получить удовольствие от того, что сделано своими руками.
 
 Единорог Dreamy полон игривости и характера — динамичная поза и выразительные детали, которые превращают каждый мазок кисти в маленькую историю. Каждая фигурка становится уникальной — вы выбираете цвета, настроение и итоговый вид.
 
@@ -287,7 +287,7 @@ What's included:
         name:        'Kit de Peinture Licorne Starlight en Plâtre',
         description: `Tout ce dont vous avez besoin pour peindre et personnaliser votre figurine Licorne Starlight en plâtre est inclus dans le kit : une figurine en plâtre, un set de peinture et un pinceau. Ouvrez simplement la boîte, mettez votre playlist préférée, réunissez vos amis ou votre famille, et transformez la peinture en une expérience créative et chaleureuse.
 
-Ce kit est parfait pour se détendre à la maison, les soirées entre amies, les fêtes, les réunions en famille, les ateliers créatifs, ou comme cadeau attentionné et original.
+Ce kit est parfait pour se détendre à la maison, les soirées entre amies, les fêtes, les réunions en famille, les ateliers créatifs, ou comme cadeau attentionné et original. Peindre des figurines en plâtre est une merveilleuse façon de ralentir, de se détendre, de stimuler sa créativité et de savourer le plaisir de créer quelque chose de ses propres mains.
 
 La Licorne Starlight est gracieuse et élégante — une figurine raffinée aux détails soignés qui vous inspirent à choisir vos plus belles couleurs. Chaque pièce devient unique — vous choisissez les couleurs, l'ambiance et le résultat final.
 
@@ -300,11 +300,11 @@ Ce qui est inclus :
       },
       de: {
         name:        'Starlight Einhorn Gipsmalerei-Set',
-        description: `Alles, was du zum Bemalen und Personalisieren deiner Starlight-Einhorn-Gipsfigur brauchst, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffne einfach die Box, leg deine Lieblingsplaylist auf, hol deine Freunde oder Familie dazu und mach das Malen zu einem gemütlichen, kreativen Erlebnis.
+        description: `Alles, was Sie zum Bemalen und Personalisieren Ihrer Starlight-Einhorn-Gipsfigur brauchen, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffnen Sie einfach die Box, legen Sie Ihre Lieblingsplaylist auf, holen Sie Freunde oder Familie dazu und machen Sie das Malen zu einem gemütlichen, kreativen Erlebnis.
 
-Dieses Kit ist perfekt zum Entspannen zu Hause, für Mädelsabende, Partys, Familientreffen, kreative Workshops oder als durchdachtes und einzigartiges Geschenk.
+Dieses Kit ist perfekt zum Entspannen zu Hause, für Mädelsabende, Partys, Familientreffen, kreative Workshops oder als durchdachtes und einzigartiges Geschenk. Gipsfiguren zu bemalen ist eine wunderbare Art, zur Ruhe zu kommen, abzuschalten, die Kreativität zu wecken und die Freude am Selbermachen zu geniessen.
 
-Das Starlight-Einhorn ist anmutig und elegant — eine ausdrucksstarke Figur mit feinen Details, die dich dazu einlädt, deine schönsten Farben zu wählen. Jedes Stück wird zum Unikat — du wählst die Farben, die Stimmung und das Endergebnis.
+Das Starlight-Einhorn ist anmutig und elegant — eine ausdrucksstarke Figur mit feinen Details, die Sie dazu einlädt, Ihre schönsten Farben zu wählen. Jedes Stück wird zum Unikat — Sie wählen die Farben, die Stimmung und das Endergebnis.
 
 Was enthalten ist:
 • 1 Starlight-Einhorn-Gipsfigur, bereit zum Bemalen
@@ -317,7 +317,7 @@ Was enthalten ist:
         name:        'Набор для росписи гипсового единорога Starlight',
         description: `Всё необходимое для росписи и украшения гипсовой фигурки единорога Starlight уже в наборе: гипсовая фигурка, набор красок и кисть. Просто откройте коробку, включите любимый плейлист, позовите друзей или семью — и превратите рисование в уютное творческое занятие.
 
-Набор идеально подойдёт для отдыха дома, девичников, вечеринок, семейных встреч, творческих мастер-классов или в качестве продуманного и оригинального подарка.
+Набор идеально подойдёт для отдыха дома, девичников, вечеринок, семейных встреч, творческих мастер-классов или в качестве продуманного и оригинального подарка. Роспись гипсовых фигурок — отличный способ замедлиться, отдохнуть, пробудить творчество и получить удовольствие от того, что сделано своими руками.
 
 Единорог Starlight изящен и элегантен — выразительная фигурка с тонкими деталями, которая вдохновляет выбрать самые красивые цвета. Каждая фигурка становится уникальной — вы выбираете цвета, настроение и итоговый вид.
 
@@ -378,11 +378,11 @@ Ce qui est inclus (×10 kits complets) :
       },
       de: {
         name:        'Dinosaurier Gipsmalerei-Set – Party Box',
-        description: `Alles, was du für eine vollständige Kreativ-Party brauchst, in einer Box — 10 komplette Dinosaurier-Mal-Sets, sofort einsatzbereit. Öffne die Box, leg deine Lieblingsplaylist auf und lass jeden seinen Dinosaurier auswählen und nach eigener Vorstellung bemalen.
+        description: `Alles, was Sie für eine vollständige Kreativ-Party brauchen, in einer Box — 10 komplette Dinosaurier-Mal-Sets, sofort einsatzbereit. Öffnen Sie die Box, legen Sie Ihre Lieblingsplaylist auf und lassen Sie jeden seinen Dinosaurier auswählen und nach eigener Vorstellung bemalen.
 
-Diese Party Box ist ideal für Kindergeburtstage, Familientreffen, Schulevents, kreative Workshops und jede Gruppenfeier, bei der du den Menschen etwas Spaßiges und Unvergessliches zum Selbermachen schenken möchtest. Sie ist auch das perfekte Geschenk für eine ganze Klasse oder ein dino-begeistertes Kind, das den Spaß teilen möchte.
+Diese Party Box ist ideal für Kindergeburtstage, Familientreffen, Schulevents, kreative Workshops und jede Gruppenfeier, bei der Sie den Gästen etwas Spassiges und Unvergessliches zum Selbermachen schenken möchten. Sie ist auch das perfekte Geschenk für eine ganze Klasse oder ein dino-begeistertes Kind, das den Spass teilen möchte.
 
-Mit CHF 4,90 pro Kit sparst du mit der Party Box 38 % gegenüber dem Einzelkauf — der beste Preis für Gruppen.
+Mit CHF 4,90 pro Kit sparen Sie mit der Party Box 38 % gegenüber dem Einzelkauf — der beste Preis für Gruppen.
 
 Was enthalten ist (×10 komplette Sets):
 • 10 Gips-Dinosaurier-Figuren, bereit zum Bemalen
@@ -441,7 +441,7 @@ What's included:
         name:        'Kit de Peinture Diplodocus en Plâtre',
         description: `Tout ce dont vous avez besoin pour peindre et personnaliser votre figurine Diplodocus en plâtre est inclus dans le kit : une figurine en plâtre, un set de peinture et un pinceau. Ouvrez simplement la boîte, mettez votre playlist préférée, réunissez vos amis ou votre famille, et transformez la peinture en une expérience créative et chaleureuse.
 
-Ce kit est parfait pour les soirées en famille, les fêtes d'anniversaire, les ateliers créatifs, ou pour tous ceux qui adorent les dinosaures.
+Ce kit est parfait pour les soirées en famille, les fêtes d'anniversaire, les ateliers créatifs, ou pour tous ceux qui adorent les dinosaures. Peindre des figurines en plâtre est une merveilleuse façon de ralentir, de se détendre, de stimuler sa créativité et de savourer le plaisir de créer quelque chose de ses propres mains.
 
 Le Diplodocus — le doux géant au long cou du Jurassique — est une figurine impressionnante à peindre. Grand, expressif et plein de caractère, il offre une toile où votre imagination peut vagabonder aussi librement que les dinosaures autrefois. Chaque pièce devient unique.
 
@@ -454,11 +454,11 @@ Ce qui est inclus :
       },
       de: {
         name:        'Diplodocus Gipsmalerei-Set',
-        description: `Alles, was du zum Bemalen und Personalisieren deiner Diplodocus-Gipsfigur brauchst, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffne einfach die Box, leg deine Lieblingsplaylist auf, hol deine Freunde oder Familie dazu und mach das Malen zu einem gemütlichen, kreativen Erlebnis.
+        description: `Alles, was Sie zum Bemalen und Personalisieren Ihrer Diplodocus-Gipsfigur brauchen, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffnen Sie einfach die Box, legen Sie Ihre Lieblingsplaylist auf, holen Sie Freunde oder Familie dazu und machen Sie das Malen zu einem gemütlichen, kreativen Erlebnis.
 
-Dieses Kit ist perfekt für Familienabende, Kindergeburtstage, kreative Workshops oder für alle, die Dinosaurier lieben.
+Dieses Kit ist perfekt für Familienabende, Kindergeburtstage, kreative Workshops oder für alle, die Dinosaurier lieben. Gipsfiguren zu bemalen ist eine wunderbare Art, zur Ruhe zu kommen, abzuschalten, die Kreativität zu wecken und die Freude am Selbermachen zu geniessen.
 
-Der Diplodocus — der sanfte Langhals-Riese der Jurazeit — ist eine beeindruckende Figur zum Bemalen. Groß, ausdrucksstark und voller Charakter bietet er eine Leinwand, auf der deine Fantasie so frei schweifen kann wie die Dinosaurier einst. Jedes Stück wird zum Unikat.
+Der Diplodocus — der sanfte Langhals-Riese der Jurazeit — ist eine beeindruckende Figur zum Bemalen. Gross, ausdrucksstark und voller Charakter bietet er eine Leinwand, auf der Ihre Fantasie so frei schweifen kann wie die Dinosaurier einst. Jedes Stück wird zum Unikat.
 
 Was enthalten ist:
 • 1 Diplodocus-Gipsfigur, bereit zum Bemalen
@@ -471,7 +471,7 @@ Was enthalten ist:
         name:        'Набор для росписи гипсового диплодока',
         description: `Всё необходимое для росписи и украшения гипсовой фигурки диплодока уже в наборе: гипсовая фигурка, набор красок и кисть. Просто откройте коробку, включите любимый плейлист, позовите друзей или семью — и превратите рисование в уютное творческое занятие.
 
-Набор идеально подойдёт для семейных вечеров, детских дней рождения, творческих мастер-классов и всех, кто любит динозавров.
+Набор идеально подойдёт для семейных вечеров, детских дней рождения, творческих мастер-классов и всех, кто любит динозавров. Роспись гипсовых фигурок — отличный способ замедлиться, отдохнуть, пробудить творчество и получить удовольствие от того, что сделано своими руками.
 
 Диплодок — добродушный длинношеий гигант юрского периода — выглядит потрясающе в расписанном виде. Большой, харизматичный и полный характера, он даёт простор для фантазии, такой же свободной, как сами динозавры. Каждая фигурка становится уникальной.
 
@@ -517,7 +517,7 @@ What's included:
         name:        'Kit de Peinture Stégosaure en Plâtre',
         description: `Tout ce dont vous avez besoin pour peindre et personnaliser votre figurine Stégosaure en plâtre est inclus dans le kit : une figurine en plâtre, un set de peinture et un pinceau. Ouvrez simplement la boîte, mettez votre playlist préférée, réunissez vos amis ou votre famille, et transformez la peinture en une expérience créative et chaleureuse.
 
-Ce kit est parfait pour les soirées en famille, les fêtes d'anniversaire, les ateliers créatifs, ou pour tous ceux qui adorent les dinosaures.
+Ce kit est parfait pour les soirées en famille, les fêtes d'anniversaire, les ateliers créatifs, ou pour tous ceux qui adorent les dinosaures. Peindre des figurines en plâtre est une merveilleuse façon de ralentir, de se détendre, de stimuler sa créativité et de savourer le plaisir de créer quelque chose de ses propres mains.
 
 Le Stégosaure — avec son dos emblématique hérissé de plaques et sa posture robuste — est l'un des dinosaures les plus reconnaissables de tous les temps. Sa silhouette audacieuse en fait une figurine fantastique à peindre et à exposer. Chaque pièce devient unique — vous choisissez les couleurs, l'ambiance et le résultat final.
 
@@ -530,11 +530,11 @@ Ce qui est inclus :
       },
       de: {
         name:        'Stegosaurus Gipsmalerei-Set',
-        description: `Alles, was du zum Bemalen und Personalisieren deiner Stegosaurus-Gipsfigur brauchst, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffne einfach die Box, leg deine Lieblingsplaylist auf, hol deine Freunde oder Familie dazu und mach das Malen zu einem gemütlichen, kreativen Erlebnis.
+        description: `Alles, was Sie zum Bemalen und Personalisieren Ihrer Stegosaurus-Gipsfigur brauchen, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffnen Sie einfach die Box, legen Sie Ihre Lieblingsplaylist auf, holen Sie Freunde oder Familie dazu und machen Sie das Malen zu einem gemütlichen, kreativen Erlebnis.
 
-Dieses Kit ist perfekt für Familienabende, Kindergeburtstage, kreative Workshops oder für alle, die Dinosaurier lieben.
+Dieses Kit ist perfekt für Familienabende, Kindergeburtstage, kreative Workshops oder für alle, die Dinosaurier lieben. Gipsfiguren zu bemalen ist eine wunderbare Art, zur Ruhe zu kommen, abzuschalten, die Kreativität zu wecken und die Freude am Selbermachen zu geniessen.
 
-Der Stegosaurus — mit seinem unverkennbaren Stachelrücken und seiner kräftigen Haltung — ist einer der bekanntesten Dinosaurier aller Zeiten. Seine markante Silhouette macht ihn zu einer fantastisch schönen Figur zum Bemalen und Ausstellen. Jedes Stück wird zum Unikat — du wählst die Farben, die Stimmung und das Endergebnis.
+Der Stegosaurus — mit seinem unverkennbaren Stachelrücken und seiner kräftigen Haltung — ist einer der bekanntesten Dinosaurier aller Zeiten. Seine markante Silhouette macht ihn zu einer fantastisch schönen Figur zum Bemalen und Ausstellen. Jedes Stück wird zum Unikat — Sie wählen die Farben, die Stimmung und das Endergebnis.
 
 Was enthalten ist:
 • 1 Stegosaurus-Gipsfigur, bereit zum Bemalen
@@ -547,7 +547,7 @@ Was enthalten ist:
         name:        'Набор для росписи гипсового стегозавра',
         description: `Всё необходимое для росписи и украшения гипсовой фигурки стегозавра уже в наборе: гипсовая фигурка, набор красок и кисть. Просто откройте коробку, включите любимый плейлист, позовите друзей или семью — и превратите рисование в уютное творческое занятие.
 
-Набор идеально подойдёт для семейных вечеров, детских дней рождения, творческих мастер-классов и всех, кто любит динозавров.
+Набор идеально подойдёт для семейных вечеров, детских дней рождения, творческих мастер-классов и всех, кто любит динозавров. Роспись гипсовых фигурок — отличный способ замедлиться, отдохнуть, пробудить творчество и получить удовольствие от того, что сделано своими руками.
 
 Стегозавр — с его легендарной шипастой спиной и мощной осанкой — один из самых узнаваемых динозавров всех времён. Его яркий силуэт делает фигурку невероятно интересной для росписи и декора. Каждая фигурка становится уникальной — вы выбираете цвета, настроение и итоговый вид.
 
@@ -599,7 +599,7 @@ Ce qui est inclus :
       },
       de: {
         name: 'Frosch-Kerze',
-        description: `Eine handgefertigte Kerze in Froschform — voll Charakter und Charme. In der Schweiz mit Sorgfalt hergestellt, eignet sich diese verspielte Figur gleichermaßen als Dekorationsstück oder als funktionale Kerze. Ihre glatte, detaillierte Silhouette macht sie zum perfekten Blickfang auf jedem Regal, Schreibtisch oder Fensterbrett.
+        description: `Eine handgefertigte Kerze in Froschform — voller Charakter und Charme. In der Schweiz mit Sorgfalt hergestellt, eignet sich diese verspielte Figur gleichermassen als Dekorationsstück oder als funktionale Kerze. Ihre glatte, detaillierte Silhouette macht sie zum perfekten Blickfang auf jedem Regal, Schreibtisch oder Fensterbrett.
 
 Ein wunderbares Geschenk für alle, die Tiere, Natur oder einfach etwas Unerwartetes und Fröhliches lieben.
 
@@ -649,7 +649,7 @@ What's included:
         name: 'Bougie Grenouille au Chapeau',
         description: `Voici la grenouille la plus élégante que vous posséderez jamais. Cette bougie artisanale représente une grenouille portant un chapeau haut-de-forme — une touche d'élégance absurde qui égaie n'importe quel espace. Fabriquée à la main en Suisse, c'est le genre de cadeau qui fait sourire dès le déballage.
 
-Le cadeau parfait pour quelqu'un qui a le sens de l'humour et un œil pour le charmant et l'inattendu.
+Posez-la sur votre bureau, une étagère ou dans la salle de bain et laissez-la lancer la conversation. Le cadeau parfait pour quelqu'un qui a le sens de l'humour et un œil pour le charmant et l'inattendu.
 
 Ce qui est inclus :
 • 1 bougie grenouille au chapeau artisanale
@@ -659,7 +659,7 @@ Ce qui est inclus :
         name: 'Frosch-mit-Hut-Kerze',
         description: `Begegnen Sie dem stilbewusstesten Frosch, den Sie je besessen haben. Diese handgefertigte Kerze zeigt einen Frosch mit Zylinder — ein kleines Detail absurder Eleganz, das jeden Raum aufheitert. In der Schweiz handgefertigt, ist es die Art von Geschenk, bei der man vom ersten Moment des Auspackens an lächelt.
 
-Das perfekte Geschenk für jemanden mit Sinn für Humor und einem Blick für das Charmante und Unerwartete.
+Stellen Sie sie auf den Schreibtisch, ins Regal oder ins Badezimmer und lassen Sie sie Gespräche eröffnen. Das perfekte Geschenk für jemanden mit Sinn für Humor und einem Blick für das Charmante und Unerwartete.
 
 Was enthalten ist:
 • 1 handgefertigte Frosch-mit-Hut-Kerze
@@ -669,7 +669,7 @@ Was enthalten ist:
         name: 'Свеча «Лягушка в шляпе»',
         description: `Самая элегантная лягушка из всех, что у вас когда-либо были. Свеча ручной работы изображает лягушку в цилиндре — маленькая деталь абсурдной элегантности, которая украсит любое пространство. Изготовлена вручную в Швейцарии — это именно тот подарок, от которого улыбаются сразу при распаковке.
 
-Идеальный подарок для того, у кого есть чувство юмора и вкус к очаровательному и неожиданному.
+Поставьте её на стол, полку или в ванную — и она сама станет поводом для разговора. Идеальный подарок для того, у кого есть чувство юмора и вкус к очаровательному и неожиданному.
 
 Что входит:
 • 1 свеча «Лягушка в шляпе» ручной работы
@@ -707,7 +707,7 @@ What's included:
         name: 'Bougie Citrouille',
         description: `Une bougie citrouille artisanale — parfaite pour la décoration d'automne, Halloween ou comme pièce décorative chaleureuse toute l'année. Fabriquée en Suisse avec une attention particulière à la forme naturelle de la citrouille : la silhouette côtelée, le corps arrondi, la petite tige sur le dessus.
 
-S'expose magnifiquement seule ou groupée dans une composition saisonnière.
+S'expose magnifiquement seule ou groupée dans une composition saisonnière. Une pièce chaleureuse et accueillante qui invite l'automne à la maison.
 
 Ce qui est inclus :
 • 1 bougie citrouille artisanale
@@ -717,7 +717,7 @@ Ce qui est inclus :
         name: 'Kürbis-Kerze',
         description: `Eine handgefertigte Kürbis-Kerze — perfekt für die Herbstdekoration, Halloween oder als gemütliches Akzentstück das ganze Jahr über. In der Schweiz mit besonderer Aufmerksamkeit für die natürliche Form eines Kürbisses hergestellt: die gerippte Silhouette, der runde Körper, der kleine Stiel oben.
 
-Wunderschön allein oder in Gruppen als saisonale Dekoration.
+Wunderschön allein oder in Gruppen als saisonale Dekoration. Ein warmes, einladendes Stück, das Herbststimmung ins Haus bringt.
 
 Was enthalten ist:
 • 1 handgefertigte Kürbis-Kerze
@@ -727,7 +727,7 @@ Was enthalten ist:
         name: 'Свеча «Тыква»',
         description: `Свеча ручной работы в форме тыквы — идеальна для осеннего декора, Хэллоуина или как уютный акцентный предмет круглый год. Изготовлена в Швейцарии с вниманием к естественной форме тыквы: рёбра, округлое тело, небольшой черешок сверху.
 
-Выглядит прекрасно отдельно или в группе как сезонная декорация.
+Выглядит прекрасно отдельно или в группе как сезонная декорация. Тёплая, уютная вещь, которая приносит ощущение осени в дом.
 
 Что входит:
 • 1 свеча «Тыква» ручной работы
@@ -768,7 +768,7 @@ What's included:
         name: 'Bougie Carrousel',
         description: `Une magnifique bougie carrousel décorative, fabriquée à la main en Suisse. L'une des pièces les plus complexes de la collection Emma's Lab — de délicats chevaux, un auvent ornemental et une base détaillée s'assemblent pour créer quelque chose de véritablement magique.
 
-Cette bougie est autant un objet d'art qu'une bougie. Exposez-la sur une cheminée, une étagère ou un buffet. Un cadeau pour ceux qui apprécient les belles choses faites à la main.
+Cette bougie est autant un objet d'art qu'une bougie. Exposez-la sur une cheminée, une étagère ou un buffet. Un cadeau pour ceux qui apprécient les belles choses faites à la main. Elle apporte la chaleur et la magie d'un carrousel de fête foraine dans chaque maison.
 
 Ce qui est inclus :
 • 1 bougie carrousel artisanale
@@ -778,7 +778,7 @@ Ce qui est inclus :
         name: 'Karussell-Kerze',
         description: `Eine atemberaubende dekorative Karussell-Kerze, handgefertigt in der Schweiz. Eines der aufwendigsten Stücke der Emma's Lab Kollektion — zarte Pferde, ein verziertes Dach und eine detaillierte Basis ergeben zusammen etwas, das sich wirklich magisch anfühlt.
 
-Diese Kerze ist ebenso sehr ein Kunstobjekt wie eine Kerze. Stellen Sie sie auf einen Kaminsims, ein Regal oder ein Sideboard. Ein Geschenk für alle, die schöne handgemachte Dinge schätzen.
+Diese Kerze ist ebenso sehr ein Kunstobjekt wie eine Kerze. Stellen Sie sie auf einen Kaminsims, ein Regal oder ein Sideboard. Ein Geschenk für alle, die schöne handgemachte Dinge schätzen. Sie bringt die Wärme und den Zauber eines Jahrmarktkarussells in jedes Zuhause.
 
 Was enthalten ist:
 • 1 handgefertigte Karussell-Kerze
@@ -788,7 +788,7 @@ Was enthalten ist:
         name: 'Свеча «Карусель»',
         description: `Потрясающая декоративная свеча-карусель, изготовленная вручную в Швейцарии. Одна из самых сложных работ в коллекции Emma's Lab — изящные лошади, украшенный навес и детализированное основание создают нечто поистине волшебное.
 
-Эта свеча — столь же предмет искусства, сколь и источник света. Поставьте её на каминную полку, полку или комод. Подарок для тех, кто ценит красивые вещи ручной работы.
+Эта свеча — столь же предмет искусства, сколь и источник света. Поставьте её на каминную полку, полку или комод. Подарок для тех, кто ценит красивые вещи ручной работы. Она приносит в дом тепло и волшебство ярмарочной карусели.
 
 Что входит:
 • 1 свеча «Карусель» ручной работы
@@ -827,7 +827,7 @@ What's included:
         name: 'Bougie Boule de Noël',
         description: `Une bougie artisanale en forme de boule de Noël classique — lisse, ronde et magnifiquement réalisée. Cette bougie-boule capture la douce nostalgie des décorations de fête dans une forme que vous pouvez exposer année après année.
 
-Parfaite comme cadeau de Noël, cadeau de Noël de bas de laine ou ajout festif à votre décoration saisonnière.
+Parfaite comme cadeau de Noël, petite attention à glisser dans la chaussette de Noël ou touche festive dans votre décoration de saison. Offrez-la seule ou associez-la à d'autres pièces de la collection de bougies Emma's Lab.
 
 Ce qui est inclus :
 • 1 bougie boule de Noël artisanale
@@ -837,7 +837,7 @@ Ce qui est inclus :
         name: 'Weihnachtskugel-Kerze',
         description: `Eine handgefertigte Kerze in Form eines klassischen Weihnachtsbaumschmucks — glatt, rund und wunderschön gearbeitet. Diese Kugelkerze fängt die warme Nostalgie der festlichen Dekoration in einer Form ein, die Sie Jahr für Jahr aufstellen können.
 
-Perfekt als Weihnachtsgeschenk, Strumpffüller oder festliche Ergänzung Ihrer saisonalen Dekoration.
+Perfekt als Weihnachtsgeschenk, Strumpffüller oder festliche Ergänzung Ihrer saisonalen Dekoration. Verschenken Sie sie einzeln oder kombiniert mit weiteren Stücken aus der Emma's Lab Kerzenkollektion.
 
 Was enthalten ist:
 • 1 handgefertigte Weihnachtskugel-Kerze
@@ -847,7 +847,7 @@ Was enthalten ist:
         name: 'Свеча «Новогодний шар»',
         description: `Свеча ручной работы в форме классического рождественского шара — гладкая, круглая и красиво исполненная. Эта свеча передаёт тёплую ностальгию праздничного декора в форме, которую можно выставлять каждый год.
 
-Идеальный рождественский подарок, дополнение к праздничному декору или часть коллекции свечей Emma's Lab.
+Идеальный рождественский подарок, маленький сюрприз в праздничный носок или нарядное дополнение к сезонному декору. Дарите отдельно или в паре с другими свечами из коллекции Emma's Lab.
 
 Что входит:
 • 1 свеча «Новогодний шар» ручной работы
@@ -884,7 +884,9 @@ What's included:
       },
       fr: {
         name: 'Bougie Roi des Souris — Rouge',
-        description: `Le Roi des souris en uniforme rouge royal — fabriqué à la main en Suisse. Inspiré du légendaire méchant de Casse-Noisette, avec sa couronne, son expression féroce et sa posture royale.
+        description: `Le Roi des souris en uniforme rouge royal — fabriqué à la main en Suisse. Inspiré du légendaire méchant de Casse-Noisette, avec sa couronne, son expression féroce et sa posture royale. Une pièce de collection qui unit l'artisanat et la magie des contes de Noël.
+
+Un cadeau mémorable pour tous ceux qui aiment Casse-Noisette, le ballet ou les décorations de saison hors du commun.
 
 Ce qui est inclus :
 • 1 bougie Roi des souris artisanale (rouge)
@@ -892,7 +894,9 @@ Ce qui est inclus :
       },
       de: {
         name: 'Mäusekönig-Kerze — Rot',
-        description: `Der Mäusekönig in seiner königlichen roten Uniform — handgefertigt in der Schweiz. Inspiriert vom legendären Bösewicht aus dem Nussknacker.
+        description: `Der Mäusekönig in seiner königlichen roten Uniform — handgefertigt in der Schweiz. Inspiriert vom legendären Bösewicht aus dem Nussknacker — mit Krone, grimmigem Blick und königlicher Haltung. Ein Sammlerstück, das Handwerk und Weihnachtsgeschichte verbindet.
+
+Ein unvergessliches Geschenk für alle, die den Nussknacker, das Ballett oder aussergewöhnliche Saisondekoration lieben.
 
 Was enthalten ist:
 • 1 handgefertigte Mäusekönig-Kerze (rot)
@@ -900,7 +904,9 @@ Was enthalten ist:
       },
       ru: {
         name: 'Свеча «Мышиный Король» — Красный',
-        description: `Мышиный Король в красном королевском мундире — изготовлен вручную в Швейцарии. По мотивам «Щелкунчика» — с короной, грозным взглядом и царственной осанкой.
+        description: `Мышиный Король в красном королевском мундире — изготовлен вручную в Швейцарии. По мотивам «Щелкунчика» — с короной, грозным взглядом и царственной осанкой. Коллекционная вещь, в которой встречаются ручная работа и рождественская сказка.
+
+Запоминающийся подарок для тех, кто любит «Щелкунчика», балет или необычный праздничный декор.
 
 Что входит:
 • 1 свеча «Мышиный Король» (красный) ручной работы
@@ -1010,7 +1016,7 @@ Ce qui est inclus :
         name: 'Hyazinthen-Kerze',
         description: `Eine wunderschön detaillierte Hyazinthen-Kerze, handgefertigt in der Schweiz. Die geschichteten Blütentrauben fangen die natürliche Eleganz einer der beliebtesten Frühlingsblumen ein. Ob allein ausgestellt oder als Teil eines floralen Arrangements — diese Kerze bringt einen Hauch botanischer Schönheit in jeden Raum.
 
-Die Hyazinthe ist ein Symbol der Erneuerung — ein nachdenkliches Geschenk zur Einweihungsfeier, zum Geburtstag oder einfach um etwas Natur nach drinnen zu bringen.
+Die Hyazinthe ist ein Symbol der Erneuerung — ein liebevolles Geschenk zur Einweihungsfeier, zum Geburtstag oder einfach um etwas Natur nach drinnen zu bringen.
 
 Was enthalten ist:
 • 1 handgefertigte Hyazinthen-Kerze

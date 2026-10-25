@@ -1635,8 +1635,8 @@
 
 <!-- ═══════════════════════════════════════ SCRIPTS ══════════════════════════════ -->
 <!-- ?v= bumps the CDN cache key: change the value whenever config.js or products.js change -->
-<script src="config.js?v=20261025d"></script>
-<script src="products.js?v=20261025d"></script>
+<script src="config.js?v=20261025g"></script>
+<script src="products.js?v=20261025g"></script>
 <script src="analytics.js"></script>
 <script>
   // CONFIG, TRANSLATIONS and PRODUCTS are loaded from config.js and products.js
@@ -2692,12 +2692,12 @@
 
 <div id="cookie-banner" role="dialog" aria-label="Cookie consent">
   <p class="cookie-text">
-    We use cookies for analytics and advertising to improve your experience.
-    See our <a href="privacy.html">Privacy Policy</a>.
+    <span data-i18n="cookie.text">We use cookies for analytics and advertising to improve your experience. See our</span>
+    <a href="privacy.html" data-i18n="cookie.link">Privacy Policy</a>.
   </p>
   <div class="cookie-btns">
-    <button class="cookie-decline" onclick="declineCookies()">Decline</button>
-    <button class="cookie-accept" onclick="acceptCookies()">Accept</button>
+    <button class="cookie-decline" onclick="declineCookies()" data-i18n="cookie.decline">Decline</button>
+    <button class="cookie-accept" onclick="acceptCookies()" data-i18n="cookie.accept">Accept</button>
   </div>
 </div>
 
