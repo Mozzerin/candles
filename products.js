@@ -912,10 +912,10 @@ Was enthalten ist:
     id:            'candle-matryoshka',
     category:      'candle',
     images:        [
-      'images/products/candles/scenes/matryoshka-1.webp',
-      'images/products/candles/scenes/matryoshka-2.webp',
-      'images/products/candles/scenes/matryoshka-3.webp',
-      'images/products/candles/scenes/matryoshka-size.webp',
+      'images/products/candles/scenes/nevalyashka-1.webp',
+      'images/products/candles/scenes/nevalyashka-2.webp',
+      'images/products/candles/scenes/nevalyashka-3.webp',
+      'images/products/candles/scenes/nevalyashka-size.webp',
     ],
     price:         49.00,
     originalPrice: null,
@@ -923,43 +923,51 @@ Was enthalten ist:
     size: '≈ 10 × 15 cm',
     translations: {
       en: {
-        name: 'Matryoshka Candle',
-        description: `A handcrafted matryoshka candle — a little girl in a glossy red hood with rosy cheeks and a painted smile. Made in Switzerland, the hood lifts off as a lid to reveal the candle inside, so she works as a cosy winter decoration and a working candle at the same time.
+        name: 'Roly-Poly Doll Candle',
+        description: `Meet our roly-poly doll — a little girl in a glossy red hood with rosy cheeks, big blue eyes and a tiny heart on her cheek, inspired by the beloved tumbler toy of childhood. Cast in plaster and painted entirely by hand in our studio in Mettmenstetten, so every doll has her own expression and no two are exactly alike.
 
-A warm, nostalgic piece for the winter season: on a windowsill, a festive table or as a gift that brings a smile.
+Her hood lifts off like a lid: inside is a soy wax candle in the scent of your choice. Once the candle has burned down, the plaster body lives on as a little keepsake box or a decoration for the winter windowsill.
+
+A warm, nostalgic gift for Christmas, a new home or anyone who loves handmade things.
 
 What's included:
-• 1 handcrafted matryoshka candle
+• 1 hand-painted roly-poly doll candle (plaster body, soy wax, scent of your choice)
 • Made in Switzerland`,
       },
       fr: {
-        name: 'Bougie Matriochka',
-        description: `Une bougie matriochka artisanale — une petite fille au capuchon rouge brillant, aux joues roses et au sourire peint. Fabriquée en Suisse, le capuchon se soulève comme un couvercle et révèle la bougie à l'intérieur : à la fois décoration d'hiver chaleureuse et vraie bougie.
+        name: 'Bougie Culbuto',
+        description: `Voici notre culbuto — une petite fille au capuchon rouge brillant, aux joues roses, aux grands yeux bleus et au petit cœur sur la joue, inspirée du jouet culbuto de notre enfance. Coulée en plâtre et entièrement peinte à la main dans notre atelier de Mettmenstetten : chaque poupée a sa propre expression, aucune n'est tout à fait identique.
 
-Une pièce douce et nostalgique pour la saison d'hiver : sur un rebord de fenêtre, une table de fête ou en cadeau qui fait sourire.
+Son capuchon se soulève comme un couvercle : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Une fois la bougie consumée, le corps en plâtre reste une jolie boîte à souvenirs ou une décoration pour le rebord de la fenêtre en hiver.
+
+Un cadeau chaleureux et nostalgique pour Noël, une pendaison de crémaillère ou tous ceux qui aiment le fait main.
 
 Ce qui est inclus :
-• 1 bougie matriochka artisanale
+• 1 bougie culbuto peinte à la main (corps en plâtre, cire de soja, parfum au choix)
 • Fabriquée en Suisse`,
       },
       de: {
-        name: 'Matrjoschka-Kerze',
-        description: `Eine handgefertigte Matrjoschka-Kerze — ein kleines Mädchen mit glänzender roter Kapuze, rosigen Wangen und gemaltem Lächeln. In der Schweiz hergestellt; die Kapuze lässt sich als Deckel abnehmen und gibt die Kerze darin frei — gemütliche Winterdekoration und echte Kerze in einem.
+        name: 'Stehaufmännchen-Kerze',
+        description: `Unser Stehaufmännchen — ein kleines Mädchen mit glänzender roter Kapuze, rosigen Wangen, grossen blauen Augen und einem kleinen Herz auf der Wange, inspiriert vom beliebten Stehauf-Spielzeug aus Kindertagen. Aus Gips gegossen und in unserem Atelier in Mettmenstetten komplett von Hand bemalt — jede Puppe hat ihren eigenen Ausdruck, keine gleicht der anderen ganz.
 
-Ein warmes, nostalgisches Stück für die Wintersaison: auf der Fensterbank, dem festlichen Tisch oder als Geschenk, das ein Lächeln schenkt.
+Die Kapuze lässt sich wie ein Deckel abnehmen: Darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Ist die Kerze abgebrannt, bleibt der Gipskörper als kleine Schatzdose oder als Dekoration für die winterliche Fensterbank.
+
+Ein warmes, nostalgisches Geschenk zu Weihnachten, zum Einzug oder für alle, die Handgemachtes lieben.
 
 Was enthalten ist:
-• 1 handgefertigte Matrjoschka-Kerze
+• 1 handbemalte Stehaufmännchen-Kerze (Gipskörper, Sojawachs, Duft nach Wahl)
 • Hergestellt in der Schweiz`,
       },
       ru: {
-        name: 'Свеча «Матрёшка»',
-        description: `Свеча ручной работы в виде матрёшки — девочка в глянцевом красном капюшоне, с румяными щеками и нарисованной улыбкой. Сделана в Швейцарии; капюшон снимается как крышка, под ним — сама свеча. Уютное зимнее украшение и настоящая свеча в одном.
+        name: 'Свеча «Неваляшка»',
+        description: `Наша неваляшка — девочка в глянцевом красном капюшоне, с румяными щеками, большими голубыми глазами и маленьким сердечком на щеке, навеянная любимой игрушкой детства. Отлита из гипса и полностью расписана вручную в нашей мастерской в Меттменштеттене: у каждой куклы своё выражение лица, двух одинаковых не бывает.
 
-Тёплая, ностальгическая вещь для зимнего сезона: на подоконник, на праздничный стол или в подарок, который вызывает улыбку.
+Капюшон снимается как крышка, а внутри — свеча из соевого воска с ароматом на ваш выбор. Когда свеча догорит, гипсовый корпус останется маленькой шкатулкой или украшением зимнего подоконника.
+
+Тёплый ностальгический подарок на Рождество, на новоселье или тем, кто любит вещи ручной работы.
 
 Что входит:
-• 1 свеча «Матрёшка» ручной работы
+• 1 свеча «Неваляшка» ручной росписи (гипсовый корпус, соевый воск, аромат на выбор)
 • Сделано в Швейцарии`,
       },
     },
