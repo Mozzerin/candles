@@ -19,6 +19,8 @@
     p { color: var(--color-muted); margin-bottom: 0.75rem; }
     ul { color: var(--color-muted); padding-left: 1.5rem; margin-bottom: 0.75rem; }
     ul li { margin-bottom: 0.35rem; }
+      .policy-content { display: none; }
+    .policy-content.visible { display: block; }
   </style>
 </head>
 <body>
@@ -42,13 +44,13 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
       </a>
       <div class="lang-switcher" id="lang-sw">
-        <button class="lang-btn" onclick="setPageLang('en')">EN</button>
+        <button class="lang-btn" data-lang="en" onclick="setPageLang(\'en\')">EN</button>
         <span class="lang-sep">/</span>
-        <button class="lang-btn" onclick="setPageLang('fr')">FR</button>
+        <button class="lang-btn" data-lang="fr" onclick="setPageLang(\'fr\')">FR</button>
         <span class="lang-sep">/</span>
-        <button class="lang-btn" onclick="setPageLang('de')">DE</button>
+        <button class="lang-btn" data-lang="de" onclick="setPageLang(\'de\')">DE</button>
         <span class="lang-sep">/</span>
-        <button class="lang-btn" onclick="setPageLang('ru')">RU</button>
+        <button class="lang-btn" data-lang="ru" onclick="setPageLang(\'ru\')">RU</button>
       </div>
       <a href="/" class="cart-btn" aria-label="Go to shop">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
@@ -74,25 +76,33 @@
     <li><a href="https://www.instagram.com/emmas_lab_candle" target="_blank" rel="noopener noreferrer">Instagram</a></li>
   </ul>
   <div class="lang-switcher" style="margin-top:auto;">
-    <button class="lang-btn" onclick="setPageLang('en');closeMobileNav()">EN</button>
+    <button class="lang-btn" data-lang="en" onclick="setPageLang(\'en\');closeMobileNav()">EN</button>
     <span class="lang-sep">/</span>
-    <button class="lang-btn" onclick="setPageLang('fr');closeMobileNav()">FR</button>
+    <button class="lang-btn" data-lang="fr" onclick="setPageLang(\'fr\');closeMobileNav()">FR</button>
     <span class="lang-sep">/</span>
-    <button class="lang-btn" onclick="setPageLang('de');closeMobileNav()">DE</button>
+    <button class="lang-btn" data-lang="de" onclick="setPageLang(\'de\');closeMobileNav()">DE</button>
     <span class="lang-sep">/</span>
-    <button class="lang-btn" onclick="setPageLang('ru');closeMobileNav()">RU</button>
+    <button class="lang-btn" data-lang="ru" onclick="setPageLang(\'ru\');closeMobileNav()">RU</button>
   </div>
 </div>
 
+<!--
+  KEEP IN SYNC: terms §5 (shipping) and §6–7 (returns) mirror returns.html, config.js shipping.*, index.html JSON-LD; §1–2 describe the product range (kits + candles).
+  All four language blocks (en, de, fr, ru) have the same numbered sections in the same order.
+  Hidden blocks cannot be scrolled to by anchor: link with ?lang=xx.
+-->
 <main>
+
+  <!-- ═══ EN ═══ -->
+  <section id="policy-en" class="policy-content visible" lang="en">
   <h1>Terms &amp; Conditions</h1>
   <p class="doc-meta">Last updated: October 2026 &nbsp;·&nbsp; Governing law: Swiss law (OR / CO)</p>
 
   <h2>1. About Us</h2>
-  <p>Emma's Lab is a small Swiss handmade business selling plaster painting kits. We operate under Swiss law. Contact: <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a></p>
+  <p>Emma's Lab is a small Swiss handmade studio selling plaster painting kits and sculptural plaster candles. We operate under Swiss law. Contact: <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a></p>
 
   <h2>2. Products</h2>
-  <p>All products are handmade in small batches. Each kit includes a pre-cast plaster figure, acrylic paints, a brush, and instructions. Product photos are representative — slight variations in the plaster figure may occur as each piece is handcrafted.</p>
+  <p>All products are handmade in small batches. Painting kits include a pre-cast plaster figure, paints, a brush, a postcard and stickers. Candles are hand-cast plaster figurines with a soy wax candle inside, scented with the fragrance you choose when ordering. Product photos are representative — slight variations may occur as each piece is handcrafted and hand-painted.</p>
 
   <h2>3. Ordering</h2>
   <p>Orders are placed by submitting a request form on our website. A contract is formed only when we confirm your order by email. We reserve the right to decline any order at our discretion (e.g. if a product is out of stock).</p>
@@ -106,10 +116,10 @@
 
   <h2>6. Returns</h2>
   <p>Swiss law does not provide a statutory right of withdrawal for online purchases. As a voluntary service, we accept returns of unused, unopened products in their original packaging within <strong>14 days</strong> of receipt. Returns must be announced by email in advance; return shipping costs and transit risk are borne by the buyer, and the product price (excluding original shipping) is refunded by bank transfer after inspection.</p>
-  <p>Personalised or made-to-order items, opened kits, lit candles and products showing signs of use are excluded. The full conditions and procedure are set out in our <a href="/returns.html">Return Policy</a>, which forms part of these Terms.</p>
+  <p>Personalised or made-to-order items, opened kits, lit candles and products showing signs of use are excluded. The full conditions and procedure are set out in our <a href="/returns.html?lang=en">Return Policy</a>, which forms part of these Terms.</p>
 
   <h2>7. Defective Goods</h2>
-  <p>If you receive a defective or incorrect item, please contact us within <strong>7 days</strong> of receipt at <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a> with a description and photos; later claims may be refused. We will offer a replacement, a partial or a full refund at our discretion. Natural variations of handmade products are not defects. Your statutory warranty rights remain unaffected. See our <a href="/returns.html">Return Policy</a> for details.</p>
+  <p>If you receive a defective or incorrect item, please contact us within <strong>7 days</strong> of receipt at <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a> with a description and photos; later claims may be refused. We will offer a replacement, a partial or a full refund at our discretion. Natural variations of handmade products are not defects. Your statutory warranty rights remain unaffected. See our <a href="/returns.html?lang=en">Return Policy</a> for details.</p>
 
   <h2>8. Limitation of Liability</h2>
   <p>Our liability is limited to the purchase price of the relevant product. We are not liable for indirect or consequential damages. This limitation does not apply in cases of gross negligence or wilful misconduct.</p>
@@ -125,12 +135,145 @@
 
   <h2>12. Contact</h2>
   <p>For any questions regarding these Terms, please contact us at <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a>.</p>
+  </section>
+
+  <!-- ═══ DE ═══ -->
+  <section id="policy-de" class="policy-content" lang="de">
+  <h1>Allgemeine Geschäftsbedingungen</h1>
+  <p class="doc-meta">Zuletzt aktualisiert: Oktober 2026 &nbsp;·&nbsp; Anwendbares Recht: Schweizer Recht (OR)</p>
+
+  <h2>1. Über uns</h2>
+  <p>Emma's Lab ist ein kleines Schweizer Handwerksatelier, das Gipsmalerei-Sets und skulpturale Gipskerzen verkauft. Wir unterliegen dem Schweizer Recht. Kontakt: <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a></p>
+
+  <h2>2. Produkte</h2>
+  <p>Alle Produkte werden von Hand in kleinen Auflagen hergestellt. Die Mal-Sets enthalten eine vorgegossene Gipsfigur, Farben, einen Pinsel, eine Postkarte und Sticker. Die Kerzen sind von Hand gegossene Gipsfiguren mit einer Sojawachskerze im Inneren, parfümiert mit dem Duft, den Sie bei der Bestellung wählen. Produktfotos sind beispielhaft — da jedes Stück von Hand gefertigt und bemalt wird, sind leichte Abweichungen möglich.</p>
+
+  <h2>3. Bestellung</h2>
+  <p>Bestellungen erfolgen über das Anfrageformular auf unserer Website. Ein Vertrag kommt erst zustande, wenn wir Ihre Bestellung per E-Mail bestätigen. Wir behalten uns vor, Bestellungen nach eigenem Ermessen abzulehnen (z. B. wenn ein Produkt nicht vorrätig ist).</p>
+  <p>Die Preise sind in Schweizer Franken (CHF) angegeben und verstehen sich, soweit erforderlich, inklusive der anwendbaren Mehrwertsteuer. Wir behalten uns Preisänderungen jederzeit vor; es gilt der Preis zum Zeitpunkt Ihrer bestätigten Bestellung.</p>
+
+  <h2>4. Zahlung</h2>
+  <p>Die Zahlungsangaben werden Ihnen mit der Bestellbestätigung per E-Mail mitgeteilt. Wir akzeptieren derzeit Banküberweisung (IBAN) sowie weitere Zahlungsarten nach Vereinbarung. Die Zahlung ist vor dem Versand fällig, sofern nichts anderes vereinbart wurde.</p>
+
+  <h2>5. Lieferung</h2>
+  <p>Wir liefern innerhalb der Schweiz zu einer Versandpauschale von CHF 8 pro Bestellung; eine kostenlose Abholung in Mettmenstetten ist nach Vereinbarung möglich. Bestellungen werden innerhalb von 5 Werktagen nach Zahlungseingang versandt. Lieferzeiten sind Richtwerte und nicht garantiert. Die Gefahr geht mit der Übergabe an das Transportunternehmen auf den Käufer über. Ein Versand ins Ausland ist auf Anfrage möglich; die Kosten werden vor der Zahlung per E-Mail bestätigt. Einzelheiten finden Sie auf unserer Seite <a href="/returns.html?lang=de#shipping-de">Versand &amp; Rückgabe</a>.</p>
+
+  <h2>6. Rückgabe</h2>
+  <p>Das Schweizer Recht sieht für Online-Käufe kein gesetzliches Widerrufsrecht vor. Als freiwillige Leistung nehmen wir ungebrauchte, ungeöffnete Produkte in der Originalverpackung innerhalb von <strong>14 Tagen</strong> nach Erhalt zurück. Rückgaben müssen vorab per E-Mail angekündigt werden; die Kosten und das Transportrisiko der Rücksendung trägt der Käufer, der Produktpreis (ohne ursprüngliche Versandkosten) wird nach Prüfung per Banküberweisung erstattet.</p>
+  <p>Personalisierte oder auf Bestellung gefertigte Artikel, geöffnete Sets, angezündete Kerzen und Produkte mit Gebrauchsspuren sind ausgeschlossen. Die vollständigen Bedingungen und das Vorgehen sind in unseren <a href="/returns.html?lang=de">Rückgabebedingungen</a> festgelegt, die Bestandteil dieser AGB sind.</p>
+
+  <h2>7. Mangelhafte Ware</h2>
+  <p>Sollten Sie einen mangelhaften oder falschen Artikel erhalten, kontaktieren Sie uns bitte innerhalb von <strong>7 Tagen</strong> nach Erhalt unter <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a> mit einer Beschreibung und Fotos; spätere Reklamationen können abgelehnt werden. Wir bieten nach unserem Ermessen Ersatz, eine Teil- oder eine vollständige Rückerstattung an. Natürliche Abweichungen handgefertigter Produkte sind keine Mängel. Ihre gesetzlichen Gewährleistungsrechte bleiben unberührt. Einzelheiten finden Sie in unseren <a href="/returns.html?lang=de">Rückgabebedingungen</a>.</p>
+
+  <h2>8. Haftungsbeschränkung</h2>
+  <p>Unsere Haftung ist auf den Kaufpreis des betreffenden Produkts beschränkt. Wir haften nicht für indirekte Schäden oder Folgeschäden. Diese Beschränkung gilt nicht bei grober Fahrlässigkeit oder Vorsatz.</p>
+
+  <h2>9. Geistiges Eigentum</h2>
+  <p>Alle Inhalte dieser Website (Texte, Bilder, Designs) sind Eigentum von Emma's Lab und dürfen ohne vorherige schriftliche Zustimmung nicht vervielfältigt werden.</p>
+
+  <h2>10. Anwendbares Recht &amp; Gerichtsstand</h2>
+  <p>Diese AGB unterliegen Schweizer Recht. Für alle Streitigkeiten sind ausschliesslich die zuständigen Gerichte der Schweiz zuständig.</p>
+
+  <h2>11. Änderungen dieser AGB</h2>
+  <p>Wir können diese AGB jederzeit anpassen. Es gilt die zum Zeitpunkt Ihrer Bestellung auf unserer Website veröffentlichte Fassung.</p>
+
+  <h2>12. Kontakt</h2>
+  <p>Bei Fragen zu diesen AGB erreichen Sie uns unter <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a>.</p>
+  </section>
+
+  <!-- ═══ FR ═══ -->
+  <section id="policy-fr" class="policy-content" lang="fr">
+  <h1>Conditions générales</h1>
+  <p class="doc-meta">Dernière mise à jour : octobre 2026 &nbsp;·&nbsp; Droit applicable : droit suisse (CO)</p>
+
+  <h2>1. Qui sommes-nous</h2>
+  <p>Emma's Lab est un petit atelier artisanal suisse qui vend des kits de peinture sur plâtre et des bougies sculptées en plâtre. Nous sommes soumis au droit suisse. Contact : <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a></p>
+
+  <h2>2. Produits</h2>
+  <p>Tous les produits sont faits main en petites séries. Les kits de peinture comprennent une figurine en plâtre préformée, des peintures, un pinceau, une carte postale et des autocollants. Les bougies sont des figurines en plâtre coulées à la main contenant une bougie en cire de soja, parfumée avec la fragrance que vous choisissez à la commande. Les photos des produits sont indicatives — chaque pièce étant fabriquée et peinte à la main, de légères variations sont possibles.</p>
+
+  <h2>3. Commande</h2>
+  <p>Les commandes se font via le formulaire de demande de notre site. Le contrat n'est conclu qu'au moment où nous confirmons votre commande par e-mail. Nous nous réservons le droit de refuser toute commande à notre discrétion (par exemple si un produit est en rupture de stock).</p>
+  <p>Les prix sont indiqués en francs suisses (CHF) et incluent, le cas échéant, la TVA applicable. Nous nous réservons le droit de modifier les prix à tout moment ; le prix en vigueur au moment de la confirmation de votre commande fait foi.</p>
+
+  <h2>4. Paiement</h2>
+  <p>Les coordonnées de paiement vous sont communiquées par e-mail avec la confirmation de commande. Nous acceptons actuellement le virement bancaire (IBAN) ainsi que d'autres moyens convenus. Le paiement est dû avant l'expédition, sauf accord contraire.</p>
+
+  <h2>5. Livraison</h2>
+  <p>Nous livrons en Suisse pour un forfait d'expédition de CHF 8 par commande ; un retrait gratuit à Mettmenstetten est possible sur rendez-vous. Les commandes sont expédiées dans les 5 jours ouvrables suivant la réception du paiement. Les délais de livraison sont indicatifs et non garantis. Le risque est transféré à l'acheteur dès la remise au transporteur. L'expédition à l'étranger est possible sur demande ; les frais sont confirmés par e-mail avant le paiement. Les détails figurent sur notre page <a href="/returns.html?lang=fr#shipping-fr">Livraison &amp; Retours</a>.</p>
+
+  <h2>6. Retours</h2>
+  <p>Le droit suisse ne prévoit pas de droit de rétractation légal pour les achats en ligne. À titre de service volontaire, nous acceptons le retour de produits non utilisés et non ouverts, dans leur emballage d'origine, dans les <strong>14 jours</strong> suivant la réception. Les retours doivent être annoncés au préalable par e-mail ; les frais et le risque de transport du retour sont à la charge de l'acheteur, et le prix du produit (hors frais d'envoi initiaux) est remboursé par virement bancaire après contrôle.</p>
+  <p>Les articles personnalisés ou fabriqués sur commande, les kits ouverts, les bougies allumées et les produits présentant des traces d'utilisation sont exclus. Les conditions complètes et la procédure sont décrites dans notre <a href="/returns.html?lang=fr">Politique de retour</a>, qui fait partie intégrante des présentes conditions.</p>
+
+  <h2>7. Produits défectueux</h2>
+  <p>Si vous recevez un article défectueux ou erroné, veuillez nous contacter dans les <strong>7 jours</strong> suivant la réception à <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a> avec une description et des photos ; les réclamations tardives peuvent être refusées. Nous proposons, à notre discrétion, un remplacement, un remboursement partiel ou total. Les variations naturelles des produits faits main ne constituent pas des défauts. Vos droits légaux de garantie demeurent inchangés. Voir notre <a href="/returns.html?lang=fr">Politique de retour</a> pour les détails.</p>
+
+  <h2>8. Limitation de responsabilité</h2>
+  <p>Notre responsabilité est limitée au prix d'achat du produit concerné. Nous ne sommes pas responsables des dommages indirects ou consécutifs. Cette limitation ne s'applique pas en cas de négligence grave ou de faute intentionnelle.</p>
+
+  <h2>9. Propriété intellectuelle</h2>
+  <p>Tout le contenu de ce site (textes, images, designs) est la propriété d'Emma's Lab et ne peut être reproduit sans autorisation écrite préalable.</p>
+
+  <h2>10. Droit applicable &amp; for</h2>
+  <p>Les présentes conditions sont régies par le droit suisse. Tout litige relève de la compétence exclusive des tribunaux compétents de Suisse.</p>
+
+  <h2>11. Modification des conditions</h2>
+  <p>Nous pouvons modifier ces conditions à tout moment. La version publiée sur notre site au moment de votre commande s'applique.</p>
+
+  <h2>12. Contact</h2>
+  <p>Pour toute question concernant ces conditions, contactez-nous à <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a>.</p>
+  </section>
+
+  <!-- ═══ RU ═══ -->
+  <section id="policy-ru" class="policy-content" lang="ru">
+  <h1>Условия и положения</h1>
+  <p class="doc-meta">Обновлено: октябрь 2026 &nbsp;·&nbsp; Применимое право: право Швейцарии (OR / CO)</p>
+
+  <h2>1. О нас</h2>
+  <p>Emma's Lab — небольшая швейцарская мастерская ручной работы, продающая наборы для росписи гипса и скульптурные гипсовые свечи. Мы действуем в рамках швейцарского права. Контакт: <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a></p>
+
+  <h2>2. Товары</h2>
+  <p>Все товары изготавливаются вручную небольшими партиями. Наборы для росписи включают отлитую гипсовую фигурку, краски, кисть, открытку и наклейки. Свечи — это отлитые вручную гипсовые фигурки со свечой из соевого воска внутри, с ароматом, который вы выбираете при заказе. Фотографии товаров носят ознакомительный характер: поскольку каждое изделие отливается и расписывается вручную, возможны небольшие отличия.</p>
+
+  <h2>3. Оформление заказа</h2>
+  <p>Заказы оформляются через форму заявки на нашем сайте. Договор считается заключённым только после подтверждения заказа с нашей стороны по электронной почте. Мы оставляем за собой право отклонить любой заказ по своему усмотрению (например, если товара нет в наличии).</p>
+  <p>Цены указаны в швейцарских франках (CHF) и, где это требуется, включают применимый НДС. Мы оставляем за собой право изменять цены в любое время; действует цена на момент подтверждения вашего заказа.</p>
+
+  <h2>4. Оплата</h2>
+  <p>Реквизиты для оплаты сообщаются по электронной почте вместе с подтверждением заказа. В настоящее время мы принимаем банковский перевод (IBAN) и другие способы по договорённости. Оплата производится до отправки, если не согласовано иное.</p>
+
+  <h2>5. Доставка</h2>
+  <p>Мы доставляем по Швейцарии по фиксированной стоимости CHF 8 за заказ; бесплатный самовывоз в Меттменштеттене возможен по договорённости. Заказы отправляются в течение 5 рабочих дней после получения оплаты. Сроки доставки ориентировочные и не гарантируются. Риск переходит к покупателю с момента передачи посылки перевозчику. Отправка за границу возможна по запросу; стоимость подтверждается по электронной почте до оплаты. Подробности — на странице <a href="/returns.html?lang=ru#shipping-ru">Доставка и возврат</a>.</p>
+
+  <h2>6. Возврат</h2>
+  <p>Швейцарское право не предусматривает законного права на отказ от онлайн-покупки. В качестве добровольной услуги мы принимаем возврат неиспользованных, невскрытых товаров в оригинальной упаковке в течение <strong>14 дней</strong> с момента получения. О возврате необходимо заранее сообщить по электронной почте; расходы и риски обратной пересылки несёт покупатель, стоимость товара (без первоначальной доставки) возвращается банковским переводом после проверки.</p>
+  <p>Персонализированные и изготовленные на заказ изделия, вскрытые наборы, зажигавшиеся свечи и товары со следами использования возврату не подлежат. Полные условия и порядок описаны в наших <a href="/returns.html?lang=ru">Условиях возврата</a>, которые являются частью настоящих Условий.</p>
+
+  <h2>7. Бракованные товары</h2>
+  <p>Если вы получили бракованный или неверный товар, напишите нам в течение <strong>7 дней</strong> с момента получения на <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a> с описанием и фотографиями; более поздние претензии могут быть отклонены. По нашему усмотрению мы предложим замену, частичный или полный возврат средств. Естественные отличия изделий ручной работы браком не являются. Ваши законные гарантийные права сохраняются. Подробности — в <a href="/returns.html?lang=ru">Условиях возврата</a>.</p>
+
+  <h2>8. Ограничение ответственности</h2>
+  <p>Наша ответственность ограничена стоимостью соответствующего товара. Мы не несём ответственности за косвенные убытки. Это ограничение не действует в случае грубой неосторожности или умысла.</p>
+
+  <h2>9. Интеллектуальная собственность</h2>
+  <p>Всё содержимое сайта (тексты, изображения, дизайн) принадлежит Emma's Lab и не может воспроизводиться без предварительного письменного согласия.</p>
+
+  <h2>10. Применимое право и подсудность</h2>
+  <p>Настоящие Условия регулируются правом Швейцарии. Все споры подлежат исключительной юрисдикции компетентных судов Швейцарии.</p>
+
+  <h2>11. Изменение Условий</h2>
+  <p>Мы можем изменять настоящие Условия в любое время. Применяется редакция, опубликованная на сайте на момент вашего заказа.</p>
+
+  <h2>12. Контакт</h2>
+  <p>По вопросам, связанным с настоящими Условиями, пишите на <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a>.</p>
+  </section>
 </main>
 
 <footer>
   <div class="footer-inner">
     <span class="footer-brand">Emma's Lab</span>
-    <span class="footer-copy">© <script>document.write(new Date().getFullYear())</script> Emma's Lab. All rights reserved.</span>
+    <span class="footer-copy">© <span id="footer-year"></span> Emma's Lab. All rights reserved.</span>
     <nav class="footer-legal">
       <a href="/privacy.html">Privacy Policy</a>
       <a href="/cookie-policy.html">Cookie Policy</a>
@@ -143,14 +286,24 @@
 <script>
   const LANGS = ['en', 'fr', 'de', 'ru'];
   function setPageLang(lang) {
+    if (!LANGS.includes(lang)) lang = 'en';
     localStorage.setItem('lang', lang);
-    document.querySelectorAll('.lang-btn').forEach((b, i) => {
-      b.classList.toggle('active', LANGS[i % LANGS.length] === lang);
+    document.querySelectorAll('.lang-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.lang === lang);
     });
+    document.querySelectorAll('.policy-content').forEach(el => {
+      el.classList.toggle('visible', el.id === 'policy-' + lang);
+    });
+    document.documentElement.lang = lang;
   }
   function openMobileNav()  { document.getElementById('mobile-nav').classList.add('open'); }
   function closeMobileNav() { document.getElementById('mobile-nav').classList.remove('open'); }
-  setPageLang(localStorage.getItem('lang') || 'en');
+
+  const initLang = new URLSearchParams(window.location.search).get('lang')
+    || localStorage.getItem('lang')
+    || (navigator.language || '').slice(0, 2).toLowerCase();
+  setPageLang(initLang);
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>

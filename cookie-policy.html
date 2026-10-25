@@ -22,6 +22,8 @@
     table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.875rem; }
     th { text-align: left; padding: 0.6rem 0.75rem; background: var(--color-light); font-weight: 600; border: 1px solid var(--color-border); }
     td { padding: 0.6rem 0.75rem; border: 1px solid var(--color-border); color: var(--color-muted); vertical-align: top; }
+      .policy-content { display: none; }
+    .policy-content.visible { display: block; }
   </style>
 </head>
 <body>
@@ -45,13 +47,13 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
       </a>
       <div class="lang-switcher" id="lang-sw">
-        <button class="lang-btn" onclick="setPageLang('en')">EN</button>
+        <button class="lang-btn" data-lang="en" onclick="setPageLang(\'en\')">EN</button>
         <span class="lang-sep">/</span>
-        <button class="lang-btn" onclick="setPageLang('fr')">FR</button>
+        <button class="lang-btn" data-lang="fr" onclick="setPageLang(\'fr\')">FR</button>
         <span class="lang-sep">/</span>
-        <button class="lang-btn" onclick="setPageLang('de')">DE</button>
+        <button class="lang-btn" data-lang="de" onclick="setPageLang(\'de\')">DE</button>
         <span class="lang-sep">/</span>
-        <button class="lang-btn" onclick="setPageLang('ru')">RU</button>
+        <button class="lang-btn" data-lang="ru" onclick="setPageLang(\'ru\')">RU</button>
       </div>
       <a href="/" class="cart-btn" aria-label="Go to shop">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
@@ -77,19 +79,27 @@
     <li><a href="https://www.instagram.com/emmas_lab_candle" target="_blank" rel="noopener noreferrer">Instagram</a></li>
   </ul>
   <div class="lang-switcher" style="margin-top:auto;">
-    <button class="lang-btn" onclick="setPageLang('en');closeMobileNav()">EN</button>
+    <button class="lang-btn" data-lang="en" onclick="setPageLang(\'en\');closeMobileNav()">EN</button>
     <span class="lang-sep">/</span>
-    <button class="lang-btn" onclick="setPageLang('fr');closeMobileNav()">FR</button>
+    <button class="lang-btn" data-lang="fr" onclick="setPageLang(\'fr\');closeMobileNav()">FR</button>
     <span class="lang-sep">/</span>
-    <button class="lang-btn" onclick="setPageLang('de');closeMobileNav()">DE</button>
+    <button class="lang-btn" data-lang="de" onclick="setPageLang(\'de\');closeMobileNav()">DE</button>
     <span class="lang-sep">/</span>
-    <button class="lang-btn" onclick="setPageLang('ru');closeMobileNav()">RU</button>
+    <button class="lang-btn" data-lang="ru" onclick="setPageLang(\'ru\');closeMobileNav()">RU</button>
   </div>
 </div>
 
+<!--
+  KEEP IN SYNC: cookie names/durations and localStorage keys (ecl_cart_v1, cookie_consent, lang) must match analytics.js and index.html.
+  All four language blocks (en, de, fr, ru) have the same numbered sections in the same order.
+  Hidden blocks cannot be scrolled to by anchor: link with ?lang=xx.
+-->
 <main>
+
+  <!-- ═══ EN ═══ -->
+  <section id="policy-en" class="policy-content visible" lang="en">
   <h1>Cookie Policy</h1>
-  <p class="doc-meta">Last updated: September 2026 &nbsp;·&nbsp; Applicable law: Swiss nDSG</p>
+  <p class="doc-meta">Last updated: October 2026 &nbsp;·&nbsp; Applicable law: Swiss FADP</p>
 
   <h2>1. What Are Cookies?</h2>
   <p>Cookies are small text files stored on your device by your browser. They are widely used to make websites work more efficiently and to provide information to site owners.</p>
@@ -100,66 +110,30 @@
 
   <h2>3. Cookies (only with your consent)</h2>
   <table>
-    <tr>
-      <th>Name</th>
-      <th>Provider</th>
-      <th>Purpose</th>
-      <th>Expires</th>
-    </tr>
-    <tr>
-      <td><code>_ga</code>, <code>_ga_*</code></td>
-      <td>Google Analytics 4</td>
-      <td>Distinguishes visitors and sessions to produce anonymised usage statistics.</td>
-      <td>Up to 2 years</td>
-    </tr>
-    <tr>
-      <td><code>_gcl_au</code>, <code>_gcl_aw</code></td>
-      <td>Google Ads</td>
-      <td>Measures the results of our Google ads and remembers that a visitor came from an ad.</td>
-      <td>Up to 3 months</td>
-    </tr>
-    <tr>
-      <td><code>_fbp</code></td>
-      <td>Meta Pixel</td>
-      <td>Identifies the browser to measure the results of our Instagram and Facebook ads and to show our ads to website visitors.</td>
-      <td>3 months</td>
-    </tr>
+    <tr><th>Name</th><th>Provider</th><th>Purpose</th><th>Expires</th></tr>
+    <tr><td><code>_ga</code>, <code>_ga_*</code></td><td>Google Analytics 4</td><td>Distinguishes visitors and sessions to produce anonymised usage statistics.</td><td>Up to 2 years</td></tr>
+    <tr><td><code>_gcl_au</code>, <code>_gcl_aw</code></td><td>Google Ads</td><td>Measures the results of our Google ads and remembers that a visitor came from an ad.</td><td>Up to 3 months</td></tr>
+    <tr><td><code>_fbp</code></td><td>Meta Pixel</td><td>Identifies the browser to measure the results of our Instagram and Facebook ads and to show our ads to website visitors.</td><td>3 months</td></tr>
   </table>
 
   <h2>4. localStorage We Use</h2>
   <table>
-    <tr>
-      <th>Key</th>
-      <th>Purpose</th>
-      <th>Expires</th>
-    </tr>
-    <tr>
-      <td><code>ecl_cart_v1</code></td>
-      <td>Saves your shopping cart items between page visits.</td>
-      <td>Until you clear browser data</td>
-    </tr>
-    <tr>
-      <td><code>cookie_consent</code></td>
-      <td>Remembers whether you accepted or declined cookies.</td>
-      <td>Until you clear browser data</td>
-    </tr>
-    <tr>
-      <td><code>lang</code></td>
-      <td>Remembers your language choice.</td>
-      <td>Until you clear browser data</td>
-    </tr>
+    <tr><th>Key</th><th>Purpose</th><th>Expires</th></tr>
+    <tr><td><code>ecl_cart_v1</code></td><td>Saves your shopping cart items between page visits.</td><td>Until you clear browser data</td></tr>
+    <tr><td><code>cookie_consent</code></td><td>Remembers whether you accepted or declined cookies.</td><td>Until you clear browser data</td></tr>
+    <tr><td><code>lang</code></td><td>Remembers your language choice.</td><td>Until you clear browser data</td></tr>
   </table>
-  <p>We use <strong>EmailJS</strong> to transmit order request forms. EmailJS may set its own cookies or storage. Please refer to <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">EmailJS Privacy Policy</a> for details. More about how your data is processed is in our <a href="privacy.html">Privacy Policy</a>.</p>
+  <p>We use <strong>EmailJS</strong> to transmit order request forms. EmailJS may set its own cookies or storage. Please refer to <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">EmailJS Privacy Policy</a> for details. More about how your data is processed is in our <a href="/privacy.html?lang=en">Privacy Policy</a>.</p>
 
   <h2>5. Withdrawing Consent</h2>
   <p>To withdraw your consent, clear this site's data in your browser (see below). The banner will appear again on your next visit and you can decline. You can also manage ad preferences in your Instagram and Facebook settings.</p>
 
   <h2>6. How to Clear Cookies and localStorage</h2>
-  <p>You can clear localStorage at any time through your browser settings:</p>
+  <p>You can clear cookies and localStorage at any time through your browser settings:</p>
   <ul>
-    <li><strong>Chrome:</strong> Settings → Privacy and security → Clear browsing data → Cached images and files</li>
+    <li><strong>Chrome:</strong> Settings → Privacy and security → Clear browsing data → Cookies and other site data</li>
     <li><strong>Firefox:</strong> Settings → Privacy &amp; Security → Clear Data</li>
-    <li><strong>Safari:</strong> Preferences → Privacy → Manage Website Data</li>
+    <li><strong>Safari:</strong> Settings → Privacy → Manage Website Data</li>
   </ul>
 
   <h2>7. Changes to This Policy</h2>
@@ -167,12 +141,154 @@
 
   <h2>8. Contact</h2>
   <p>Questions about our cookie practices? Contact us at <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a>.</p>
+  </section>
+
+  <!-- ═══ DE ═══ -->
+  <section id="policy-de" class="policy-content" lang="de">
+  <h1>Cookie-Richtlinie</h1>
+  <p class="doc-meta">Zuletzt aktualisiert: Oktober 2026 &nbsp;·&nbsp; Anwendbares Recht: Schweizer DSG</p>
+
+  <h2>1. Was sind Cookies?</h2>
+  <p>Cookies sind kleine Textdateien, die Ihr Browser auf Ihrem Gerät speichert. Sie werden häufig verwendet, damit Websites effizienter funktionieren und um den Betreibern Informationen zu liefern.</p>
+
+  <h2>2. Was wir verwenden</h2>
+  <p>Erst wenn Sie Cookies in unserem Banner akzeptieren, laden wir <strong>Google Analytics 4</strong>, das <strong>Google-Ads-Tag</strong> und das <strong>Meta Pixel</strong>, die Analyse- und Werbe-Cookies setzen. Wenn Sie ablehnen, wird keiner dieser Dienste geladen und es werden keine Analyse- oder Werbe-Cookies gesetzt. Die Website funktioniert in beiden Fällen vollständig.</p>
+  <p>Ausserdem nutzen wir den <strong>localStorage</strong> Ihres Browsers — eine ähnliche Technologie, die Daten ausschliesslich lokal auf Ihrem Gerät speichert.</p>
+
+  <h2>3. Cookies (nur mit Ihrer Einwilligung)</h2>
+  <table>
+    <tr><th>Name</th><th>Anbieter</th><th>Zweck</th><th>Gültigkeit</th></tr>
+    <tr><td><code>_ga</code>, <code>_ga_*</code></td><td>Google Analytics 4</td><td>Unterscheidet Besucher und Sitzungen, um anonymisierte Nutzungsstatistiken zu erstellen.</td><td>Bis zu 2 Jahre</td></tr>
+    <tr><td><code>_gcl_au</code>, <code>_gcl_aw</code></td><td>Google Ads</td><td>Misst die Ergebnisse unserer Google-Anzeigen und merkt sich, dass ein Besucher über eine Anzeige kam.</td><td>Bis zu 3 Monate</td></tr>
+    <tr><td><code>_fbp</code></td><td>Meta Pixel</td><td>Identifiziert den Browser, um die Ergebnisse unserer Instagram- und Facebook-Anzeigen zu messen und Website-Besuchern unsere Anzeigen zu zeigen.</td><td>3 Monate</td></tr>
+  </table>
+
+  <h2>4. Verwendeter localStorage</h2>
+  <table>
+    <tr><th>Schlüssel</th><th>Zweck</th><th>Gültigkeit</th></tr>
+    <tr><td><code>ecl_cart_v1</code></td><td>Speichert die Artikel in Ihrem Warenkorb zwischen den Besuchen.</td><td>Bis Sie die Browserdaten löschen</td></tr>
+    <tr><td><code>cookie_consent</code></td><td>Merkt sich, ob Sie Cookies akzeptiert oder abgelehnt haben.</td><td>Bis Sie die Browserdaten löschen</td></tr>
+    <tr><td><code>lang</code></td><td>Merkt sich Ihre Sprachwahl.</td><td>Bis Sie die Browserdaten löschen</td></tr>
+  </table>
+  <p>Für die Übermittlung der Bestellformulare nutzen wir <strong>EmailJS</strong>. EmailJS kann eigene Cookies oder Speicher setzen. Einzelheiten finden Sie in der <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von EmailJS</a>. Mehr zur Verarbeitung Ihrer Daten steht in unserer <a href="/privacy.html?lang=de">Datenschutzerklärung</a>.</p>
+
+  <h2>5. Einwilligung widerrufen</h2>
+  <p>Um Ihre Einwilligung zu widerrufen, löschen Sie die Daten dieser Website in Ihrem Browser (siehe unten). Beim nächsten Besuch erscheint das Banner erneut und Sie können ablehnen. Werbeeinstellungen können Sie zudem in Ihren Instagram- und Facebook-Einstellungen verwalten.</p>
+
+  <h2>6. Cookies und localStorage löschen</h2>
+  <p>Sie können Cookies und localStorage jederzeit über die Einstellungen Ihres Browsers löschen:</p>
+  <ul>
+    <li><strong>Chrome:</strong> Einstellungen → Datenschutz und Sicherheit → Browserdaten löschen → Cookies und andere Websitedaten</li>
+    <li><strong>Firefox:</strong> Einstellungen → Datenschutz &amp; Sicherheit → Daten entfernen</li>
+    <li><strong>Safari:</strong> Einstellungen → Datenschutz → Websitedaten verwalten</li>
+  </ul>
+
+  <h2>7. Änderungen dieser Richtlinie</h2>
+  <p>Wir können diese Cookie-Richtlinie anpassen, wenn wir neue Technologien einführen. Das Datum oben auf dieser Seite zeigt die letzte Überarbeitung.</p>
+
+  <h2>8. Kontakt</h2>
+  <p>Fragen zu unserem Umgang mit Cookies? Schreiben Sie uns an <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a>.</p>
+  </section>
+
+  <!-- ═══ FR ═══ -->
+  <section id="policy-fr" class="policy-content" lang="fr">
+  <h1>Politique relative aux cookies</h1>
+  <p class="doc-meta">Dernière mise à jour : octobre 2026 &nbsp;·&nbsp; Droit applicable : LPD suisse</p>
+
+  <h2>1. Que sont les cookies ?</h2>
+  <p>Les cookies sont de petits fichiers texte enregistrés sur votre appareil par votre navigateur. Ils sont largement utilisés pour faire fonctionner les sites plus efficacement et fournir des informations à leurs exploitants.</p>
+
+  <h2>2. Ce que nous utilisons</h2>
+  <p>Ce n'est qu'après votre acceptation des cookies dans notre bannière que nous chargeons <strong>Google Analytics 4</strong>, la <strong>balise Google Ads</strong> et le <strong>pixel Meta</strong>, qui déposent des cookies d'analyse et de publicité. Si vous refusez, aucun de ces services n'est chargé et aucun cookie d'analyse ou de publicité n'est déposé. Le site fonctionne pleinement dans les deux cas.</p>
+  <p>Nous utilisons également le <strong>localStorage</strong> de votre navigateur — une technologie similaire qui stocke des données uniquement en local sur votre appareil.</p>
+
+  <h2>3. Cookies (uniquement avec votre consentement)</h2>
+  <table>
+    <tr><th>Nom</th><th>Fournisseur</th><th>Finalité</th><th>Durée</th></tr>
+    <tr><td><code>_ga</code>, <code>_ga_*</code></td><td>Google Analytics 4</td><td>Distingue les visiteurs et les sessions pour produire des statistiques d'utilisation anonymisées.</td><td>Jusqu'à 2 ans</td></tr>
+    <tr><td><code>_gcl_au</code>, <code>_gcl_aw</code></td><td>Google Ads</td><td>Mesure les résultats de nos annonces Google et retient qu'un visiteur provient d'une annonce.</td><td>Jusqu'à 3 mois</td></tr>
+    <tr><td><code>_fbp</code></td><td>Pixel Meta</td><td>Identifie le navigateur pour mesurer les résultats de nos annonces Instagram et Facebook et afficher nos annonces aux visiteurs du site.</td><td>3 mois</td></tr>
+  </table>
+
+  <h2>4. localStorage utilisé</h2>
+  <table>
+    <tr><th>Clé</th><th>Finalité</th><th>Durée</th></tr>
+    <tr><td><code>ecl_cart_v1</code></td><td>Conserve les articles de votre panier entre vos visites.</td><td>Jusqu'à l'effacement des données du navigateur</td></tr>
+    <tr><td><code>cookie_consent</code></td><td>Mémorise si vous avez accepté ou refusé les cookies.</td><td>Jusqu'à l'effacement des données du navigateur</td></tr>
+    <tr><td><code>lang</code></td><td>Mémorise votre choix de langue.</td><td>Jusqu'à l'effacement des données du navigateur</td></tr>
+  </table>
+  <p>Nous utilisons <strong>EmailJS</strong> pour transmettre les formulaires de commande. EmailJS peut déposer ses propres cookies ou données. Consultez la <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">politique de confidentialité d'EmailJS</a> pour les détails. Pour en savoir plus sur le traitement de vos données, voir notre <a href="/privacy.html?lang=fr">Politique de confidentialité</a>.</p>
+
+  <h2>5. Retirer son consentement</h2>
+  <p>Pour retirer votre consentement, effacez les données de ce site dans votre navigateur (voir ci-dessous). La bannière réapparaîtra lors de votre prochaine visite et vous pourrez refuser. Vous pouvez aussi gérer vos préférences publicitaires dans vos paramètres Instagram et Facebook.</p>
+
+  <h2>6. Effacer les cookies et le localStorage</h2>
+  <p>Vous pouvez effacer les cookies et le localStorage à tout moment dans les paramètres de votre navigateur :</p>
+  <ul>
+    <li><strong>Chrome :</strong> Paramètres → Confidentialité et sécurité → Effacer les données de navigation → Cookies et autres données des sites</li>
+    <li><strong>Firefox :</strong> Paramètres → Vie privée et sécurité → Effacer les données</li>
+    <li><strong>Safari :</strong> Réglages → Confidentialité → Gérer les données de sites web</li>
+  </ul>
+
+  <h2>7. Modifications de cette politique</h2>
+  <p>Nous pouvons mettre à jour cette politique si nous introduisons de nouvelles technologies. La date en haut de cette page indique la dernière révision.</p>
+
+  <h2>8. Contact</h2>
+  <p>Des questions sur notre utilisation des cookies ? Écrivez-nous à <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a>.</p>
+  </section>
+
+  <!-- ═══ RU ═══ -->
+  <section id="policy-ru" class="policy-content" lang="ru">
+  <h1>Политика cookie</h1>
+  <p class="doc-meta">Обновлено: октябрь 2026 &nbsp;·&nbsp; Применимое право: швейцарский FADP</p>
+
+  <h2>1. Что такое cookie?</h2>
+  <p>Cookie — это небольшие текстовые файлы, которые браузер сохраняет на вашем устройстве. Они широко используются, чтобы сайты работали эффективнее и предоставляли информацию их владельцам.</p>
+
+  <h2>2. Что мы используем</h2>
+  <p>Только после того как вы примете cookie в нашем баннере, мы загружаем <strong>Google Analytics 4</strong>, <strong>тег Google Ads</strong> и <strong>Meta Pixel</strong>, которые устанавливают аналитические и рекламные cookie. Если вы откажетесь, ни один из этих сервисов не загружается и такие cookie не устанавливаются. Сайт полностью работает в обоих случаях.</p>
+  <p>Мы также используем <strong>localStorage</strong> вашего браузера — похожую технологию, которая хранит данные только локально на вашем устройстве.</p>
+
+  <h2>3. Cookie (только с вашего согласия)</h2>
+  <table>
+    <tr><th>Название</th><th>Поставщик</th><th>Назначение</th><th>Срок</th></tr>
+    <tr><td><code>_ga</code>, <code>_ga_*</code></td><td>Google Analytics 4</td><td>Различает посетителей и сессии для построения обезличенной статистики посещений.</td><td>До 2 лет</td></tr>
+    <tr><td><code>_gcl_au</code>, <code>_gcl_aw</code></td><td>Google Ads</td><td>Измеряет результаты нашей рекламы в Google и запоминает, что посетитель пришёл по объявлению.</td><td>До 3 месяцев</td></tr>
+    <tr><td><code>_fbp</code></td><td>Meta Pixel</td><td>Идентифицирует браузер, чтобы измерять результаты нашей рекламы в Instagram и Facebook и показывать нашу рекламу посетителям сайта.</td><td>3 месяца</td></tr>
+  </table>
+
+  <h2>4. Используемый localStorage</h2>
+  <table>
+    <tr><th>Ключ</th><th>Назначение</th><th>Срок</th></tr>
+    <tr><td><code>ecl_cart_v1</code></td><td>Сохраняет товары в корзине между визитами.</td><td>До очистки данных браузера</td></tr>
+    <tr><td><code>cookie_consent</code></td><td>Запоминает, приняли вы cookie или отклонили.</td><td>До очистки данных браузера</td></tr>
+    <tr><td><code>lang</code></td><td>Запоминает выбранный язык.</td><td>До очистки данных браузера</td></tr>
+  </table>
+  <p>Для передачи форм заказа мы используем <strong>EmailJS</strong>. EmailJS может устанавливать собственные cookie или хранилище. Подробности — в <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">политике конфиденциальности EmailJS</a>. Больше о том, как обрабатываются ваши данные, — в нашей <a href="/privacy.html?lang=ru">Политике конфиденциальности</a>.</p>
+
+  <h2>5. Отзыв согласия</h2>
+  <p>Чтобы отозвать согласие, удалите данные этого сайта в браузере (см. ниже). При следующем визите баннер появится снова, и вы сможете отказаться. Настройки рекламы также можно изменить в параметрах Instagram и Facebook.</p>
+
+  <h2>6. Как удалить cookie и localStorage</h2>
+  <p>Удалить cookie и localStorage можно в любой момент в настройках браузера:</p>
+  <ul>
+    <li><strong>Chrome:</strong> Настройки → Конфиденциальность и безопасность → Удалить данные браузера → Файлы cookie и другие данные сайтов</li>
+    <li><strong>Firefox:</strong> Настройки → Приватность и защита → Удалить данные</li>
+    <li><strong>Safari:</strong> Настройки → Конфиденциальность → Управление данными веб-сайтов</li>
+  </ul>
+
+  <h2>7. Изменения политики</h2>
+  <p>Мы можем обновлять эту политику при внедрении новых технологий. Дата вверху страницы отражает последнюю редакцию.</p>
+
+  <h2>8. Контакт</h2>
+  <p>Вопросы о cookie? Пишите нам на <a href="mailto:emmaslabcandle@gmail.com">emmaslabcandle@gmail.com</a>.</p>
+  </section>
 </main>
 
 <footer>
   <div class="footer-inner">
     <span class="footer-brand">Emma's Lab</span>
-    <span class="footer-copy">© <script>document.write(new Date().getFullYear())</script> Emma's Lab. All rights reserved.</span>
+    <span class="footer-copy">© <span id="footer-year"></span> Emma's Lab. All rights reserved.</span>
     <nav class="footer-legal">
       <a href="/privacy.html">Privacy Policy</a>
       <a href="/cookie-policy.html">Cookie Policy</a>
@@ -185,14 +301,24 @@
 <script>
   const LANGS = ['en', 'fr', 'de', 'ru'];
   function setPageLang(lang) {
+    if (!LANGS.includes(lang)) lang = 'en';
     localStorage.setItem('lang', lang);
-    document.querySelectorAll('.lang-btn').forEach((b, i) => {
-      b.classList.toggle('active', LANGS[i % LANGS.length] === lang);
+    document.querySelectorAll('.lang-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.lang === lang);
     });
+    document.querySelectorAll('.policy-content').forEach(el => {
+      el.classList.toggle('visible', el.id === 'policy-' + lang);
+    });
+    document.documentElement.lang = lang;
   }
   function openMobileNav()  { document.getElementById('mobile-nav').classList.add('open'); }
   function closeMobileNav() { document.getElementById('mobile-nav').classList.remove('open'); }
-  setPageLang(localStorage.getItem('lang') || 'en');
+
+  const initLang = new URLSearchParams(window.location.search).get('lang')
+    || localStorage.getItem('lang')
+    || (navigator.language || '').slice(0, 2).toLowerCase();
+  setPageLang(initLang);
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
