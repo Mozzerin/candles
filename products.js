@@ -579,43 +579,63 @@ Was enthalten ist:
     translations: {
       en: {
         name: 'Frog Candle',
-        description: `A handcrafted frog-shaped candle, full of character and charm. Made with care in Switzerland, this whimsical figure works equally well as a decorative piece or a functional candle. Its smooth, detailed silhouette makes it a perfect conversation starter on any shelf, desk, or windowsill.
+        description: `A green frog with rosy cheeks and a little golden crown – half fairy tale, half wink. Put him on a shelf, a desk or next to the bathtub and he will make everyone smile.
 
-A delightful gift for anyone who loves animals, nature, or just something unexpected and fun.
+Each figure is cast in plaster and painted by hand in our studio in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Once the candle has burned down, the frog stays on as decor or a little box for jewellery and odds and ends.
 
-What's included:
-• 1 handcrafted frog-shaped candle
-• Made in Switzerland`,
+A gift for anyone who loves frogs, fairy tales or simply something special.
+
+GOOD TO KNOW
+• Plaster figure, hand-cast and hand-painted in Switzerland
+• Top part lifts off as a lid
+• Soy wax candle, scent of your choice (see below)
+• Size: approx. 12 × 8 cm
+• Every piece is one of a kind, small variations are part of its charm`,
       },
       fr: {
         name: 'Bougie Grenouille',
-        description: `Une bougie artisanale en forme de grenouille, pleine de caractère et de charme. Fabriquée avec soin en Suisse, cette figurine espiègle fonctionne aussi bien comme pièce décorative que comme bougie fonctionnelle. Sa silhouette lisse et détaillée en fait un accessoire parfait sur toute étagère, bureau ou rebord de fenêtre.
+        description: `Une grenouille verte aux joues roses et à la petite couronne dorée – moitié conte de fées, moitié clin d'œil. Posée sur une étagère, un bureau ou près de la baignoire, elle fait sourire tout le monde.
 
-Un cadeau délicieux pour tous ceux qui aiment les animaux, la nature ou simplement quelque chose d'inattendu et d'amusant.
+Chaque figurine est coulée en plâtre et peinte à la main dans notre atelier de Mettmenstetten. La partie supérieure s'enlève : dessous se cache une bougie en cire de soja au parfum de votre choix. Une fois la bougie consumée, la grenouille reste comme décoration ou petite boîte à bijoux.
 
-Ce qui est inclus :
-• 1 bougie grenouille artisanale
-• Fabriquée en Suisse`,
+Un cadeau pour tous ceux qui aiment les grenouilles, les contes ou simplement les belles choses.
+
+BON À SAVOIR
+• Figurine en plâtre, coulée et peinte à la main en Suisse
+• La partie supérieure s'enlève comme un couvercle
+• Bougie en cire de soja, parfum au choix (voir ci-dessous)
+• Taille : env. 12 × 8 cm
+• Chaque pièce est unique, de petites variations font partie de son charme`,
       },
       de: {
         name: 'Frosch-Kerze',
-        description: `Eine handgefertigte Kerze in Froschform — voller Charakter und Charme. In der Schweiz mit Sorgfalt hergestellt, eignet sich diese verspielte Figur gleichermassen als Dekorationsstück oder als funktionale Kerze. Ihre glatte, detaillierte Silhouette macht sie zum perfekten Blickfang auf jedem Regal, Schreibtisch oder Fensterbrett.
+        description: `Ein grüner Frosch mit roten Bäckchen und kleiner goldener Krone – halb Märchen, halb Augenzwinkern. Er sitzt auf dem Regal, auf dem Schreibtisch oder neben der Badewanne und bringt garantiert jeden zum Lächeln.
 
-Ein wunderbares Geschenk für alle, die Tiere, Natur oder einfach etwas Unerwartetes und Fröhliches lieben.
+Die Figur wird in unserem Atelier in Mettmenstetten aus Gips gegossen und von Hand bemalt. Der obere Teil lässt sich abnehmen: darunter steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Ist die Kerze abgebrannt, bleibt der Frosch als Deko oder kleine Dose für Schmuck und Krimskrams.
 
-Was enthalten ist:
-• 1 handgefertigte Frosch-Kerze
-• Hergestellt in der Schweiz`,
+Ein Geschenk für alle, die Frösche, Märchen oder einfach etwas Besonderes lieben.
+
+GUT ZU WISSEN
+• Gipsfigur, von Hand gegossen und bemalt in der Schweiz
+• Oberer Teil als abnehmbarer Deckel
+• Kerze aus Sojawachs, Duft nach Wahl (siehe unten)
+• Grösse: ca. 12 × 8 cm
+• Jedes Stück ist ein Unikat, kleine Abweichungen gehören dazu`,
       },
       ru: {
         name: 'Свеча «Лягушка»',
-        description: `Свеча ручной работы в форме лягушки — с характером и шармом. Изготовлена с заботой в Швейцарии, эта игривая фигурка одинаково хороша и как декоративный предмет, и как функциональная свеча. Плавный, детально проработанный силуэт станет идеальным украшением любой полки, стола или подоконника.
+        description: `Зелёная лягушка с румяными щёчками и маленькой золотой короной – наполовину сказка, наполовину шутка. На полке, на рабочем столе или у ванны она поднимает настроение всем, кто её видит.
 
-Прекрасный подарок для тех, кто любит животных, природу или просто что-то неожиданное и весёлое.
+Каждую фигурку мы отливаем из гипса и расписываем вручную в нашей мастерской в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Когда свеча догорит, лягушка останется украшением или шкатулкой для украшений и мелочей.
 
-Что входит:
-• 1 свеча-лягушка ручной работы
-• Сделано в Швейцарии`,
+Подарок для всех, кто любит лягушек, сказки или просто необычные вещи.
+
+ПОЛЕЗНО ЗНАТЬ
+• Гипсовая фигурка, отлита и расписана вручную в Швейцарии
+• Верхняя часть снимается как крышка
+• Свеча из соевого воска, аромат на выбор (см. ниже)
+• Размер: ок. 12 × 8 см
+• Каждая фигурка уникальна, небольшие отличия неизбежны`,
       },
     },
   },
@@ -637,43 +657,63 @@ Was enthalten ist:
     translations: {
       en: {
         name: 'Frog in a Hat Candle',
-        description: `Meet the most dapper frog you'll ever own. This handcrafted candle features a frog in a top hat — a little touch of absurdist elegance that brightens up any space. Made by hand in Switzerland, it's the kind of gift that makes someone smile the moment they unwrap it.
+        description: `This frog has dressed up for autumn: a brown hat with a buckle, rosy cheeks and a contented look. A little character for the windowsill, a shelf or the autumn table.
 
-Place it on your desk, shelf, or bathroom counter and let it start conversations. A perfect gift for someone with a sense of humour and an eye for the charming and unexpected.
+Each figure is cast in plaster and painted by hand in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Once it has burned down, the frog stays on as decor or a storage box.
 
-What's included:
-• 1 handcrafted frog-in-a-hat candle
-• Made in Switzerland`,
+Perfect for Halloween, for autumn and for anyone who likes a bit of humour on the shelf.
+
+GOOD TO KNOW
+• Plaster figure, hand-cast and hand-painted in Switzerland
+• Top part lifts off as a lid
+• Soy wax candle, scent of your choice (see below)
+• Size: approx. 12 × 10 cm
+• Every piece is one of a kind, small variations are part of its charm`,
       },
       fr: {
         name: 'Bougie Grenouille au Chapeau',
-        description: `Voici la grenouille la plus élégante que vous posséderez jamais. Cette bougie artisanale représente une grenouille portant un chapeau haut-de-forme — une touche d'élégance absurde qui égaie n'importe quel espace. Fabriquée à la main en Suisse, c'est le genre de cadeau qui fait sourire dès le déballage.
+        description: `Cette grenouille s'est faite belle pour l'automne : chapeau brun à boucle, joues roses et air satisfait. Un petit personnage pour le rebord de fenêtre, l'étagère ou la table d'automne.
 
-Posez-la sur votre bureau, une étagère ou dans la salle de bain et laissez-la lancer la conversation. Le cadeau parfait pour quelqu'un qui a le sens de l'humour et un œil pour le charmant et l'inattendu.
+Chaque figurine est coulée en plâtre et peinte à la main à Mettmenstetten. La partie supérieure s'enlève : dessous se cache une bougie en cire de soja au parfum de votre choix. Une fois consumée, la grenouille reste comme décoration ou boîte de rangement.
 
-Ce qui est inclus :
-• 1 bougie grenouille au chapeau artisanale
-• Fabriquée en Suisse`,
+Idéale pour Halloween, pour l'automne et pour tous ceux qui aiment l'humour sur leurs étagères.
+
+BON À SAVOIR
+• Figurine en plâtre, coulée et peinte à la main en Suisse
+• La partie supérieure s'enlève comme un couvercle
+• Bougie en cire de soja, parfum au choix (voir ci-dessous)
+• Taille : env. 12 × 10 cm
+• Chaque pièce est unique, de petites variations font partie de son charme`,
       },
       de: {
         name: 'Frosch-mit-Hut-Kerze',
-        description: `Begegnen Sie dem stilbewusstesten Frosch, den Sie je besessen haben. Diese handgefertigte Kerze zeigt einen Frosch mit Zylinder — ein kleines Detail absurder Eleganz, das jeden Raum aufheitert. In der Schweiz handgefertigt, ist es die Art von Geschenk, bei der man vom ersten Moment des Auspackens an lächelt.
+        description: `Dieser Frosch hat sich für den Herbst schick gemacht: brauner Hut mit Schnalle, rote Bäckchen, zufriedener Blick. Ein kleiner Charakter für Fensterbank, Regal oder Herbsttisch.
 
-Stellen Sie sie auf den Schreibtisch, ins Regal oder ins Badezimmer und lassen Sie sie Gespräche eröffnen. Das perfekte Geschenk für jemanden mit Sinn für Humor und einem Blick für das Charmante und Unerwartete.
+Die Figur wird in Mettmenstetten aus Gips gegossen und von Hand bemalt. Der obere Teil lässt sich abnehmen: darunter steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Ist die Kerze abgebrannt, bleibt der Frosch als Deko oder Aufbewahrungsdose.
 
-Was enthalten ist:
-• 1 handgefertigte Frosch-mit-Hut-Kerze
-• Hergestellt in der Schweiz`,
+Passt zu Halloween, zum Herbst und zu allen, die Humor im Regal mögen.
+
+GUT ZU WISSEN
+• Gipsfigur, von Hand gegossen und bemalt in der Schweiz
+• Oberer Teil als abnehmbarer Deckel
+• Kerze aus Sojawachs, Duft nach Wahl (siehe unten)
+• Grösse: ca. 12 × 10 cm
+• Jedes Stück ist ein Unikat, kleine Abweichungen gehören dazu`,
       },
       ru: {
         name: 'Свеча «Лягушка в шляпе»',
-        description: `Самая элегантная лягушка из всех, что у вас когда-либо были. Свеча ручной работы изображает лягушку в цилиндре — маленькая деталь абсурдной элегантности, которая украсит любое пространство. Изготовлена вручную в Швейцарии — это именно тот подарок, от которого улыбаются сразу при распаковке.
+        description: `Эта лягушка нарядилась к осени: коричневая шляпа с пряжкой, румяные щёчки и довольный взгляд. Маленький персонаж для подоконника, полки или осеннего стола.
 
-Поставьте её на стол, полку или в ванную — и она сама станет поводом для разговора. Идеальный подарок для того, у кого есть чувство юмора и вкус к очаровательному и неожиданному.
+Фигурку мы отливаем из гипса и расписываем вручную в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Когда свеча догорит, лягушка останется украшением или шкатулкой.
 
-Что входит:
-• 1 свеча «Лягушка в шляпе» ручной работы
-• Сделано в Швейцарии`,
+Подойдёт к Хэллоуину, к осени и всем, кто любит немного юмора на полке.
+
+ПОЛЕЗНО ЗНАТЬ
+• Гипсовая фигурка, отлита и расписана вручную в Швейцарии
+• Верхняя часть снимается как крышка
+• Свеча из соевого воска, аромат на выбор (см. ниже)
+• Размер: ок. 12 × 10 см
+• Каждая фигурка уникальна, небольшие отличия неизбежны`,
       },
     },
   },
@@ -695,43 +735,63 @@ Was enthalten ist:
     translations: {
       en: {
         name: 'Pumpkin Candle',
-        description: `A handcrafted pumpkin candle — perfect for autumn decorating, Halloween, or as a cosy accent piece year-round. Made in Switzerland with careful attention to the natural form of a pumpkin: the ribbed silhouette, the rounded body, the little stem on top.
+        description: `A little pumpkin house with a witch's hat, a wooden door and tiny windows – the cosiest resident of your autumn table.
 
-Works beautifully on its own or grouped together in a seasonal display. A warm, inviting piece that brings the feeling of autumn indoors.
+Cast in plaster and painted by hand in our studio in Mettmenstetten. Simply lift off the hat: underneath is a soy wax candle in the scent of your choice. Afterwards the pumpkin house stays on as autumn decor or a box for small things.
 
-What's included:
-• 1 handcrafted pumpkin candle
-• Made in Switzerland`,
+Lovely for Halloween, the autumn table or as a little gift.
+
+GOOD TO KNOW
+• Plaster figure, hand-cast and hand-painted in Switzerland
+• The hat lifts off as a lid
+• Soy wax candle, scent of your choice (see below)
+• Size: approx. 10 × 11 cm
+• Every piece is one of a kind, small variations are part of its charm`,
       },
       fr: {
         name: 'Bougie Citrouille',
-        description: `Une bougie citrouille artisanale — parfaite pour la décoration d'automne, Halloween ou comme pièce décorative chaleureuse toute l'année. Fabriquée en Suisse avec une attention particulière à la forme naturelle de la citrouille : la silhouette côtelée, le corps arrondi, la petite tige sur le dessus.
+        description: `Une petite maison-citrouille avec chapeau de sorcière, porte en bois et fenêtres minuscules – l'habitante la plus douillette de votre table d'automne.
 
-S'expose magnifiquement seule ou groupée dans une composition saisonnière. Une pièce chaleureuse et accueillante qui invite l'automne à la maison.
+Coulée en plâtre et peinte à la main dans notre atelier de Mettmenstetten. Il suffit de soulever le chapeau : dessous se cache une bougie en cire de soja au parfum de votre choix. Ensuite, la maison-citrouille reste comme décoration d'automne ou petite boîte.
 
-Ce qui est inclus :
-• 1 bougie citrouille artisanale
-• Fabriquée en Suisse`,
+Parfaite pour Halloween, la table d'automne ou comme petit cadeau.
+
+BON À SAVOIR
+• Figurine en plâtre, coulée et peinte à la main en Suisse
+• Le chapeau s'enlève comme un couvercle
+• Bougie en cire de soja, parfum au choix (voir ci-dessous)
+• Taille : env. 10 × 11 cm
+• Chaque pièce est unique, de petites variations font partie de son charme`,
       },
       de: {
         name: 'Kürbis-Kerze',
-        description: `Eine handgefertigte Kürbis-Kerze — perfekt für die Herbstdekoration, Halloween oder als gemütliches Akzentstück das ganze Jahr über. In der Schweiz mit besonderer Aufmerksamkeit für die natürliche Form eines Kürbisses hergestellt: die gerippte Silhouette, der runde Körper, der kleine Stiel oben.
+        description: `Ein kleines Kürbishaus mit Hexenhut, Holztür und Fensterchen – der gemütlichste Bewohner Ihres Herbsttisches.
 
-Wunderschön allein oder in Gruppen als saisonale Dekoration. Ein warmes, einladendes Stück, das Herbststimmung ins Haus bringt.
+Gegossen aus Gips und von Hand bemalt in unserem Atelier in Mettmenstetten. Den Hut nehmen Sie einfach ab: darunter steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt das Kürbishaus als Herbstdeko oder Dose für Kleinigkeiten.
 
-Was enthalten ist:
-• 1 handgefertigte Kürbis-Kerze
-• Hergestellt in der Schweiz`,
+Schön zu Halloween, für den Herbsttisch oder als Mitbringsel.
+
+GUT ZU WISSEN
+• Gipsfigur, von Hand gegossen und bemalt in der Schweiz
+• Hut als abnehmbarer Deckel
+• Kerze aus Sojawachs, Duft nach Wahl (siehe unten)
+• Grösse: ca. 10 × 11 cm
+• Jedes Stück ist ein Unikat, kleine Abweichungen gehören dazu`,
       },
       ru: {
         name: 'Свеча «Тыква»',
-        description: `Свеча ручной работы в форме тыквы — идеальна для осеннего декора, Хэллоуина или как уютный акцентный предмет круглый год. Изготовлена в Швейцарии с вниманием к естественной форме тыквы: рёбра, округлое тело, небольшой черешок сверху.
+        description: `Маленький домик-тыква с ведьминой шляпой, деревянной дверцей и окошками – самый уютный жилец вашего осеннего стола.
 
-Выглядит прекрасно отдельно или в группе как сезонная декорация. Тёплая, уютная вещь, которая приносит ощущение осени в дом.
+Отлит из гипса и расписан вручную в нашей мастерской в Меттменштеттене. Просто снимите шляпу: под ней свеча из соевого воска с ароматом на ваш выбор. Потом домик останется осенним декором или шкатулкой для мелочей.
 
-Что входит:
-• 1 свеча «Тыква» ручной работы
-• Сделано в Швейцарии`,
+Для Хэллоуина, осеннего стола или как небольшой подарок.
+
+ПОЛЕЗНО ЗНАТЬ
+• Гипсовая фигурка, отлита и расписана вручную в Швейцарии
+• Шляпа снимается как крышка
+• Свеча из соевого воска, аромат на выбор (см. ниже)
+• Размер: ок. 10 × 11 см
+• Каждая фигурка уникальна, небольшие отличия неизбежны`,
       },
     },
   },
@@ -756,43 +816,67 @@ Was enthalten ist:
     translations: {
       en: {
         name: 'Carousel Candle',
-        description: `A stunning decorative carousel candle, handcrafted in Switzerland. One of the most intricate pieces in the Emma's Lab collection — delicate horses, an ornate canopy, and a detailed base come together to create something that feels truly magical.
+        description: `A little fairground carousel with horses, arches and an ornate roof. Our most detailed piece – every time you look, you spot something new.
 
-This candle is as much an art object as it is a candle. Display it on a mantelpiece, shelf, or sideboard, and gift it to someone who appreciates beautiful handmade things. It brings the warmth and wonder of a fairground carousel into any home.
+Cast in plaster and painted by hand in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the carousel stays on as a jewellery box or Christmas decoration.
 
-What's included:
-• 1 handcrafted carousel candle
-• Made in Switzerland`,
+Available in silver, red and gold. A gift for anyone who collects beautiful handmade things.
+
+GOOD TO KNOW
+• Plaster figure, hand-cast and hand-painted in Switzerland
+• Top part lifts off as a lid
+• Colours: silver, red, gold
+• Soy wax candle, scent of your choice (see below)
+• Size: approx. 10 × 12 cm
+• Every piece is one of a kind, small variations are part of its charm`,
       },
       fr: {
         name: 'Bougie Carrousel',
-        description: `Une magnifique bougie carrousel décorative, fabriquée à la main en Suisse. L'une des pièces les plus complexes de la collection Emma's Lab — de délicats chevaux, un auvent ornemental et une base détaillée s'assemblent pour créer quelque chose de véritablement magique.
+        description: `Un petit carrousel de fête foraine avec chevaux, arcades et toit ouvragé. Notre pièce la plus détaillée – à chaque regard, on découvre un nouveau détail.
 
-Cette bougie est autant un objet d'art qu'une bougie. Exposez-la sur une cheminée, une étagère ou un buffet. Un cadeau pour ceux qui apprécient les belles choses faites à la main. Elle apporte la chaleur et la magie d'un carrousel de fête foraine dans chaque maison.
+Coulé en plâtre et peint à la main à Mettmenstetten. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, le carrousel reste comme boîte à bijoux ou décoration de Noël.
 
-Ce qui est inclus :
-• 1 bougie carrousel artisanale
-• Fabriquée en Suisse`,
+Disponible en argent, rouge et or. Un cadeau pour tous ceux qui collectionnent les belles choses faites main.
+
+BON À SAVOIR
+• Figurine en plâtre, coulée et peinte à la main en Suisse
+• La partie supérieure s'enlève comme un couvercle
+• Couleurs : argent, rouge, or
+• Bougie en cire de soja, parfum au choix (voir ci-dessous)
+• Taille : env. 10 × 12 cm
+• Chaque pièce est unique, de petites variations font partie de son charme`,
       },
       de: {
         name: 'Karussell-Kerze',
-        description: `Eine atemberaubende dekorative Karussell-Kerze, handgefertigt in der Schweiz. Eines der aufwendigsten Stücke der Emma's Lab Kollektion — zarte Pferde, ein verziertes Dach und eine detaillierte Basis ergeben zusammen etwas, das sich wirklich magisch anfühlt.
+        description: `Ein kleines Jahrmarktkarussell mit Pferdchen, Bögen und verziertem Dach. Unser aufwendigstes Stück – beim Hinsehen entdeckt man immer wieder ein neues Detail.
 
-Diese Kerze ist ebenso sehr ein Kunstobjekt wie eine Kerze. Stellen Sie sie auf einen Kaminsims, ein Regal oder ein Sideboard. Ein Geschenk für alle, die schöne handgemachte Dinge schätzen. Sie bringt die Wärme und den Zauber eines Jahrmarktkarussells in jedes Zuhause.
+Gegossen aus Gips und von Hand bemalt in Mettmenstetten. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt das Karussell als Schmuckdose oder Weihnachtsdeko.
 
-Was enthalten ist:
-• 1 handgefertigte Karussell-Kerze
-• Hergestellt in der Schweiz`,
+Erhältlich in Silber, Rot und Gold. Ein Geschenk für alle, die schöne handgemachte Dinge sammeln.
+
+GUT ZU WISSEN
+• Gipsfigur, von Hand gegossen und bemalt in der Schweiz
+• Oberer Teil als abnehmbarer Deckel
+• Farben: Silber, Rot, Gold
+• Kerze aus Sojawachs, Duft nach Wahl (siehe unten)
+• Grösse: ca. 10 × 12 cm
+• Jedes Stück ist ein Unikat, kleine Abweichungen gehören dazu`,
       },
       ru: {
         name: 'Свеча «Карусель»',
-        description: `Потрясающая декоративная свеча-карусель, изготовленная вручную в Швейцарии. Одна из самых сложных работ в коллекции Emma's Lab — изящные лошади, украшенный навес и детализированное основание создают нечто поистине волшебное.
+        description: `Маленькая ярмарочная карусель с лошадками, арками и узорной крышей. Наша самая детальная работа – каждый раз замечаешь что-то новое.
 
-Эта свеча — столь же предмет искусства, сколь и источник света. Поставьте её на каминную полку, полку или комод. Подарок для тех, кто ценит красивые вещи ручной работы. Она приносит в дом тепло и волшебство ярмарочной карусели.
+Отлита из гипса и расписана вручную в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом карусель останется шкатулкой для украшений или рождественским декором.
 
-Что входит:
-• 1 свеча «Карусель» ручной работы
-• Сделано в Швейцарии`,
+Есть в серебряном, красном и золотом цвете. Подарок для тех, кто собирает красивые вещи ручной работы.
+
+ПОЛЕЗНО ЗНАТЬ
+• Гипсовая фигурка, отлита и расписана вручную в Швейцарии
+• Верхняя часть снимается как крышка
+• Цвета: серебряный, красный, золотой
+• Свеча из соевого воска, аромат на выбор (см. ниже)
+• Размер: ок. 10 × 12 см
+• Каждая фигурка уникальна, небольшие отличия неизбежны`,
       },
     },
   },
@@ -815,43 +899,67 @@ Was enthalten ist:
     translations: {
       en: {
         name: 'Christmas Bauble Candle',
-        description: `A handcrafted candle in the shape of a classic Christmas tree ornament — smooth, round, and beautifully made. This bauble candle captures the warm nostalgia of holiday decorating in a form you can display year after year.
+        description: `A Christmas bauble you don't hang on the tree – you light it. With a snowflake relief, in blue or gold.
 
-Perfect as a Christmas gift, a stocking filler, or a festive addition to your seasonal décor. Give it on its own or pair it with other pieces from the Emma's Lab candle collection.
+Cast in plaster and painted by hand in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the bauble stays on as a little box or Christmas decoration.
 
-What's included:
-• 1 handcrafted Christmas bauble candle
-• Made in Switzerland`,
+Ideal for Secret Santa, the Advent calendar or as table decor.
+
+GOOD TO KNOW
+• Plaster figure, hand-cast and hand-painted in Switzerland
+• Top part lifts off as a lid
+• Colours: blue, gold
+• Soy wax candle, scent of your choice (see below)
+• Size: approx. 7 × 8 cm
+• Every piece is one of a kind, small variations are part of its charm`,
       },
       fr: {
         name: 'Bougie Boule de Noël',
-        description: `Une bougie artisanale en forme de boule de Noël classique — lisse, ronde et magnifiquement réalisée. Cette bougie-boule capture la douce nostalgie des décorations de fête dans une forme que vous pouvez exposer année après année.
+        description: `Une boule de Noël qu'on n'accroche pas au sapin – on l'allume. Avec un relief de flocons de neige, en bleu ou en or.
 
-Parfaite comme cadeau de Noël, petite attention à glisser dans la chaussette de Noël ou touche festive dans votre décoration de saison. Offrez-la seule ou associez-la à d'autres pièces de la collection de bougies Emma's Lab.
+Coulée en plâtre et peinte à la main à Mettmenstetten. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, la boule reste comme petite boîte ou décoration de Noël.
 
-Ce qui est inclus :
-• 1 bougie boule de Noël artisanale
-• Fabriquée en Suisse`,
+Idéale pour un échange de cadeaux, un calendrier de l'Avent ou comme décoration de table.
+
+BON À SAVOIR
+• Figurine en plâtre, coulée et peinte à la main en Suisse
+• La partie supérieure s'enlève comme un couvercle
+• Couleurs : bleu, or
+• Bougie en cire de soja, parfum au choix (voir ci-dessous)
+• Taille : env. 7 × 8 cm
+• Chaque pièce est unique, de petites variations font partie de son charme`,
       },
       de: {
         name: 'Weihnachtskugel-Kerze',
-        description: `Eine handgefertigte Kerze in Form eines klassischen Weihnachtsbaumschmucks — glatt, rund und wunderschön gearbeitet. Diese Kugelkerze fängt die warme Nostalgie der festlichen Dekoration in einer Form ein, die Sie Jahr für Jahr aufstellen können.
+        description: `Eine Christbaumkugel, die man nicht an den Baum hängt, sondern anzündet. Mit Schneeflocken-Relief, in Blau oder Gold.
 
-Perfekt als Weihnachtsgeschenk, Strumpffüller oder festliche Ergänzung Ihrer saisonalen Dekoration. Verschenken Sie sie einzeln oder kombiniert mit weiteren Stücken aus der Emma's Lab Kerzenkollektion.
+Gegossen aus Gips und von Hand bemalt in Mettmenstetten. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt die Kugel als kleine Dose oder Weihnachtsdeko.
 
-Was enthalten ist:
-• 1 handgefertigte Weihnachtskugel-Kerze
-• Hergestellt in der Schweiz`,
+Ideal als Wichtelgeschenk, für den Adventskalender oder als Tischdeko.
+
+GUT ZU WISSEN
+• Gipsfigur, von Hand gegossen und bemalt in der Schweiz
+• Oberer Teil als abnehmbarer Deckel
+• Farben: Blau, Gold
+• Kerze aus Sojawachs, Duft nach Wahl (siehe unten)
+• Grösse: ca. 7 × 8 cm
+• Jedes Stück ist ein Unikat, kleine Abweichungen gehören dazu`,
       },
       ru: {
         name: 'Свеча «Новогодний шар»',
-        description: `Свеча ручной работы в форме классического рождественского шара — гладкая, круглая и красиво исполненная. Эта свеча передаёт тёплую ностальгию праздничного декора в форме, которую можно выставлять каждый год.
+        description: `Ёлочный шар, который не вешают на ёлку, а зажигают. Со снежинками в рельефе, синий или золотой.
 
-Идеальный рождественский подарок, маленький сюрприз в праздничный носок или нарядное дополнение к сезонному декору. Дарите отдельно или в паре с другими свечами из коллекции Emma's Lab.
+Отлит из гипса и расписан вручную в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом шар останется маленькой шкатулкой или ёлочным декором.
 
-Что входит:
-• 1 свеча «Новогодний шар» ручной работы
-• Сделано в Швейцарии`,
+Отличный подарок для «Тайного Санты», адвент-календаря или украшение праздничного стола.
+
+ПОЛЕЗНО ЗНАТЬ
+• Гипсовая фигурка, отлита и расписана вручную в Швейцарии
+• Верхняя часть снимается как крышка
+• Цвета: синий, золотой
+• Свеча из соевого воска, аромат на выбор (см. ниже)
+• Размер: ок. 7 × 8 см
+• Каждая фигурка уникальна, небольшие отличия неизбежны`,
       },
     },
   },
@@ -874,43 +982,63 @@ Was enthalten ist:
     translations: {
       en: {
         name: 'Mouse King Candle — Red',
-        description: `The Mouse King in his royal red uniform — handcrafted in Switzerland. Inspired by the legendary villain of The Nutcracker, complete with his crown, fierce expression, and regal posture. A collectible piece that bridges handmade craft and Christmas storytelling.
+        description: `The Mouse King from «The Nutcracker» – in a red uniform with golden buttons, a ruff and a crown. At 20 cm our largest piece and a real eye-catcher at Christmas.
 
-A memorable gift for anyone who loves The Nutcracker, ballet, or extraordinary seasonal decorations.
+Cast in plaster and painted by hand in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the Mouse King stays on as a collector's figure.
 
-What's included:
-• 1 handcrafted Mouse King candle (red)
-• Made in Switzerland`,
+For anyone who loves The Nutcracker, ballet or unusual Christmas decor.
+
+GOOD TO KNOW
+• Plaster figure, hand-cast and hand-painted in Switzerland
+• Top part lifts off as a lid
+• Soy wax candle, scent of your choice (see below)
+• Size: approx. 15 × 20 cm
+• Every piece is one of a kind, small variations are part of its charm`,
       },
       fr: {
         name: 'Bougie Roi des Souris — Rouge',
-        description: `Le Roi des souris en uniforme rouge royal — fabriqué à la main en Suisse. Inspiré du légendaire méchant de Casse-Noisette, avec sa couronne, son expression féroce et sa posture royale. Une pièce de collection qui unit l'artisanat et la magie des contes de Noël.
+        description: `Le Roi des souris de «Casse-Noisette» – en uniforme rouge à boutons dorés, avec fraise et couronne. Avec ses 20 cm, notre plus grande pièce et un vrai point de mire à Noël.
 
-Un cadeau mémorable pour tous ceux qui aiment Casse-Noisette, le ballet ou les décorations de saison hors du commun.
+Coulé en plâtre et peint à la main à Mettmenstetten. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, le Roi des souris reste comme figurine de collection.
 
-Ce qui est inclus :
-• 1 bougie Roi des souris artisanale (rouge)
-• Fabriquée en Suisse`,
+Pour tous ceux qui aiment Casse-Noisette, le ballet ou les décorations de Noël originales.
+
+BON À SAVOIR
+• Figurine en plâtre, coulée et peinte à la main en Suisse
+• La partie supérieure s'enlève comme un couvercle
+• Bougie en cire de soja, parfum au choix (voir ci-dessous)
+• Taille : env. 15 × 20 cm
+• Chaque pièce est unique, de petites variations font partie de son charme`,
       },
       de: {
         name: 'Mäusekönig-Kerze — Rot',
-        description: `Der Mäusekönig in seiner königlichen roten Uniform — handgefertigt in der Schweiz. Inspiriert vom legendären Bösewicht aus dem Nussknacker — mit Krone, grimmigem Blick und königlicher Haltung. Ein Sammlerstück, das Handwerk und Weihnachtsgeschichte verbindet.
+        description: `Der Mäusekönig aus dem «Nussknacker» – in roter Uniform mit goldenen Knöpfen, Halskrause und Krone. Mit 20 cm unser grösstes Stück und ein echter Blickfang zur Weihnachtszeit.
 
-Ein unvergessliches Geschenk für alle, die den Nussknacker, das Ballett oder aussergewöhnliche Saisondekoration lieben.
+Gegossen aus Gips und von Hand bemalt in Mettmenstetten. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt der Mäusekönig als Sammlerfigur.
 
-Was enthalten ist:
-• 1 handgefertigte Mäusekönig-Kerze (rot)
-• Hergestellt in der Schweiz`,
+Für alle, die den Nussknacker, das Ballett oder aussergewöhnliche Weihnachtsdeko lieben.
+
+GUT ZU WISSEN
+• Gipsfigur, von Hand gegossen und bemalt in der Schweiz
+• Oberer Teil als abnehmbarer Deckel
+• Kerze aus Sojawachs, Duft nach Wahl (siehe unten)
+• Grösse: ca. 15 × 20 cm
+• Jedes Stück ist ein Unikat, kleine Abweichungen gehören dazu`,
       },
       ru: {
         name: 'Свеча «Мышиный Король» — Красный',
-        description: `Мышиный Король в красном королевском мундире — изготовлен вручную в Швейцарии. По мотивам «Щелкунчика» — с короной, грозным взглядом и царственной осанкой. Коллекционная вещь, в которой встречаются ручная работа и рождественская сказка.
+        description: `Мышиный король из «Щелкунчика» – в красном мундире с золотыми пуговицами, жабо и короной. 20 см в высоту – наша самая большая фигурка и главный акцент рождественского интерьера.
 
-Запоминающийся подарок для тех, кто любит «Щелкунчика», балет или необычный праздничный декор.
+Отлит из гипса и расписан вручную в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом Мышиный король останется коллекционной фигуркой.
 
-Что входит:
-• 1 свеча «Мышиный Король» (красный) ручной работы
-• Сделано в Швейцарии`,
+Для всех, кто любит «Щелкунчика», балет или необычный новогодний декор.
+
+ПОЛЕЗНО ЗНАТЬ
+• Гипсовая фигурка, отлита и расписана вручную в Швейцарии
+• Верхняя часть снимается как крышка
+• Свеча из соевого воска, аромат на выбор (см. ниже)
+• Размер: ок. 15 × 20 см
+• Каждая фигурка уникальна, небольшие отличия неизбежны`,
       },
     },
   },
@@ -930,51 +1058,63 @@ Was enthalten ist:
     translations: {
       en: {
         name: 'Roly-Poly Doll Candle',
-        description: `Meet our roly-poly doll — a little girl in a glossy red hood with rosy cheeks, big blue eyes and a tiny heart on her cheek, inspired by the beloved tumbler toy of childhood. Cast in plaster and painted entirely by hand in our studio in Mettmenstetten, so every doll has her own expression and no two are exactly alike.
+        description: `A red hood, rosy cheeks, big blue eyes and a little heart on her cheek: our roly-poly doll is inspired by the much-loved toy of childhood.
 
-Her hood lifts off like a lid: inside is a soy wax candle in the scent of your choice. Once the candle has burned down, the plaster body lives on as a little keepsake box or a decoration for the winter windowsill.
+Each doll is cast in plaster and painted by hand in Mettmenstetten – so every one has her own expression. The top part lifts off: inside is a soy wax candle in the scent of your choice. Once it has burned down, the doll stays on as a keepsake box or winter decoration on the windowsill.
 
-A warm, nostalgic gift for Christmas, a new home or anyone who loves handmade things.
+A warm, nostalgic gift for Christmas or a new home.
 
-What's included:
-• 1 hand-painted roly-poly doll candle (plaster body, soy wax, scent of your choice)
-• Made in Switzerland`,
+GOOD TO KNOW
+• Plaster figure, hand-cast and hand-painted in Switzerland
+• Top part lifts off as a lid
+• Soy wax candle, scent of your choice (see below)
+• Size: approx. 10 × 15 cm
+• Every piece is one of a kind, small variations are part of its charm`,
       },
       fr: {
         name: 'Bougie Culbuto',
-        description: `Voici notre culbuto — une petite fille au capuchon rouge brillant, aux joues roses, aux grands yeux bleus et au petit cœur sur la joue, inspirée du jouet culbuto de notre enfance. Coulée en plâtre et entièrement peinte à la main dans notre atelier de Mettmenstetten : chaque poupée a sa propre expression, aucune n'est tout à fait identique.
+        description: `Capuche rouge, joues roses, grands yeux bleus et un petit cœur sur la joue : notre culbuto s'inspire du jouet préféré de l'enfance.
 
-Son capuchon se soulève comme un couvercle : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Une fois la bougie consumée, le corps en plâtre reste une jolie boîte à souvenirs ou une décoration pour le rebord de la fenêtre en hiver.
+Chaque poupée est coulée en plâtre et peinte à la main à Mettmenstetten – chacune a donc son propre visage. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Une fois consumée, la poupée reste comme boîte à trésors ou décoration d'hiver sur le rebord de fenêtre.
 
-Un cadeau chaleureux et nostalgique pour Noël, une pendaison de crémaillère ou tous ceux qui aiment le fait main.
+Un cadeau chaleureux et nostalgique pour Noël ou une pendaison de crémaillère.
 
-Ce qui est inclus :
-• 1 bougie culbuto peinte à la main (corps en plâtre, cire de soja, parfum au choix)
-• Fabriquée en Suisse`,
+BON À SAVOIR
+• Figurine en plâtre, coulée et peinte à la main en Suisse
+• La partie supérieure s'enlève comme un couvercle
+• Bougie en cire de soja, parfum au choix (voir ci-dessous)
+• Taille : env. 10 × 15 cm
+• Chaque pièce est unique, de petites variations font partie de son charme`,
       },
       de: {
         name: 'Stehaufmännchen-Kerze',
-        description: `Unser Stehaufmännchen — ein kleines Mädchen mit glänzender roter Kapuze, rosigen Wangen, grossen blauen Augen und einem kleinen Herz auf der Wange, inspiriert vom beliebten Stehauf-Spielzeug aus Kindertagen. Aus Gips gegossen und in unserem Atelier in Mettmenstetten komplett von Hand bemalt — jede Puppe hat ihren eigenen Ausdruck, keine gleicht der anderen ganz.
+        description: `Rote Kapuze, rosige Wangen, grosse blaue Augen und ein kleines Herz auf der Wange: unser Stehaufmännchen ist dem Spielzeug aus Kindertagen nachempfunden.
 
-Die Kapuze lässt sich wie ein Deckel abnehmen: Darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Ist die Kerze abgebrannt, bleibt der Gipskörper als kleine Schatzdose oder als Dekoration für die winterliche Fensterbank.
+Jede Puppe wird in Mettmenstetten aus Gips gegossen und von Hand bemalt – darum hat jede ihren eigenen Gesichtsausdruck. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Ist sie abgebrannt, bleibt die Puppe als Schatzdose oder Winterdeko auf der Fensterbank.
 
-Ein warmes, nostalgisches Geschenk zu Weihnachten, zum Einzug oder für alle, die Handgemachtes lieben.
+Ein warmes, nostalgisches Geschenk zu Weihnachten oder zum Einzug.
 
-Was enthalten ist:
-• 1 handbemalte Stehaufmännchen-Kerze (Gipskörper, Sojawachs, Duft nach Wahl)
-• Hergestellt in der Schweiz`,
+GUT ZU WISSEN
+• Gipsfigur, von Hand gegossen und bemalt in der Schweiz
+• Oberer Teil als abnehmbarer Deckel
+• Kerze aus Sojawachs, Duft nach Wahl (siehe unten)
+• Grösse: ca. 10 × 15 cm
+• Jedes Stück ist ein Unikat, kleine Abweichungen gehören dazu`,
       },
       ru: {
         name: 'Свеча «Неваляшка»',
-        description: `Наша неваляшка — девочка в глянцевом красном капюшоне, с румяными щеками, большими голубыми глазами и маленьким сердечком на щеке, навеянная любимой игрушкой детства. Отлита из гипса и полностью расписана вручную в нашей мастерской в Меттменштеттене: у каждой куклы своё выражение лица, двух одинаковых не бывает.
+        description: `Красный капюшон, румяные щёки, большие голубые глаза и сердечко на щеке – наша неваляшка навеяна любимой игрушкой из детства.
 
-Капюшон снимается как крышка, а внутри — свеча из соевого воска с ароматом на ваш выбор. Когда свеча догорит, гипсовый корпус останется маленькой шкатулкой или украшением зимнего подоконника.
+Каждую куклу мы отливаем из гипса и расписываем вручную в Меттменштеттене, поэтому у каждой своё выражение лица. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Когда свеча догорит, неваляшка останется шкатулкой для сокровищ или зимним украшением подоконника.
 
-Тёплый ностальгический подарок на Рождество, на новоселье или тем, кто любит вещи ручной работы.
+Тёплый ностальгический подарок на Рождество или новоселье.
 
-Что входит:
-• 1 свеча «Неваляшка» ручной росписи (гипсовый корпус, соевый воск, аромат на выбор)
-• Сделано в Швейцарии`,
+ПОЛЕЗНО ЗНАТЬ
+• Гипсовая фигурка, отлита и расписана вручную в Швейцарии
+• Верхняя часть снимается как крышка
+• Свеча из соевого воска, аромат на выбор (см. ниже)
+• Размер: ок. 10 × 15 см
+• Каждая фигурка уникальна, небольшие отличия неизбежны`,
       },
     },
   },
@@ -994,43 +1134,63 @@ Was enthalten ist:
     translations: {
       en: {
         name: 'Hyacinth Candle',
-        description: `A beautifully detailed hyacinth candle, handcrafted in Switzerland. The layered clusters of petals capture the natural elegance of one of spring's most beloved flowers. Whether displayed solo or as part of a floral arrangement, this candle brings a touch of botanical beauty to any interior.
+        description: `A hyacinth with dense, delicate clusters of blossoms – the first hello of spring for the windowsill, Easter table or bedside.
 
-The hyacinth is a symbol of rebirth and new beginnings — making this a thoughtful gift for housewarmings, birthdays, or simply to bring a little nature indoors.
+Cast in plaster and painted by hand in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the hyacinth stays on as spring decor that never wilts.
 
-What's included:
-• 1 handcrafted hyacinth candle
-• Made in Switzerland`,
+A small gift for a birthday, for Easter or just because.
+
+GOOD TO KNOW
+• Plaster figure, hand-cast and hand-painted in Switzerland
+• Top part lifts off as a lid
+• Soy wax candle, scent of your choice (see below)
+• Size: approx. 6 × 9 cm
+• Every piece is one of a kind, small variations are part of its charm`,
       },
       fr: {
         name: 'Bougie Jacinthe',
-        description: `Une bougie jacinthe magnifiquement détaillée, fabriquée à la main en Suisse. Les grappes de pétales superposées capturent l'élégance naturelle de l'une des fleurs les plus appréciées du printemps. Exposée seule ou intégrée dans une composition florale, cette bougie apporte une touche de beauté botanique à tout intérieur.
+        description: `Une jacinthe aux grappes de fleurs denses et délicates – le premier salut du printemps pour le rebord de fenêtre, la table de Pâques ou la table de chevet.
 
-La jacinthe est un symbole de renaissance — ce qui en fait un cadeau attentionné pour une pendaison de crémaillère, un anniversaire ou simplement pour apporter un peu de nature à l'intérieur.
+Coulée en plâtre et peinte à la main à Mettmenstetten. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, la jacinthe reste comme décoration de printemps qui ne fane jamais.
 
-Ce qui est inclus :
-• 1 bougie jacinthe artisanale
-• Fabriquée en Suisse`,
+Un petit cadeau pour un anniversaire, pour Pâques ou simplement pour faire plaisir.
+
+BON À SAVOIR
+• Figurine en plâtre, coulée et peinte à la main en Suisse
+• La partie supérieure s'enlève comme un couvercle
+• Bougie en cire de soja, parfum au choix (voir ci-dessous)
+• Taille : env. 6 × 9 cm
+• Chaque pièce est unique, de petites variations font partie de son charme`,
       },
       de: {
         name: 'Hyazinthen-Kerze',
-        description: `Eine wunderschön detaillierte Hyazinthen-Kerze, handgefertigt in der Schweiz. Die geschichteten Blütentrauben fangen die natürliche Eleganz einer der beliebtesten Frühlingsblumen ein. Ob allein ausgestellt oder als Teil eines floralen Arrangements — diese Kerze bringt einen Hauch botanischer Schönheit in jeden Raum.
+        description: `Eine Hyazinthe mit dichten, zarten Blütendolden – der erste Frühlingsgruss für Fensterbank, Ostertisch oder Nachttisch.
 
-Die Hyazinthe ist ein Symbol der Erneuerung — ein liebevolles Geschenk zur Einweihungsfeier, zum Geburtstag oder einfach um etwas Natur nach drinnen zu bringen.
+Gegossen aus Gips und von Hand bemalt in Mettmenstetten. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt die Hyazinthe als Frühlingsdeko, die nie verblüht.
 
-Was enthalten ist:
-• 1 handgefertigte Hyazinthen-Kerze
-• Hergestellt in der Schweiz`,
+Ein kleines Geschenk zum Geburtstag, zu Ostern oder einfach so.
+
+GUT ZU WISSEN
+• Gipsfigur, von Hand gegossen und bemalt in der Schweiz
+• Oberer Teil als abnehmbarer Deckel
+• Kerze aus Sojawachs, Duft nach Wahl (siehe unten)
+• Grösse: ca. 6 × 9 cm
+• Jedes Stück ist ein Unikat, kleine Abweichungen gehören dazu`,
       },
       ru: {
         name: 'Свеча «Гиацинт»',
-        description: `Красиво детализированная свеча в форме гиацинта, изготовленная вручную в Швейцарии. Многослойные грозди лепестков передают природную элегантность одного из самых любимых весенних цветков. Эта свеча принесёт нотку ботанической красоты в любой интерьер — отдельно или в составе цветочной композиции.
+        description: `Гиацинт с пышными нежными соцветиями – первый привет весны для подоконника, пасхального стола или прикроватной тумбочки.
 
-Гиацинт — символ возрождения и новых начал. Это продуманный подарок на новоселье, день рождения или просто чтобы привнести немного природы в дом.
+Отлит из гипса и расписан вручную в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом гиацинт останется весенним украшением, которое никогда не завянет.
 
-Что входит:
-• 1 свеча «Гиацинт» ручной работы
-• Сделано в Швейцарии`,
+Небольшой подарок на день рождения, на Пасху или просто так.
+
+ПОЛЕЗНО ЗНАТЬ
+• Гипсовая фигурка, отлита и расписана вручную в Швейцарии
+• Верхняя часть снимается как крышка
+• Свеча из соевого воска, аромат на выбор (см. ниже)
+• Размер: ок. 6 × 9 см
+• Каждая фигурка уникальна, небольшие отличия неизбежны`,
       },
     },
   },
