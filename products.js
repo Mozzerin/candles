@@ -645,8 +645,6 @@ GUT ZU WISSEN
     category:      'candle',
     images:        [
       'images/products/candles/photos/frog-hat-scene-1.webp',
-      'images/products/candles/photos/frog-hat-scene-2.webp',
-      'images/products/candles/photos/frog-hat-scene-3.webp',
       'images/products/candles/photos/frog-hat-scene-size.webp',
       'images/products/candles/froghat3.mp4',
     ],
@@ -970,8 +968,6 @@ GUT ZU WISSEN
     images:        [
       'images/products/candles/scenes/mouse-king-1b.webp',
       'images/products/candles/scenes/mouse-king-2b.webp',
-      'images/products/candles/scenes/mouse-king-3b.webp',
-      'images/products/candles/scenes/mouse-king-4.webp',
       'images/products/candles/scenes/mouse-king-size-b.webp',
       'images/products/candles/mouse_king4.mp4',
     ],
@@ -1123,7 +1119,6 @@ GUT ZU WISSEN
     category:      'candle',
     images:        [
       'images/products/candles/photos/hyacinth-scene-1.webp',
-      'images/products/candles/photos/hyacinth-scene-2.webp',
       'images/products/candles/photos/hyacinth-scene-size.webp',
       'images/products/candles/hyacinth4.mp4',
     ],
