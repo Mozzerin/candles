@@ -581,7 +581,7 @@ Was enthalten ist:
         name: 'Frog Candle',
         description: `A green frog with rosy cheeks and a little golden crown – half fairy tale, half wink. Put him on a shelf, a desk or next to the bathtub and he will make everyone smile.
 
-Each figure is cast in plaster and painted by hand in our studio in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Once the candle has burned down, the frog stays on as decor or a little box for jewellery and odds and ends.
+Each figure is cast in plaster and painted by hand in our studio in Switzerland. The top part lifts off: inside is a soy wax candle in the scent of your choice. Once the candle has burned down, the frog stays on as decor or a little box for jewellery and odds and ends.
 
 A gift for anyone who loves frogs, fairy tales or simply something special.
 
@@ -596,7 +596,7 @@ GOOD TO KNOW
         name: 'Bougie Grenouille',
         description: `Une grenouille verte aux joues roses et à la petite couronne dorée – moitié conte de fées, moitié clin d'œil. Posée sur une étagère, un bureau ou près de la baignoire, elle fait sourire tout le monde.
 
-Chaque figurine est coulée en plâtre et peinte à la main dans notre atelier de Mettmenstetten. La partie supérieure s'enlève : dessous se cache une bougie en cire de soja au parfum de votre choix. Une fois la bougie consumée, la grenouille reste comme décoration ou petite boîte à bijoux.
+Chaque figurine est coulée en plâtre et peinte à la main dans notre atelier en Suisse. La partie supérieure s'enlève : dessous se cache une bougie en cire de soja au parfum de votre choix. Une fois la bougie consumée, la grenouille reste comme décoration ou petite boîte à bijoux.
 
 Un cadeau pour tous ceux qui aiment les grenouilles, les contes ou simplement les belles choses.
 
@@ -611,7 +611,7 @@ BON À SAVOIR
         name: 'Frosch-Kerze',
         description: `Ein grüner Frosch mit roten Bäckchen und kleiner goldener Krone – halb Märchen, halb Augenzwinkern. Er sitzt auf dem Regal, auf dem Schreibtisch oder neben der Badewanne und bringt garantiert jeden zum Lächeln.
 
-Die Figur wird in unserem Atelier in Mettmenstetten aus Gips gegossen und von Hand bemalt. Der obere Teil lässt sich abnehmen: darunter steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Ist die Kerze abgebrannt, bleibt der Frosch als Deko oder kleine Dose für Schmuck und Krimskrams.
+Die Figur wird in unserem Atelier in der Schweiz aus Gips gegossen und von Hand bemalt. Der obere Teil lässt sich abnehmen: darunter steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Ist die Kerze abgebrannt, bleibt der Frosch als Deko oder kleine Dose für Schmuck und Krimskrams.
 
 Ein Geschenk für alle, die Frösche, Märchen oder einfach etwas Besonderes lieben.
 
@@ -626,7 +626,7 @@ GUT ZU WISSEN
         name: 'Свеча «Лягушка»',
         description: `Зелёная лягушка с румяными щёчками и маленькой золотой короной – наполовину сказка, наполовину шутка. На полке, на рабочем столе или у ванны она поднимает настроение всем, кто её видит.
 
-Каждую фигурку мы отливаем из гипса и расписываем вручную в нашей мастерской в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Когда свеча догорит, лягушка останется украшением или шкатулкой для украшений и мелочей.
+Каждую фигурку мы отливаем из гипса и расписываем вручную в нашей мастерской в Швейцарии. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Когда свеча догорит, лягушка останется украшением или шкатулкой для украшений и мелочей.
 
 Подарок для всех, кто любит лягушек, сказки или просто необычные вещи.
 
@@ -659,7 +659,7 @@ GUT ZU WISSEN
         name: 'Frog in a Hat Candle',
         description: `This frog has dressed up for autumn: a brown hat with a buckle, rosy cheeks and a contented look. A little character for the windowsill, a shelf or the autumn table.
 
-Each figure is cast in plaster and painted by hand in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Once it has burned down, the frog stays on as decor or a storage box.
+Each figure is cast in plaster and painted by hand in Switzerland. The top part lifts off: inside is a soy wax candle in the scent of your choice. Once it has burned down, the frog stays on as decor or a storage box.
 
 Perfect for Halloween, for autumn and for anyone who likes a bit of humour on the shelf.
 
@@ -674,7 +674,7 @@ GOOD TO KNOW
         name: 'Bougie Grenouille au Chapeau',
         description: `Cette grenouille s'est faite belle pour l'automne : chapeau brun à boucle, joues roses et air satisfait. Un petit personnage pour le rebord de fenêtre, l'étagère ou la table d'automne.
 
-Chaque figurine est coulée en plâtre et peinte à la main à Mettmenstetten. La partie supérieure s'enlève : dessous se cache une bougie en cire de soja au parfum de votre choix. Une fois consumée, la grenouille reste comme décoration ou boîte de rangement.
+Chaque figurine est coulée en plâtre et peinte à la main en Suisse. La partie supérieure s'enlève : dessous se cache une bougie en cire de soja au parfum de votre choix. Une fois consumée, la grenouille reste comme décoration ou boîte de rangement.
 
 Idéale pour Halloween, pour l'automne et pour tous ceux qui aiment l'humour sur leurs étagères.
 
@@ -689,7 +689,7 @@ BON À SAVOIR
         name: 'Frosch-mit-Hut-Kerze',
         description: `Dieser Frosch hat sich für den Herbst schick gemacht: brauner Hut mit Schnalle, rote Bäckchen, zufriedener Blick. Ein kleiner Charakter für Fensterbank, Regal oder Herbsttisch.
 
-Die Figur wird in Mettmenstetten aus Gips gegossen und von Hand bemalt. Der obere Teil lässt sich abnehmen: darunter steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Ist die Kerze abgebrannt, bleibt der Frosch als Deko oder Aufbewahrungsdose.
+Die Figur wird in der Schweiz aus Gips gegossen und von Hand bemalt. Der obere Teil lässt sich abnehmen: darunter steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Ist die Kerze abgebrannt, bleibt der Frosch als Deko oder Aufbewahrungsdose.
 
 Passt zu Halloween, zum Herbst und zu allen, die Humor im Regal mögen.
 
@@ -704,7 +704,7 @@ GUT ZU WISSEN
         name: 'Свеча «Лягушка в шляпе»',
         description: `Эта лягушка нарядилась к осени: коричневая шляпа с пряжкой, румяные щёчки и довольный взгляд. Маленький персонаж для подоконника, полки или осеннего стола.
 
-Фигурку мы отливаем из гипса и расписываем вручную в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Когда свеча догорит, лягушка останется украшением или шкатулкой.
+Фигурку мы отливаем из гипса и расписываем вручную в Швейцарии. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Когда свеча догорит, лягушка останется украшением или шкатулкой.
 
 Подойдёт к Хэллоуину, к осени и всем, кто любит немного юмора на полке.
 
@@ -737,7 +737,7 @@ GUT ZU WISSEN
         name: 'Pumpkin Candle',
         description: `A little pumpkin house with a witch's hat, a wooden door and tiny windows – the cosiest resident of your autumn table.
 
-Cast in plaster and painted by hand in our studio in Mettmenstetten. Simply lift off the hat: underneath is a soy wax candle in the scent of your choice. Afterwards the pumpkin house stays on as autumn decor or a box for small things.
+Cast in plaster and painted by hand in our studio in Switzerland. Simply lift off the hat: underneath is a soy wax candle in the scent of your choice. Afterwards the pumpkin house stays on as autumn decor or a box for small things.
 
 Lovely for Halloween, the autumn table or as a little gift.
 
@@ -752,7 +752,7 @@ GOOD TO KNOW
         name: 'Bougie Citrouille',
         description: `Une petite maison-citrouille avec chapeau de sorcière, porte en bois et fenêtres minuscules – l'habitante la plus douillette de votre table d'automne.
 
-Coulée en plâtre et peinte à la main dans notre atelier de Mettmenstetten. Il suffit de soulever le chapeau : dessous se cache une bougie en cire de soja au parfum de votre choix. Ensuite, la maison-citrouille reste comme décoration d'automne ou petite boîte.
+Coulée en plâtre et peinte à la main dans notre atelier en Suisse. Il suffit de soulever le chapeau : dessous se cache une bougie en cire de soja au parfum de votre choix. Ensuite, la maison-citrouille reste comme décoration d'automne ou petite boîte.
 
 Parfaite pour Halloween, la table d'automne ou comme petit cadeau.
 
@@ -767,7 +767,7 @@ BON À SAVOIR
         name: 'Kürbis-Kerze',
         description: `Ein kleines Kürbishaus mit Hexenhut, Holztür und Fensterchen – der gemütlichste Bewohner Ihres Herbsttisches.
 
-Gegossen aus Gips und von Hand bemalt in unserem Atelier in Mettmenstetten. Den Hut nehmen Sie einfach ab: darunter steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt das Kürbishaus als Herbstdeko oder Dose für Kleinigkeiten.
+Gegossen aus Gips und von Hand bemalt in unserem Atelier in der Schweiz. Den Hut nehmen Sie einfach ab: darunter steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt das Kürbishaus als Herbstdeko oder Dose für Kleinigkeiten.
 
 Schön zu Halloween, für den Herbsttisch oder als Mitbringsel.
 
@@ -782,7 +782,7 @@ GUT ZU WISSEN
         name: 'Свеча «Тыква»',
         description: `Маленький домик-тыква с ведьминой шляпой, деревянной дверцей и окошками – самый уютный жилец вашего осеннего стола.
 
-Отлит из гипса и расписан вручную в нашей мастерской в Меттменштеттене. Просто снимите шляпу: под ней свеча из соевого воска с ароматом на ваш выбор. Потом домик останется осенним декором или шкатулкой для мелочей.
+Отлит из гипса и расписан вручную в нашей мастерской в Швейцарии. Просто снимите шляпу: под ней свеча из соевого воска с ароматом на ваш выбор. Потом домик останется осенним декором или шкатулкой для мелочей.
 
 Для Хэллоуина, осеннего стола или как небольшой подарок.
 
@@ -818,7 +818,7 @@ GUT ZU WISSEN
         name: 'Carousel Candle',
         description: `A little fairground carousel with horses, arches and an ornate roof. Our most detailed piece – every time you look, you spot something new.
 
-Cast in plaster and painted by hand in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the carousel stays on as a jewellery box or Christmas decoration.
+Cast in plaster and painted by hand in Switzerland. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the carousel stays on as a jewellery box or Christmas decoration.
 
 Available in silver, red and gold. A gift for anyone who collects beautiful handmade things.
 
@@ -834,7 +834,7 @@ GOOD TO KNOW
         name: 'Bougie Carrousel',
         description: `Un petit carrousel de fête foraine avec chevaux, arcades et toit ouvragé. Notre pièce la plus détaillée – à chaque regard, on découvre un nouveau détail.
 
-Coulé en plâtre et peint à la main à Mettmenstetten. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, le carrousel reste comme boîte à bijoux ou décoration de Noël.
+Coulé en plâtre et peint à la main en Suisse. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, le carrousel reste comme boîte à bijoux ou décoration de Noël.
 
 Disponible en argent, rouge et or. Un cadeau pour tous ceux qui collectionnent les belles choses faites main.
 
@@ -850,7 +850,7 @@ BON À SAVOIR
         name: 'Karussell-Kerze',
         description: `Ein kleines Jahrmarktkarussell mit Pferdchen, Bögen und verziertem Dach. Unser aufwendigstes Stück – beim Hinsehen entdeckt man immer wieder ein neues Detail.
 
-Gegossen aus Gips und von Hand bemalt in Mettmenstetten. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt das Karussell als Schmuckdose oder Weihnachtsdeko.
+Gegossen aus Gips und von Hand bemalt in der Schweiz. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt das Karussell als Schmuckdose oder Weihnachtsdeko.
 
 Erhältlich in Silber, Rot und Gold. Ein Geschenk für alle, die schöne handgemachte Dinge sammeln.
 
@@ -866,7 +866,7 @@ GUT ZU WISSEN
         name: 'Свеча «Карусель»',
         description: `Маленькая ярмарочная карусель с лошадками, арками и узорной крышей. Наша самая детальная работа – каждый раз замечаешь что-то новое.
 
-Отлита из гипса и расписана вручную в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом карусель останется шкатулкой для украшений или рождественским декором.
+Отлита из гипса и расписана вручную в Швейцарии. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом карусель останется шкатулкой для украшений или рождественским декором.
 
 Есть в серебряном, красном и золотом цвете. Подарок для тех, кто собирает красивые вещи ручной работы.
 
@@ -901,7 +901,7 @@ GUT ZU WISSEN
         name: 'Christmas Bauble Candle',
         description: `A Christmas bauble you don't hang on the tree – you light it. With a snowflake relief, in blue or gold.
 
-Cast in plaster and painted by hand in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the bauble stays on as a little box or Christmas decoration.
+Cast in plaster and painted by hand in Switzerland. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the bauble stays on as a little box or Christmas decoration.
 
 Ideal for Secret Santa, the Advent calendar or as table decor.
 
@@ -917,7 +917,7 @@ GOOD TO KNOW
         name: 'Bougie Boule de Noël',
         description: `Une boule de Noël qu'on n'accroche pas au sapin – on l'allume. Avec un relief de flocons de neige, en bleu ou en or.
 
-Coulée en plâtre et peinte à la main à Mettmenstetten. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, la boule reste comme petite boîte ou décoration de Noël.
+Coulée en plâtre et peinte à la main en Suisse. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, la boule reste comme petite boîte ou décoration de Noël.
 
 Idéale pour un échange de cadeaux, un calendrier de l'Avent ou comme décoration de table.
 
@@ -933,7 +933,7 @@ BON À SAVOIR
         name: 'Weihnachtskugel-Kerze',
         description: `Eine Christbaumkugel, die man nicht an den Baum hängt, sondern anzündet. Mit Schneeflocken-Relief, in Blau oder Gold.
 
-Gegossen aus Gips und von Hand bemalt in Mettmenstetten. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt die Kugel als kleine Dose oder Weihnachtsdeko.
+Gegossen aus Gips und von Hand bemalt in der Schweiz. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt die Kugel als kleine Dose oder Weihnachtsdeko.
 
 Ideal als Wichtelgeschenk, für den Adventskalender oder als Tischdeko.
 
@@ -949,7 +949,7 @@ GUT ZU WISSEN
         name: 'Свеча «Новогодний шар»',
         description: `Ёлочный шар, который не вешают на ёлку, а зажигают. Со снежинками в рельефе, синий или золотой.
 
-Отлит из гипса и расписан вручную в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом шар останется маленькой шкатулкой или ёлочным декором.
+Отлит из гипса и расписан вручную в Швейцарии. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом шар останется маленькой шкатулкой или ёлочным декором.
 
 Отличный подарок для «Тайного Санты», адвент-календаря или украшение праздничного стола.
 
@@ -984,7 +984,7 @@ GUT ZU WISSEN
         name: 'Mouse King Candle — Red',
         description: `The Mouse King from «The Nutcracker» – in a red uniform with golden buttons, a ruff and a crown. At 20 cm our largest piece and a real eye-catcher at Christmas.
 
-Cast in plaster and painted by hand in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the Mouse King stays on as a collector's figure.
+Cast in plaster and painted by hand in Switzerland. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the Mouse King stays on as a collector's figure.
 
 For anyone who loves The Nutcracker, ballet or unusual Christmas decor.
 
@@ -999,7 +999,7 @@ GOOD TO KNOW
         name: 'Bougie Roi des Souris — Rouge',
         description: `Le Roi des souris de «Casse-Noisette» – en uniforme rouge à boutons dorés, avec fraise et couronne. Avec ses 20 cm, notre plus grande pièce et un vrai point de mire à Noël.
 
-Coulé en plâtre et peint à la main à Mettmenstetten. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, le Roi des souris reste comme figurine de collection.
+Coulé en plâtre et peint à la main en Suisse. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, le Roi des souris reste comme figurine de collection.
 
 Pour tous ceux qui aiment Casse-Noisette, le ballet ou les décorations de Noël originales.
 
@@ -1014,7 +1014,7 @@ BON À SAVOIR
         name: 'Mäusekönig-Kerze — Rot',
         description: `Der Mäusekönig aus dem «Nussknacker» – in roter Uniform mit goldenen Knöpfen, Halskrause und Krone. Mit 20 cm unser grösstes Stück und ein echter Blickfang zur Weihnachtszeit.
 
-Gegossen aus Gips und von Hand bemalt in Mettmenstetten. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt der Mäusekönig als Sammlerfigur.
+Gegossen aus Gips und von Hand bemalt in der Schweiz. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt der Mäusekönig als Sammlerfigur.
 
 Für alle, die den Nussknacker, das Ballett oder aussergewöhnliche Weihnachtsdeko lieben.
 
@@ -1029,7 +1029,7 @@ GUT ZU WISSEN
         name: 'Свеча «Мышиный Король» — Красный',
         description: `Мышиный король из «Щелкунчика» – в красном мундире с золотыми пуговицами, жабо и короной. 20 см в высоту – наша самая большая фигурка и главный акцент рождественского интерьера.
 
-Отлит из гипса и расписан вручную в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом Мышиный король останется коллекционной фигуркой.
+Отлит из гипса и расписан вручную в Швейцарии. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом Мышиный король останется коллекционной фигуркой.
 
 Для всех, кто любит «Щелкунчика», балет или необычный новогодний декор.
 
@@ -1058,9 +1058,9 @@ GUT ZU WISSEN
     translations: {
       en: {
         name: 'Roly-Poly Doll Candle',
-        description: `A red hood, rosy cheeks, big blue eyes and a little heart on her cheek: our roly-poly doll is inspired by the much-loved toy of childhood.
+        description: `Rosy cheeks, big blue eyes and a little heart on her cheek: our roly-poly doll is inspired by the much-loved toy of childhood.
 
-Each doll is cast in plaster and painted by hand in Mettmenstetten – so every one has her own expression. The top part lifts off: inside is a soy wax candle in the scent of your choice. Once it has burned down, the doll stays on as a keepsake box or winter decoration on the windowsill.
+Each doll is cast in plaster and painted by hand in Switzerland – so every one has her own expression. The top part lifts off: inside is a soy wax candle in the scent of your choice. Once it has burned down, the doll stays on as a keepsake box or winter decoration on the windowsill.
 
 A warm, nostalgic gift for Christmas or a new home.
 
@@ -1073,9 +1073,9 @@ GOOD TO KNOW
       },
       fr: {
         name: 'Bougie Culbuto',
-        description: `Capuche rouge, joues roses, grands yeux bleus et un petit cœur sur la joue : notre culbuto s'inspire du jouet préféré de l'enfance.
+        description: `Joues roses, grands yeux bleus et un petit cœur sur la joue : notre culbuto s'inspire du jouet préféré de l'enfance.
 
-Chaque poupée est coulée en plâtre et peinte à la main à Mettmenstetten – chacune a donc son propre visage. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Une fois consumée, la poupée reste comme boîte à trésors ou décoration d'hiver sur le rebord de fenêtre.
+Chaque poupée est coulée en plâtre et peinte à la main en Suisse – chacune a donc son propre visage. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Une fois consumée, la poupée reste comme boîte à trésors ou décoration d'hiver sur le rebord de fenêtre.
 
 Un cadeau chaleureux et nostalgique pour Noël ou une pendaison de crémaillère.
 
@@ -1088,9 +1088,9 @@ BON À SAVOIR
       },
       de: {
         name: 'Stehaufmännchen-Kerze',
-        description: `Rote Kapuze, rosige Wangen, grosse blaue Augen und ein kleines Herz auf der Wange: unser Stehaufmännchen ist dem Spielzeug aus Kindertagen nachempfunden.
+        description: `Rosige Wangen, grosse blaue Augen und ein kleines Herz auf der Wange: unser Stehaufmännchen ist dem Spielzeug aus Kindertagen nachempfunden.
 
-Jede Puppe wird in Mettmenstetten aus Gips gegossen und von Hand bemalt – darum hat jede ihren eigenen Gesichtsausdruck. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Ist sie abgebrannt, bleibt die Puppe als Schatzdose oder Winterdeko auf der Fensterbank.
+Jede Puppe wird in der Schweiz aus Gips gegossen und von Hand bemalt – darum hat jede ihren eigenen Gesichtsausdruck. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Ist sie abgebrannt, bleibt die Puppe als Schatzdose oder Winterdeko auf der Fensterbank.
 
 Ein warmes, nostalgisches Geschenk zu Weihnachten oder zum Einzug.
 
@@ -1103,9 +1103,9 @@ GUT ZU WISSEN
       },
       ru: {
         name: 'Свеча «Неваляшка»',
-        description: `Красный капюшон, румяные щёки, большие голубые глаза и сердечко на щеке – наша неваляшка навеяна любимой игрушкой из детства.
+        description: `Румяные щёки, большие голубые глаза и сердечко на щеке – наша неваляшка навеяна любимой игрушкой из детства.
 
-Каждую куклу мы отливаем из гипса и расписываем вручную в Меттменштеттене, поэтому у каждой своё выражение лица. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Когда свеча догорит, неваляшка останется шкатулкой для сокровищ или зимним украшением подоконника.
+Каждую куклу мы отливаем из гипса и расписываем вручную в Швейцарии, поэтому у каждой своё выражение лица. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Когда свеча догорит, неваляшка останется шкатулкой для сокровищ или зимним украшением подоконника.
 
 Тёплый ностальгический подарок на Рождество или новоселье.
 
@@ -1136,7 +1136,7 @@ GUT ZU WISSEN
         name: 'Hyacinth Candle',
         description: `A hyacinth with dense, delicate clusters of blossoms – the first hello of spring for the windowsill, Easter table or bedside.
 
-Cast in plaster and painted by hand in Mettmenstetten. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the hyacinth stays on as spring decor that never wilts.
+Cast in plaster and painted by hand in Switzerland. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the hyacinth stays on as spring decor that never wilts.
 
 A small gift for a birthday, for Easter or just because.
 
@@ -1151,7 +1151,7 @@ GOOD TO KNOW
         name: 'Bougie Jacinthe',
         description: `Une jacinthe aux grappes de fleurs denses et délicates – le premier salut du printemps pour le rebord de fenêtre, la table de Pâques ou la table de chevet.
 
-Coulée en plâtre et peinte à la main à Mettmenstetten. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, la jacinthe reste comme décoration de printemps qui ne fane jamais.
+Coulée en plâtre et peinte à la main en Suisse. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, la jacinthe reste comme décoration de printemps qui ne fane jamais.
 
 Un petit cadeau pour un anniversaire, pour Pâques ou simplement pour faire plaisir.
 
@@ -1166,7 +1166,7 @@ BON À SAVOIR
         name: 'Hyazinthen-Kerze',
         description: `Eine Hyazinthe mit dichten, zarten Blütendolden – der erste Frühlingsgruss für Fensterbank, Ostertisch oder Nachttisch.
 
-Gegossen aus Gips und von Hand bemalt in Mettmenstetten. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt die Hyazinthe als Frühlingsdeko, die nie verblüht.
+Gegossen aus Gips und von Hand bemalt in der Schweiz. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt die Hyazinthe als Frühlingsdeko, die nie verblüht.
 
 Ein kleines Geschenk zum Geburtstag, zu Ostern oder einfach so.
 
@@ -1181,7 +1181,7 @@ GUT ZU WISSEN
         name: 'Свеча «Гиацинт»',
         description: `Гиацинт с пышными нежными соцветиями – первый привет весны для подоконника, пасхального стола или прикроватной тумбочки.
 
-Отлит из гипса и расписан вручную в Меттменштеттене. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом гиацинт останется весенним украшением, которое никогда не завянет.
+Отлит из гипса и расписан вручную в Швейцарии. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом гиацинт останется весенним украшением, которое никогда не завянет.
 
 Небольшой подарок на день рождения, на Пасху или просто так.
 
