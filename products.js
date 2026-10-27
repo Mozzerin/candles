@@ -816,11 +816,11 @@ GUT ZU WISSEN
     translations: {
       en: {
         name: 'Carousel Candle',
-        description: `A little fairground carousel with horses, arches and an ornate roof. Our most detailed piece – every time you look, you spot something new.
+        description: `A carousel with horses in relief and a domed roof with a little spire. The details are hand-painted in silver, red or gold.
 
-Cast in plaster and painted by hand in Switzerland. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the carousel stays on as a jewellery box or Christmas decoration.
+Cast in plaster and painted by hand in Switzerland. The top part lifts off: inside is a soy wax candle in the scent of your choice. Afterwards the carousel stays on as a box for jewellery and small treasures, or as a decoration on the shelf.
 
-Available in silver, red and gold. A gift for anyone who collects beautiful handmade things.
+A gift for Christmas, a birthday or anyone who loves beautiful handmade things.
 
 GOOD TO KNOW
 • Plaster figure, hand-cast and hand-painted in Switzerland
@@ -832,11 +832,11 @@ GOOD TO KNOW
       },
       fr: {
         name: 'Bougie Carrousel',
-        description: `Un petit carrousel de fête foraine avec chevaux, arcades et toit ouvragé. Notre pièce la plus détaillée – à chaque regard, on découvre un nouveau détail.
+        description: `Un carrousel avec des chevaux en relief et un toit en coupole surmonté d'une petite flèche. Les détails sont peints à la main en argent, rouge ou or.
 
-Coulé en plâtre et peint à la main en Suisse. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, le carrousel reste comme boîte à bijoux ou décoration de Noël.
+Coulé en plâtre et peint à la main en Suisse. La partie supérieure s'enlève : à l'intérieur, une bougie en cire de soja au parfum de votre choix. Ensuite, le carrousel reste comme boîte à bijoux et petits trésors, ou comme décoration sur une étagère.
 
-Disponible en argent, rouge et or. Un cadeau pour tous ceux qui collectionnent les belles choses faites main.
+Un cadeau pour Noël, un anniversaire ou pour tous ceux qui aiment les belles choses faites main.
 
 BON À SAVOIR
 • Figurine en plâtre, coulée et peinte à la main en Suisse
@@ -848,11 +848,11 @@ BON À SAVOIR
       },
       de: {
         name: 'Karussell-Kerze',
-        description: `Ein kleines Jahrmarktkarussell mit Pferdchen, Bögen und verziertem Dach. Unser aufwendigstes Stück – beim Hinsehen entdeckt man immer wieder ein neues Detail.
+        description: `Ein Karussell mit Pferdchen im Relief und einem gewölbten Dach mit kleiner Spitze. Die Verzierungen werden von Hand in Silber, Rot oder Gold bemalt.
 
-Gegossen aus Gips und von Hand bemalt in der Schweiz. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt das Karussell als Schmuckdose oder Weihnachtsdeko.
+Gegossen aus Gips und von Hand bemalt in der Schweiz. Der obere Teil lässt sich abnehmen: darin steckt eine Kerze aus Sojawachs mit dem Duft Ihrer Wahl. Danach bleibt das Karussell als Dose für Schmuck und kleine Schätze oder als Deko im Regal.
 
-Erhältlich in Silber, Rot und Gold. Ein Geschenk für alle, die schöne handgemachte Dinge sammeln.
+Ein Geschenk zu Weihnachten, zum Geburtstag oder für alle, die schöne handgemachte Dinge mögen.
 
 GUT ZU WISSEN
 • Gipsfigur, von Hand gegossen und bemalt in der Schweiz
@@ -864,11 +864,11 @@ GUT ZU WISSEN
       },
       ru: {
         name: 'Свеча «Карусель»',
-        description: `Маленькая ярмарочная карусель с лошадками, арками и узорной крышей. Наша самая детальная работа – каждый раз замечаешь что-то новое.
+        description: `Карусель с рельефными лошадками и куполом с маленьким шпилем. Узоры расписаны вручную серебром, красным или золотом.
 
-Отлита из гипса и расписана вручную в Швейцарии. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом карусель останется шкатулкой для украшений или рождественским декором.
+Отлита из гипса и расписана вручную в Швейцарии. Верхняя часть снимается, а внутри – свеча из соевого воска с ароматом на ваш выбор. Потом карусель останется шкатулкой для украшений и мелочей или украшением на полке.
 
-Есть в серебряном, красном и золотом цвете. Подарок для тех, кто собирает красивые вещи ручной работы.
+Подарок на Рождество, день рождения или для тех, кто любит красивые вещи ручной работы.
 
 ПОЛЕЗНО ЗНАТЬ
 • Гипсовая фигурка, отлита и расписана вручную в Швейцарии
