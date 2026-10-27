@@ -56,19 +56,6 @@ const CONFIG = {
       base:  { en: 'Cedar, Saffron, Nutmeg',     de: 'Zeder, Safran, Muskatnuss',     fr: 'Cèdre, Safran, Noix de muscade',     ru: 'Кедр, Шафран, Мускатный орех' },
     },
     {
-      id: 'northern-cranberry',
-      en: 'Northern Cranberry', de: 'Nordische Preiselbeere', fr: 'Canneberge du Nord', ru: 'Северная клюква',
-      desc: {
-        en: 'A fresh berry fragrance with a light tartness of red currant and cranberry. Green fig leaf notes complement the composition, while cinnamon and sugarcane add softness and gentle sweetness.',
-        de: 'Ein frischer Beerenduft mit leichter Säure von roter Johannisbeere und Preiselbeere. Grüne Feigenblatt-Noten ergänzen die Komposition, während Zimt und Zuckerrohr Weichheit verleihen.',
-        fr: 'Un parfum de baies frais avec une légère acidité de groseille rouge et de canneberge. Des notes de feuille de figuier complètent la composition, tandis que la cannelle et la canne à sucre apportent douceur et suavité.',
-        ru: 'Свежий ягодный аромат с лёгкой кислинкой красной смородины и клюквы. Зелёные ноты листа фикуса дополняют композицию, а корица и сахарный тростник придают ей мягкость и лёгкую сладость.',
-      },
-      top:   { en: 'Red Currant',                de: 'Rote Johannisbeere',            fr: 'Groseille rouge',                    ru: 'Красная смородина' },
-      heart: { en: 'Cranberry, Fig Leaf',         de: 'Preiselbeere, Feigenblatt',     fr: 'Canneberge, Feuille de figuier',     ru: 'Клюква, Лист фикуса' },
-      base:  { en: 'Cinnamon, Sugarcane',         de: 'Zimt, Zuckerrohr',              fr: 'Cannelle, Canne à sucre',            ru: 'Корица, Сахарный тростник' },
-    },
-    {
       id: 'freshly-cut-grass',
       en: 'Freshly Cut Grass', de: 'Frisch gemähtes Gras', fr: 'Herbe fraîchement coupée', ru: 'Свежескошенная трава',
       desc: {
