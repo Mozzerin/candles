@@ -561,6 +561,225 @@ Was enthalten ist:
     },
   },
 
+  {
+    id:            'pumpkin-chick-kit',
+    category:      'kids',
+    images:        [
+      'images/products/kits/Pumpkin_Chick1.webp',
+    ],
+    price:         8.00,
+    originalPrice: null,
+    onSale:        false,
+    translations: {
+      en: {
+        name:        'Pumpkin Chick Plaster Painting Kit',
+        description: `Everything you need to paint and personalize your Pumpkin Chick plaster figurine is included in the kit: a plaster figurine, paint set, and brush. Simply open the box, put on your favorite playlist, gather your friends or family, and turn painting into a cozy, creative experience.
+
+This kit is perfect for autumn evenings at home, Halloween parties, children's birthdays, family gatherings, creative workshops, or as a small seasonal gift. Painting plaster figures is a great way to slow down, unwind, spark creativity, and enjoy the process of making something with your own hands.
+
+The Pumpkin Chick peeks out of a cracked shell perched on a stitched-up pumpkin — half cute, half spooky. Paint it in cozy autumn colors or go full Halloween. Every piece becomes one of a kind — you choose the colors, the mood, and the final look.
+
+What's included:
+• 1 Pumpkin Chick plaster figurine ready to paint
+• paint set
+• paintbrush
+• postcard
+• 2 stickers`,
+      },
+      fr: {
+        name:        'Kit de Peinture Poussin Pumpkin Chick en Plâtre',
+        description: `Tout ce dont vous avez besoin pour peindre et personnaliser votre figurine Poussin Pumpkin Chick en plâtre est inclus dans le kit : une figurine en plâtre, un set de peinture et un pinceau. Ouvrez simplement la boîte, mettez votre playlist préférée, réunissez vos amis ou votre famille, et transformez la peinture en une expérience créative et chaleureuse.
+
+Ce kit est parfait pour les soirées d'automne à la maison, les fêtes d'Halloween, les anniversaires d'enfants, les réunions en famille, les ateliers créatifs, ou comme petit cadeau de saison. Peindre des figurines en plâtre est une merveilleuse façon de ralentir, de se détendre, de stimuler sa créativité et de savourer le plaisir de créer quelque chose de ses propres mains.
+
+Le Pumpkin Chick sort la tête de sa coquille, perché sur une citrouille recousue — à la fois mignon et un peu effrayant. Peignez-le aux couleurs douces de l'automne ou version Halloween. Chaque pièce devient unique — vous choisissez les couleurs, l'ambiance et le résultat final.
+
+Ce qui est inclus :
+• 1 figurine Poussin Pumpkin Chick en plâtre prête à peindre
+• set de peinture
+• pinceau
+• carte postale
+• 2 autocollants`,
+      },
+      de: {
+        name:        'Pumpkin Chick Küken Gipsmalerei-Set',
+        description: `Alles, was Sie zum Bemalen und Personalisieren Ihrer Pumpkin-Chick-Gipsfigur brauchen, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffnen Sie einfach die Box, legen Sie Ihre Lieblingsplaylist auf, holen Sie Freunde oder Familie dazu und machen Sie das Malen zu einem gemütlichen, kreativen Erlebnis.
+
+Dieses Kit ist perfekt für Herbstabende zu Hause, Halloween-Partys, Kindergeburtstage, Familientreffen, kreative Workshops oder als kleines saisonales Geschenk. Gipsfiguren zu bemalen ist eine wunderbare Art, zur Ruhe zu kommen, abzuschalten, die Kreativität zu wecken und die Freude am Selbermachen zu geniessen.
+
+Das Pumpkin Chick schaut aus seiner Eierschale, die auf einem zusammengenähten Kürbis sitzt — halb süss, halb schaurig. Bemalen Sie es in warmen Herbstfarben oder ganz im Halloween-Stil. Jedes Stück wird zum Unikat — Sie wählen die Farben, die Stimmung und das Endergebnis.
+
+Was enthalten ist:
+• 1 Pumpkin-Chick-Gipsfigur, bereit zum Bemalen
+• Farb-Set
+• Pinsel
+• Postkarte
+• 2 Sticker`,
+      },
+      ru: {
+        name:        'Набор для росписи гипсового цыплёнка Pumpkin Chick',
+        description: `Всё необходимое для росписи и украшения фигурки уже в наборе: гипсовая фигурка, набор красок и кисть. Просто откройте коробку, включите любимый плейлист, позовите друзей или семью — и превратите рисование в уютное творческое занятие.
+
+Набор идеально подойдёт для осенних вечеров дома, вечеринок на Хэллоуин, детских дней рождения, семейных встреч, творческих мастер-классов или в качестве небольшого сезонного подарка. Роспись гипсовых фигурок — отличный способ замедлиться, отдохнуть, пробудить творчество и получить удовольствие от того, что сделано своими руками.
+
+Цыплёнок Pumpkin Chick выглядывает из скорлупки, сидя на зашитой тыкве, — немного милый, немного жутковатый. Раскрасьте его в уютные осенние цвета или сделайте настоящим героем Хэллоуина. Каждая фигурка становится уникальной — вы выбираете цвета, настроение и итоговый вид.
+
+Что входит в набор:
+• 1 гипсовая фигурка цыплёнка Pumpkin Chick, готовая к росписи
+• набор красок
+• кисть
+• открытка
+• 2 наклейки`,
+      },
+    },
+  },
+
+  {
+    id:            'harvest-wagon-kit',
+    category:      'kids',
+    images:        [
+      'images/products/kits/Harvest_Wagon1.webp',
+    ],
+    price:         8.00,
+    originalPrice: null,
+    onSale:        false,
+    translations: {
+      en: {
+        name:        'Harvest Wagon Plaster Painting Kit',
+        description: `Everything you need to paint and personalize your Harvest Wagon plaster figurine is included in the kit: a plaster figurine, paint set, and brush. Simply open the box, put on your favorite playlist, gather your friends or family, and turn painting into a cozy, creative experience.
+
+This kit is perfect for autumn evenings at home, Halloween parties, children's birthdays, family gatherings, creative workshops, or as a small seasonal gift. Painting plaster figures is a great way to slow down, unwind, spark creativity, and enjoy the process of making something with your own hands.
+
+The Harvest Wagon is a little cart loaded with three plump pumpkins — a cozy piece for the windowsill or the autumn table. Paint the pumpkins orange, white or green and give the wagon your own color. Every piece becomes one of a kind — you choose the colors, the mood, and the final look.
+
+What's included:
+• 1 Harvest Wagon plaster figurine ready to paint
+• paint set
+• paintbrush
+• postcard
+• 2 stickers`,
+      },
+      fr: {
+        name:        'Kit de Peinture Chariot Harvest Wagon en Plâtre',
+        description: `Tout ce dont vous avez besoin pour peindre et personnaliser votre figurine Chariot Harvest Wagon en plâtre est inclus dans le kit : une figurine en plâtre, un set de peinture et un pinceau. Ouvrez simplement la boîte, mettez votre playlist préférée, réunissez vos amis ou votre famille, et transformez la peinture en une expérience créative et chaleureuse.
+
+Ce kit est parfait pour les soirées d'automne à la maison, les fêtes d'Halloween, les anniversaires d'enfants, les réunions en famille, les ateliers créatifs, ou comme petit cadeau de saison. Peindre des figurines en plâtre est une merveilleuse façon de ralentir, de se détendre, de stimuler sa créativité et de savourer le plaisir de créer quelque chose de ses propres mains.
+
+Le Harvest Wagon est une petite charrette chargée de trois belles citrouilles — une jolie décoration pour le rebord de fenêtre ou la table d'automne. Peignez les citrouilles en orange, blanc ou vert et choisissez la couleur du chariot. Chaque pièce devient unique — vous choisissez les couleurs, l'ambiance et le résultat final.
+
+Ce qui est inclus :
+• 1 figurine Chariot Harvest Wagon en plâtre prête à peindre
+• set de peinture
+• pinceau
+• carte postale
+• 2 autocollants`,
+      },
+      de: {
+        name:        'Harvest Wagon Kürbiswagen Gipsmalerei-Set',
+        description: `Alles, was Sie zum Bemalen und Personalisieren Ihrer Harvest-Wagon-Gipsfigur brauchen, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffnen Sie einfach die Box, legen Sie Ihre Lieblingsplaylist auf, holen Sie Freunde oder Familie dazu und machen Sie das Malen zu einem gemütlichen, kreativen Erlebnis.
+
+Dieses Kit ist perfekt für Herbstabende zu Hause, Halloween-Partys, Kindergeburtstage, Familientreffen, kreative Workshops oder als kleines saisonales Geschenk. Gipsfiguren zu bemalen ist eine wunderbare Art, zur Ruhe zu kommen, abzuschalten, die Kreativität zu wecken und die Freude am Selbermachen zu geniessen.
+
+Der Harvest Wagon ist ein kleiner Wagen, beladen mit drei prallen Kürbissen — ein gemütliches Stück für die Fensterbank oder den Herbsttisch. Bemalen Sie die Kürbisse orange, weiss oder grün und geben Sie dem Wagen Ihre eigene Farbe. Jedes Stück wird zum Unikat — Sie wählen die Farben, die Stimmung und das Endergebnis.
+
+Was enthalten ist:
+• 1 Harvest-Wagon-Gipsfigur, bereit zum Bemalen
+• Farb-Set
+• Pinsel
+• Postkarte
+• 2 Sticker`,
+      },
+      ru: {
+        name:        'Набор для росписи гипсовой тележки с тыквами Harvest Wagon',
+        description: `Всё необходимое для росписи и украшения фигурки уже в наборе: гипсовая фигурка, набор красок и кисть. Просто откройте коробку, включите любимый плейлист, позовите друзей или семью — и превратите рисование в уютное творческое занятие.
+
+Набор идеально подойдёт для осенних вечеров дома, вечеринок на Хэллоуин, детских дней рождения, семейных встреч, творческих мастер-классов или в качестве небольшого сезонного подарка. Роспись гипсовых фигурок — отличный способ замедлиться, отдохнуть, пробудить творчество и получить удовольствие от того, что сделано своими руками.
+
+Harvest Wagon — маленькая тележка с тремя круглыми тыквами, уютное украшение для подоконника или осеннего стола. Раскрасьте тыквы в оранжевый, белый или зелёный и выберите свой цвет для тележки. Каждая фигурка становится уникальной — вы выбираете цвета, настроение и итоговый вид.
+
+Что входит в набор:
+• 1 гипсовая фигурка тележки Harvest Wagon, готовая к росписи
+• набор красок
+• кисть
+• открытка
+• 2 наклейки`,
+      },
+    },
+  },
+
+  {
+    id:            'boo-ghost-kit',
+    category:      'kids',
+    images:        [
+      'images/products/kits/Boo_Ghost1.webp',
+    ],
+    price:         8.00,
+    originalPrice: null,
+    onSale:        false,
+    translations: {
+      en: {
+        name:        'Boo Ghost Plaster Painting Kit',
+        description: `Everything you need to paint and personalize your Boo Ghost plaster figurine is included in the kit: a plaster figurine, paint set, and brush. Simply open the box, put on your favorite playlist, gather your friends or family, and turn painting into a cozy, creative experience.
+
+This kit is perfect for autumn evenings at home, Halloween parties, children's birthdays, family gatherings, creative workshops, or as a small seasonal gift. Painting plaster figures is a great way to slow down, unwind, spark creativity, and enjoy the process of making something with your own hands.
+
+The Boo Ghost is a friendly little ghost with a bow, peeking over a carved jack-o'-lantern — more sweet than scary. A perfect Halloween project for kids and grown-ups alike. Every piece becomes one of a kind — you choose the colors, the mood, and the final look.
+
+What's included:
+• 1 Boo Ghost plaster figurine ready to paint
+• paint set
+• paintbrush
+• postcard
+• 2 stickers`,
+      },
+      fr: {
+        name:        'Kit de Peinture Fantôme Boo Ghost en Plâtre',
+        description: `Tout ce dont vous avez besoin pour peindre et personnaliser votre figurine Fantôme Boo Ghost en plâtre est inclus dans le kit : une figurine en plâtre, un set de peinture et un pinceau. Ouvrez simplement la boîte, mettez votre playlist préférée, réunissez vos amis ou votre famille, et transformez la peinture en une expérience créative et chaleureuse.
+
+Ce kit est parfait pour les soirées d'automne à la maison, les fêtes d'Halloween, les anniversaires d'enfants, les réunions en famille, les ateliers créatifs, ou comme petit cadeau de saison. Peindre des figurines en plâtre est une merveilleuse façon de ralentir, de se détendre, de stimuler sa créativité et de savourer le plaisir de créer quelque chose de ses propres mains.
+
+Le Boo Ghost est un gentil petit fantôme avec un nœud, qui se cache derrière une citrouille d'Halloween — plus mignon qu'effrayant. Un projet d'Halloween parfait pour les enfants comme pour les adultes. Chaque pièce devient unique — vous choisissez les couleurs, l'ambiance et le résultat final.
+
+Ce qui est inclus :
+• 1 figurine Fantôme Boo Ghost en plâtre prête à peindre
+• set de peinture
+• pinceau
+• carte postale
+• 2 autocollants`,
+      },
+      de: {
+        name:        'Boo Ghost Gespenst Gipsmalerei-Set',
+        description: `Alles, was Sie zum Bemalen und Personalisieren Ihrer Boo-Ghost-Gipsfigur brauchen, ist im Kit enthalten: eine Gipsfigur, ein Farb-Set und ein Pinsel. Öffnen Sie einfach die Box, legen Sie Ihre Lieblingsplaylist auf, holen Sie Freunde oder Familie dazu und machen Sie das Malen zu einem gemütlichen, kreativen Erlebnis.
+
+Dieses Kit ist perfekt für Herbstabende zu Hause, Halloween-Partys, Kindergeburtstage, Familientreffen, kreative Workshops oder als kleines saisonales Geschenk. Gipsfiguren zu bemalen ist eine wunderbare Art, zur Ruhe zu kommen, abzuschalten, die Kreativität zu wecken und die Freude am Selbermachen zu geniessen.
+
+Das Boo Ghost ist ein freundliches kleines Gespenst mit Schleife, das hinter einem geschnitzten Halloween-Kürbis hervorschaut — eher süss als gruselig. Ein perfektes Halloween-Projekt für Kinder und Erwachsene. Jedes Stück wird zum Unikat — Sie wählen die Farben, die Stimmung und das Endergebnis.
+
+Was enthalten ist:
+• 1 Boo-Ghost-Gipsfigur, bereit zum Bemalen
+• Farb-Set
+• Pinsel
+• Postkarte
+• 2 Sticker`,
+      },
+      ru: {
+        name:        'Набор для росписи гипсового привидения Boo Ghost',
+        description: `Всё необходимое для росписи и украшения фигурки уже в наборе: гипсовая фигурка, набор красок и кисть. Просто откройте коробку, включите любимый плейлист, позовите друзей или семью — и превратите рисование в уютное творческое занятие.
+
+Набор идеально подойдёт для осенних вечеров дома, вечеринок на Хэллоуин, детских дней рождения, семейных встреч, творческих мастер-классов или в качестве небольшого сезонного подарка. Роспись гипсовых фигурок — отличный способ замедлиться, отдохнуть, пробудить творчество и получить удовольствие от того, что сделано своими руками.
+
+Boo Ghost — добродушное маленькое привидение с бантиком, которое выглядывает из-за тыквы-фонаря, — скорее милое, чем страшное. Отличное занятие на Хэллоуин и для детей, и для взрослых. Каждая фигурка становится уникальной — вы выбираете цвета, настроение и итоговый вид.
+
+Что входит в набор:
+• 1 гипсовая фигурка привидения Boo Ghost, готовая к росписи
+• набор красок
+• кисть
+• открытка
+• 2 наклейки`,
+      },
+    },
+  },
+
   // ── CANDLE COLLECTION ─────────────────────────────────────────────────
 
   {
