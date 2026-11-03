@@ -10,9 +10,9 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="64x64" href="images/site/favicon-64.webp">
   <link rel="apple-touch-icon" href="images/site/logo.webp">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261103a">
   <script src="config.js"></script>
-  <script src="analytics.js"></script>
+  <script src="analytics.js?v=20261103a"></script>
   <style>
     /* Blog-specific overrides */
     body { font-size: 16px; line-height: 1.7; }
@@ -376,6 +376,19 @@
     <a href="/returns.html">Shipping &amp; Returns</a>
   </div>
 </footer>
+
+
+<!-- KEEP IN SYNC with the cookie banner in index.html -->
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p class="cookie-text">
+    <span data-i18n="cookie.text">We use cookies for analytics and advertising to improve your experience. See our</span>
+    <a href="privacy.html" data-i18n="cookie.link">Privacy Policy</a>.
+  </p>
+  <div class="cookie-btns">
+    <button class="cookie-decline" onclick="declineCookies()" data-i18n="cookie.decline">Decline</button>
+    <button class="cookie-accept" onclick="acceptCookies()" data-i18n="cookie.accept">Accept</button>
+  </div>
+</div>
 
 <script>
   const BLOG_LANGS = ['en', 'fr', 'de', 'ru'];

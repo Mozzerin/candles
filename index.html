@@ -6,7 +6,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="64x64" href="images/site/favicon-64.webp">
   <link rel="apple-touch-icon" href="images/site/logo.webp">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261103a">
   <meta name="google-site-verification" content="KIUStx5k5Wp_E-8cCM1nekmmU4cCCyEC2AvhrLJScGM" />
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="CH">
@@ -1050,51 +1050,6 @@
       .promo-text { font-size: 0.88rem; }
     }
 
-    /* ── Cookie consent banner ───────────────────────────────────── */
-    #cookie-banner {
-      display: none;
-      position: fixed;
-      bottom: 0; left: 0; right: 0;
-      z-index: 9999;
-      background: var(--color-bg);
-      border-top: 1px solid var(--color-border);
-      padding: 1rem var(--site-gutter);
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      box-shadow: 0 -4px 20px rgba(0,0,0,0.07);
-    }
-    .cookie-text {
-      font-size: 0.82rem;
-      color: var(--color-muted);
-      line-height: 1.6;
-      flex: 1;
-      min-width: 220px;
-    }
-    .cookie-text a { color: var(--color-accent); text-decoration: underline; }
-    .cookie-btns { display: flex; gap: 0.6rem; flex-shrink: 0; }
-    .cookie-accept {
-      background: var(--color-btn);
-      color: var(--color-btn-text);
-      border: none;
-      padding: 0.55rem 1.25rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-    .cookie-decline {
-      background: none;
-      border: 1px solid var(--color-border);
-      color: var(--color-muted);
-      padding: 0.55rem 1.25rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-    .cookie-decline:hover { color: var(--color-text); border-color: #aaa; }
   </style>
 </head>
 <body>
@@ -1641,7 +1596,7 @@
 <!-- ?v= bumps the CDN cache key: change the value whenever config.js or products.js change -->
 <script src="config.js?v=20261027c"></script>
 <script src="products.js?v=20261031a"></script>
-<script src="analytics.js"></script>
+<script src="analytics.js?v=20261103a"></script>
 <script>
   // CONFIG, TRANSLATIONS and PRODUCTS are loaded from config.js and products.js
 
@@ -1792,7 +1747,7 @@
     const grid  = document.getElementById('products-grid');
     const items = filteredProducts();
 
-    grid.innerHTML = items.map(p => {
+    grid.innerHTML = items.map((p, idx) => {
       const tr   = p.translations[currentLang] || p.translations.en;
       const name = tr.name;
       const cat  = p.category.charAt(0).toUpperCase() + p.category.slice(1);
@@ -1821,8 +1776,8 @@
         : '';
 
       return `
-        <div class="product-card" data-product-id="${p.id}">
-          <div class="card-img-wrap" onclick="openProduct('${p.id}')">
+        <div class="product-card" data-product-id="${p.id}" data-index="${idx}">
+          <div class="card-img-wrap" onclick="selectProduct('${p.id}',${idx})">
             ${slidesHtml}
             ${dotsHtml}
             ${badgeHtml}
@@ -1831,12 +1786,43 @@
             <div class="card-category">${cat}</div>
             <h3 class="card-name">${name}</h3>
             <div class="card-price-row">${priceHtml}</div>
-            <button class="card-add-btn" onclick="event.stopPropagation();addToCart('${p.id}')">
+            <button class="card-add-btn" onclick="event.stopPropagation();addToCart('${p.id}',${idx})">
               ${t('add.to.cart')}
             </button>
           </div>
         </div>`;
     }).join('');
+    observeCatalog();
+  }
+
+  /* Analytics: which cards were really on screen (view_item_list) and which were
+     clicked (select_item). List name = active filter (all / candle / kids). */
+  const reportedInList = new Set();
+  let catalogObserver = null;
+  function observeCatalog() {
+    if (catalogObserver) catalogObserver.disconnect();
+    if (!('IntersectionObserver' in window)) return;
+    catalogObserver = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        const id  = en.target.dataset.productId;
+        const key = currentFilter + ':' + id;
+        if (reportedInList.has(key)) return;
+        const p = PRODUCTS.find(x => x.id === id);
+        if (p && trackItemListView(p, currentFilter, +en.target.dataset.index)) {
+          reportedInList.add(key);
+          catalogObserver.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('#products-grid .product-card').forEach(c => catalogObserver.observe(c));
+  }
+  window.onAnalyticsReady = observeCatalog;
+
+  function selectProduct(id, idx) {
+    const p = PRODUCTS.find(x => x.id === id);
+    if (p) trackSelectItem(p, currentFilter, idx);
+    openProduct(id);
   }
 
   /* ──────────────────────────────────────────────────────────────
@@ -2038,17 +2024,17 @@
     saveCart();
     updateCartBadge();
     showCartFlyout(pdProductId);
-    const product = PRODUCTS.find(x => x.id === pdProductId);
-    if (product) trackAddToCart(product);
+    if (p) trackAddToCart(p, pdQty, pdScent);
     closeProduct();
   }
 
   /* ──────────────────────────────────────────────────────────────
      CART LOGIC
   ────────────────────────────────────────────────────────────── */
-  function addToCart(productId) {
+  function addToCart(productId, idx) {
     const p = PRODUCTS.find(x => x.id === productId);
-    if (p && p.category === 'candle') { openProduct(productId); return; }
+    // Candles need a scent, so the card button opens the product (a click from the list).
+    if (p && p.category === 'candle') { selectProduct(productId, idx); return; }
     const existing = cart.find(i => i.productId === productId);
     if (existing) {
       existing.qty++;
@@ -2087,17 +2073,28 @@
     btn.addEventListener('animationend', () => btn.classList.remove('bump'), { once: true });
   }
 
-  function removeFromCart(productId) {
-    cart = cart.filter(i => i.productId !== productId);
+  // Cart lines are addressed by position: one product can be in the cart in several scents.
+  function removeFromCart(lineIdx) {
+    const [removed] = cart.splice(lineIdx, 1);
+    if (!removed) return;
+    trackRemoveFromCart([removed]);
+    if (!cart.length) resetCheckoutTracking();
     saveCart();
     updateCartBadge();
     renderCartItems();
   }
 
-  function changeQty(productId, delta) {
-    const item = cart.find(i => i.productId === productId);
+  function changeQty(lineIdx, delta) {
+    const item = cart[lineIdx];
     if (!item) return;
+    const before = item.qty;
     item.qty = Math.max(1, item.qty + delta);
+    if (item.qty > before) {
+      const p = PRODUCTS.find(x => x.id === item.productId);
+      if (p) trackAddToCart(p, item.qty - before, item.scent);
+    } else if (item.qty < before) {
+      trackRemoveFromCart([{ ...item, qty: before - item.qty }]);
+    }
     saveCart();
     renderCartItems();
     updateCartBadge();
@@ -2137,7 +2134,7 @@
     shippingInfo.style.display = '';
     formSection.style.display = '';
 
-    listEl.innerHTML = cart.map(item => {
+    listEl.innerHTML = cart.map((item, lineIdx) => {
       const product = PRODUCTS.find(p => p.id === item.productId);
       if (!product) return '';
       const name = (product.translations[currentLang] || product.translations.en).name;
@@ -2151,11 +2148,11 @@
             ${item.scent ? `<div class="cart-item-scent">${item.scent}</div>` : ''}
             <div class="cart-item-price">${formatPrice(product.price)} × ${item.qty} = ${formatPrice(product.price * item.qty)}</div>
             <div class="cart-item-qty">
-              <button class="qty-btn" onclick="changeQty('${item.productId}',-1)" aria-label="Decrease">−</button>
+              <button class="qty-btn" onclick="changeQty(${lineIdx},-1)" aria-label="Decrease">−</button>
               <span class="qty-val">${item.qty}</span>
-              <button class="qty-btn" onclick="changeQty('${item.productId}',1)" aria-label="Increase">+</button>
+              <button class="qty-btn" onclick="changeQty(${lineIdx},1)" aria-label="Increase">+</button>
             </div>
-            <button class="cart-item-remove" onclick="removeFromCart('${item.productId}')">Remove</button>
+            <button class="cart-item-remove" onclick="removeFromCart(${lineIdx})">Remove</button>
           </div>
         </div>
       `;
@@ -2173,7 +2170,7 @@
      CART OPEN / CLOSE
   ────────────────────────────────────────────────────────────── */
   function openCart() {
-    trackInitiateCheckout(cart, cartTotal());
+    trackViewCart(cart, cartTotal());
     renderCartItems();
     document.getElementById('cart-overlay').classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -2688,6 +2685,10 @@
   });
   document.addEventListener('DOMContentLoaded', initPromo); // popup markup sits after this script
 
+  // begin_checkout = first interaction with the request form (not just opening the cart)
+  document.getElementById('request-form')
+    .addEventListener('focusin', () => trackInitiateCheckout(cart, cartTotal()));
+
   // Open product from URL param: ?product=candle-pumpkin
   const urlProduct = new URLSearchParams(window.location.search).get('product');
   if (urlProduct) setTimeout(() => openProduct(urlProduct), 300);
@@ -2708,6 +2709,7 @@
   </div>
 </div>
 
+<!-- KEEP IN SYNC: same banner markup in blog.html, blog-hyacinth-order.html, blog-emmas-lab-story.html; styles in styles.css -->
 <div id="cookie-banner" role="dialog" aria-label="Cookie consent">
   <p class="cookie-text">
     <span data-i18n="cookie.text">We use cookies for analytics and advertising to improve your experience. See our</span>
