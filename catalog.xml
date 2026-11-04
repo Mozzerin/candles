@@ -234,7 +234,6 @@
     <g:condition>new</g:condition>
     <g:availability>in stock</g:availability>
     <g:price>44.00 CHF</g:price>
-    <g:sale_price>34.00 CHF</g:sale_price>
     <g:brand>Emma's Lab</g:brand>
     <g:google_product_category>Home &amp; Garden > Decor > Candles</g:google_product_category>
     <g:shipping>
@@ -302,7 +301,7 @@
     <g:condition>new</g:condition>
     <g:availability>in stock</g:availability>
     <g:price>49.00 CHF</g:price>
-    
+    <g:sale_price>39.00 CHF</g:sale_price>
     <g:brand>Emma's Lab</g:brand>
     <g:google_product_category>Home &amp; Garden > Decor > Candles</g:google_product_category>
     <g:shipping>

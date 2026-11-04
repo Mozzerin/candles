@@ -945,9 +945,9 @@ GUT ZU WISSEN
       'images/products/candles/photos/pumpkin-scene-size.webp',
       'images/products/candles/pumpkin4.mp4',
     ],
-    price:         34.00,
-    originalPrice: 44.00,
-    onSale:        true,
+    price:         44.00,
+    originalPrice: null,
+    onSale:        false,
     size: '≈ 10 × 11 cm',
     translations: {
       en: {
@@ -1266,9 +1266,9 @@ GUT ZU WISSEN
       'images/products/candles/scenes/nevalyashka-3.webp',
       'images/products/candles/scenes/nevalyashka-size.webp',
     ],
-    price:         49.00,
-    originalPrice: null,
-    onSale:        false,
+    price:         39.00,
+    originalPrice: 49.00,
+    onSale:        true,
     size: '≈ 10 × 15 cm',
     translations: {
       en: {

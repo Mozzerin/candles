@@ -15,9 +15,9 @@
   <meta name="ICBM" content="46.818188, 8.227512">
 
   <!-- Primary SEO (content updated by JS on language switch) -->
-  <title id="page-title">Emma's Lab | Halloween Pumpkin Candle &amp; Handmade Sculptural Candles – Switzerland</title>
-  <meta id="meta-desc" name="description" content="Handmade sculptural plaster candles from Switzerland. Halloween pumpkin witch candle on sale — CHF 34. Unique shaped candles, plaster painting kits for kids. Order online — shipped across Switzerland.">
-  <meta id="meta-keywords" name="keywords" content="Halloween candle Switzerland, pumpkin candle Halloween, Halloween gift Switzerland, handmade candles Switzerland, sculptural candles gift, plaster painting kit kids, Kerzen Schweiz handgemacht, Halloween Kerze Schweiz, Kürbis Kerze Halloween, bougie Halloween Suisse, свечи хэллоуин Швейцария">
+  <title id="page-title">Emma's Lab | Roly-Poly Doll Candle &amp; Handmade Sculptural Candles – Switzerland</title>
+  <meta id="meta-desc" name="description" content="Handmade sculptural plaster candles from Switzerland. Roly-poly doll candle on winter offer — CHF 39 instead of 49. Unique shaped candles, plaster painting kits for kids. Order online — shipped across Switzerland.">
+  <meta id="meta-keywords" name="keywords" content="Christmas candle Switzerland, Christmas gift Switzerland, roly-poly doll candle, handmade candles Switzerland, sculptural candles gift, plaster painting kit kids, Kerzen Schweiz handgemacht, Weihnachtskerze Schweiz, Stehaufmännchen Kerze, bougie Noël Suisse, свеча неваляшка">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -768,10 +768,10 @@
       line-height: 1.75;
     }
 
-    /* ── Party Box CTA ────────────────────────────────────── */
+    /* ── Featured offer CTA ────────────────────────────────────── */
     .partycta-section {
       padding: 4rem var(--site-gutter) 5rem;
-      background: #100c08;
+      background: var(--color-light);
       position: relative;
       overflow: hidden;
     }
@@ -781,35 +781,35 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       height: 480px;
-      border: 1px solid #3a2510;
+      border: 1px solid var(--color-border);
       overflow: hidden;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+      box-shadow: 0 8px 32px rgba(44,24,16,0.10);
     }
     .partycta-images {
       overflow: hidden;
-      background: #0d0804;
+      background: var(--color-bg);
     }
     .partycta-images img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 60%;
+      object-position: center 55%;
       display: block;
     }
     .partycta-text {
-      background: #1c1108;
-      color: #F5EDD8;
+      background: var(--color-bg);
+      color: var(--color-text);
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 3rem 3rem;
-      border-left: 1px solid #3a2510;
+      border-left: 1px solid var(--color-border);
     }
     .partycta-tag {
       font-size: 0.65rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: #C4622D;
+      color: #B3282D;
       margin-bottom: 1rem;
     }
     .partycta-title {
@@ -818,10 +818,10 @@
       font-weight: 500;
       line-height: 1.15;
       margin-bottom: 1rem;
-      color: #F5EDD8;
+      color: var(--color-text);
     }
     .partycta-sub {
-      color: rgba(245,237,216,0.6);
+      color: var(--color-muted);
       font-size: 0.875rem;
       line-height: 1.8;
       margin-bottom: 1.25rem;
@@ -836,25 +836,25 @@
       font-family: var(--font-heading);
       font-size: 1.9rem;
       font-weight: 500;
-      color: #F5EDD8;
+      color: #B3282D;
     }
     .partycta-original-price {
       font-size: 1rem;
-      color: rgba(245,237,216,0.35);
+      color: var(--color-muted);
       text-decoration: line-through;
     }
     .partycta-discount-badge {
       font-size: 0.6rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #C4622D;
-      border: 1px solid rgba(196,98,45,0.5);
+      color: #B3282D;
+      border: 1px solid rgba(179,40,45,0.45);
       padding: 0.2rem 0.55rem;
     }
     .partycta-btns { display: flex; flex-direction: column; gap: 0.6rem; align-items: flex-start; }
     .partycta-btn {
-      background: #C4622D;
-      color: #F5EDD8;
+      background: #B3282D;
+      color: #FAF6EE;
       padding: 0.85rem 1.75rem;
       font-size: 0.72rem;
       letter-spacing: 0.1em;
@@ -864,10 +864,10 @@
       transition: background 0.2s;
       align-self: flex-start;
     }
-    .partycta-btn:hover { background: #a84e22; }
+    .partycta-btn:hover { background: #8E1F23; }
     .partycta-btn.outline {
       background: none;
-      color: rgba(245,237,216,0.45);
+      color: var(--color-muted);
       border: none;
       padding: 0.3rem 0;
       font-size: 0.72rem;
@@ -875,7 +875,7 @@
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-    .partycta-btn.outline:hover { color: #F5EDD8; }
+    .partycta-btn.outline:hover { color: var(--color-text); }
 
     /* ── B2B section ─────────────────────────────────────────── */
     .b2b-section {
@@ -1022,6 +1022,7 @@
       color: var(--color-text);
     }
     .promo-price { font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-accent); }
+    .promo-price-old { font-size: 0.95rem; color: var(--color-muted); text-decoration: line-through; margin-left: 0.4rem; }
     .promo-text { font-size: 0.95rem; color: var(--color-muted); line-height: 1.75; max-width: 34ch; }
     .promo-cta {
       margin-top: 0.75rem; align-self: flex-start;
@@ -1213,22 +1214,22 @@
   <!-- PARTY BOX CTA -->
   <section class="partycta-section">
 
-    <!-- Spider + web — top right corner -->
-    <div class="partycta-inner">
+    <!-- Featured offer: product id in data-product, prices filled from products.js by renderFeaturedPrice() -->
+    <div class="partycta-inner" id="partycta" data-product="candle-matryoshka">
       <div class="partycta-images">
-        <img src="images/products/candles/pumpkin_wide.webp" alt="Pumpkin witch hat candle by Emma's Lab">
+        <img src="images/products/candles/nevalyashka-banner.webp" alt="Roly-poly doll candle by Emma's Lab" loading="lazy">
       </div>
       <div class="partycta-text">
-        <span class="partycta-tag" data-i18n="partycta.tag">31 October is Coming</span>
-        <h2 class="partycta-title" data-i18n="partycta.title">The Pumpkin Candle</h2>
-        <p class="partycta-sub" data-i18n="partycta.sub">Halloween is almost here. Our enchanted pumpkin cottage glows from within — hand-sculpted in Switzerland, limited seasonal piece. Order yours before it's gone.</p>
+        <span class="partycta-tag" data-i18n="partycta.tag">Winter offer</span>
+        <h2 class="partycta-title" data-i18n="partycta.title">The Roly-Poly Doll Candle</h2>
+        <p class="partycta-sub" data-i18n="partycta.sub">A roly-poly doll inspired by the classic childhood toy — hand-painted plaster, soy wax, scent of your choice. A cosy winter gift, now at a special price.</p>
         <div class="partycta-price">
-          <span class="partycta-sale-price">CHF 34</span>
-          <span class="partycta-original-price">CHF 44</span>
-          <span class="partycta-discount-badge">−CHF 10</span>
+          <span class="partycta-sale-price" id="partycta-price"></span>
+          <span class="partycta-original-price" id="partycta-original"></span>
+          <span class="partycta-discount-badge" id="partycta-badge"></span>
         </div>
         <div class="partycta-btns">
-          <button class="partycta-btn" onclick="openProduct('candle-pumpkin')" data-i18n="partycta.btn.primary">Shop Pumpkin Candle</button>
+          <button class="partycta-btn" onclick="openProduct(document.getElementById('partycta').dataset.product)" data-i18n="partycta.btn.primary">Shop the Roly-Poly Doll</button>
           <button class="partycta-btn outline" onclick="filterCategory('candle')" data-i18n="partycta.btn.secondary">All Candles</button>
         </div>
       </div>
@@ -1594,8 +1595,8 @@
 
 <!-- ═══════════════════════════════════════ SCRIPTS ══════════════════════════════ -->
 <!-- ?v= bumps the CDN cache key: change the value whenever config.js or products.js change -->
-<script src="config.js?v=20261027c"></script>
-<script src="products.js?v=20261031a"></script>
+<script src="config.js?v=20261104a"></script>
+<script src="products.js?v=20261104a"></script>
 <script src="analytics.js?v=20261103a"></script>
 <script>
   // CONFIG, TRANSLATIONS and PRODUCTS are loaded from config.js and products.js
@@ -1629,6 +1630,19 @@
     return CONFIG.currency + ' ' + n.toFixed(2);
   }
 
+  // Featured offer banner: price, struck original and saving come from products.js
+  function renderFeaturedPrice() {
+    const box = document.getElementById('partycta');
+    const p = box && PRODUCTS.find(x => x.id === box.dataset.product);
+    if (!p) return;
+    const sale = p.onSale && p.originalPrice > p.price;
+    const saving = sale ? p.originalPrice - p.price : 0;
+    document.getElementById('partycta-price').textContent    = formatPrice(p.price);
+    document.getElementById('partycta-original').textContent = sale ? formatPrice(p.originalPrice) : '';
+    document.getElementById('partycta-badge').textContent    = sale ? '−' + CONFIG.currency + ' ' + (saving % 1 ? saving.toFixed(2) : saving) : '';
+    document.getElementById('partycta-badge').style.display  = sale ? '' : 'none';
+  }
+
   /* ──────────────────────────────────────────────────────────────
      LANGUAGE
   ────────────────────────────────────────────────────────────── */
@@ -1650,6 +1664,7 @@
       el.textContent = t(key);
     });
     refreshPromoName();
+    renderFeaturedPrice();
 
     // Contact email value text
     const emailVal = document.getElementById('contact-email-val');
@@ -2649,6 +2664,7 @@
     document.getElementById('promo-name').textContent  = tr.name;
     document.getElementById('promo-img').alt           = tr.name;
     document.getElementById('promo-price').textContent = formatPrice(promoProduct.price);
+    document.getElementById('promo-price-old').textContent = promoProduct.onSale ? formatPrice(promoProduct.originalPrice) : '';
     document.getElementById('promo-close').setAttribute('aria-label', t('promo.close'));
     // the popup markup is added after the initial setLang() ran, so translate its labels here too
     document.querySelectorAll('#promo-popup [data-i18n]').forEach(el => { el.textContent = t(el.getAttribute('data-i18n')); });
@@ -2700,7 +2716,7 @@
     <div class="promo-body">
       <span class="promo-eyebrow" data-i18n="promo.eyebrow">New in the shop</span>
       <span id="promo-name" class="promo-name"></span>
-      <span id="promo-price" class="promo-price"></span>
+      <span class="promo-price"><span id="promo-price"></span> <span id="promo-price-old" class="promo-price-old"></span></span>
       <p class="promo-text" data-i18n="promo.text"></p>
       <button class="promo-cta" onclick="goPromo()" data-i18n="promo.cta">View the candle</button>
       <button class="promo-later" onclick="closePromo()" data-i18n="promo.later">Maybe later</button>
