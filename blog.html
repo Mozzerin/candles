@@ -10,7 +10,8 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="64x64" href="images/site/favicon-64.webp">
   <link rel="apple-touch-icon" href="images/site/logo.webp">
-  <link rel="stylesheet" href="styles.css?v=20261103a">
+  <link rel="stylesheet" href="styles.css?v=20261122f">
+  <script src="season.js?v=20261122c"></script>
   <script src="config.js"></script>
   <script src="analytics.js?v=20261103a"></script>
   <style>
@@ -29,6 +30,7 @@
       top: -20px;
       left: -30px;
       width: 200px;
+      height: 354px;
       opacity: 0.82;
       pointer-events: none;
     }
@@ -53,7 +55,7 @@
 
     /* Article */
     .article-wrap {
-      max-width: clamp(720px, 60vw, 960px);
+      max-width: calc(clamp(720px, 60vw, 960px) + 2 * var(--site-gutter)); /* text column 960px max; gutters on top */
       margin: 0 auto;
       padding: 3.5rem var(--site-gutter) 6rem;
     }
@@ -70,7 +72,7 @@
 
     /* Blog index cards */
     .blog-index {
-      max-width: clamp(720px, 60vw, 960px);
+      max-width: calc(clamp(720px, 60vw, 960px) + 2 * var(--site-gutter)); /* text column 960px max; gutters on top */
       margin: 0 auto;
       padding: 3.5rem var(--site-gutter) 6rem;
       display: grid;
@@ -255,7 +257,7 @@
 </div>
 
 <div class="blog-hero">
-  <img src="images/site/autumn_branch.webp" alt="" class="blog-branch" aria-hidden="true">
+  <span class="blog-branch season-branch" aria-hidden="true"></span>
   <div class="blog-hero-inner">
     <p class="blog-eyebrow" id="blog-eyebrow">Emma's Lab · Hinter den Kulissen</p>
     <h1 id="blog-h1">Geschichten &amp; Einblicke</h1>

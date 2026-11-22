@@ -18,10 +18,87 @@
   --color-btn:        #5A2530;
   --color-btn-text:   #FAF6EE;
   --color-accent:     #C4622D;
-  --font-body:    system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  /* index.html "Why Emma's Lab" card stripes/icons and the hero image backdrop */
+  --benefit-1:        #C4622D;
+  --benefit-2:        #D4AA70;
+  --benefit-2-icon:   #9A7820;
+  --benefit-3:        #5A2530;
+  --benefit-4:        #8B3A2A;
+  --hero-visual-bg:   #2C1810;
+  /* seasonal images (index hero photo, decorative watercolor branch) */
+  --hero-img:         url('images/site/hero_candles_2026b.webp');
+  --branch-img:       url('images/site/autumn_branch.webp');
+  --font-body:  system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
   --font-heading: 'Playfair Display', Georgia, serif;
   --site-gutter:  4vw;
   --header-h:     64px;
+}
+
+/* ── Seasons ───────────────────────────────────────────────────────────────── */
+/* The season is chosen with ONE word in season.js (SEASON = 'christmas' | 'autumn'),
+   which sets <html data-season="...">.
+   :root above = AUTUMN ("harvest") — keep it unchanged for next autumn.
+   The block below = CHRISTMAS. A new season = a new :root[data-season="..."] block
+   plus its entry in SEASON_PRODUCTS in season.js. */
+:root[data-season="christmas"] {
+  --hero-img:         url('images/site/hero_winter_2026.webp');
+  --branch-img:       url('images/site/winter_branch.webp');
+  /* "lilac frost": colours taken from the winter hero (lilac-grey frost, window blue,
+     the red of the roly-poly doll) */
+  --color-bg:         #FAF8FB;
+  --color-text:       #2A2840;
+  --color-muted:      #625E73;
+  --color-light:      #EFEAF1;
+  --color-border:     #CFC5D4;
+  --color-sale:       #B3232C;
+  --color-badge-bg:   #EFEAF1;
+  --color-btn:        #B3232C;
+  --color-btn-text:   #FFFFFF;
+  --color-accent:     #B3232C;
+  --benefit-1:        #B3232C;
+  --benefit-2:        #A697A5;
+  --benefit-2-icon:   #625E73;
+  --benefit-3:        #5B7095;
+  --benefit-4:        #2A2840;
+  --hero-visual-bg:   #2A2840;
+  --tree-img:         url('images/site/winter_tree.webp');
+  --footer-bg:        #2A2840;
+  --footer-text:      #F5F1F6;
+  --footer-muted:     #CBC4D0;
+  --season-badge-bg:  #B3232C;
+  --season-badge-text:#FFFFFF;
+}
+
+/* Christmas extras (only in the christmas season): watercolor tree in the
+   "Why Emma's Lab" section (index), footer colours of the season */
+:root[data-season="christmas"] .benefit-section { position: relative; overflow: hidden; }
+:root[data-season="christmas"] .benefit-section::before {
+  content: '';
+  position: absolute;
+  left: 3%; bottom: 0;
+  width: 240px; height: 360px;
+  background: var(--tree-img) no-repeat center bottom / contain;
+  pointer-events: none;
+}
+:root[data-season="christmas"] .benefit-inner { position: relative; z-index: 1; }
+@media (max-width: 1100px) {
+  :root[data-season="christmas"] .benefit-section::before { display: none; }
+}
+/* footer colours of the season */
+:root[data-season="christmas"] footer {
+  position: relative;
+  background: var(--footer-bg);
+  border-top: none;
+  color: var(--footer-text);
+  /* footer content uses these tokens, so it all turns light on the dark background */
+  --color-text:  var(--footer-text);
+  --color-muted: var(--footer-muted);
+}
+
+/* Decorative seasonal branch (index hero + About, blog headers); size comes from the page */
+.season-branch {
+  display: block;
+  background: var(--branch-img) no-repeat center top / contain;
 }
 
 /* ── Base ──────────────────────────────────────────────────────────────────── */

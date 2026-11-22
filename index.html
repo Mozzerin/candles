@@ -6,7 +6,8 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="64x64" href="images/site/favicon-64.webp">
   <link rel="apple-touch-icon" href="images/site/logo.webp">
-  <link rel="stylesheet" href="styles.css?v=20261103a">
+  <link rel="stylesheet" href="styles.css?v=20261122f">
+  <script src="season.js?v=20261122c"></script>
   <meta name="google-site-verification" content="KIUStx5k5Wp_E-8cCM1nekmmU4cCCyEC2AvhrLJScGM" />
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="CH">
@@ -150,9 +151,11 @@
     /* ── Products Grid ───────────────────────────────────────── */
     .products-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 2rem;
     }
+    @media (max-width: 1024px) { .products-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 640px)  { .products-grid { grid-template-columns: 1fr; } }
 
     /* ── Product card ────────────────────────────────────────── */
     .product-card {
@@ -223,6 +226,13 @@
       background: #fff;
       border: 1px solid var(--color-sale);
       padding: 0.2rem 0.55rem;
+    }
+    /* season badge (season.js SEASON_PRODUCTS), top-right so it never covers the sale badge */
+    .card-badge-season {
+      left: auto; right: 0.75rem;
+      color: var(--season-badge-text, #fff);
+      background: var(--season-badge-bg, var(--color-sale));
+      border-color: var(--color-border);
     }
 
     .card-body {
@@ -640,6 +650,7 @@
       top: -30px;
       left: 0;
       width: 150px;
+      height: 265px;
       opacity: 0.85;
       pointer-events: none;
       z-index: 0;
@@ -698,14 +709,14 @@
     .hero-visual {
       position: relative;
       overflow: hidden;
-      background: #2C1810;
+      background: var(--hero-visual-bg);
+      aspect-ratio: 1 / 1;
     }
-    .hero-visual img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      display: block;
+    /* hero photo comes from the season (--hero-img in styles.css, chosen in season.js) */
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      background: var(--hero-img) no-repeat center / cover;
     }
 
     /* ── Benefits ─────────────────────────────────────────── */
@@ -738,10 +749,10 @@
       transition: border-color 0.2s;
     }
     .benefit-item:hover { border-color: var(--color-accent); }
-    .benefit-item:nth-child(1) { border-top-color: #C4622D; }
-    .benefit-item:nth-child(2) { border-top-color: #D4AA70; }
-    .benefit-item:nth-child(3) { border-top-color: #5A2530; }
-    .benefit-item:nth-child(4) { border-top-color: #8B3A2A; }
+    .benefit-item:nth-child(1) { border-top-color: var(--benefit-1); }
+    .benefit-item:nth-child(2) { border-top-color: var(--benefit-2); }
+    .benefit-item:nth-child(3) { border-top-color: var(--benefit-3); }
+    .benefit-item:nth-child(4) { border-top-color: var(--benefit-4); }
     .benefit-icon {
       width: 48px; height: 48px;
       margin: 0 auto 1.25rem;
@@ -753,10 +764,10 @@
       justify-content: center;
       padding: 11px;
     }
-    .benefit-item:nth-child(1) .benefit-icon { color: #C4622D; }
-    .benefit-item:nth-child(2) .benefit-icon { color: #9A7820; }
-    .benefit-item:nth-child(3) .benefit-icon { color: #5A2530; }
-    .benefit-item:nth-child(4) .benefit-icon { color: #8B3A2A; }
+    .benefit-item:nth-child(1) .benefit-icon { color: var(--benefit-1); }
+    .benefit-item:nth-child(2) .benefit-icon { color: var(--benefit-2-icon); }
+    .benefit-item:nth-child(3) .benefit-icon { color: var(--benefit-3); }
+    .benefit-item:nth-child(4) .benefit-icon { color: var(--benefit-4); }
     .benefit-item-title {
       font-size: 0.9rem;
       font-weight: 600;
@@ -930,7 +941,6 @@
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; min-height: auto; }
       .hero-text { padding: 4rem 0 3rem; }
-      .hero-visual { aspect-ratio: 4/3; }
       .hero-branch { display: none; }
       .partycta-inner { grid-template-columns: 1fr; }
       .partycta-images { aspect-ratio: 4/3; }
@@ -1132,7 +1142,7 @@
 
   <!-- HERO -->
   <section class="hero-section">
-    <img src="images/site/autumn_branch.webp" alt="" class="hero-branch" aria-hidden="true">
+    <span class="hero-branch season-branch" aria-hidden="true"></span>
     <div class="hero-inner">
       <div class="hero-text">
         <p class="hero-eyebrow" data-i18n="hero.eyebrow">Handmade in Switzerland</p>
@@ -1143,7 +1153,7 @@
         </button>
       </div>
       <div class="hero-visual">
-        <img src="images/site/hero_candles_2026b.webp" alt="Emma's Lab handmade candles and plaster painting kits from Switzerland">
+        <div class="hero-img" role="img" aria-label="Emma's Lab handmade candles and plaster painting kits from Switzerland"></div>
       </div>
     </div>
   </section>
@@ -1274,7 +1284,7 @@
 
   <!-- ABOUT SECTION -->
   <section id="about" style="padding: 4rem var(--site-gutter) 5rem; max-width: var(--max-width); margin: 0 auto; position: relative; overflow: hidden;">
-    <img src="images/site/autumn_branch.webp" alt="" aria-hidden="true" style="position:absolute;bottom:-40px;right:-10px;width:180px;opacity:0.7;pointer-events:none;transform:scaleX(-1) rotate(10deg);">
+    <span class="season-branch" aria-hidden="true" style="position:absolute;bottom:-40px;right:-10px;width:180px;height:318px;opacity:0.7;pointer-events:none;transform:scaleX(-1) rotate(10deg);"></span>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;">
       <div style="aspect-ratio:3/4;overflow:hidden;background:var(--color-light);position:sticky;top:calc(var(--header-h) + 2rem);">
         <img src="images/site/creator-2026.webp" alt="Ekaterina — founder of Emma's Lab" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
@@ -1595,7 +1605,7 @@
 
 <!-- ═══════════════════════════════════════ SCRIPTS ══════════════════════════════ -->
 <!-- ?v= bumps the CDN cache key: change the value whenever config.js or products.js change -->
-<script src="config.js?v=20261104a"></script>
+<script src="config.js?v=20261122b"></script>
 <script src="products.js?v=20261104a"></script>
 <script src="analytics.js?v=20261103a"></script>
 <script>
@@ -1649,6 +1659,8 @@
   function setLang(lang) {
     if (!TRANSLATIONS[lang]) return;
     currentLang = lang;
+    // remember the choice so blog and legal pages open in the same language (they read 'lang')
+    try { localStorage.setItem('lang', lang); } catch (e) {}
 
     // HTML lang attribute (important for SEO & screen readers)
     document.documentElement.lang = lang;
@@ -1704,6 +1716,11 @@
     return PRODUCTS.filter(p => !p.hidden);
   }
 
+  // ids of the current season's products (season.js); [] if season.js is missing
+  function seasonProducts() {
+    return (typeof SEASON_PRODUCTS !== "undefined" && SEASON_PRODUCTS[SEASON]) || [];
+  }
+
   function filteredProducts() {
     const all = visibleProducts();
     const filtered = currentFilter === 'all' ? all : all.filter(p => p.category === currentFilter);
@@ -1719,7 +1736,10 @@
       const nb = (b.translations[currentLang] || b.translations.en).name;
       return nb.localeCompare(na);
     });
-    return filtered;
+    // "Featured": SEASON_PRODUCTS[SEASON] ids first (season.js), the rest keep products.js order (stable sort)
+    const first = seasonProducts();
+    const rank = p => { const i = first.indexOf(p.id); return i === -1 ? first.length : i; };
+    return [...filtered].sort((a, b) => rank(a) - rank(b));
   }
 
   function setSort(value) {
@@ -1776,6 +1796,9 @@
 
       const badgeHtml = p.onSale
         ? `<div class="card-badge">${t('badge.sale')}</div>` : '';
+      const seasonKey = typeof SEASON !== "undefined" ? "badge.season." + SEASON : "";
+      const seasonBadgeHtml = seasonProducts().includes(p.id) && TRANSLATIONS.en[seasonKey]
+        ? `<div class="card-badge card-badge-season">${t(seasonKey)}</div>` : "";
 
       const allImgs = p.images || [p.image];
       const imgs = allImgs.filter(s => !/\.mp4$/i.test(s));
@@ -1796,6 +1819,7 @@
             ${slidesHtml}
             ${dotsHtml}
             ${badgeHtml}
+            ${seasonBadgeHtml}
           </div>
           <div class="card-body">
             <div class="card-category">${cat}</div>
