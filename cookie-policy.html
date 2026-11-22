@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, follow">
   <title>Cookie Policy – Emma's Lab</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles.css?v=20261122f">
+  <link rel="stylesheet" href="styles.css?v=20261122g">
   <script src="season.js?v=20261122c"></script>
   <style>
     main {
@@ -21,6 +21,8 @@
     ul { color: var(--color-muted); padding-left: 1.5rem; margin-bottom: 0.75rem; }
     ul li { margin-bottom: 0.35rem; }
     table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.875rem; }
+    /* wide cookie tables scroll inside themselves on phones instead of widening the page */
+    @media (max-width: 700px) { table { display: block; overflow-x: auto; } }
     th { text-align: left; padding: 0.6rem 0.75rem; background: var(--color-light); font-weight: 600; border: 1px solid var(--color-border); }
     td { padding: 0.6rem 0.75rem; border: 1px solid var(--color-border); color: var(--color-muted); vertical-align: top; }
       .policy-content { display: none; }

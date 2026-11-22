@@ -242,10 +242,22 @@ img { display: block; max-width: 100%; }
   opacity: 0.6; cursor: pointer;
 }
 
-@media (max-width: 700px) {
+/* Compact header (burger menu) up to 960px: the full header (nav + languages + Instagram + cart)
+   needs ~900px, so tablets got a horizontal scroll with the old 700px breakpoint. */
+@media (max-width: 960px) {
   .header-nav { display: none; }
   .burger { display: flex; }
-  .lang-switcher { display: none; }
+  /* only the header copy is hidden; the one inside the burger menu stays visible,
+     otherwise phones had no way to change the language */
+  #header .lang-switcher { display: none; }
+  /* drop the empty <nav> (it still took two flex gaps) */
+  .header-inner > nav { display: none; }
+}
+@media (max-width: 700px) {
+  /* the header must fit a 320-390px phone: tighter gaps, cart shows icon + count only
+     (its aria-label still says "cart") */
+  .header-inner { gap: 1rem; }
+  .cart-btn span:not(.cart-count) { display: none; }
 }
 
 /* ── Footer (shared) ───────────────────────────────────────────────────────── */

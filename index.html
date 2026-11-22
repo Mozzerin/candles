@@ -6,7 +6,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="64x64" href="images/site/favicon-64.webp">
   <link rel="apple-touch-icon" href="images/site/logo.webp">
-  <link rel="stylesheet" href="styles.css?v=20261122f">
+  <link rel="stylesheet" href="styles.css?v=20261122g">
   <script src="season.js?v=20261122c"></script>
   <meta name="google-site-verification" content="KIUStx5k5Wp_E-8cCM1nekmmU4cCCyEC2AvhrLJScGM" />
   <meta name="robots" content="index, follow">
@@ -81,6 +81,7 @@
       display: flex;
       align-items: baseline;
       justify-content: space-between;
+      flex-wrap: wrap;  /* sort drops under the title on narrow phones instead of overflowing */
       margin-bottom: 1rem;
       gap: 1rem;
     }
@@ -710,7 +711,10 @@
       position: relative;
       overflow: hidden;
       background: var(--hero-visual-bg);
+      /* square from the column WIDTH: stretched to the row's min-height it grew wider than its column */
       aspect-ratio: 1 / 1;
+      width: 100%;
+      align-self: center;
     }
     /* hero photo comes from the season (--hero-img in styles.css, chosen in season.js) */
     .hero-img {
