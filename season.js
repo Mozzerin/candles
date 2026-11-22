@@ -12,7 +12,7 @@
    (search the project for "season.js?v=") so the CDN serves the new file at once;
    without that the old season can stay visible for up to 24 h.
    ──────────────────────────────────────────────────────────────────────── */
-var SEASON = 'christmas';
+var SEASON = 'autumn';
 
 /* Seasonal products: shown first (in this order) under the default "Featured" sort
    and marked with the season badge; all other products follow in products.js order. */
